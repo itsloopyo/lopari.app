@@ -6,7 +6,23 @@ platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
 
 [dependencies]
 python = ">=3.11"
+# `node` runs scripts/update-metadata.mjs and scripts/update-latest.mjs.
+# `gh` is the GitHub CLI - update-metadata.mjs falls back to `gh auth token`
+# when $GITHUB_TOKEN isn't set, which is the path most devs hit.
+nodejs = ">=20"
+gh = ">=2.40"
 
 [tasks.dev]
 cmd = "python -c \"import webbrowser, threading, http.server, socketserver; port=4173; threading.Timer(0.6, lambda: webbrowser.open(f'http://localhost:{port}/')).start(); socketserver.TCPServer(('127.0.0.1', port), http.server.SimpleHTTPRequestHandler).serve_forever()\""
 description = "Serve lopari.app at http://localhost:4173 and open it in the default browser"
+
+# Walk ../lopari/catalog/mods.json, query GitHub for each public mod's
+# latest release + latest successful nightly workflow run, and write the
+# combined result to metadata.json. Lopari fetches that one file at
+# startup instead of hammering the GitHub API per-mod on every detail
+# pane. Run this whenever a mod gets a new release or a meaningfully
+# new nightly. Authenticate with `$env:GITHUB_TOKEN = "ghp_..."` first
+# to lift the rate limit from 60/hr to 5000/hr.
+[tasks.update-metadata]
+cmd = "node scripts/update-metadata.mjs"
+description = "Refresh metadata.json with the latest release + nightly info for every public mod in the lopari catalog"
