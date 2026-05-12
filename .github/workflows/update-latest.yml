@@ -1,0 +1,61 @@
+name: update-latest
+
+# Fires when itsloopyo/lopari finishes a release build and dispatches at us.
+# Payload contains version + asset URLs + SHA256 digests for the Windows
+# installers. We template those into index.html between the LATEST_RELEASE
+# markers and commit straight to main; Pages auto-deploys on push.
+#
+# Static-at-rest by design: no client-side fetch to api.github.com, no rate
+# limit risk, no flash-of-loading. The page literally serves the latest
+# version's download links from HTML.
+on:
+  repository_dispatch:
+    types: [lopari-release]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Tag (e.g. v0.1.0)"
+        required: true
+      nsis_filename:
+        description: "Installer filename"
+        required: true
+      nsis_url:
+        description: "Installer URL"
+        required: true
+      nsis_sha256:
+        description: "Installer SHA256"
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run templater
+        env:
+          VERSION:       ${{ github.event.client_payload.version       || github.event.inputs.version }}
+          NSIS_FILENAME: ${{ github.event.client_payload.nsis_filename || github.event.inputs.nsis_filename }}
+          NSIS_URL:      ${{ github.event.client_payload.nsis_url      || github.event.inputs.nsis_url }}
+          NSIS_SHA256:   ${{ github.event.client_payload.nsis_sha256   || github.event.inputs.nsis_sha256 }}
+        run: node scripts/update-latest.mjs
+
+      - name: Commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git diff --quiet; then
+            echo "No changes - index.html already at this version."
+            exit 0
+          fi
+          VERSION="${{ github.event.client_payload.version || github.event.inputs.version }}"
+          git add index.html
+          git commit -m "release: surface Lopari $VERSION on the download section"
+          git push

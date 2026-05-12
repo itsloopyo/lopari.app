@@ -1,0 +1,12 @@
+[workspace]
+name = "lopari.app"
+description = "Marketing site for Lopari"
+channels = ["conda-forge"]
+platforms = ["win-64", "linux-64", "osx-64", "osx-arm64"]
+
+[dependencies]
+python = ">=3.11"
+
+[tasks.dev]
+cmd = "python -c \"import webbrowser, threading, http.server, socketserver; port=4173; threading.Timer(0.6, lambda: webbrowser.open(f'http://localhost:{port}/')).start(); socketserver.TCPServer(('127.0.0.1', port), http.server.SimpleHTTPRequestHandler).serve_forever()\""
+description = "Serve lopari.app at http://localhost:4173 and open it in the default browser"

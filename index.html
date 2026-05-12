@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lopari — a launcher for the head-tracking-capable games on your PC</title>
+<meta name="description" content="Lopari is a desktop game launcher. It surfaces the games you have installed that support head tracking, and launches any of them in one click." />
+<meta property="og:title" content="Lopari" />
+<meta property="og:description" content="A launcher for the head-tracking-capable games on your PC." />
+<meta property="og:image" content="favicon.png" />
+<meta name="theme-color" content="#f6f2eb" />
+<link rel="icon" type="image/png" href="favicon.png" />
+<link rel="apple-touch-icon" href="favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..800;1,6..72,300..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="masthead">
+  <div class="mast-row">
+    <a href="index.html" class="mast-brand">
+      <img src="favicon.png" alt="" width="22" height="22" />
+      <span>Lopari</span>
+    </a>
+    <nav class="mast-nav">
+      <a href="#what">What</a>
+      <a href="#how">How</a>
+      <a href="#download">Get it</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="lede">
+  <p class="rubric">A desktop game launcher.</p>
+  <h1>
+    Lopari shows you the games on your PC that support head tracking,
+    and launches any of them in one click.
+  </h1>
+  <p class="standfirst">
+    It reads the libraries you already have on Steam, GOG, Epic, EA, Ubisoft, and Xbox, keeps the head-tracking-capable titles, and skips the ones that aren't.
+  </p>
+  <div class="lede-actions">
+    <a class="action" href="#download">Get the Windows build</a>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section class="what" id="what">
+  <h2 class="section-title">What it does, in plain terms</h2>
+
+  <div class="prose-grid">
+    <div class="prose-col">
+      <p>Lopari is a launcher first. You open it, you see your library. The library is filtered: only games installed on this machine that can be played with head tracking are shown. Everything else stays out of the way.</p>
+      <p>For most titles in that filtered list, head tracking is something the developer shipped. Elite Dangerous, DCS World, Microsoft Flight Simulator, iRacing, Assetto Corsa, Star Citizen, IL-2, X-Plane — all of these read your tracker out of the box. Lopari surfaces the connection details in one place, instead of you hunting through each game's options menu.</p>
+      <p>For a handful of titles where head tracking isn't shipped natively, a community mod exists that adds it. Lopari installs that mod for you on first launch, and uninstalls it again when you want vanilla back. Same download and install process you'd do by hand, just one click away.</p>
+    </div>
+    <aside class="aside">
+      <p class="aside-kicker">Specifications</p>
+      <dl>
+        <dt>Platform</dt><dd>Windows 10, Windows 11</dd>
+        <dt>Sources</dt><dd>Steam, GOG, Epic, EA, Ubisoft, Xbox</dd>
+        <dt>Account</dt><dd>None</dd>
+        <dt>Telemetry</dt><dd>None</dd>
+        <dt>Price</dt><dd>Free</dd>
+      </dl>
+    </aside>
+  </div>
+</section>
+
+<hr class="rule" />
+
+<section class="how" id="how">
+  <h2 class="section-title">How to use it</h2>
+
+  <ol class="steps">
+    <li>
+      <span class="step-no">1</span>
+      <p>Install Lopari. Open it. It scans your machine and lists the head-tracking-capable games you actually own. No sign-in.</p>
+    </li>
+    <li>
+      <span class="step-no">2</span>
+      <p>Point a tracker at your face. A webcam running OpenTrack on the same PC, or a phone running a tracking app on a tripod across the room. Anything that speaks the OpenTrack UDP protocol.</p>
+    </li>
+    <li>
+      <span class="step-no">3</span>
+      <p>Click Play. The launcher hands off to Steam (or GOG, Epic, etc.) the same way the storefront would, and the game opens. For titles that need a community mod to enable tracking, Lopari installs that mod first, and uninstalls it later from the same place.</p>
+    </li>
+  </ol>
+</section>
+
+<hr class="rule" />
+
+<section class="download" id="download">
+  <h2 class="section-title">Get it</h2>
+
+  <div class="download-row">
+    <div class="download-text">
+      <p>Lopari is in public beta. Windows 10 and Windows 11 only — macOS and Linux are not supported.</p>
+      <p class="small">Heads-up: the installer is not yet code-signed, so Windows will warn you about an unrecognised publisher. Nothing is wrong; it's expected for a small independent project that hasn't paid for a certificate yet. The steps below tell you exactly what to click. A SHA256 digest is also published alongside every release so you can verify the bundle independently if you want to.</p>
+    </div>
+    <div class="download-cta-wrap">
+      <!-- LATEST_RELEASE:START -->
+      <p class="download-version">No release published yet. Watch the releases page or check back here.</p>
+      <div class="download-cta">
+        <a class="action" href="https://github.com/itsloopyo/lopari-releases/releases" target="_blank" rel="noopener">Releases on GitHub</a>
+        <a class="action plain" href="https://patreon.com/itsloopyo" target="_blank" rel="noopener">Support on Patreon</a>
+      </div>
+      <!-- LATEST_RELEASE:END -->
+    </div>
+  </div>
+
+  <div class="install-guide">
+    <h3 class="install-title">Installing on Windows</h3>
+
+    <ol class="install-steps">
+      <li>
+        <p class="install-step-title">Download the installer.</p>
+        <p>Grab the <code>-setup.exe</code> from the latest release.</p>
+      </li>
+      <li>
+        <p class="install-step-title">If your browser warns about the download, keep it.</p>
+        <p>Chrome and Edge sometimes label unsigned downloads as "uncommon" or "may harm your device." Click the dropdown next to the warning and choose <em>Keep</em> (Chrome) or <em>Keep anyway</em> (Edge).</p>
+      </li>
+      <li>
+        <p class="install-step-title">Unblock the file.</p>
+        <p>Windows tags every file downloaded from the internet so it can refuse to run it later. Right-click the downloaded <code>.exe</code> → <strong>Properties</strong> → at the bottom of the General tab, tick <strong>Unblock</strong> → <strong>OK</strong>. Some Windows installs skip straight to step 4 without needing this; do it anyway, it doesn't hurt.</p>
+      </li>
+      <li>
+        <p class="install-step-title">Run the installer.</p>
+        <p>Double-click the <code>.exe</code>. SmartScreen will show a blue full-screen warning that says <em>Windows protected your PC</em> and lists the publisher as <em>Unknown</em>. Click <strong>More info</strong>, then <strong>Run anyway</strong>. The installer takes a few seconds and Lopari appears in your Start menu.</p>
+      </li>
+      <li>
+        <p class="install-step-title">If Windows Defender quarantines it.</p>
+        <p>Occasionally Defender flags unsigned Tauri installers heuristically. Open <strong>Windows Security</strong> → <em>Virus &amp; threat protection</em> → <em>Protection history</em>, find the Lopari entry, and choose <strong>Restore</strong>. Then re-run step 4. The SHA256 published with each release is your independent verification that the bundle matches what was built.</p>
+      </li>
+    </ol>
+
+    <p class="install-footnote">When Lopari is code-signed, steps 2, 3, and 4 will go away.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="colophon">
+  <div class="colo-grid">
+    <div class="colo-cell">
+      <p class="colo-label">Lopari</p>
+      <p>An independent desktop game launcher.</p>
+    </div>
+    <div class="colo-cell">
+      <p class="colo-label">Find me</p>
+      <ul>
+        <li><a href="https://github.com/itsloopyo/lopari-releases" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://bsky.app/profile/itsloopyo.bsky.social" target="_blank" rel="noopener">Bluesky · @itsloopyo</a></li>
+        <li><a href="https://patreon.com/itsloopyo" target="_blank" rel="noopener">Patreon</a></li>
+      </ul>
+    </div>
+    <div class="colo-cell">
+      <p class="colo-label">Legal</p>
+      <ul>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a href="eula.html">EULA</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="disclaimer">
+    Lopari is an independent, fan-made project. It is not affiliated with, endorsed by, or sponsored by any game publisher, developer, storefront, or trademark holder. All game titles, trademarks, and logos are the property of their respective owners and are referenced here solely to identify which titles support head tracking. The community mods Lopari can optionally install modify only files on the user's own machine and are designed to be reversible.
+  </p>
+
+  <p class="copyline">© 2026 itsloopyo</p>
+</footer>
+
+</body>
+</html>
