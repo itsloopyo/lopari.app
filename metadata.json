@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-18T01:22:26.025Z",
+  "generated_at": "2026-05-18T01:36:01.452Z",
   "source_catalog_updated_at": "2026-04-30",
   "mods": {
     "subnautica": {
@@ -394,7 +394,7 @@
         "tag_name": "v0.1.0",
         "name": "v0.1.0",
         "html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/tag/v0.1.0",
-        "published_at": "2026-05-18T00:54:44Z",
+        "published_at": "2026-05-18T01:34:28Z",
         "body": "First release.\r\n",
         "assets": [
           {
@@ -406,18 +406,18 @@
           {
             "name": "SkyrimSEHeadTracking-v0.1.0-nexus.zip",
             "browser_download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.1.0/SkyrimSEHeadTracking-v0.1.0-nexus.zip",
-            "size": 213180,
+            "size": 213028,
             "content_type": "application/zip"
           }
         ]
       },
       "nightly": {
-        "head_sha": "1572aad0f59d7bfab9106aa7a6f89df11f00d0de",
-        "short_sha": "1572aad",
+        "head_sha": "76fbab7b994e24ebc1532e399e8e38377d2830b5",
+        "short_sha": "76fbab7",
         "branch": "main",
         "commit_subject": "Hello world",
-        "created_at": "2026-05-18T00:52:09Z",
-        "run_html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/actions/runs/26007779932",
+        "created_at": "2026-05-18T01:32:22Z",
+        "run_html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/actions/runs/26008805355",
         "download_url": "https://nightly.link/itsloopyo/skyrim-special-edition-headtracking/workflows/build/main/SkyrimSEHeadTracking-installer.zip",
         "artifact_name": "SkyrimSEHeadTracking-installer"
       }
