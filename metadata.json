@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-12T22:38:46.470Z",
+  "generated_at": "2026-05-16T10:14:02.551Z",
   "source_catalog_updated_at": "2026-04-30",
   "mods": {
     "subnautica": {
@@ -357,21 +357,21 @@
     "valheim": {
       "repo": "itsloopyo/valheim-headtracking",
       "latest_release": {
-        "tag_name": "v0.1.3",
-        "name": "Head Tracking for Valheim v0.1.3",
-        "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.3",
-        "published_at": "2026-05-12T22:38:22Z",
-        "body": "## What's Changed in v0.1.3\n\n- Inline release workflow with SteamCMD-based build\n- Include .github/workflows in release-notes artifact paths\r\n",
+        "tag_name": "v0.1.4",
+        "name": "Head Tracking for Valheim v0.1.4",
+        "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.4",
+        "published_at": "2026-05-16T10:14:02Z",
+        "body": "## What's Changed in v0.1.4\r\n",
         "assets": [
           {
-            "name": "ValheimHeadTracking-v0.1.3-installer.zip",
-            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.3/ValheimHeadTracking-v0.1.3-installer.zip",
+            "name": "ValheimHeadTracking-v0.1.4-installer.zip",
+            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.4/ValheimHeadTracking-v0.1.4-installer.zip",
             "size": 761264,
             "content_type": "application/zip"
           },
           {
-            "name": "ValheimHeadTracking-v0.1.3-nexus.zip",
-            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.3/ValheimHeadTracking-v0.1.3-nexus.zip",
+            "name": "ValheimHeadTracking-v0.1.4-nexus.zip",
+            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.4/ValheimHeadTracking-v0.1.4-nexus.zip",
             "size": 74653,
             "content_type": "application/zip"
           }

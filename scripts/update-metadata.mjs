@@ -39,6 +39,11 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(__dirname, "..");
 const CATALOG_PATH = resolve(REPO_ROOT, "..", "lopari", "catalog", "mods.json");
 const OUT_PATH = resolve(REPO_ROOT, "metadata.json");
+// Catalog is also republished to the Pages site root so the launcher
+// can fetch it from lopari.app/mods.json. The lopari repo is private,
+// so raw.githubusercontent.com 404s anonymously; lopari.app is public
+// Pages and reachable without auth.
+const CATALOG_OUT_PATH = resolve(REPO_ROOT, "mods.json");
 
 const TOKEN = resolveToken();
 
@@ -77,8 +82,14 @@ const headers = {
 
 // ---------- catalog ---------------------------------------------------------
 
-const catalog = JSON.parse(readFileSync(CATALOG_PATH, "utf8"));
+const catalogText = readFileSync(CATALOG_PATH, "utf8");
+const catalog = JSON.parse(catalogText);
 const publicMods = catalog.mods.filter((m) => m.public === true);
+
+// Republish the raw catalog verbatim. Write the original text (not a
+// re-serialization) so unknown fields and formatting survive.
+writeFileSync(CATALOG_OUT_PATH, catalogText, "utf8");
+console.log(`catalog: copied to ${CATALOG_OUT_PATH}`);
 console.log(
   `catalog: ${catalog.mods.length} entries total, ${publicMods.length} public (the rest are dev-only).`
 );

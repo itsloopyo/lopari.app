@@ -1,5 +1,8 @@
 .pixi/
-.claude/settings.local.json
+.claude/
+.lab/
 node_modules/
 .DS_Store
 Thumbs.db
+AGENTS.md
+CLAUDE.md
