@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-16T10:14:02.551Z",
+  "generated_at": "2026-05-18T01:22:26.025Z",
   "source_catalog_updated_at": "2026-04-30",
   "mods": {
     "subnautica": {
@@ -286,6 +286,40 @@
         "artifact_name": "GoneHomeHeadTracking-installer"
       }
     },
+    "easy-delivery-co": {
+      "repo": "itsloopyo/easy-delivery-co-headtracking",
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "Head Tracking for Easy Delivery Co v0.1.0",
+        "html_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/tag/v0.1.0",
+        "published_at": "2026-05-16T09:40:02Z",
+        "body": "First release.\r\n",
+        "assets": [
+          {
+            "name": "EasyDeliveryCoHeadTracking-v0.1.0-installer.zip",
+            "browser_download_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/download/v0.1.0/EasyDeliveryCoHeadTracking-v0.1.0-installer.zip",
+            "size": 765346,
+            "content_type": "application/zip"
+          },
+          {
+            "name": "EasyDeliveryCoHeadTracking-v0.1.0-nexus.zip",
+            "browser_download_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/download/v0.1.0/EasyDeliveryCoHeadTracking-v0.1.0-nexus.zip",
+            "size": 71476,
+            "content_type": "application/zip"
+          }
+        ]
+      },
+      "nightly": {
+        "head_sha": "9933df3eabf0b87a88e3b4a0bd23e5a40b44ba46",
+        "short_sha": "9933df3",
+        "branch": "main",
+        "commit_subject": "Hello world",
+        "created_at": "2026-05-16T09:39:22Z",
+        "run_html_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/actions/runs/25958669439",
+        "download_url": "https://nightly.link/itsloopyo/easy-delivery-co-headtracking/workflows/build/main/EasyDeliveryCoHeadTracking-main.zip",
+        "artifact_name": "EasyDeliveryCoHeadTracking-main"
+      }
+    },
     "eternal-afternoon": {
       "repo": "itsloopyo/eternal-afternoon-headtracking",
       "latest_release": {
@@ -354,24 +388,58 @@
         "artifact_name": "FirewatchHeadTracking-installer"
       }
     },
+    "skyrim-special-edition": {
+      "repo": "itsloopyo/skyrim-special-edition-headtracking",
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "v0.1.0",
+        "html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/tag/v0.1.0",
+        "published_at": "2026-05-18T00:54:44Z",
+        "body": "First release.\r\n",
+        "assets": [
+          {
+            "name": "SkyrimSEHeadTracking-v0.1.0-installer.zip",
+            "browser_download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.1.0/SkyrimSEHeadTracking-v0.1.0-installer.zip",
+            "size": 2991355,
+            "content_type": "application/zip"
+          },
+          {
+            "name": "SkyrimSEHeadTracking-v0.1.0-nexus.zip",
+            "browser_download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.1.0/SkyrimSEHeadTracking-v0.1.0-nexus.zip",
+            "size": 213180,
+            "content_type": "application/zip"
+          }
+        ]
+      },
+      "nightly": {
+        "head_sha": "1572aad0f59d7bfab9106aa7a6f89df11f00d0de",
+        "short_sha": "1572aad",
+        "branch": "main",
+        "commit_subject": "Hello world",
+        "created_at": "2026-05-18T00:52:09Z",
+        "run_html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/actions/runs/26007779932",
+        "download_url": "https://nightly.link/itsloopyo/skyrim-special-edition-headtracking/workflows/build/main/SkyrimSEHeadTracking-installer.zip",
+        "artifact_name": "SkyrimSEHeadTracking-installer"
+      }
+    },
     "valheim": {
       "repo": "itsloopyo/valheim-headtracking",
       "latest_release": {
-        "tag_name": "v0.1.4",
-        "name": "Head Tracking for Valheim v0.1.4",
-        "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.4",
-        "published_at": "2026-05-16T10:14:02Z",
-        "body": "## What's Changed in v0.1.4\r\n",
+        "tag_name": "v0.1.3",
+        "name": "Head Tracking for Valheim v0.1.3",
+        "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.3",
+        "published_at": "2026-05-12T22:38:22Z",
+        "body": "## What's Changed in v0.1.3\n\n- Inline release workflow with SteamCMD-based build\n- Include .github/workflows in release-notes artifact paths\r\n",
         "assets": [
           {
-            "name": "ValheimHeadTracking-v0.1.4-installer.zip",
-            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.4/ValheimHeadTracking-v0.1.4-installer.zip",
+            "name": "ValheimHeadTracking-v0.1.3-installer.zip",
+            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.3/ValheimHeadTracking-v0.1.3-installer.zip",
             "size": 761264,
             "content_type": "application/zip"
           },
           {
-            "name": "ValheimHeadTracking-v0.1.4-nexus.zip",
-            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.4/ValheimHeadTracking-v0.1.4-nexus.zip",
+            "name": "ValheimHeadTracking-v0.1.3-nexus.zip",
+            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.3/ValheimHeadTracking-v0.1.3-nexus.zip",
             "size": 74653,
             "content_type": "application/zip"
           }
