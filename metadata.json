@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-18T01:36:01.452Z",
+  "generated_at": "2026-05-23T15:57:33.109Z",
   "source_catalog_updated_at": "2026-04-30",
   "mods": {
     "subnautica": {
@@ -422,36 +422,70 @@
         "artifact_name": "SkyrimSEHeadTracking-installer"
       }
     },
-    "valheim": {
-      "repo": "itsloopyo/valheim-headtracking",
+    "subnautica-2": {
+      "repo": "itsloopyo/subnautica-2-headtracking",
       "latest_release": {
-        "tag_name": "v0.1.3",
-        "name": "Head Tracking for Valheim v0.1.3",
-        "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.3",
-        "published_at": "2026-05-12T22:38:22Z",
-        "body": "## What's Changed in v0.1.3\n\n- Inline release workflow with SteamCMD-based build\n- Include .github/workflows in release-notes artifact paths\r\n",
+        "tag_name": "v0.1.0",
+        "name": "Subnautica 2 Head Tracking v0.1.0",
+        "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.1.0",
+        "published_at": "2026-05-23T11:02:22Z",
+        "body": "First release.\r\n",
         "assets": [
           {
-            "name": "ValheimHeadTracking-v0.1.3-installer.zip",
-            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.3/ValheimHeadTracking-v0.1.3-installer.zip",
-            "size": 761264,
+            "name": "Subnautica2HeadTracking-v0.1.0-installer.zip",
+            "browser_download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.1.0/Subnautica2HeadTracking-v0.1.0-installer.zip",
+            "size": 3195134,
             "content_type": "application/zip"
           },
           {
-            "name": "ValheimHeadTracking-v0.1.3-nexus.zip",
-            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.3/ValheimHeadTracking-v0.1.3-nexus.zip",
-            "size": 74653,
+            "name": "Subnautica2HeadTracking-v0.1.0-nexus.zip",
+            "browser_download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.1.0/Subnautica2HeadTracking-v0.1.0-nexus.zip",
+            "size": 405920,
             "content_type": "application/zip"
           }
         ]
       },
       "nightly": {
-        "head_sha": "55f66bdd94c5f04b0faf0e3873905f443490f9c3",
-        "short_sha": "55f66bd",
+        "head_sha": "eeed2f1e9329b08eda897bf6e8838752b51bb907",
+        "short_sha": "eeed2f1",
         "branch": "main",
-        "commit_subject": "Set PLUGIN_SUBFOLDER for Valheim plugin layout",
-        "created_at": "2026-05-12T22:10:49Z",
-        "run_html_url": "https://github.com/itsloopyo/valheim-headtracking/actions/runs/25765214761",
+        "commit_subject": "Hello world",
+        "created_at": "2026-05-23T10:59:40Z",
+        "run_html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/actions/runs/26330933152",
+        "download_url": "https://nightly.link/itsloopyo/subnautica-2-headtracking/workflows/build/main/Subnautica2HeadTracking-main.zip",
+        "artifact_name": "Subnautica2HeadTracking-main"
+      }
+    },
+    "valheim": {
+      "repo": "itsloopyo/valheim-headtracking",
+      "latest_release": {
+        "tag_name": "v0.1.4",
+        "name": "Head Tracking for Valheim v0.1.4",
+        "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.4",
+        "published_at": "2026-05-18T22:42:07Z",
+        "body": "## What's Changed in v0.1.4\n\n- Cycle tracking modes and widen vertical position limits\n- scripts: drop the two-phase loader-init prompt from install bodies\n- data: add Black & White (Lionhead) to games registry\n- scripts: detect BepInEx 6 IL2CPP via BepInEx.Core.dll marker\n- powershell: skip cameraunlock-core remote refresh in CI\n- scripts: add UE4SS install template, fix delayed expansion in ASI body, expand games registry\r\n",
+        "assets": [
+          {
+            "name": "ValheimHeadTracking-v0.1.4-installer.zip",
+            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.4/ValheimHeadTracking-v0.1.4-installer.zip",
+            "size": 762376,
+            "content_type": "application/zip"
+          },
+          {
+            "name": "ValheimHeadTracking-v0.1.4-nexus.zip",
+            "browser_download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.4/ValheimHeadTracking-v0.1.4-nexus.zip",
+            "size": 74917,
+            "content_type": "application/zip"
+          }
+        ]
+      },
+      "nightly": {
+        "head_sha": "06f67a95c516ac37847ec5b96bb484268d5f57be",
+        "short_sha": "06f67a9",
+        "branch": "main",
+        "commit_subject": "Bump cameraunlock-core submodule",
+        "created_at": "2026-05-18T22:36:39Z",
+        "run_html_url": "https://github.com/itsloopyo/valheim-headtracking/actions/runs/26064477557",
         "download_url": "https://nightly.link/itsloopyo/valheim-headtracking/workflows/build/main/ValheimHeadTracking-installer.zip",
         "artifact_name": "ValheimHeadTracking-installer"
       }
