@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-05-23T15:57:33.109Z",
+  "generated_at": "2026-05-24T16:39:21.562Z",
   "source_catalog_updated_at": "2026-04-30",
   "mods": {
     "subnautica": {
@@ -412,12 +412,12 @@
         ]
       },
       "nightly": {
-        "head_sha": "76fbab7b994e24ebc1532e399e8e38377d2830b5",
-        "short_sha": "76fbab7",
+        "head_sha": "987cec5dec4086515b3e7c3fcb4b4f6923a851fe",
+        "short_sha": "987cec5",
         "branch": "main",
-        "commit_subject": "Hello world",
-        "created_at": "2026-05-18T01:32:22Z",
-        "run_html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/actions/runs/26008805355",
+        "commit_subject": "chore: untrack AGENTS.md/CLAUDE.md and ignore libs/",
+        "created_at": "2026-05-24T01:17:51Z",
+        "run_html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/actions/runs/26348362607",
         "download_url": "https://nightly.link/itsloopyo/skyrim-special-edition-headtracking/workflows/build/main/SkyrimSEHeadTracking-installer.zip",
         "artifact_name": "SkyrimSEHeadTracking-installer"
       }
@@ -425,33 +425,33 @@
     "subnautica-2": {
       "repo": "itsloopyo/subnautica-2-headtracking",
       "latest_release": {
-        "tag_name": "v0.1.0",
-        "name": "Subnautica 2 Head Tracking v0.1.0",
-        "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.1.0",
-        "published_at": "2026-05-23T11:02:22Z",
-        "body": "First release.\r\n",
+        "tag_name": "v0.2.0",
+        "name": "Subnautica 2 Head Tracking v0.2.0",
+        "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.2.0",
+        "published_at": "2026-05-24T16:17:50Z",
+        "body": "## What's Changed in v0.2.0\n\n- Gate tooltip follow on world-hover viewmodel token\n- Add Game Pass (WinGDK) support via dxgi proxy + build profile registry\n- data: add Ni no Kuni Remastered and Yakuza 0; switch find-game output to UTF-8\n- detection: add Xbox/GDK build support for Subnautica 2 (and any future GDK title)\r\n",
         "assets": [
           {
-            "name": "Subnautica2HeadTracking-v0.1.0-installer.zip",
-            "browser_download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.1.0/Subnautica2HeadTracking-v0.1.0-installer.zip",
-            "size": 3195134,
+            "name": "Subnautica2HeadTracking-v0.2.0-installer.zip",
+            "browser_download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.2.0/Subnautica2HeadTracking-v0.2.0-installer.zip",
+            "size": 461442,
             "content_type": "application/zip"
           },
           {
-            "name": "Subnautica2HeadTracking-v0.1.0-nexus.zip",
-            "browser_download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.1.0/Subnautica2HeadTracking-v0.1.0-nexus.zip",
-            "size": 405920,
+            "name": "Subnautica2HeadTracking-v0.2.0-nexus.zip",
+            "browser_download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.2.0/Subnautica2HeadTracking-v0.2.0-nexus.zip",
+            "size": 826154,
             "content_type": "application/zip"
           }
         ]
       },
       "nightly": {
-        "head_sha": "eeed2f1e9329b08eda897bf6e8838752b51bb907",
-        "short_sha": "eeed2f1",
+        "head_sha": "75f33cdf658e06561f2296a5759cfc221e62f2eb",
+        "short_sha": "75f33cd",
         "branch": "main",
-        "commit_subject": "Hello world",
-        "created_at": "2026-05-23T10:59:40Z",
-        "run_html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/actions/runs/26330933152",
+        "commit_subject": "Fix install.ps1 plugins/ lookup for release ZIP layout",
+        "created_at": "2026-05-24T15:51:31Z",
+        "run_html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/actions/runs/26365777812",
         "download_url": "https://nightly.link/itsloopyo/subnautica-2-headtracking/workflows/build/main/Subnautica2HeadTracking-main.zip",
         "artifact_name": "Subnautica2HeadTracking-main"
       }
@@ -488,6 +488,40 @@
         "run_html_url": "https://github.com/itsloopyo/valheim-headtracking/actions/runs/26064477557",
         "download_url": "https://nightly.link/itsloopyo/valheim-headtracking/workflows/build/main/ValheimHeadTracking-installer.zip",
         "artifact_name": "ValheimHeadTracking-installer"
+      }
+    },
+    "black-and-white": {
+      "repo": "itsloopyo/black-and-white-headtracking",
+      "latest_release": {
+        "tag_name": "v0.1.0",
+        "name": "BlackAndWhiteHeadTracking v0.1.0",
+        "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.1.0",
+        "published_at": "2026-05-24T16:00:49Z",
+        "body": "First release.\r\n",
+        "assets": [
+          {
+            "name": "BlackAndWhiteHeadTracking-v0.1.0-installer.zip",
+            "browser_download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.1.0/BlackAndWhiteHeadTracking-v0.1.0-installer.zip",
+            "size": 256427,
+            "content_type": "application/zip"
+          },
+          {
+            "name": "BlackAndWhiteHeadTracking-v0.1.0-nexus.zip",
+            "browser_download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.1.0/BlackAndWhiteHeadTracking-v0.1.0-nexus.zip",
+            "size": 205689,
+            "content_type": "application/zip"
+          }
+        ]
+      },
+      "nightly": {
+        "head_sha": "7fa312cd38ead6c5d25fcc5af0708746838048e8",
+        "short_sha": "7fa312c",
+        "branch": "main",
+        "commit_subject": "Hello world",
+        "created_at": "2026-05-24T15:58:45Z",
+        "run_html_url": "https://github.com/itsloopyo/black-and-white-headtracking/actions/runs/26365943667",
+        "download_url": "https://nightly.link/itsloopyo/black-and-white-headtracking/workflows/build/main/BlackAndWhiteHeadTracking-installer.zip",
+        "artifact_name": "BlackAndWhiteHeadTracking-installer"
       }
     }
   }

@@ -272,31 +272,6 @@
       "nightly": {}
     },
     {
-      "id": "black-and-white",
-      "display_name": "Black & White",
-      "repo": "itsloopyo/black-and-white-headtracking",
-      "install_strategy": "AsiLoader",
-      "game": {
-        "steam_app_id": null,
-        "gog_ids": [],
-        "epic_search_paths": [],
-        "env_var": "BLACK_AND_WHITE_PATH",
-        "registry_paths": [
-          { "hive": "HKCU", "key": "Software\\Lionhead Studios Ltd\\Black & White", "value": "GameDir" }
-        ],
-        "executable_relpath": "runblack.exe"
-      },
-      "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" }
-      ],
-      "nightly": {
-        "artifact": "BlackAndWhiteHeadTracking-main"
-      }
-    },
-    {
       "id": "cyberpunk-2077",
       "display_name": "Cyberpunk 2077",
       "repo": "itsloopyo/cyberpunk-2077-headtracking",
@@ -406,7 +381,7 @@
         { "action": "Toggle reticle", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
       ],
       "nightly": {
-        "artifact": "FalloutNVHeadTracking-main"
+        "artifact": "FalloutNVHeadTracking-installer"
       }
     },
     {
@@ -742,6 +717,47 @@
         { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
         { "action": "Toggle 6DOF (head position)", "nav_key": "Page Up", "chord": "Ctrl+Shift+G" },
         { "action": "Toggle yaw mode (world vs local)", "nav_key": "Page Down", "chord": "Ctrl+Shift+H" }
+      ],
+      "nightly": {}
+    },
+    {
+      "id": "black-and-white",
+      "public": true,
+      "released": true,
+      "display_name": "Black & White",
+      "repo": "itsloopyo/black-and-white-headtracking",
+      "install_strategy": "Shim",
+      "game": {
+        "steam_app_id": null,
+        "steam_folder": null,
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "search_paths": [
+          "C:\\Program Files (x86)\\Lionhead Studios Ltd\\Black & White"
+        ],
+        "registry_paths": [
+          { "hive": "HKCU", "key": "Software\\Lionhead Studios Ltd\\Black & White", "value": "GameDir" }
+        ],
+        "env_var": "BLACK_AND_WHITE_PATH",
+        "executable_relpath": "runblack.exe",
+        "modded_executable_relpath": "bw-headtracking-launcher.exe"
+      },
+      "description": "Head tracking for Lionhead's Black & White. Launch through the included shim launcher to add OpenTrack-driven free look while the mouse cursor stays tied to normal god-hand interaction.",
+      "features": [
+        "Decoupled look and aim: head tracking adds free look while the mouse cursor stays in place in the world",
+        "6DOF positional tracking for leaning and peeking",
+        "World-space and camera-local yaw modes"
+      ],
+      "requirements": [
+        "Black & White (Lionhead Studios, 2001)",
+        "Unofficial Fan Patch 1.42",
+        "OpenTrack or any OpenTrack UDP-compatible tracker"
+      ],
+      "hotkeys": [
+        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
+        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
+        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through normal 6DOF, rotation only, position only, then back" },
+        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked world-space yaw and camera-local yaw" }
       ],
       "nightly": {}
     }
