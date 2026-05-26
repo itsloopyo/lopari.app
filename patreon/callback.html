@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lopari — connecting to Patreon</title>
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="stylesheet" href="/styles.css" />
+<style>
+  .callback-card { max-width: 28rem; margin: 6rem auto; padding: 2rem; text-align: center; }
+  .callback-card h1 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+  .callback-card p { color: #555; }
+  .callback-card code { font-family: "IBM Plex Mono", monospace; font-size: 0.85rem; }
+  .err { color: #b91c1c; }
+</style>
+</head>
+<body>
+
+<main class="callback-card" id="card">
+  <h1 id="title">Returning to Lopari…</h1>
+  <p id="msg">Hand-off in progress. If nothing happens within a few seconds, you can close this tab and try again from the launcher.</p>
+</main>
+
+<script>
+// This page is the OAuth redirect target for the desktop launcher's
+// Patreon flow. We don't see the access token here - we just take the
+// authorization `code` + `state` from Patreon's redirect and forward
+// them into the `lopari://` deep link so the desktop app can finish
+// the exchange (which needs the client_secret held by the broker).
+(function () {
+  const params = new URLSearchParams(window.location.search);
+  const code = params.get("code");
+  const state = params.get("state");
+  const error = params.get("error");
+  const errorDescription = params.get("error_description");
+
+  const title = document.getElementById("title");
+  const msg = document.getElementById("msg");
+
+  if (error) {
+    title.textContent = "Patreon hand-off failed";
+    title.classList.add("err");
+    msg.innerHTML = "Patreon returned <code>" + escapeHtml(error) + "</code>" +
+      (errorDescription ? ": " + escapeHtml(errorDescription) : "") +
+      ". Try again from the launcher.";
+    return;
+  }
+  if (!code || !state) {
+    title.textContent = "Missing code or state";
+    title.classList.add("err");
+    msg.textContent = "Open this page from the Lopari Connect Patreon button.";
+    return;
+  }
+
+  const deepLink = "lopari://patreon-callback" +
+    "?code=" + encodeURIComponent(code) +
+    "&state=" + encodeURIComponent(state);
+  // Trigger the protocol hand-off. Browsers vary on whether this needs
+  // a user gesture; the link below is the manual fallback.
+  window.location.replace(deepLink);
+
+  setTimeout(function () {
+    msg.innerHTML = "If Lopari didn't reopen automatically, " +
+      "<a href=\"" + deepLink + "\">click here to return to the launcher</a>.";
+  }, 1200);
+
+  function escapeHtml(s) {
+    return s.replace(/[&<>"']/g, function (c) {
+      return ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c];
+    });
+  }
+})();
+</script>
+</body>
+</html>
