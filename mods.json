@@ -381,7 +381,7 @@
         { "action": "Toggle reticle", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
       ],
       "nightly": {
-        "artifact": "FalloutNVHeadTracking-installer"
+        "artifact": "FalloutNVHeadTracking-main"
       }
     },
     {
