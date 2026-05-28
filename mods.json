@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "updated_at": "2026-04-30",
   "mods": [
     {
@@ -32,13 +32,38 @@
         "OpenTrack (or any TrackIR/FreeTrack-compatible source)"
       ],
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Cycle UDP port", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Cycles the UDP listen port through 4242, 4243, 4244, 4245 for running multiple game instances on one PC" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Cycle UDP port",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Cycles the UDP listen port through 4242, 4243, 4244, 4245 for running multiple game instances on one PC"
+        }
       ],
       "nightly": {
-        "artifact": "SubnauticaHeadTracking-installer"
+        "artifact": "SubnauticaHeadTracking-installer",
+        "pinned": {
+          "head_sha": "e2b9e9d5ee1853aa2236734aa4d951f4905a00f8",
+          "commit_subject": "fix: tolerate noise-only commit ranges in release-notes generation",
+          "created_at": "2026-05-03T19:50:24Z",
+          "run_html_url": "https://github.com/itsloopyo/subnautica-headtracking/actions/runs/25289102325",
+          "download_url": "https://nightly.link/itsloopyo/subnautica-headtracking/workflows/build/main/SubnauticaHeadTracking-installer.zip"
+        }
       }
     },
     {
@@ -67,12 +92,38 @@
         "OpenTrack or any TrackIR/FreeTrack-compatible source"
       ],
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle reticle", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle reticle",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Toggle a faint dot in the screen center marking where head-aim points"
+        }
       ],
-      "nightly": {}
+      "nightly": {
+        "pinned": {
+          "head_sha": "8156661dbb3c03922113fbf3f739214b9cca26ef",
+          "commit_subject": "Match Unity 2017's UnityAction<Scene, LoadSceneMode> on sceneLoaded",
+          "created_at": "2026-05-03T21:12:25Z",
+          "run_html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/actions/runs/25290941927",
+          "download_url": "https://nightly.link/itsloopyo/obra-dinn-headtracking/workflows/build/main/ObraDinnHeadTracking-installer.zip"
+        }
+      }
     },
     {
       "id": "peak",
@@ -99,13 +150,38 @@
         "OpenTrack or a compatible head tracking app (smartphone, webcam, or dedicated hardware)"
       ],
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
       ],
       "nightly": {
-        "artifact": "PeakHeadTracking-installer"
+        "artifact": "PeakHeadTracking-installer",
+        "pinned": {
+          "head_sha": "00cb28ef76c0af7037c97885a00a45348b1b01b4",
+          "commit_subject": "Update submodule to latest main",
+          "created_at": "2026-05-03T18:41:22Z",
+          "run_html_url": "https://github.com/itsloopyo/peak-headtracking/actions/runs/25287477383",
+          "download_url": "https://nightly.link/itsloopyo/peak-headtracking/workflows/build/main/PeakHeadTracking-installer.zip"
+        }
       }
     },
     {
@@ -124,12 +200,38 @@
         "executable_relpath": "GH.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between camera-local yaw (default; head yaw pans the screen even at extreme pitch) and world-space yaw (horizon-locked)" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between camera-local yaw (default; head yaw pans the screen even at extreme pitch) and world-space yaw (horizon-locked)"
+        }
       ],
-      "nightly": {}
+      "nightly": {
+        "pinned": {
+          "head_sha": "3f20d64f00a82c3b1dc41cda7462d252359c7d3a",
+          "commit_subject": "Update submodule to latest main",
+          "created_at": "2026-05-03T18:41:19Z",
+          "run_html_url": "https://github.com/itsloopyo/green-hell-headtracking/actions/runs/25287476119",
+          "download_url": "https://nightly.link/itsloopyo/green-hell-headtracking/workflows/build/main/GreenHellHeadTracking-installer.zip"
+        }
+      }
     },
     {
       "id": "outer-wilds",
@@ -168,9 +270,25 @@
         "Hotkeys (recenter, toggle tracking) live in the Mod Manager: click 'Head Tracking' in the mod list → Settings."
       ],
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
+      ],
+      "known_issues": [
+        "No README.gif."
       ]
     },
     {
@@ -189,13 +307,38 @@
         "executable_relpath": "re9.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
       ],
       "nightly": {
-        "artifact": "RE9HeadTracking-installer"
+        "artifact": "RE9HeadTracking-installer",
+        "pinned": {
+          "head_sha": "8aa447af5cb0e44c8369af23d2190bd6d9360c6c",
+          "commit_subject": "chore(scripts): use unified REFramework.zip vendor asset",
+          "created_at": "2026-05-03T18:53:57Z",
+          "run_html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/actions/runs/25287762921",
+          "download_url": "https://nightly.link/itsloopyo/resident-evil-requiem-headtracking/workflows/build/main/RE9HeadTracking-installer.zip"
+        }
       }
     },
     {
@@ -214,14 +357,44 @@
         "executable_relpath": "ph\\work\\bin\\x64\\DyingLightGame_x64_rwdi.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" },
-        { "action": "Toggle reticle", "nav_key": "Insert", "chord": "Ctrl+Shift+U", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Toggle reticle",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Toggle a faint dot in the screen center marking where head-aim points"
+        }
       ],
       "nightly": {
-        "artifact": "DL2HeadTracking-installer"
+        "artifact": "DL2HeadTracking-installer",
+        "pinned": {
+          "head_sha": "888ee597dba944e654dbb3d353465c824d08ca99",
+          "commit_subject": "Update submodule to latest main",
+          "created_at": "2026-05-03T18:41:17Z",
+          "run_html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/actions/runs/25287475382",
+          "download_url": "https://nightly.link/itsloopyo/dying-light-2-headtracking/workflows/build/main/DL2HeadTracking-installer.zip"
+        }
       }
     },
     {
@@ -240,12 +413,32 @@
         "executable_relpath": "Build\\Final\\BioshockHD.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
       ],
       "nightly": {
-        "artifact": "BioshockRemasteredHeadTracking-installer"
+        "artifact": "BioshockRemasteredHeadTracking-installer",
+        "pinned": {
+          "head_sha": "67bf3d34f57a6ca6b315749731370ef60b191c5f",
+          "commit_subject": "Release v0.3.2",
+          "created_at": "2026-05-03T19:02:46Z",
+          "run_html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/actions/runs/25287968792",
+          "download_url": "https://nightly.link/itsloopyo/bioshock-remastered-headtracking/workflows/build/main/BioshockRemasteredHeadTracking-installer.zip"
+        }
       }
     },
     {
@@ -264,22 +457,53 @@
         "executable_relpath": "GoneHome.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between camera-local yaw (default) and horizon-locked world-space yaw" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between camera-local yaw (default) and horizon-locked world-space yaw"
+        }
       ],
-      "nightly": {}
+      "nightly": {
+        "pinned": {
+          "head_sha": "33df58c6f9cc8eb68355ab948c03bb6e004b1cb3",
+          "commit_subject": "Update submodule to latest main",
+          "created_at": "2026-05-03T18:41:18Z",
+          "run_html_url": "https://github.com/itsloopyo/gone-home-headtracking/actions/runs/25287475738",
+          "download_url": "https://nightly.link/itsloopyo/gone-home-headtracking/workflows/build/main/GoneHomeHeadTracking-installer.zip"
+        }
+      }
     },
     {
       "id": "cyberpunk-2077",
+      "public": true,
+      "released": false,
       "display_name": "Cyberpunk 2077",
       "repo": "itsloopyo/cyberpunk-2077-headtracking",
       "install_strategy": "AsiLoader",
       "game": {
         "steam_app_id": 1091500,
         "steam_folder": "Cyberpunk 2077",
-        "gog_ids": ["1423049311", "1256837418"],
+        "gog_ids": [
+          "1423049311",
+          "1256837418"
+        ],
         "epic_search_paths": [],
         "env_var": "CYBERPUNK_2077_PATH",
         "executable_relpath": "bin\\x64\\Cyberpunk2077.exe"
@@ -298,15 +522,38 @@
         "A head-tracking device or source"
       ],
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Currently flips position tracking on/off as a placeholder; the full rotation -> rotation only -> position only cycle lands when 6DOF translation is wired up" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" },
-        { "action": "Toggle reticle", "nav_key": "Insert", "chord": "Ctrl+Shift+U", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "description": "Currently flips position tracking on/off as a placeholder; the full rotation -> rotation only -> position only cycle lands when 6DOF translation is wired up"
+        }
       ],
-      "nightly": {
-        "artifact": "Cyberpunk2077HeadTracking-main"
-      }
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260528.f74990b",
+          "built_at": "2026-05-28T13:49:47Z",
+          "zip_filename": "HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/dev/HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "World-yaw not yet implemented.",
+        "Look/aim not decoupled.",
+        "Weapons sometimes point off-reticle.",
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "easy-delivery-co",
@@ -324,14 +571,44 @@
         "executable_relpath": "EasyDeliveryCo.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" },
-        { "action": "Toggle aim reticle", "nav_key": "Insert", "chord": "Ctrl+Shift+U", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Toggle aim reticle",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Toggle a faint dot in the screen center marking where head-aim points"
+        }
       ],
       "nightly": {
-        "artifact": "EasyDeliveryCoHeadTracking-main"
+        "artifact": "EasyDeliveryCoHeadTracking-main",
+        "pinned": {
+          "head_sha": "9933df3eabf0b87a88e3b4a0bd23e5a40b44ba46",
+          "commit_subject": "Hello world",
+          "created_at": "2026-05-16T09:39:22Z",
+          "run_html_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/actions/runs/25958669439",
+          "download_url": "https://nightly.link/itsloopyo/easy-delivery-co-headtracking/workflows/build/main/EasyDeliveryCoHeadTracking-main.zip"
+        }
       }
     },
     {
@@ -350,39 +627,105 @@
         "executable_relpath": "Eternal Afternoon.exe"
       },
       "hotkeys": [
-        { "action": "Recenter view", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle head tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" },
-        { "action": "Toggle aim reticle", "nav_key": "Insert", "chord": "Ctrl+Shift+U", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
+        {
+          "action": "Recenter view",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle head tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Toggle aim reticle",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Toggle a faint dot in the screen center marking where head-aim points"
+        }
       ],
-      "nightly": {}
+      "nightly": {
+        "pinned": {
+          "head_sha": "df8b006c2173c3410ee0d8919d3f775fe3c0890b",
+          "commit_subject": "Update submodule to latest main",
+          "created_at": "2026-05-03T18:27:35Z",
+          "run_html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/actions/runs/25287178058",
+          "download_url": "https://nightly.link/itsloopyo/eternal-afternoon-headtracking/workflows/build/main/EternalAfternoonHeadTracking-installer.zip"
+        }
+      }
     },
     {
       "id": "fallout-new-vegas",
+      "public": true,
+      "released": false,
       "display_name": "Fallout: New Vegas",
       "repo": "itsloopyo/fallout-new-vegas-headtracking",
       "install_strategy": "AsiLoader",
       "game": {
         "steam_app_id": 22380,
         "steam_folder": "Fallout New Vegas",
-        "gog_ids": ["1454587428"],
+        "gog_ids": [
+          "1454587428"
+        ],
         "epic_search_paths": [
           "C:\\Program Files\\Epic Games\\FalloutNewVegas\\Fallout New Vegas English",
           "C:\\Program Files\\Epic Games\\FalloutNewVegas"
         ],
         "env_var": "FalloutNVPath",
-        "executable_relpath": "FalloutNV.exe"
+        "executable_relpath": "FalloutNV.exe",
+        "modded_executable_relpath": "nvse_loader.exe",
+        "modded_launcher_hint": "Fallout: New Vegas loads head tracking through xNVSE, but nvse_loader.exe wasn't found next to FalloutNV.exe. Install xNVSE 6.4.1 or newer (github.com/xNVSE/NVSE/releases) into your game folder, then launch again. Strongly recommended: New Vegas Tick Fix / NVTF (nexusmods.com/newvegas/mods/66537) for smooth head-tracked camera motion."
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle reticle", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle reticle",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Toggle a faint dot in the screen center marking where head-aim points"
+        }
       ],
-      "nightly": {
-        "artifact": "FalloutNVHeadTracking-main"
-      }
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260528.3470afe",
+          "built_at": "2026-05-28T13:35:19Z",
+          "zip_filename": "FalloutNVHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/dev/FalloutNVHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Skybox affected by positional tracking.",
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "firewatch",
@@ -400,16 +743,49 @@
         "executable_relpath": "Firewatch.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between world-space yaw (default; horizon-locked) and camera-local yaw" },
-        { "action": "Toggle reticle follow", "nav_key": "Insert", "chord": "Ctrl+Shift+U", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between world-space yaw (default; horizon-locked) and camera-local yaw"
+        },
+        {
+          "action": "Toggle reticle follow",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Toggle a faint dot in the screen center marking where head-aim points"
+        }
       ],
-      "nightly": {}
+      "nightly": {
+        "pinned": {
+          "head_sha": "5f2184204152b976ed2574acce4f426bae8db1cf",
+          "commit_subject": "Hello world",
+          "created_at": "2026-05-12T22:30:56Z",
+          "run_html_url": "https://github.com/itsloopyo/firewatch-headtracking/actions/runs/25766047879",
+          "download_url": "https://nightly.link/itsloopyo/firewatch-headtracking/workflows/build/main/FirewatchHeadTracking-installer.zip"
+        }
+      }
     },
     {
       "id": "painscreek-killings",
+      "public": true,
+      "released": false,
       "display_name": "The Painscreek Killings",
       "repo": "itsloopyo/the-painscreek-killings-headtracking",
       "install_strategy": "MonoCecil",
@@ -422,14 +798,42 @@
         "executable_relpath": "Painscreek.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between world-space yaw (default; horizon-locked) and camera-local yaw" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between world-space yaw (default; horizon-locked) and camera-local yaw"
+        }
       ],
-      "nightly": {
-        "artifact": "PainscreekHeadTracking-installer"
-      }
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260528.99d6e86",
+          "built_at": "2026-05-28T13:33:30Z",
+          "zip_filename": "PainscreekHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/download/dev/PainscreekHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "resident-evil-2",
@@ -445,11 +849,29 @@
         "executable_relpath": "re2.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home" },
-        { "action": "Toggle tracking", "nav_key": "End" },
-        { "action": "Toggle position tracking", "nav_key": "Page Up", "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" },
-        { "action": "Toggle aim reticle", "nav_key": "Insert", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End"
+        },
+        {
+          "action": "Toggle position tracking",
+          "nav_key": "Page Up",
+          "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Toggle aim reticle",
+          "nav_key": "Insert",
+          "description": "Toggle a faint dot in the screen center marking where head-aim points"
+        }
       ],
       "nightly": {}
     },
@@ -467,10 +889,26 @@
         "executable_relpath": "re3.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Toggle 6DOF (head position)", "nav_key": "Page Up", "chord": "Ctrl+Shift+G" },
-        { "action": "Toggle yaw mode (world vs local)", "nav_key": "Page Down", "chord": "Ctrl+Shift+H" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Toggle 6DOF (head position)",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G"
+        },
+        {
+          "action": "Toggle yaw mode (world vs local)",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H"
+        }
       ],
       "nightly": {}
     },
@@ -488,11 +926,34 @@
         "executable_relpath": "re4.exe"
       },
       "hotkeys": [
-        { "action": "Recenter view", "nav_key": "Home", "chord": "Ctrl+Shift+R" },
-        { "action": "Toggle head tracking", "nav_key": "End", "chord": "Ctrl+Shift+H" },
-        { "action": "Toggle positional tracking", "nav_key": "Page Up", "chord": "Ctrl+Shift+P", "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+Y", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" },
-        { "action": "Toggle aim reticle", "nav_key": "Insert", "chord": "Ctrl+Shift+X", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
+        {
+          "action": "Recenter view",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+R"
+        },
+        {
+          "action": "Toggle head tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+H"
+        },
+        {
+          "action": "Toggle positional tracking",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+P",
+          "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+Y",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Toggle aim reticle",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+X",
+          "description": "Toggle a faint dot in the screen center marking where head-aim points"
+        }
       ],
       "nightly": {
         "artifact": "RE4HeadTracking-installer"
@@ -512,10 +973,26 @@
         "executable_relpath": "re7.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Toggle 6DOF (head position)", "nav_key": "Page Up", "chord": "Ctrl+Shift+G" },
-        { "action": "Toggle yaw mode (world vs local)", "nav_key": "Page Down", "chord": "Ctrl+Shift+H" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Toggle 6DOF (head position)",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G"
+        },
+        {
+          "action": "Toggle yaw mode (world vs local)",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H"
+        }
       ],
       "nightly": {}
     },
@@ -533,15 +1010,33 @@
         "executable_relpath": "re8.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Toggle 6DOF (head position)", "nav_key": "Page Up", "chord": "Ctrl+Shift+G" },
-        { "action": "Toggle yaw mode (world vs local)", "nav_key": "Page Down", "chord": "Ctrl+Shift+H" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Toggle 6DOF (head position)",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G"
+        },
+        {
+          "action": "Toggle yaw mode (world vs local)",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H"
+        }
       ],
       "nightly": {}
     },
     {
       "id": "shadows-of-doubt",
+      "public": false,
+      "released": false,
       "display_name": "Shadows of Doubt",
       "repo": "itsloopyo/shadows-of-doubt-headtracking",
       "install_strategy": "BepInEx5",
@@ -554,12 +1049,34 @@
         "executable_relpath": "Shadows of Doubt.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
       ],
-      "nightly": {}
+      "nightly": {},
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "skyrim-special-edition",
@@ -577,13 +1094,38 @@
         "executable_relpath": "SkyrimSE.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Toggle position tracking", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw (default) and camera-local yaw" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Toggle position tracking",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (default) and camera-local yaw"
+        }
       ],
       "nightly": {
-        "artifact": "SkyrimSEHeadTracking-installer"
+        "artifact": "SkyrimSEHeadTracking-installer",
+        "pinned": {
+          "head_sha": "987cec5dec4086515b3e7c3fcb4b4f6923a851fe",
+          "commit_subject": "chore: untrack AGENTS.md/CLAUDE.md and ignore libs/",
+          "created_at": "2026-05-24T01:17:51Z",
+          "run_html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/actions/runs/26348362607",
+          "download_url": "https://nightly.link/itsloopyo/skyrim-special-edition-headtracking/workflows/build/main/SkyrimSEHeadTracking-installer.zip"
+        }
       }
     },
     {
@@ -602,10 +1144,26 @@
         "executable_relpath": "SubnauticaZero.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Toggle 6DOF (head position)", "nav_key": "Page Up", "chord": "Ctrl+Shift+G" },
-        { "action": "Toggle yaw mode (world vs local)", "nav_key": "Page Down", "chord": "Ctrl+Shift+H" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Toggle 6DOF (head position)",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G"
+        },
+        {
+          "action": "Toggle yaw mode (world vs local)",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H"
+        }
       ],
       "nightly": {}
     },
@@ -622,15 +1180,36 @@
         "gog_ids": [],
         "epic_search_paths": [],
         "env_var": "SUBNAUTICA_2_PATH",
-        "executable_relpath": "Subnautica2\\Binaries\\Win64\\Subnautica2-Win64-Shipping.exe"
+        "executable_relpath": "Subnautica2\\Binaries\\Win64\\Subnautica2-Win64-Shipping.exe",
+        "xbox_executable_relpath": "Subnautica2\\Binaries\\WinGDK\\Subnautica2-WinGDK-Shipping.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
       ],
       "nightly": {
-        "artifact": "Subnautica2HeadTracking-main"
+        "artifact": "Subnautica2HeadTracking-main",
+        "pinned": {
+          "head_sha": "75f33cdf658e06561f2296a5759cfc221e62f2eb",
+          "commit_subject": "Fix install.ps1 plugins/ lookup for release ZIP layout",
+          "created_at": "2026-05-24T15:51:31Z",
+          "run_html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/actions/runs/26365777812",
+          "download_url": "https://nightly.link/itsloopyo/subnautica-2-headtracking/workflows/build/main/Subnautica2HeadTracking-main.zip"
+        }
       }
     },
     {
@@ -647,10 +1226,26 @@
         "executable_relpath": "Tacoma.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Toggle 6DOF (head position)", "nav_key": "Page Up", "chord": "Ctrl+Shift+G" },
-        { "action": "Toggle yaw mode (world vs local)", "nav_key": "Page Down", "chord": "Ctrl+Shift+H" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Toggle 6DOF (head position)",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G"
+        },
+        {
+          "action": "Toggle yaw mode (world vs local)",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H"
+        }
       ],
       "nightly": {}
     },
@@ -670,13 +1265,44 @@
         "executable_relpath": "valheim.exe"
       },
       "hotkeys": [
-        { "action": "Recenter view", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle head tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Toggle positional tracking", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw" },
-        { "action": "Toggle aim reticle", "nav_key": "Insert", "chord": "Ctrl+Shift+U", "description": "Toggle a faint dot in the screen center marking where head-aim points" }
+        {
+          "action": "Recenter view",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle head tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Toggle positional tracking",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Toggle aim reticle",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Toggle a faint dot in the screen center marking where head-aim points"
+        }
       ],
-      "nightly": {}
+      "nightly": {
+        "pinned": {
+          "head_sha": "06f67a95c516ac37847ec5b96bb484268d5f57be",
+          "commit_subject": "Bump cameraunlock-core submodule",
+          "created_at": "2026-05-18T22:36:39Z",
+          "run_html_url": "https://github.com/itsloopyo/valheim-headtracking/actions/runs/26064477557",
+          "download_url": "https://nightly.link/itsloopyo/valheim-headtracking/workflows/build/main/ValheimHeadTracking-installer.zip"
+        }
+      }
     },
     {
       "id": "witcher-3",
@@ -692,15 +1318,35 @@
         "executable_relpath": "bin\\x64\\witcher3.exe"
       },
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through rotation + position, rotation only, and position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked yaw and camera-local yaw" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw and camera-local yaw"
+        }
       ],
       "nightly": {}
     },
     {
       "id": "wobbly-life",
+      "public": true,
+      "released": false,
       "display_name": "Wobbly Life",
       "repo": "itsloopyo/wobbly-life-headtracking",
       "install_strategy": "BepInEx5",
@@ -712,13 +1358,44 @@
         "env_var": "WOBBLY_LIFE_PATH",
         "executable_relpath": "Wobbly Life.exe"
       },
+      "description": "Head tracking for Wobbly Life. Decouples look from aim so you can glance around the world while the mouse or controller still drives aim and movement. Supports up to 4 local players in couch co-op - each player needs their own OpenTrack source on a separate UDP port (P1 4242, P2 4243, P3 4244, P4 4245). Online multiplayer is unaffected: tracking is client-side only and is not transmitted to other clients.",
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Toggle 6DOF (head position)", "nav_key": "Page Up", "chord": "Ctrl+Shift+G" },
-        { "action": "Toggle yaw mode (world vs local)", "nav_key": "Page Down", "chord": "Ctrl+Shift+H" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw and camera-local yaw"
+        }
       ],
-      "nightly": {}
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260528.022f4e6",
+          "built_at": "2026-05-28T13:33:54Z",
+          "zip_filename": "WobblyLifeHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/wobbly-life-headtracking/releases/download/dev/WobblyLifeHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "black-and-white",
@@ -736,7 +1413,11 @@
           "C:\\Program Files (x86)\\Lionhead Studios Ltd\\Black & White"
         ],
         "registry_paths": [
-          { "hive": "HKCU", "key": "Software\\Lionhead Studios Ltd\\Black & White", "value": "GameDir" }
+          {
+            "hive": "HKCU",
+            "key": "Software\\Lionhead Studios Ltd\\Black & White",
+            "value": "GameDir"
+          }
         ],
         "env_var": "BLACK_AND_WHITE_PATH",
         "executable_relpath": "runblack.exe",
@@ -754,12 +1435,104 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker"
       ],
       "hotkeys": [
-        { "action": "Recenter", "nav_key": "Home", "chord": "Ctrl+Shift+T" },
-        { "action": "Toggle tracking", "nav_key": "End", "chord": "Ctrl+Shift+Y" },
-        { "action": "Cycle tracking mode", "nav_key": "Page Up", "chord": "Ctrl+Shift+G", "description": "Cycles through normal 6DOF, rotation only, position only, then back" },
-        { "action": "Toggle yaw mode", "nav_key": "Page Down", "chord": "Ctrl+Shift+H", "description": "Switch between horizon-locked world-space yaw and camera-local yaw" }
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through normal 6DOF, rotation only, position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked world-space yaw and camera-local yaw"
+        }
       ],
-      "nightly": {}
+      "nightly": {
+        "pinned": {
+          "head_sha": "7fa312cd38ead6c5d25fcc5af0708746838048e8",
+          "commit_subject": "Hello world",
+          "created_at": "2026-05-24T15:58:45Z",
+          "run_html_url": "https://github.com/itsloopyo/black-and-white-headtracking/actions/runs/26365943667",
+          "download_url": "https://nightly.link/itsloopyo/black-and-white-headtracking/workflows/build/main/BlackAndWhiteHeadTracking-installer.zip"
+        }
+      }
+    },
+    {
+      "id": "assassins-creed-unity",
+      "public": true,
+      "released": false,
+      "display_name": "Assassin's Creed Unity",
+      "repo": "itsloopyo/assassins-creed-unity-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 289650,
+        "steam_folder": "Assassin's Creed Unity",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "ASSASSINS_CREED_UNITY_PATH",
+        "executable_relpath": "ACU.exe"
+      },
+      "description": "Head tracking for Assassin's Creed Unity. Turning your head nudges the camera on top of the normal third-person orbit, so you can peek around corners and lean into rooftop drops without taking your hands off the mouse or controller.",
+      "features": [
+        "Head nudges the third-person camera; mouse + aim untouched",
+        "6DOF position tracking, tuned to ACU's tight follow camera",
+        "Auto-recenter on first packet after reconnect",
+        "Pauses in menus and loading screens"
+      ],
+      "requirements": [
+        "Assassin's Creed Unity (Steam or Ubisoft Connect)",
+        "OpenTrack (or any TrackIR/FreeTrack-compatible source)"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between world-space yaw (default; horizon-locked) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260528.f5b291e",
+          "built_at": "2026-05-28T13:31:49Z",
+          "zip_filename": "AssassinsCreedUnityHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/assassins-creed-unity-headtracking/releases/download/dev/AssassinsCreedUnityHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "Frustum culling issues.",
+        "UI element positioning issues.",
+        "No README.gif."
+      ]
     }
   ],
   "native_games": [
@@ -769,7 +1542,10 @@
       "steam_app_id": 359320,
       "steam_folder": "Elite Dangerous",
       "executable_relpath": "EDLaunch.exe",
-      "protocols": ["TrackIR", "Tobii"],
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
       "notes": "Native TrackIR; OpenTrack reachable via headset-emulator output.",
       "setup_steps": [
         "Start TrackIR (or OpenTrack with Output = 'freetrack 2.0 Enhanced', Interface = 'Both') BEFORE launching the game.",
@@ -783,7 +1559,11 @@
       "steam_app_id": 223750,
       "steam_folder": "DCSWorld",
       "executable_relpath": "bin\\DCS.exe",
-      "protocols": ["TrackIR", "Native", "Tobii"],
+      "protocols": [
+        "TrackIR",
+        "Native",
+        "Tobii"
+      ],
       "notes": "Built-in TrackIR; OpenTrack via native export; VR headset supported.",
       "setup_steps": [
         "Start TrackIR (or OpenTrack with Output = 'freetrack 2.0 Enhanced') BEFORE launching DCS.",
@@ -798,7 +1578,10 @@
       "steam_app_id": 2537590,
       "steam_folder": "Microsoft Flight Simulator 2024",
       "executable_relpath": "FlightSimulator.exe",
-      "protocols": ["TrackIR", "Native"],
+      "protocols": [
+        "TrackIR",
+        "Native"
+      ],
       "notes": "SimConnect integration; OpenTrack works via TrackIR output protocol.",
       "setup_steps": [
         "Update the TrackIR software first (Help → Check for game updates) - MSFS 2024 requires a recent profile.",
@@ -814,7 +1597,10 @@
       "steam_app_id": 1250410,
       "steam_folder": "MicrosoftFlightSimulator",
       "executable_relpath": "FlightSimulator.exe",
-      "protocols": ["TrackIR", "Native"],
+      "protocols": [
+        "TrackIR",
+        "Native"
+      ],
       "notes": "SimConnect-based; same driver chain as MSFS 2024.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE MSFS 2020.",
@@ -829,7 +1615,10 @@
       "steam_app_id": 266410,
       "steam_folder": "iRacing",
       "executable_relpath": "iRacingSim64DX11.exe",
-      "protocols": ["TrackIR", "Tobii"],
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE iRacing.",
         "iRacing auto-detects TrackIR - no in-game enable required.",
@@ -843,7 +1632,10 @@
       "steam_app_id": 244210,
       "steam_folder": "assettocorsa",
       "executable_relpath": "acs.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE Assetto Corsa.",
         "AC auto-detects TrackIR and FreeTrack - no menu toggle.",
@@ -858,7 +1650,9 @@
       "steam_app_id": 805550,
       "steam_folder": "Assetto Corsa Competizione",
       "executable_relpath": "AC2-Win64-Shipping.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE ACC.",
         "ACC auto-detects TrackIR - there's no in-game on/off toggle.",
@@ -873,7 +1667,9 @@
       "steam_app_id": 365960,
       "steam_folder": "rFactor 2",
       "executable_relpath": "Bin64\\rFactor2.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE rFactor 2.",
         "rF2 auto-detects TrackIR; no in-game enable required.",
@@ -887,7 +1683,10 @@
       "steam_app_id": 107410,
       "steam_folder": "Arma 3",
       "executable_relpath": "arma3_x64.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "Widely used in milsim; FreeTrack support configurable.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE Arma 3.",
@@ -902,7 +1701,9 @@
       "steam_app_id": 236390,
       "steam_folder": "War Thunder",
       "executable_relpath": "aces.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE War Thunder.",
         "In-game: Options → Controls → Controls Setup → set Control Setup mode to 'Custom'.",
@@ -916,7 +1717,9 @@
       "steam_app_id": 307960,
       "steam_folder": "IL-2 Sturmovik Battle of Stalingrad",
       "executable_relpath": "bin\\game\\Il-2.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE IL-2.",
         "IL-2 Great Battles auto-detects TrackIR - there is no in-game enable toggle. Make sure the TrackIR software recognises the game (update the game list if it doesn't appear).",
@@ -930,7 +1733,9 @@
       "steam_app_id": 1198460,
       "steam_folder": "IL-2 Sturmovik Battle of Bodenplatte",
       "executable_relpath": "bin\\game\\Il-2.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "Shares the Great Battles engine.",
       "setup_steps": [
         "Same engine as IL-2 Great Battles - instructions identical.",
@@ -945,7 +1750,10 @@
       "steam_app_id": 15320,
       "steam_folder": "IL-2 1946",
       "executable_relpath": "il2fb.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "Legacy classic; FreeTrack via the community modpack.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE IL-2 1946.",
@@ -960,7 +1768,9 @@
       "steam_app_id": null,
       "steam_folder": "Falcon BMS 4.38",
       "executable_relpath": "Bin\\x64\\Falcon BMS.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "Not on Steam; community F-16 sim. Install path must be set via env or manual override.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE BMS. Keep OpenTrack's FreeTrack output disabled - BMS is TrackIR-only.",
@@ -975,7 +1785,10 @@
       "steam_app_id": 2014780,
       "steam_folder": "X-Plane 12",
       "executable_relpath": "X-Plane.exe",
-      "protocols": ["TrackIR", "Native"],
+      "protocols": [
+        "TrackIR",
+        "Native"
+      ],
       "notes": "Native TrackIR checkbox in settings.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE X-Plane 12. Running both X-Plane and the tracker as administrator avoids detection issues.",
@@ -989,7 +1802,10 @@
       "steam_app_id": 269950,
       "steam_folder": "X-Plane 11",
       "executable_relpath": "X-Plane.exe",
-      "protocols": ["TrackIR", "Native"],
+      "protocols": [
+        "TrackIR",
+        "Native"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE X-Plane 11; run both as administrator to avoid detection issues.",
         "In-game: Settings -> Graphics -> tick the TrackIR checkbox, then Settings -> Keyboard -> search 'trackir' and bind 'Toggle TrackIR control' to a key or joystick button for mid-flight pause/resume.",
@@ -1002,7 +1818,10 @@
       "steam_app_id": null,
       "steam_folder": "Prepar3D v6",
       "executable_relpath": "Prepar3D.exe",
-      "protocols": ["TrackIR", "Native"],
+      "protocols": [
+        "TrackIR",
+        "Native"
+      ],
       "notes": "Lockheed Martin; not on Steam. SimConnect-based; TrackIR requires ChasePlane or ViewTracker - P3D v6 has no native menu toggle.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE P3D.",
@@ -1017,7 +1836,10 @@
       "steam_app_id": 314160,
       "steam_folder": "FSX",
       "executable_relpath": "fsx.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "Classic Flight Simulator X; TrackIR has been supported since launch.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE FSX.",
@@ -1032,7 +1854,10 @@
       "steam_app_id": null,
       "steam_folder": "flightgear",
       "executable_relpath": "bin\\fgfs.exe",
-      "protocols": ["OpenTrack UDP", "Native"],
+      "protocols": [
+        "OpenTrack UDP",
+        "Native"
+      ],
       "notes": "Open-source flight sim; uses FlightGear's native UDP protocol.",
       "setup_steps": [
         "In OpenTrack, add Output = 'UDP over network'; set Host = 127.0.0.1, port = 4242.",
@@ -1047,7 +1872,9 @@
       "steam_app_id": null,
       "steam_folder": "StarCitizen",
       "executable_relpath": "StarCitizen Launcher.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "Not on Steam (RSI launcher). Native TrackIR.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE launching Star Citizen.",
@@ -1062,7 +1889,9 @@
       "steam_app_id": null,
       "steam_folder": "Orbiter 2016",
       "executable_relpath": "orbiter.exe",
-      "protocols": ["OpenTrack UDP"],
+      "protocols": [
+        "OpenTrack UDP"
+      ],
       "notes": "Free spaceflight simulator; distributed via orbiter-forum.com.",
       "setup_steps": [
         "Download the TrackIR plugin from orbiter-forum.com (search 'OrbiterTrackIR').",
@@ -1078,7 +1907,10 @@
       "steam_app_id": 1066890,
       "steam_folder": "Automobilista 2",
       "executable_relpath": "Bin64\\AMS2AVX.exe",
-      "protocols": ["TrackIR", "SteamVR"],
+      "protocols": [
+        "TrackIR",
+        "SteamVR"
+      ],
       "notes": "TrackIR only works when AMS 2 is launched in SteamVR mode; there is no in-game TrackIR toggle.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE AMS 2.",
@@ -1093,7 +1925,9 @@
       "steam_app_id": 211500,
       "steam_folder": "raceroom racing experience",
       "executable_relpath": "Game\\RRRE64.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "setup_steps": [
         "Update the TrackIR software's game list (top-right refresh) so the RaceRoom profile is present.",
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE RaceRoom.",
@@ -1107,7 +1941,11 @@
       "steam_app_id": 378860,
       "steam_folder": "Project CARS 2",
       "executable_relpath": "pCARS2AVX.exe",
-      "protocols": ["TrackIR", "FreeTrack", "Tobii"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack",
+        "Tobii"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE pCARS2.",
         "pCARS2 only reads TrackIR when launched in SteamVR mode - right-click the game in Steam -> Properties -> Launch Options and add '-vr' (or launch via steam://launch/234630/vr).",
@@ -1121,7 +1959,9 @@
       "steam_app_id": 690790,
       "steam_folder": "DiRT Rally 2.0",
       "executable_relpath": "dirtrally2.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "TrackIR added post-launch.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE DR2.",
@@ -1136,7 +1976,9 @@
       "steam_app_id": 284160,
       "steam_folder": "BeamNG.drive",
       "executable_relpath": "Bin64\\BeamNG.drive.x64.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE BeamNG.",
         "BeamNG detects TrackIR automatically via its bundled profile - no in-game enable.",
@@ -1150,7 +1992,10 @@
       "steam_app_id": null,
       "steam_folder": "Live for Speed",
       "executable_relpath": "LFS.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "Self-distributed from lfs.net; detected by folder match only.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE LFS.",
@@ -1165,7 +2010,10 @@
       "steam_app_id": 8710,
       "steam_folder": "GTR2",
       "executable_relpath": "GTR2.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "Legacy Simbin racing sim.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE GTR 2.",
@@ -1180,7 +2028,10 @@
       "steam_app_id": 227300,
       "steam_folder": "Euro Truck Simulator 2",
       "executable_relpath": "bin\\win_x64\\eurotrucks2.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE ETS2.",
         "ETS2 auto-detects TrackIR using its bundled profile - no in-game enable.",
@@ -1194,7 +2045,10 @@
       "steam_app_id": 270880,
       "steam_folder": "American Truck Simulator",
       "executable_relpath": "bin\\win_x64\\amtrucks.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "setup_steps": [
         "Same engine as ETS2 - setup is identical.",
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE ATS.",
@@ -1207,7 +2061,9 @@
       "steam_app_id": 1248220,
       "steam_folder": "Farming Simulator 22",
       "executable_relpath": "x64\\FarmingSimulator2022.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE FS22.",
         "FS22 auto-detects TrackIR on startup - check log.txt in the game folder if uncertain ('TrackIR initialised' line).",
@@ -1221,7 +2077,9 @@
       "steam_app_id": 2467660,
       "steam_folder": "Train Sim World 4",
       "executable_relpath": "WindowsNoEditor\\TS4Prototype\\Binaries\\Win64\\TS4Prototype-Win64-Shipping.exe",
-      "protocols": ["OpenTrack UDP"],
+      "protocols": [
+        "OpenTrack UDP"
+      ],
       "notes": "No native TrackIR / FreeTrack support; UE4 title driven through mouse emulation.",
       "setup_steps": [
         "TSW4 has NO native TrackIR or FreeTrack support - head look has to be emulated as mouse movement.",
@@ -1236,7 +2094,9 @@
       "steam_app_id": 393380,
       "steam_folder": "Squad",
       "executable_relpath": "SquadGame.exe",
-      "protocols": ["OpenTrack UDP"],
+      "protocols": [
+        "OpenTrack UDP"
+      ],
       "notes": "No native TrackIR / FreeTrack (NaturalPoint's NDA blocks integration in UE4). Head tracking via mouse emulation only.",
       "setup_steps": [
         "Squad has NO native TrackIR or FreeTrack support.",
@@ -1251,7 +2111,9 @@
       "steam_app_id": 686810,
       "steam_folder": "Hell Let Loose",
       "executable_relpath": "HLL.exe",
-      "protocols": ["OpenTrack UDP"],
+      "protocols": [
+        "OpenTrack UDP"
+      ],
       "setup_steps": [
         "Hell Let Loose does NOT natively support TrackIR or FreeTrack as of 2026.",
         "Community requests have been open since 2019; the UE4 implementation cost has kept it off the devs' roadmap.",
@@ -1265,7 +2127,10 @@
       "steam_app_id": 1222730,
       "steam_folder": "Star Wars Squadrons",
       "executable_relpath": "starwarssquadrons.exe",
-      "protocols": ["TrackIR", "SteamVR"],
+      "protocols": [
+        "TrackIR",
+        "SteamVR"
+      ],
       "notes": "Native TrackIR; VR mode also exposes tracking to emulated headsets.",
       "setup_steps": [
         "Update your TrackIR software to v5.5+ (Help → Check for game updates).",
@@ -1280,7 +2145,9 @@
       "steam_app_id": 895870,
       "steam_folder": "Project Wingman",
       "executable_relpath": "Wingman\\Binaries\\Win64\\Wingman-Win64-Shipping.exe",
-      "protocols": ["OpenTrack UDP"],
+      "protocols": [
+        "OpenTrack UDP"
+      ],
       "notes": "OpenTrack via FreePIE bridge; no native TrackIR.",
       "setup_steps": [
         "Project Wingman has no native TrackIR support (Ace Combat clone - by design).",
@@ -1295,7 +2162,9 @@
       "steam_app_id": 21600,
       "steam_folder": "Tom Clancy's H.A.W.X",
       "executable_relpath": "hawx_game.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "setup_steps": [
         "Start TrackIR (or OpenTrack with TrackIR output) BEFORE HAWX.",
         "HAWX auto-detects TrackIR via the bundled NPClient.dll in the game root.",
@@ -1309,7 +2178,9 @@
       "steam_app_id": 15670,
       "steam_folder": "Tom Clancy's H.A.W.X. 2",
       "executable_relpath": "HAWX2Game.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "setup_steps": [
         "Same setup as the first HAWX.",
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE launching.",
@@ -1323,7 +2194,10 @@
       "steam_app_id": 928600,
       "steam_folder": "F1 2019",
       "executable_relpath": "F1_2019_dx12.exe",
-      "protocols": ["TrackIR", "Tobii"],
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
       "setup_steps": [
         "Update the TrackIR game list first; start TrackIR / OpenTrack (TrackIR output) BEFORE F1 2019.",
         "In-game: Settings -> Camera -> set 'Head tracking with TrackIR' to On, then restart the game for the setting to take effect. If the option is greyed out, update the TrackIR game list and relaunch.",
@@ -1337,7 +2211,10 @@
       "steam_app_id": 1080110,
       "steam_folder": "F1 2020",
       "executable_relpath": "F1_2020_dx12.exe",
-      "protocols": ["TrackIR", "Tobii"],
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE F1 2020; keep the TrackIR game list current or the toggle stays greyed out.",
         "Settings -> Camera -> 'Head tracking with TrackIR' -> On, then restart the game.",
@@ -1351,7 +2228,10 @@
       "steam_app_id": 2108330,
       "steam_folder": "F1 23",
       "executable_relpath": "F1_23.exe",
-      "protocols": ["TrackIR", "Tobii"],
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE F1 23.",
         "The TrackIR enable toggle is only available during a session, not in the main menu: start any race / time trial, pause, then Settings (gear icon) -> 'Eye and Head Tracking' -> 'Head Tracking with TrackIR' -> On.",
@@ -1365,7 +2245,10 @@
       "steam_app_id": 2488620,
       "steam_folder": "F1 24",
       "executable_relpath": "F1_24.exe",
-      "protocols": ["TrackIR", "Tobii"],
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE F1 24.",
         "TrackIR can only be enabled in-session: start a race / time trial, pause, then Settings (gear icon) -> 'Eye and Head Tracking' -> 'Head Tracking with TrackIR' -> On.",
@@ -1379,7 +2262,9 @@
       "steam_app_id": 310560,
       "steam_folder": "DiRT Rally",
       "executable_relpath": "drt.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "Yaw/pitch in dashcam and bonnet views; predecessor to DR2.0.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE DiRT Rally.",
@@ -1394,7 +2279,9 @@
       "steam_app_id": 421020,
       "steam_folder": "DiRT 4",
       "executable_relpath": "dirt4.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "Codemasters EGO engine; same head-tracking chain as the DiRT Rally titles.",
       "setup_steps": [
         "Same as DiRT Rally / DR2.0 - EGO engine.",
@@ -1408,7 +2295,10 @@
       "steam_app_id": 1849250,
       "steam_folder": "EA SPORTS WRC",
       "executable_relpath": "WRC\\Binaries\\Win64\\WRC-Win64-Shipping.exe",
-      "protocols": ["OpenTrack UDP", "SteamVR"],
+      "protocols": [
+        "OpenTrack UDP",
+        "SteamVR"
+      ],
       "notes": "No native TrackIR / FreeTrack as of 2026 - Codemasters chose not to port the DR2.0 driver. VR is supported via SteamVR.",
       "setup_steps": [
         "EA SPORTS WRC has NO native TrackIR or FreeTrack support (confirmed unsupported through 2025).",
@@ -1423,7 +2313,10 @@
       "steam_app_id": 37970,
       "steam_folder": "rFactor",
       "executable_relpath": "rFactor.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "Foundational sim racing title; TrackIR since 2005.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE rFactor.",
@@ -1438,7 +2331,10 @@
       "steam_app_id": null,
       "steam_folder": "Richard Burns Rally",
       "executable_relpath": "RichardBurnsRally_SSE.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "Classic 2004 rally sim; TrackIR since 2004. Not on Steam; distributed via RSRBR community pack.",
       "setup_steps": [
         "Install the RSRBR / NGP community mod pack from rallysimfans.hu - native RBR predates modern Windows and the mod pack fixes compatibility.",
@@ -1453,7 +2349,10 @@
       "steam_app_id": 244050,
       "steam_folder": "Rise of Flight",
       "executable_relpath": "ROF.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "WWI flight sim; Options > Controls > Pilot Head Control.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE Rise of Flight.",
@@ -1468,7 +2367,10 @@
       "steam_app_id": 754530,
       "steam_folder": "IL-2 Sturmovik Cliffs of Dover Blitz",
       "executable_relpath": "Launcher.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "Battle-of-Britain flight sim; TrackIR full support post-Blitz remaster.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching CloD Blitz.",
@@ -1483,7 +2385,9 @@
       "steam_app_id": 7910,
       "steam_folder": "Lock On",
       "executable_relpath": "lockon.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "Precursor to DCS (Flaming Cliffs lineage); TrackIR since 2004.",
       "setup_steps": [
         "Start TrackIR (or OpenTrack with TrackIR output) BEFORE Lock On.",
@@ -1498,7 +2402,9 @@
       "steam_app_id": 289760,
       "steam_folder": "Strike Fighters 2",
       "executable_relpath": "StrikeFighters2.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "Third Wire jet combat sim; shared TrackIR profile across the SF2 family ('First Eagles, Wings Over Europe, Strike Fighters').",
       "setup_steps": [
         "Start TrackIR (or OpenTrack with TrackIR output) BEFORE SF2. On Windows 10/11, right-click both the tracker and StrikeFighters2.exe -> 'Run as administrator'.",
@@ -1512,7 +2418,9 @@
       "steam_app_id": 1260120,
       "steam_folder": "Aces High III",
       "executable_relpath": "ahiii.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "MMO combat flight sim; TrackIR supported in cockpit views.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE Aces High III.",
@@ -1527,7 +2435,10 @@
       "steam_app_id": 273620,
       "steam_folder": "Freespace 2",
       "executable_relpath": "fs2_open.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "Via FreeSpace Open (SCP); requires the community DLL drop.",
       "setup_steps": [
         "Use a FreeSpace Open (SCP) build rather than the stock 1999 exe - get one from scp.indiegames.us.",
@@ -1542,7 +2453,10 @@
       "steam_app_id": null,
       "steam_folder": "Wing Commander Saga",
       "executable_relpath": "WingCommanderSaga.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "Freeware built on FSO engine; standalone installer from wcsaga.com.",
       "setup_steps": [
         "Wing Commander Saga is built on the same FSO engine as FreeSpace 2 - setup mirrors it.",
@@ -1557,7 +2471,9 @@
       "steam_app_id": 1128920,
       "steam_folder": "EVERSPACE 2",
       "executable_relpath": "ES2.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "Enable via Settings > Game > Track IR Support. Some DX11 quirks reported.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE Everspace 2.",
@@ -1572,7 +2488,10 @@
       "steam_app_id": 91330,
       "steam_folder": "Iron Front",
       "executable_relpath": "IronFront.exe",
-      "protocols": ["TrackIR", "FreeTrack"],
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
       "notes": "WWII combat sim on the ARMA 2 engine; same FreeTrack config path as ARMA.",
       "setup_steps": [
         "Iron Front runs on the ARMA 2 engine - same tracker wiring.",
@@ -1587,7 +2506,9 @@
       "steam_app_id": 12830,
       "steam_folder": "Operation Flashpoint Dragon Rising",
       "executable_relpath": "DR.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "TrackIR works in vehicle views only; on-foot needs GlovePIE/OpenTrack bridging.",
       "setup_steps": [
         "Start TrackIR (or OpenTrack with TrackIR output) BEFORE Dragon Rising.",
@@ -1602,7 +2523,9 @@
       "steam_app_id": 787860,
       "steam_folder": "Farming Simulator 19",
       "executable_relpath": "x64\\FarmingSimulator2019.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE FS19.",
         "FS19 auto-detects TrackIR via its bundled profile on launch.",
@@ -1616,7 +2539,10 @@
       "steam_app_id": 2300320,
       "steam_folder": "Farming Simulator 25",
       "executable_relpath": "x64\\FarmingSimulator2025.exe",
-      "protocols": ["TrackIR", "Native"],
+      "protocols": [
+        "TrackIR",
+        "Native"
+      ],
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE FS25.",
         "FS25 has a first-class head-tracking UI: Options → General → 'Head Tracking' → Enable.",
@@ -1630,7 +2556,9 @@
       "steam_app_id": 24010,
       "steam_folder": "RailWorks",
       "executable_relpath": "RailWorks64.exe",
-      "protocols": ["TrackIR"],
+      "protocols": [
+        "TrackIR"
+      ],
       "notes": "Dovetail Games long-running train sim; TrackIR native since early releases.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE TSC.",
@@ -1645,7 +2573,9 @@
       "steam_app_id": 582160,
       "steam_folder": "Assassins Creed Origins",
       "executable_relpath": "ACOrigins.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "AC Origins uses Tobii eye / head tracking ONLY - TrackIR and FreeTrack do not work.",
         "Install Tobii Game Hub from gaming.tobii.com and connect a Tobii Eye Tracker 5 (or 4C).",
@@ -1659,7 +2589,9 @@
       "steam_app_id": 812140,
       "steam_folder": "Assassins Creed Odyssey",
       "executable_relpath": "ACOdyssey.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "AC Odyssey is Tobii-only; TrackIR and FreeTrack are not supported.",
         "Install Tobii Game Hub and connect a Tobii device.",
@@ -1673,7 +2605,9 @@
       "steam_app_id": 368500,
       "steam_folder": "Assassins Creed Syndicate",
       "executable_relpath": "ACS.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Tobii-only - TrackIR / FreeTrack are NOT supported.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1687,7 +2621,9 @@
       "steam_app_id": 2208920,
       "steam_folder": "Assassins Creed Valhalla",
       "executable_relpath": "ACValhalla.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Tobii-only - TrackIR / FreeTrack are NOT supported.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1701,7 +2637,9 @@
       "steam_app_id": 552520,
       "steam_folder": "Far Cry 5",
       "executable_relpath": "bin\\FarCry5.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Far Cry 5 is Tobii-only - TrackIR / FreeTrack are NOT supported.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1715,7 +2653,9 @@
       "steam_app_id": 2369390,
       "steam_folder": "Far Cry 6",
       "executable_relpath": "bin\\FarCry6.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Tobii-only; TrackIR / FreeTrack are NOT supported.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1729,7 +2669,9 @@
       "steam_app_id": 460930,
       "steam_folder": "Tom Clancy's Ghost Recon Wildlands",
       "executable_relpath": "GRW.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Ghost Recon Wildlands is Tobii-only; TrackIR / FreeTrack do NOT work.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1743,7 +2685,9 @@
       "steam_app_id": 2231380,
       "steam_folder": "Tom Clancy's Ghost Recon Breakpoint",
       "executable_relpath": "grb.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Tobii-only; TrackIR / FreeTrack do NOT work.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1757,7 +2701,9 @@
       "steam_app_id": 447040,
       "steam_folder": "Watch_Dogs 2",
       "executable_relpath": "bin\\WatchDogs2.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Tobii-only; TrackIR / FreeTrack do NOT work.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1771,7 +2717,9 @@
       "steam_app_id": 2239550,
       "steam_folder": "Watch Dogs Legion",
       "executable_relpath": "bin\\WatchDogsLegion.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Tobii-only; TrackIR / FreeTrack do NOT work.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1785,7 +2733,9 @@
       "steam_app_id": 365590,
       "steam_folder": "Tom Clancy's The Division",
       "executable_relpath": "TheDivision.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "The Division is Tobii-only; TrackIR / FreeTrack do NOT work.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1799,7 +2749,9 @@
       "steam_app_id": 2221490,
       "steam_folder": "Tom Clancy's The Division 2",
       "executable_relpath": "TheDivision2.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Same as Division 1 - Tobii-only; TrackIR / FreeTrack do NOT work.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1813,7 +2765,9 @@
       "steam_app_id": 391220,
       "steam_folder": "Rise of the Tomb Raider",
       "executable_relpath": "ROTTR.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Rise of the Tomb Raider is Tobii-only; TrackIR / FreeTrack do NOT work.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1827,7 +2781,9 @@
       "steam_app_id": 750920,
       "steam_folder": "Shadow of the Tomb Raider",
       "executable_relpath": "SOTTR.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Shadow of the Tomb Raider is Tobii-only; TrackIR / FreeTrack do NOT work.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1841,7 +2797,9 @@
       "steam_app_id": 239140,
       "steam_folder": "Dying Light",
       "executable_relpath": "DyingLightGame.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Dying Light (original) supports Tobii eye / head tracking only - no TrackIR.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1855,7 +2813,9 @@
       "steam_app_id": 236870,
       "steam_folder": "Hitman",
       "executable_relpath": "Retail\\HITMAN.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "HITMAN (2016) is Tobii-only; TrackIR / FreeTrack do NOT work.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
@@ -1869,7 +2829,9 @@
       "steam_app_id": 337000,
       "steam_folder": "Deus Ex Mankind Divided",
       "executable_relpath": "dxmd.exe",
-      "protocols": ["Tobii"],
+      "protocols": [
+        "Tobii"
+      ],
       "setup_steps": [
         "Deus Ex: Mankind Divided is Tobii-only; TrackIR / FreeTrack do NOT work.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
