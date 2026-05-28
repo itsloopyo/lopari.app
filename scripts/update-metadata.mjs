@@ -142,29 +142,86 @@ function firstLine(s) {
   return (s || "").split("\n")[0].trimEnd();
 }
 
+// Git tag of the rolling dev pre-release each mod repo publishes (see
+// cameraunlock-core NightlyRelease.psm1). Must match DEV_RELEASE_TAG in
+// the launcher's commands.rs.
+const DEV_RELEASE_TAG = "dev";
+
+// Resolve the latest `dev` pre-release for a mod and shape it into the
+// launcher's `PinnedDevRelease` struct (catalog/mods.rs): four fields,
+// no more. catalog::validate enforces an https://github.com/ host on
+// download_url, so don't ever emit a different host here. Returns null
+// when the release exists but has no -installer.zip asset yet.
+async function fetchDevReleasePin(repo) {
+  const url = `https://api.github.com/repos/${repo}/releases/tags/${DEV_RELEASE_TAG}`;
+  const res = await fetch(url, { headers });
+  if (!res.ok) {
+    throw new Error(`GET ${url} -> ${res.status} ${res.statusText}`);
+  }
+  const release = await res.json();
+  const asset = (release.assets || []).find((a) =>
+    a.name.toLowerCase().endsWith("-installer.zip"),
+  );
+  if (!asset) return null;
+  // Mirror the launcher's dev_version_from_release: strip the
+  // "Development build " title prefix, else fall back to the tag.
+  const name = release.name || "";
+  const version = name.startsWith("Development build ")
+    ? name.slice("Development build ".length).trim()
+    : release.tag_name || DEV_RELEASE_TAG;
+  return {
+    version,
+    built_at: release.published_at || "",
+    zip_filename: asset.name,
+    download_url: asset.browser_download_url,
+  };
+}
+
 // ---------- run -------------------------------------------------------------
 
 const errors = [];
 let pinned = 0;
+let devPinned = 0;
 
 // Sequential, not parallel: avoids GitHub's secondary rate limit
 // (concurrent-request throttle) and keeps the failure log in a
 // predictable order. ~30 mods × ~200ms RTT ≈ 6s total.
 for (const m of publicMods) {
-  if (!m.nightly) continue;
+  const hasNightly = Boolean(m.nightly);
+  const hasDevRelease = m.distribution && m.distribution.type === "dev-release";
+  if (!hasNightly && !hasDevRelease) continue;
   console.log(`[${m.id}] ${m.repo}`);
-  try {
-    const pin = await fetchLatestNightly(m.repo, m.nightly);
-    if (pin) {
-      m.nightly.pinned = pin;
-      pinned++;
-      console.log(`  pinned ${pin.head_sha.slice(0, 7)} (${pin.created_at})`);
-    } else {
-      console.log(`  nightly: no successful runs on ${NIGHTLY_BRANCH} yet`);
+
+  if (hasNightly) {
+    try {
+      const pin = await fetchLatestNightly(m.repo, m.nightly);
+      if (pin) {
+        m.nightly.pinned = pin;
+        pinned++;
+        console.log(`  pinned ${pin.head_sha.slice(0, 7)} (${pin.created_at})`);
+      } else {
+        console.log(`  nightly: no successful runs on ${NIGHTLY_BRANCH} yet`);
+      }
+    } catch (e) {
+      console.warn(`  nightly: FAILED - ${e.message}`);
+      errors.push({ mod: m.id, error: e.message });
     }
-  } catch (e) {
-    console.warn(`  nightly: FAILED - ${e.message}`);
-    errors.push({ mod: m.id, error: e.message });
+  }
+
+  if (hasDevRelease) {
+    try {
+      const pin = await fetchDevReleasePin(m.repo);
+      if (pin) {
+        m.distribution.pinned = pin;
+        devPinned++;
+        console.log(`  dev pinned ${pin.version} (${pin.built_at})`);
+      } else {
+        console.log(`  dev: '${DEV_RELEASE_TAG}' release has no -installer.zip yet`);
+      }
+    } catch (e) {
+      console.warn(`  dev: FAILED - ${e.message}`);
+      errors.push({ mod: m.id, error: e.message });
+    }
   }
 }
 
@@ -177,7 +234,7 @@ writeFileSync(
   "utf8",
 );
 console.log(
-  `\nwrote ${CATALOG_OUT_PATH}\nmods: ${publicMods.length}, pinned: ${pinned}, errors: ${errors.length}`,
+  `\nwrote ${CATALOG_OUT_PATH}\nmods: ${publicMods.length}, nightly pinned: ${pinned}, dev pinned: ${devPinned}, errors: ${errors.length}`,
 );
 
 if (errors.length > 0) {
