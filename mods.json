@@ -1204,10 +1204,10 @@
       "nightly": {
         "artifact": "Subnautica2HeadTracking-main",
         "pinned": {
-          "head_sha": "75f33cdf658e06561f2296a5759cfc221e62f2eb",
-          "commit_subject": "Fix install.ps1 plugins/ lookup for release ZIP layout",
-          "created_at": "2026-05-24T15:51:31Z",
-          "run_html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/actions/runs/26365777812",
+          "head_sha": "573fbb206c760682c2b261e32df3ab69beb0506b",
+          "commit_subject": "Drive reticle projection from live engine FOV",
+          "created_at": "2026-05-28T17:31:45Z",
+          "run_html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/actions/runs/26591176871",
           "download_url": "https://nightly.link/itsloopyo/subnautica-2-headtracking/workflows/build/main/Subnautica2HeadTracking-main.zip"
         }
       }
