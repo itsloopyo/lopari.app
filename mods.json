@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-04-30",
+  "updated_at": "2026-05-29",
   "mods": [
     {
       "id": "subnautica",
@@ -1532,6 +1532,61 @@
         "Frustum culling issues.",
         "UI element positioning issues.",
         "No README.gif."
+      ]
+    },
+    {
+      "id": "abzu",
+      "public": true,
+      "released": false,
+      "display_name": "ABZÛ",
+      "repo": "itsloopyo/abzu-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 384190,
+        "steam_folder": "ABZU",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "ABZU_PATH",
+        "executable_relpath": "AbzuGame\\Binaries\\Win64\\AbzuGame-Win64-Shipping.exe"
+      },
+      "description": "Head tracking for ABZÛ that moves your view with your head while your controller or mouse keeps full control of movement and direction - no VR headset required.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, the game's own controls stay untouched",
+        "6DOF positional tracking - lean and peek with head position"
+      ],
+      "requirements": [
+        "ABZÛ (Steam)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260529.4ced432",
+          "built_at": "2026-05-29T22:18:38Z",
+          "zip_filename": "AbzuHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/abzu-headtracking/releases/download/dev/AbzuHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
       ]
     }
   ],
