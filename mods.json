@@ -54,17 +54,7 @@
           "chord": "Ctrl+Shift+H",
           "description": "Cycles the UDP listen port through 4242, 4243, 4244, 4245 for running multiple game instances on one PC"
         }
-      ],
-      "nightly": {
-        "artifact": "SubnauticaHeadTracking-installer",
-        "pinned": {
-          "head_sha": "e2b9e9d5ee1853aa2236734aa4d951f4905a00f8",
-          "commit_subject": "fix: tolerate noise-only commit ranges in release-notes generation",
-          "created_at": "2026-05-03T19:50:24Z",
-          "run_html_url": "https://github.com/itsloopyo/subnautica-headtracking/actions/runs/25289102325",
-          "download_url": "https://nightly.link/itsloopyo/subnautica-headtracking/workflows/build/main/SubnauticaHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "obra-dinn",
@@ -114,16 +104,7 @@
           "chord": "Ctrl+Shift+H",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ],
-      "nightly": {
-        "pinned": {
-          "head_sha": "8156661dbb3c03922113fbf3f739214b9cca26ef",
-          "commit_subject": "Match Unity 2017's UnityAction<Scene, LoadSceneMode> on sceneLoaded",
-          "created_at": "2026-05-03T21:12:25Z",
-          "run_html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/actions/runs/25290941927",
-          "download_url": "https://nightly.link/itsloopyo/obra-dinn-headtracking/workflows/build/main/ObraDinnHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "peak",
@@ -172,17 +153,7 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
-      ],
-      "nightly": {
-        "artifact": "PeakHeadTracking-installer",
-        "pinned": {
-          "head_sha": "00cb28ef76c0af7037c97885a00a45348b1b01b4",
-          "commit_subject": "Update submodule to latest main",
-          "created_at": "2026-05-03T18:41:22Z",
-          "run_html_url": "https://github.com/itsloopyo/peak-headtracking/actions/runs/25287477383",
-          "download_url": "https://nightly.link/itsloopyo/peak-headtracking/workflows/build/main/PeakHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "green-hell",
@@ -222,16 +193,7 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between camera-local yaw (default; head yaw pans the screen even at extreme pitch) and world-space yaw (horizon-locked)"
         }
-      ],
-      "nightly": {
-        "pinned": {
-          "head_sha": "3f20d64f00a82c3b1dc41cda7462d252359c7d3a",
-          "commit_subject": "Update submodule to latest main",
-          "created_at": "2026-05-03T18:41:19Z",
-          "run_html_url": "https://github.com/itsloopyo/green-hell-headtracking/actions/runs/25287476119",
-          "download_url": "https://nightly.link/itsloopyo/green-hell-headtracking/workflows/build/main/GreenHellHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "outer-wilds",
@@ -329,17 +291,7 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
-      ],
-      "nightly": {
-        "artifact": "RE9HeadTracking-installer",
-        "pinned": {
-          "head_sha": "8aa447af5cb0e44c8369af23d2190bd6d9360c6c",
-          "commit_subject": "chore(scripts): use unified REFramework.zip vendor asset",
-          "created_at": "2026-05-03T18:53:57Z",
-          "run_html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/actions/runs/25287762921",
-          "download_url": "https://nightly.link/itsloopyo/resident-evil-requiem-headtracking/workflows/build/main/RE9HeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "dying-light-2",
@@ -385,17 +337,7 @@
           "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ],
-      "nightly": {
-        "artifact": "DL2HeadTracking-installer",
-        "pinned": {
-          "head_sha": "888ee597dba944e654dbb3d353465c824d08ca99",
-          "commit_subject": "Update submodule to latest main",
-          "created_at": "2026-05-03T18:41:17Z",
-          "run_html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/actions/runs/25287475382",
-          "download_url": "https://nightly.link/itsloopyo/dying-light-2-headtracking/workflows/build/main/DL2HeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "bioshock-remastered",
@@ -429,17 +371,7 @@
           "chord": "Ctrl+Shift+G",
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         }
-      ],
-      "nightly": {
-        "artifact": "BioshockRemasteredHeadTracking-installer",
-        "pinned": {
-          "head_sha": "67bf3d34f57a6ca6b315749731370ef60b191c5f",
-          "commit_subject": "Release v0.3.2",
-          "created_at": "2026-05-03T19:02:46Z",
-          "run_html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/actions/runs/25287968792",
-          "download_url": "https://nightly.link/itsloopyo/bioshock-remastered-headtracking/workflows/build/main/BioshockRemasteredHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "gone-home",
@@ -479,16 +411,7 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between camera-local yaw (default) and horizon-locked world-space yaw"
         }
-      ],
-      "nightly": {
-        "pinned": {
-          "head_sha": "33df58c6f9cc8eb68355ab948c03bb6e004b1cb3",
-          "commit_subject": "Update submodule to latest main",
-          "created_at": "2026-05-03T18:41:18Z",
-          "run_html_url": "https://github.com/itsloopyo/gone-home-headtracking/actions/runs/25287475738",
-          "download_url": "https://nightly.link/itsloopyo/gone-home-headtracking/workflows/build/main/GoneHomeHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "cyberpunk-2077",
@@ -541,8 +464,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260528.f74990b",
-          "built_at": "2026-05-28T13:49:47Z",
+          "version": "0.0.0-nightly.20260529.5d32902",
+          "built_at": "2026-05-29T23:09:50Z",
           "zip_filename": "HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/dev/HeadTracking-dev-installer.zip"
         }
@@ -599,17 +522,7 @@
           "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ],
-      "nightly": {
-        "artifact": "EasyDeliveryCoHeadTracking-main",
-        "pinned": {
-          "head_sha": "9933df3eabf0b87a88e3b4a0bd23e5a40b44ba46",
-          "commit_subject": "Hello world",
-          "created_at": "2026-05-16T09:39:22Z",
-          "run_html_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/actions/runs/25958669439",
-          "download_url": "https://nightly.link/itsloopyo/easy-delivery-co-headtracking/workflows/build/main/EasyDeliveryCoHeadTracking-main.zip"
-        }
-      }
+      ]
     },
     {
       "id": "eternal-afternoon",
@@ -655,16 +568,7 @@
           "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ],
-      "nightly": {
-        "pinned": {
-          "head_sha": "df8b006c2173c3410ee0d8919d3f775fe3c0890b",
-          "commit_subject": "Update submodule to latest main",
-          "created_at": "2026-05-03T18:27:35Z",
-          "run_html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/actions/runs/25287178058",
-          "download_url": "https://nightly.link/itsloopyo/eternal-afternoon-headtracking/workflows/build/main/EternalAfternoonHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "fallout-new-vegas",
@@ -771,16 +675,7 @@
           "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ],
-      "nightly": {
-        "pinned": {
-          "head_sha": "5f2184204152b976ed2574acce4f426bae8db1cf",
-          "commit_subject": "Hello world",
-          "created_at": "2026-05-12T22:30:56Z",
-          "run_html_url": "https://github.com/itsloopyo/firewatch-headtracking/actions/runs/25766047879",
-          "download_url": "https://nightly.link/itsloopyo/firewatch-headtracking/workflows/build/main/FirewatchHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "painscreek-killings",
@@ -837,6 +732,8 @@
     },
     {
       "id": "resident-evil-2",
+      "public": true,
+      "released": false,
       "display_name": "Resident Evil 2",
       "repo": "itsloopyo/resident-evil-2-headtracking",
       "install_strategy": "REFramework",
@@ -873,10 +770,24 @@
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
       ],
-      "nightly": {}
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260601.3098dac",
+          "built_at": "2026-06-01T07:03:09Z",
+          "zip_filename": "RE2HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/download/dev/RE2HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "resident-evil-3",
+      "public": true,
+      "released": false,
       "display_name": "Resident Evil 3",
       "repo": "itsloopyo/resident-evil-3-headtracking",
       "install_strategy": "REFramework",
@@ -910,10 +821,24 @@
           "chord": "Ctrl+Shift+H"
         }
       ],
-      "nightly": {}
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260601.6a4132d",
+          "built_at": "2026-06-01T07:19:19Z",
+          "zip_filename": "RE3HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/resident-evil-3-headtracking/releases/download/dev/RE3HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "resident-evil-4",
+      "public": true,
+      "released": false,
       "display_name": "Resident Evil 4",
       "repo": "itsloopyo/resident-evil-4-headtracking",
       "install_strategy": "REFramework",
@@ -955,12 +880,24 @@
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
       ],
-      "nightly": {
-        "artifact": "RE4HeadTracking-installer"
-      }
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260601.7a81bd4",
+          "built_at": "2026-06-01T07:04:25Z",
+          "zip_filename": "RE4HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/resident-evil-4-headtracking/releases/download/dev/RE4HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "resident-evil-7",
+      "public": true,
+      "released": false,
       "display_name": "Resident Evil 7 biohazard",
       "repo": "itsloopyo/resident-evil-7-headtracking",
       "install_strategy": "REFramework",
@@ -994,10 +931,24 @@
           "chord": "Ctrl+Shift+H"
         }
       ],
-      "nightly": {}
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260601.67340a4",
+          "built_at": "2026-06-01T07:50:09Z",
+          "zip_filename": "RE7HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/resident-evil-7-headtracking/releases/download/dev/RE7HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "resident-evil-village",
+      "public": true,
+      "released": false,
       "display_name": "Resident Evil Village",
       "repo": "itsloopyo/resident-evil-village-headtracking",
       "install_strategy": "REFramework",
@@ -1031,7 +982,19 @@
           "chord": "Ctrl+Shift+H"
         }
       ],
-      "nightly": {}
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260601.db4dd32",
+          "built_at": "2026-06-01T07:05:01Z",
+          "zip_filename": "RE8HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/resident-evil-village-headtracking/releases/download/dev/RE8HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "shadows-of-doubt",
@@ -1072,7 +1035,9 @@
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
-      "nightly": {},
+      "distribution": {
+        "type": "dev-release"
+      },
       "known_issues": [
         "Not comprehensively tested.",
         "No README.gif."
@@ -1116,17 +1081,7 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (default) and camera-local yaw"
         }
-      ],
-      "nightly": {
-        "artifact": "SkyrimSEHeadTracking-installer",
-        "pinned": {
-          "head_sha": "987cec5dec4086515b3e7c3fcb4b4f6923a851fe",
-          "commit_subject": "chore: untrack AGENTS.md/CLAUDE.md and ignore libs/",
-          "created_at": "2026-05-24T01:17:51Z",
-          "run_html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/actions/runs/26348362607",
-          "download_url": "https://nightly.link/itsloopyo/skyrim-special-edition-headtracking/workflows/build/main/SkyrimSEHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "subnautica-below-zero",
@@ -1165,7 +1120,9 @@
           "chord": "Ctrl+Shift+H"
         }
       ],
-      "nightly": {}
+      "distribution": {
+        "type": "dev-release"
+      }
     },
     {
       "id": "subnautica-2",
@@ -1200,17 +1157,7 @@
           "chord": "Ctrl+Shift+G",
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         }
-      ],
-      "nightly": {
-        "artifact": "Subnautica2HeadTracking-main",
-        "pinned": {
-          "head_sha": "573fbb206c760682c2b261e32df3ab69beb0506b",
-          "commit_subject": "Drive reticle projection from live engine FOV",
-          "created_at": "2026-05-28T17:31:45Z",
-          "run_html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/actions/runs/26591176871",
-          "download_url": "https://nightly.link/itsloopyo/subnautica-2-headtracking/workflows/build/main/Subnautica2HeadTracking-main.zip"
-        }
-      }
+      ]
     },
     {
       "id": "tacoma",
@@ -1247,7 +1194,9 @@
           "chord": "Ctrl+Shift+H"
         }
       ],
-      "nightly": {}
+      "distribution": {
+        "type": "dev-release"
+      }
     },
     {
       "id": "valheim",
@@ -1293,16 +1242,7 @@
           "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ],
-      "nightly": {
-        "pinned": {
-          "head_sha": "06f67a95c516ac37847ec5b96bb484268d5f57be",
-          "commit_subject": "Bump cameraunlock-core submodule",
-          "created_at": "2026-05-18T22:36:39Z",
-          "run_html_url": "https://github.com/itsloopyo/valheim-headtracking/actions/runs/26064477557",
-          "download_url": "https://nightly.link/itsloopyo/valheim-headtracking/workflows/build/main/ValheimHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "witcher-3",
@@ -1341,7 +1281,9 @@
           "description": "Switch between horizon-locked yaw and camera-local yaw"
         }
       ],
-      "nightly": {}
+      "distribution": {
+        "type": "dev-release"
+      }
     },
     {
       "id": "wobbly-life",
@@ -1457,16 +1399,7 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked world-space yaw and camera-local yaw"
         }
-      ],
-      "nightly": {
-        "pinned": {
-          "head_sha": "7fa312cd38ead6c5d25fcc5af0708746838048e8",
-          "commit_subject": "Hello world",
-          "created_at": "2026-05-24T15:58:45Z",
-          "run_html_url": "https://github.com/itsloopyo/black-and-white-headtracking/actions/runs/26365943667",
-          "download_url": "https://nightly.link/itsloopyo/black-and-white-headtracking/workflows/build/main/BlackAndWhiteHeadTracking-installer.zip"
-        }
-      }
+      ]
     },
     {
       "id": "assassins-creed-unity",
@@ -2892,6 +2825,2606 @@
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
         "In-game: Options → Interface → Tobii Eye Tracking → enable Extended View / Aim at Gaze / Clean UI.",
         "Head-pan sensitivity lives in the same menu."
+      ]
+    },
+    {
+      "id": "18-wheels-of-steel-american-long-haul",
+      "display_name": "18 Wheels of Steel: American Long Haul",
+      "steam_app_id": 12520,
+      "gog_ids": [
+        "2034202455"
+      ],
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
+      "notes": "Sold on Steam (app 12520) and GOG; installdir/exe not verified.",
+      "setup_steps": [
+        "Install and update your TrackIR (or Tobii) software and connect the tracker.",
+        "Start the tracker software BEFORE launching the game.",
+        "Launch the game and play; no separate in-game toggle was verified."
+      ]
+    },
+    {
+      "id": "18-wheels-of-steel-extreme-trucker",
+      "display_name": "18 Wheels of Steel: Extreme Trucker",
+      "steam_app_id": 33730,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Steam installdir/exe not verified.",
+      "setup_steps": [
+        "Install and calibrate your Tobii (or TrackIR) tracker software.",
+        "Start the tracker software BEFORE launching the game.",
+        "Launch the game and play; no separate in-game setup step was verified."
+      ]
+    },
+    {
+      "id": "18-wheels-of-steel-extreme-trucker-2",
+      "display_name": "18 Wheels of Steel: Extreme Trucker 2",
+      "steam_app_id": 362780,
+      "gog_ids": [
+        "1775839845"
+      ],
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Sold on Steam (app 362780) and GOG; installdir/exe not verified.",
+      "setup_steps": [
+        "Install/update TrackIR software and connect the tracker directly.",
+        "Launch TrackIR BEFORE starting the game.",
+        "Launch the game and, if needed, enable TrackIR/free-look in the options."
+      ]
+    },
+    {
+      "id": "aces-high-2",
+      "display_name": "Aces High 2",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Distributed directly by HiTech Creations; only the later Aces High III is on Steam.",
+      "setup_steps": [
+        "Install/update TrackIR software and connect the tracker directly.",
+        "Launch TrackIR BEFORE starting the game.",
+        "Launch the game and enable TrackIR/free-look in the cockpit view if needed."
+      ]
+    },
+    {
+      "id": "agents-of-mayhem",
+      "display_name": "Agents of Mayhem",
+      "steam_app_id": 304530,
+      "executable_relpath": "aom\\AOM_Release_Final.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Steam installdir not verified; main exe is aom\\AOM_Release_Final.exe.",
+      "setup_steps": [
+        "Install the Tobii Eye Tracking software and calibrate the tracker.",
+        "Launch the game; eye-tracking is auto-detected via the built-in features.",
+        "No extra in-game setup step beyond enabling the Tobii features was verified."
+      ]
+    },
+    {
+      "id": "aerofly-5",
+      "display_name": "AeroFly 5",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Sold via IPACS/Aerosoft directly; not verified on Steam.",
+      "setup_steps": [
+        "Install/update TrackIR software and connect the tracker directly.",
+        "Launch TrackIR BEFORE starting the game.",
+        "Launch the game and enable TrackIR/free-look in the cockpit view if needed."
+      ]
+    },
+    {
+      "id": "aerofly-fs",
+      "display_name": "Aerofly FS",
+      "steam_app_id": 214130,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "The 2012 original = Aerofly FS 1 (Steam app 214130); installdir/exe not verified.",
+      "setup_steps": [
+        "Install/update TrackIR software and connect the tracker directly.",
+        "Launch TrackIR BEFORE starting the game.",
+        "Launch the game and enable TrackIR/free-look in the cockpit view if needed."
+      ]
+    },
+    {
+      "id": "air-battles-sky-defender",
+      "display_name": "Air Battles: Sky Defender",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "2007 Wild Hare/ValuSoft retail title; not on Steam or GOG.",
+      "setup_steps": [
+        "Install/update TrackIR software and connect the tracker directly.",
+        "Launch TrackIR BEFORE starting the game.",
+        "Launch the game and enable TrackIR/free-look in-game if needed."
+      ]
+    },
+    {
+      "id": "air-missions-hind",
+      "display_name": "Air Missions: Hind",
+      "steam_app_id": 423490,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Steam installdir/exe not verified.",
+      "setup_steps": [
+        "Install/update TrackIR software and connect the tracker directly.",
+        "Launch TrackIR BEFORE starting the game.",
+        "Launch the game and enable TrackIR/free-look in the cockpit view if needed."
+      ]
+    },
+    {
+      "id": "america-s-army",
+      "display_name": "America's Army",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Original 2002 free release was distributed directly, not on Steam; only later AA: Proving Grounds is.",
+      "setup_steps": [
+        "Install/update TrackIR software and connect the tracker directly.",
+        "Launch TrackIR BEFORE starting the game.",
+        "TrackIR support is limited (e.g. the HMMWV vehicle view); follow the official TrackIR launch order otherwise."
+      ]
+    },
+    {
+      "id": "apache-air-assault",
+      "display_name": "Apache: Air Assault",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "2010 Activision/Gaijin title; never released on Steam or GOG.",
+      "setup_steps": [
+        "Install/update TrackIR software and connect the tracker directly.",
+        "Launch TrackIR BEFORE starting the game.",
+        "Launch the game and enable TrackIR/free-look in the cockpit view if needed."
+      ]
+    },
+    {
+      "id": "arma-armed-assault",
+      "display_name": "ArmA: Armed Assault",
+      "steam_app_id": 2780,
+      "executable_relpath": "arma.exe",
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
+      "notes": "Sold on Steam as 'ARMA: Combat Operations' (app 2780); installdir not verified.",
+      "setup_steps": [
+        "Install/update your TrackIR or FreeTrack software and connect the tracker.",
+        "Start the tracker software BEFORE launching the game.",
+        "Launch the game; head tracking is detected natively, no extra in-game step verified."
+      ]
+    },
+    {
+      "id": "arma-2",
+      "display_name": "ARMA 2",
+      "steam_app_id": 33900,
+      "executable_relpath": "arma2.exe",
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
+      "notes": "Steam installdir not verified.",
+      "setup_steps": [
+        "Install/update your TrackIR or FreeTrack software and connect the tracker.",
+        "Start the tracker software BEFORE launching the game.",
+        "Launch the game; head tracking is detected natively, no extra in-game step verified."
+      ]
+    },
+    {
+      "id": "arma-2-operation-arrowhead",
+      "display_name": "ARMA 2: Operation Arrowhead",
+      "steam_app_id": 33930,
+      "executable_relpath": "arma2oa.exe",
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
+      "notes": "Standalone expansion; Steam installdir not verified.",
+      "setup_steps": [
+        "Install/update your TrackIR or FreeTrack software and connect the tracker.",
+        "Start the tracker software BEFORE launching the game.",
+        "Launch the game; head tracking is detected natively, no extra in-game step verified."
+      ]
+    },
+    {
+      "id": "arma-2-reinforcements",
+      "display_name": "Arma 2: Reinforcements",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "App 33930 is the Reinforcements/Combined Operations entry; installs into the shared Arma 2 Operation Arrowhead folder.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game, then enable TrackIR / free-look in the controls or difficulty options.",
+        "Use the in-game free-look key to confirm head tracking is active."
+      ]
+    },
+    {
+      "id": "arvoch-alliance",
+      "display_name": "Arvoch Alliance",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Original game sold directly by StarWraith 3D Games; a separate Steam re-release exists as Arvoch Alliance SE (app 1219770).",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and enable TrackIR in the controls/options menu.",
+        "Recenter the view with the assigned key once in cockpit."
+      ]
+    },
+    {
+      "id": "arvoch-conflict",
+      "display_name": "Arvoch Conflict",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Sold directly by StarWraith 3D Games; not on Steam or GOG.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and enable TrackIR in the controls/options menu.",
+        "Recenter the view with the assigned key once in cockpit."
+      ]
+    },
+    {
+      "id": "automobilista",
+      "display_name": "Automobilista",
+      "steam_app_id": 431600,
+      "steam_folder": "Automobilista",
+      "executable_relpath": "AMS.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch Automobilista; head tracking is detected automatically in the cockpit view.",
+        "Recenter the view with the assigned key while driving."
+      ]
+    },
+    {
+      "id": "battle-of-britain-ii-wings-of-victory",
+      "display_name": "Battle of Britain II: Wings of Victory",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
+      "notes": "Sold via Matrix Games / A2A Simulations digital download; not on Steam or GOG.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and enable TrackIR / cockpit free-look in the options.",
+        "For Tobii on this legacy sim, run Tobii Game Hub with OpenTrack to feed TrackIR emulation."
+      ]
+    },
+    {
+      "id": "battleground-europe-world-war-ii-online",
+      "display_name": "Battleground Europe: World War II Online",
+      "steam_app_id": 251950,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Listed on Steam as WWII Online; uses the Cornered Rat playgate launcher.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and enable TrackIR free-look in the in-game settings.",
+        "Recenter the view with the assigned key once in a vehicle or aircraft."
+      ]
+    },
+    {
+      "id": "bomb-who-let-the-dogfight",
+      "display_name": "BOMB: Who let the dogfight?",
+      "steam_app_id": 301500,
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and confirm head tracking responds in the cockpit.",
+        "Recenter the view with the assigned key as needed."
+      ]
+    },
+    {
+      "id": "the-crew",
+      "display_name": "The Crew",
+      "steam_app_id": 241560,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Delisted in 2024 with servers offline; requires Ubisoft Connect and is effectively unplayable without a community server emulator.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game through Ubisoft Connect and enable TrackIR in the camera options.",
+        "Recenter the view with the assigned key while driving."
+      ]
+    },
+    {
+      "id": "city-transport-simulator",
+      "display_name": "City Transport Simulator",
+      "steam_app_id": 2604480,
+      "steam_folder": "CityTransportSim",
+      "executable_relpath": "TramSimNext\\Binaries\\Win64\\TramSimNext-Win64-Shipping.exe",
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
+      "notes": "Head/eye tracking (TrackIR and Tobii) was added in a late-2025 update; the Steam entry corresponds to CTS: Tram.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and enable head tracking in the options after the late-2025 tracking update.",
+        "Recenter the view with the assigned key once in the cab."
+      ]
+    },
+    {
+      "id": "colin-mcrae-rally-2004",
+      "display_name": "Colin McRae Rally 2004",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "PC (Windows) release by Codemasters but never on Steam; the GOG edition was delisted in 2009, so no current store ID.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and enable TrackIR in the controls/options if supported.",
+        "Recenter the view with the assigned key while driving."
+      ]
+    },
+    {
+      "id": "combat-air-patrol-2",
+      "display_name": "Combat Air Patrol 2",
+      "steam_app_id": 347170,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Listed on Steam as Combat Air Patrol 2: Military Flight Simulator.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and enable TrackIR / head tracking in the cockpit options.",
+        "Recenter the view with the assigned key while flying."
+      ]
+    },
+    {
+      "id": "combat-flight-simulator-3-battle-for-europe",
+      "display_name": "Combat Flight Simulator 3: Battle for Europe",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Microsoft retail (disc) release; not on Steam or GOG.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and enable TrackIR / cockpit free-look in the view options.",
+        "Recenter the view with the assigned key while flying."
+      ]
+    },
+    {
+      "id": "combat-helo",
+      "display_name": "Combat Helo",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Sold directly from combat-helo.com; not verified on Steam.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and enable TrackIR in the cockpit/view options.",
+        "Recenter the view with the assigned key while flying."
+      ]
+    },
+    {
+      "id": "combat-pilot",
+      "display_name": "Combat Pilot",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "On Steam the title ships as COMBAT PILOT: CARRIER QUALIFICATION (app 2761800); the bare 'Combat Pilot' AppID is unverified.",
+      "setup_steps": [
+        "Install or update the TrackIR software and connect the tracker directly.",
+        "Start TrackIR BEFORE launching the game.",
+        "Launch the game and enable TrackIR / head tracking in the cockpit options.",
+        "Recenter the view with the assigned key while flying."
+      ]
+    },
+    {
+      "id": "condor-the-competition-soaring-simulator",
+      "display_name": "Condor: The Competition Soaring Simulator",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Sold via condorsoaring.com license keys, not Steam.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game's view/options settings.",
+        "Recenter the view with your TrackIR hotkey while in the cockpit."
+      ]
+    },
+    {
+      "id": "condor-2-the-complete-soaring-simulator",
+      "display_name": "Condor 2: The Complete Soaring Simulator",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Distributed via condorsoaring.com licensing, not Steam.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game's setup/options.",
+        "Recenter the view with your TrackIR hotkey while in the cockpit."
+      ]
+    },
+    {
+      "id": "construction-simulator",
+      "display_name": "Construction Simulator",
+      "steam_app_id": 1273400,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Unreal Engine 4 title; Steam installdir and executable unverified.",
+      "setup_steps": [
+        "Install and update the Tobii Experience / Eye Tracking software, then calibrate.",
+        "Launch the game; Tobii support is auto-detected.",
+        "Adjust extended view / gaze features in the in-game settings if desired."
+      ]
+    },
+    {
+      "id": "crashday",
+      "display_name": "Crashday",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Original 2006 release is not on Steam; the separate Crashday Redline Edition (AppID 508980) is a different package.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Recenter the view with your TrackIR hotkey in cockpit view."
+      ]
+    },
+    {
+      "id": "cross-racing-championship-extreme-2005",
+      "display_name": "Cross Racing Championship Extreme 2005",
+      "steam_app_id": 925550,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Steam re-release listed as Cross Racing Championship Extreme (AppID 925550); installdir unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Recenter the view with your TrackIR hotkey while driving."
+      ]
+    },
+    {
+      "id": "darkfield-vr",
+      "display_name": "Darkfield VR",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Listed on legacy TrackIR-compatible lists; no official in-game setup verified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack BEFORE launching the game.",
+        "Enable head tracking in the game options if available.",
+        "Recenter the view with your TrackIR hotkey."
+      ]
+    },
+    {
+      "id": "dayz",
+      "display_name": "DayZ",
+      "steam_app_id": 221100,
+      "steam_folder": "DayZ",
+      "executable_relpath": "DayZ_x64.exe",
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
+      "notes": "Bohemia Enfusion engine with native TrackIR/FreeTrack support.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (FreeTrack output) BEFORE launching the game.",
+        "Enable head tracking in the in-game controls/options.",
+        "Recenter the view with your tracker's center hotkey in-game."
+      ]
+    },
+    {
+      "id": "dcs-a-10c",
+      "display_name": "DCS: A-10C",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
+      "notes": "DCS module/DLC that installs into DCS World rather than a standalone folder; standalone installdir unverified.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching DCS; it is detected natively.",
+        "Enable TrackIR in DCS Options > Misc / Special.",
+        "Recenter the view with your TrackIR center hotkey in the cockpit."
+      ]
+    },
+    {
+      "id": "dcs-black-shark",
+      "display_name": "DCS: Black Shark",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "DCS module/DLC; Steam AppID and standalone installdir unverified.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching DCS; it is detected natively.",
+        "Enable TrackIR in DCS Options if not already active.",
+        "Recenter the view with your TrackIR center hotkey in the cockpit."
+      ]
+    },
+    {
+      "id": "dcs-black-shark-2",
+      "display_name": "DCS: Black Shark 2",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "DCS module/DLC; Steam AppID and standalone installdir unverified.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching DCS; it is detected natively.",
+        "Enable TrackIR in DCS Options if not already active.",
+        "Recenter the view with your TrackIR center hotkey in the cockpit."
+      ]
+    },
+    {
+      "id": "dirt",
+      "display_name": "DiRT",
+      "steam_app_id": 11440,
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
+      "notes": "Delisted from Steam (GFWL); AppID 11440 retained on SteamDB, installdir/exe unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Recenter the view with your TrackIR hotkey while driving."
+      ]
+    },
+    {
+      "id": "dirt-2",
+      "display_name": "DiRT 2",
+      "steam_app_id": 12840,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Delisted from Steam (GFWL); AppID 12840 retained on SteamDB, installdir/exe unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Recenter the view with your TrackIR hotkey while driving."
+      ]
+    },
+    {
+      "id": "dirt-3",
+      "display_name": "DiRT 3",
+      "steam_app_id": 44320,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Original DiRT 3 delisted (Complete Edition AppID 321040 replaced it); AppID 44320 retained on SteamDB, installdir/exe unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Recenter the view with your TrackIR hotkey while driving."
+      ]
+    },
+    {
+      "id": "distance",
+      "display_name": "Distance",
+      "steam_app_id": 233610,
+      "steam_folder": "Distance",
+      "executable_relpath": "Distance.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Refract Studios Unity title with an official Tobii integration page.",
+      "setup_steps": [
+        "Install and calibrate the Tobii Eye Tracking software first.",
+        "Launch the game; Tobii support is auto-detected.",
+        "Tune extended view / gaze options in the in-game settings."
+      ]
+    },
+    {
+      "id": "dovetail-flight-school",
+      "display_name": "Dovetail Flight School",
+      "steam_app_id": 441920,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Delisted from Steam; AppID 441920 remains valid for previously purchased copies. Installdir/executable unverified.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching Flight School.",
+        "Enable TrackIR/head tracking in the in-game view options.",
+        "Tracking is detected once the TrackIR software is running."
+      ]
+    },
+    {
+      "id": "enemy-engaged-rah-66-comanche-vs-ka-52-hokum",
+      "display_name": "Enemy Engaged: RAH-66 Comanche vs. KA-52 Hokum",
+      "steam_app_id": null,
+      "gog_ids": [
+        "1207658761"
+      ],
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Not on Steam; sold on GOG as 'Enemy Engaged: Comanche vs Hokum' (product 1207658761).",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching the game.",
+        "Enable TrackIR/head-tracking support in the cockpit view options.",
+        "Tracking is detected once the TrackIR software is running."
+      ]
+    },
+    {
+      "id": "enemy-engaged-2",
+      "display_name": "Enemy Engaged 2",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "The 2007 G2 Games title is not on a verified storefront; a later reworked 'Enemy Engaged 2: Desert Operations' (Steam AppID 1581200, 2022) is a distinct release.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching the game.",
+        "Enable TrackIR/head-tracking support in the cockpit view options.",
+        "Tracking is detected once the TrackIR software is running."
+      ]
+    },
+    {
+      "id": "euro-truck-simulator",
+      "display_name": "Euro Truck Simulator",
+      "steam_app_id": 232010,
+      "steam_folder": "Euro Truck Simulator",
+      "executable_relpath": "bin\\win_x86\\eurotrucks.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Original 2008 SCS title (Steam AppID 232010), distinct from Euro Truck Simulator 2.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching Euro Truck Simulator.",
+        "Enable head tracking in the in-game options.",
+        "Tracking is detected once the TrackIR software is running."
+      ]
+    },
+    {
+      "id": "everspace",
+      "display_name": "EVERSPACE",
+      "steam_app_id": 396750,
+      "steam_folder": "EVERSPACE",
+      "executable_relpath": "EVERSPACE.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Original 2017 EVERSPACE (not EVERSPACE 2); ships with native Tobii head/eye-tracking support (Tobii Eye Tracker 5).",
+      "setup_steps": [
+        "Launch the Tobii Eye Tracking software and calibrate BEFORE starting the game.",
+        "Enable eye tracking in the game's options menu.",
+        "Tracking is auto-detected once the Tobii runtime is active."
+      ]
+    },
+    {
+      "id": "evochron-alliance-2-0",
+      "display_name": "Evochron Alliance 2.0",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "StarWraith 3D Games title sold direct from starwraith.com; not on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching the game.",
+        "Enable TrackIR support in the in-game controls/view options.",
+        "Tracking is detected once the TrackIR software is running."
+      ]
+    },
+    {
+      "id": "evochron-legends",
+      "display_name": "Evochron Legends",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "StarWraith 3D Games title sold direct from starwraith.com; not on Steam or GOG (only Evochron Mercenary and Evochron Legacy reached Steam).",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching the game.",
+        "Enable TrackIR support in the in-game controls/view options.",
+        "Tracking is detected once the TrackIR software is running."
+      ]
+    },
+    {
+      "id": "evochron-mercenary",
+      "display_name": "Evochron Mercenary",
+      "steam_app_id": 71000,
+      "steam_folder": "Evochron Mercenary",
+      "executable_relpath": "EvochronMercenary.exe",
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
+      "notes": "On Steam as AppID 71000 (also sold direct by StarWraith).",
+      "setup_steps": [
+        "Start TrackIR (or the Tobii software) BEFORE launching the game.",
+        "Enable TrackIR or Tobii support in the in-game controls/view options.",
+        "Tracking is detected once the tracker software is running."
+      ]
+    },
+    {
+      "id": "evochron-renegades",
+      "display_name": "Evochron Renegades",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "StarWraith 3D Games title sold direct from starwraith.com; not on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching the game.",
+        "Enable TrackIR support in the in-game controls/view options.",
+        "Tracking is detected once the TrackIR software is running."
+      ]
+    },
+    {
+      "id": "exosky",
+      "display_name": "Exosky",
+      "steam_app_id": 2795160,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "2025 indie title on Steam (AppID 2795160) with TrackIR support; installdir/executable unverified.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching Exosky.",
+        "Enable TrackIR support in the in-game settings.",
+        "Tracking is detected once the TrackIR software is running."
+      ]
+    },
+    {
+      "id": "f-22-total-air-war",
+      "display_name": "F-22 Total Air War",
+      "steam_app_id": null,
+      "executable_relpath": "f22.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "1998 DID/Infogrames title; not sold on Steam or GOG. Main executable is f22.exe.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching the game.",
+        "Enable TrackIR/head-tracking support in the cockpit view options.",
+        "Tracking is detected once the TrackIR software is running."
+      ]
+    },
+    {
+      "id": "f1-2015",
+      "display_name": "F1 2015",
+      "steam_app_id": 286570,
+      "steam_folder": "F1 2015",
+      "executable_relpath": "F1_2015.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Delisted from Steam in March 2022; AppID 286570 remains valid for previously purchased copies.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching F1 2015.",
+        "Enable TrackIR in the in-game options.",
+        "Tracking is auto-detected once running."
+      ]
+    },
+    {
+      "id": "f1-2016",
+      "display_name": "F1 2016",
+      "steam_app_id": 391040,
+      "steam_folder": "F1 2016",
+      "executable_relpath": "F1_2016.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Delisted from Steam in March 2022; AppID 391040 remains valid for previously purchased copies.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching F1 2016.",
+        "Enable TrackIR in the in-game options.",
+        "Tracking is auto-detected once running."
+      ]
+    },
+    {
+      "id": "f1-2018",
+      "display_name": "F1 2018",
+      "steam_app_id": 737800,
+      "steam_folder": "F1 2018",
+      "executable_relpath": "F1_2018.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Tobii eye and head tracking are supported natively via the official integration.",
+      "setup_steps": [
+        "Install and launch the Tobii Eye Tracking software, then calibrate your eye tracker before starting the game.",
+        "Start F1 2018 once calibration completes.",
+        "Enable the eye-tracking / extended-view options in the game settings.",
+        "Tracking is auto-detected once Tobii is running; no external head tracker needed."
+      ]
+    },
+    {
+      "id": "f1-2021",
+      "display_name": "F1 2021",
+      "steam_app_id": 1134570,
+      "executable_relpath": "F1_2021.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Tobii native support; the Steam store listing was later delisted but the AppID remains valid for owned copies.",
+      "setup_steps": [
+        "Install and launch the Tobii Eye Tracking software, then calibrate your eye tracker before starting the game.",
+        "Start F1 2021 once calibration completes.",
+        "Enable the eye-tracking / extended-view options in the game settings.",
+        "Tracking is auto-detected once Tobii is running; no external head tracker needed."
+      ]
+    },
+    {
+      "id": "f1-22",
+      "display_name": "F1 22",
+      "steam_app_id": 1692250,
+      "executable_relpath": "F1_22.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Tobii native support; the Steam store listing was delisted in 2024 but the AppID remains valid for owned copies.",
+      "setup_steps": [
+        "Install and launch the Tobii Eye Tracking software, then calibrate your eye tracker before starting the game.",
+        "Start F1 22 once calibration completes.",
+        "Enable the eye-tracking / extended-view options in the game settings.",
+        "Tracking is auto-detected once Tobii is running; no external head tracker needed."
+      ]
+    },
+    {
+      "id": "f1-2025",
+      "display_name": "F1 2025",
+      "steam_app_id": 3059520,
+      "executable_relpath": "F1_25.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Tobii eye and head tracking are supported natively; executable name follows the series F1_<yy>.exe convention.",
+      "setup_steps": [
+        "Install and launch the Tobii Eye Tracking software, then calibrate your eye tracker before starting the game.",
+        "Start F1 25 once calibration completes.",
+        "Enable the eye-tracking / extended-view options in the game settings.",
+        "Tracking is auto-detected once Tobii is running; no external head tracker needed."
+      ]
+    },
+    {
+      "id": "f1-career-challenge",
+      "display_name": "F1 Career Challenge",
+      "steam_app_id": null,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Released only on consoles (PS2, Xbox, GameCube); no PC, Steam, or GOG version exists.",
+      "setup_steps": [
+        "Install and launch the Tobii Eye Tracking software, then calibrate your eye tracker.",
+        "Start the game once calibration completes.",
+        "Enable any in-game eye/head-tracking option if present.",
+        "Tracking is auto-detected once Tobii is running."
+      ]
+    },
+    {
+      "id": "f1-challenge",
+      "display_name": "F1 Challenge",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy EA Sports retail title (F1 Challenge '99-'02); not sold on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) before launching the game.",
+        "Launch F1 Challenge from its installed location.",
+        "Confirm head tracking responds in the cockpit view.",
+        "Use TrackIR's recenter hotkey to reset the view."
+      ]
+    },
+    {
+      "id": "falcon-4-0",
+      "display_name": "Falcon 4.0",
+      "steam_app_id": 429530,
+      "steam_folder": "Falcon 4.0",
+      "executable_relpath": "falcon4.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Base 1998 title; community-modded Falcon variants (e.g. BMS) are separate and excluded.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) before launching the sim.",
+        "Launch Falcon 4.0 from Steam.",
+        "Enable head tracking in the cockpit/view controls if required.",
+        "Use TrackIR's recenter hotkey to reset the view."
+      ]
+    },
+    {
+      "id": "falcon-4-0-allied-force",
+      "display_name": "Falcon 4.0: Allied Force",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Was sold on GOG as part of the Falcon Collection but delisted in 2023; not on Steam and no current verifiable product ID.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) before launching the sim.",
+        "Launch Falcon 4.0: Allied Force from your installed copy.",
+        "Enable head tracking in the cockpit/view controls if required.",
+        "Use TrackIR's recenter hotkey to reset the view."
+      ]
+    },
+    {
+      "id": "farming-simulator-17",
+      "display_name": "Farming Simulator 17",
+      "steam_app_id": 447020,
+      "steam_folder": "Farming Simulator 17",
+      "executable_relpath": "x64\\FarmingSimulator2017Game.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Root FarmingSimulator2017.exe is the launcher; the actual game binary is under x64\\.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) before launching the game.",
+        "Launch Farming Simulator 17 from Steam.",
+        "Confirm head tracking responds in the in-cab view.",
+        "Use TrackIR's recenter hotkey to reset the view."
+      ]
+    },
+    {
+      "id": "fernbus-simulator",
+      "display_name": "Fernbus Simulator",
+      "steam_app_id": 427100,
+      "steam_folder": "Fernbus Simulator",
+      "executable_relpath": "Fernbus\\Binaries\\Win64\\Fernbus-Win64-Shipping.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Unreal Engine title; root launcher exists but the shipping binary is under Fernbus\\Binaries\\Win64\\.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) before launching the game.",
+        "Launch Fernbus Simulator from Steam.",
+        "Confirm head tracking responds in the driver view.",
+        "Use TrackIR's recenter hotkey to reset the view."
+      ]
+    },
+    {
+      "id": "first-eagles-the-great-war-1918",
+      "display_name": "First Eagles: The Great War 1918",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "ThirdWire title sold via direct download; not on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) before launching the sim.",
+        "Launch First Eagles from its installed location.",
+        "Enable head tracking in the cockpit options if required.",
+        "Use TrackIR's recenter hotkey to reset the view."
+      ]
+    },
+    {
+      "id": "flight-simulator-2002",
+      "display_name": "Flight Simulator 2002",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
+      "notes": "Microsoft Flight Simulator 2002 is a retail-only release; FreeTrack support is via FSUIPC.",
+      "setup_steps": [
+        "Start TrackIR or FreeTrack (Interface = Both) before launching the sim.",
+        "For FreeTrack, ensure FSUIPC is installed to bridge head tracking.",
+        "Launch Flight Simulator 2002 from its installed location.",
+        "Use the tracker's recenter hotkey to reset the view."
+      ]
+    },
+    {
+      "id": "flight-simulator-2004-a-century-of-flight",
+      "display_name": "Flight Simulator 2004: A Century of Flight",
+      "steam_app_id": null,
+      "executable_relpath": "fs9.exe",
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
+      "notes": "Retail/disc title, not sold on Steam; install path varies by edition.",
+      "setup_steps": [
+        "Start TrackIR or a FreeTrack-compatible tracker (Interface = Both) BEFORE launching the sim.",
+        "Enable head tracking via FSUIPC for FreeTrack support.",
+        "Recenter your view with the tracker's hotkey once in the cockpit."
+      ]
+    },
+    {
+      "id": "flyboys",
+      "display_name": "Flyboys",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
+      "notes": "This is Flyboys Squadron (2006), a WWI flight sim; not on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR (or Tobii Eye Tracking software) and calibrate BEFORE launching the game.",
+        "Launch the tracker first, then the game so it is detected.",
+        "Recenter your view with the tracker's hotkey in-game."
+      ]
+    },
+    {
+      "id": "future-pinball",
+      "display_name": "Future Pinball",
+      "steam_app_id": null,
+      "executable_relpath": "Future Pinball.exe",
+      "search_paths": [
+        "C:\\Program Files (x86)\\Future Pinball"
+      ],
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Free standalone download, not distributed on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching Future Pinball.",
+        "Enable head tracking in the game's video/controller options.",
+        "Recenter your view with the TrackIR hotkey."
+      ]
+    },
+    {
+      "id": "garry-s-mod",
+      "display_name": "Garry's Mod",
+      "steam_app_id": 4000,
+      "steam_folder": "GarrysMod",
+      "executable_relpath": "gmod.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Start TrackIR BEFORE launching Garry's Mod.",
+        "Head tracking requires a TrackIR-aware addon or supported gamemode.",
+        "Recenter your view with the TrackIR hotkey."
+      ]
+    },
+    {
+      "id": "gp-bikes",
+      "display_name": "GP Bikes",
+      "steam_app_id": null,
+      "protocols": [
+        "FreeTrack"
+      ],
+      "notes": "PiBoSo title distributed from piboso.com, not Steam or GOG.",
+      "setup_steps": [
+        "Start your FreeTrack-compatible tracker BEFORE launching GP Bikes.",
+        "Enable FreeTrack head tracking in the game's settings.",
+        "Recenter your view with the tracker's hotkey."
+      ]
+    },
+    {
+      "id": "gtr",
+      "display_name": "GTR",
+      "steam_app_id": 44600,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "AppID 44600 is GTR - FIA GT Racing Game (the 2005 original); installdir/executable not verified.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching the game.",
+        "Enable head tracking in the game options.",
+        "Recenter your view with the TrackIR hotkey."
+      ]
+    },
+    {
+      "id": "gtr-2-2",
+      "display_name": "GTR 2",
+      "steam_app_id": 8790,
+      "steam_folder": "GTR 2 - FIA GT Racing Game",
+      "executable_relpath": "GTR2.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "AppID 8790 is GTR 2 - FIA GT Racing Game.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching GTR 2.",
+        "Enable head tracking in the game options.",
+        "Recenter your view with the TrackIR hotkey."
+      ]
+    },
+    {
+      "id": "gt-legends",
+      "display_name": "GT Legends",
+      "steam_app_id": 44690,
+      "steam_folder": "GT Legends",
+      "executable_relpath": "GTL.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "AppID 44690 is GT Legends.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching GT Legends.",
+        "Enable head tracking in the game options.",
+        "Recenter your view with the TrackIR hotkey."
+      ]
+    },
+    {
+      "id": "half-dead",
+      "display_name": "Half Dead",
+      "steam_app_id": 434730,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "AppID 434730 is Half dead; installdir/executable not verified.",
+      "setup_steps": [
+        "Install and run Tobii Eye Tracking software, then calibrate.",
+        "Launch the eye tracker BEFORE starting the game.",
+        "Use the in-game Tobii features once eye tracking is detected."
+      ]
+    },
+    {
+      "id": "harrier-attack-ii",
+      "display_name": "Harrier Attack II",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy 1990s title; no verified Steam or GOG listing.",
+      "setup_steps": [
+        "Start TrackIR BEFORE launching the game.",
+        "Enable head tracking in the game options if available.",
+        "Recenter your view with the TrackIR hotkey."
+      ]
+    },
+    {
+      "id": "heavy-bullets",
+      "display_name": "Heavy Bullets",
+      "steam_app_id": 297120,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "AppID 297120 is Heavy Bullets; installdir/executable not verified.",
+      "setup_steps": [
+        "Install and run Tobii Eye Tracking software, then calibrate.",
+        "Launch the eye tracker BEFORE starting the game.",
+        "Use the in-game Tobii features once eye tracking is detected."
+      ]
+    },
+    {
+      "id": "helicopter-gunship-dex",
+      "display_name": "Helicopter Gunship DEX",
+      "steam_app_id": 2012140,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "AppID 2012140 is Helicopter Gunship DEX; installdir/executable not verified.",
+      "setup_steps": [
+        "Install and run Tobii Eye Tracking software, then calibrate.",
+        "Launch the eye tracker BEFORE starting the game.",
+        "Use the in-game Tobii features once eye tracking is detected."
+      ]
+    },
+    {
+      "id": "house-of-the-dying-sun",
+      "display_name": "House of the Dying Sun",
+      "steam_app_id": 283160,
+      "steam_folder": "House of the Dying Sun",
+      "executable_relpath": "Dying Suns.exe",
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
+      "notes": "Unity game; Tobii support requires Tobii Game Hub, OpenTrack can emulate TrackIR.",
+      "setup_steps": [
+        "Install Tobii Game Hub (for Tobii) or start TrackIR / OpenTrack before launching.",
+        "Launch the tracker software first, then start the game.",
+        "Enable head tracking in the game's options.",
+        "Recenter the view using your tracker's default recenter key."
+      ]
+    },
+    {
+      "id": "il-2-sturmovik-forgotten-battles",
+      "display_name": "IL-2 Sturmovik: Forgotten Battles",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy 2003 title; not verified on a current Steam/GOG store page.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Launch IL-2 Sturmovik: Forgotten Battles.",
+        "Enable TrackIR / head movement in the control or realism settings.",
+        "Recenter the view with your TrackIR default key in the cockpit."
+      ]
+    },
+    {
+      "id": "il-2-sturmovik-cliffs-of-dover",
+      "display_name": "IL-2 Sturmovik: Cliffs of Dover",
+      "steam_app_id": 63950,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "AppID 63950 is the original; a separate BLITZ Edition is 754530. Installdir/executable not verified.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Launch IL-2 Sturmovik: Cliffs of Dover.",
+        "Enable TrackIR head tracking in the control settings.",
+        "Recenter the view with your TrackIR default key in the cockpit."
+      ]
+    },
+    {
+      "id": "in-the-black",
+      "display_name": "In the Black",
+      "steam_app_id": 380110,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Steam page (380110) lists it as coming soon; installdir/executable not yet verified.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Launch In the Black.",
+        "Enable TrackIR head tracking in the game options.",
+        "Recenter the view with your TrackIR default key."
+      ]
+    },
+    {
+      "id": "interactive-gun-range",
+      "display_name": "Interactive Gun Range",
+      "steam_app_id": 2398210,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Steam AppID 2398210; uses TrackIR mouse-emulation. Installdir/executable not verified.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Launch Interactive Gun Range.",
+        "Enable TrackIR head tracking in the game options.",
+        "Recenter the view with your TrackIR default key."
+      ]
+    },
+    {
+      "id": "jane-s-f-a-18",
+      "display_name": "Jane's F/A-18",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy 2000 title; not available on current digital stores.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Launch Jane's F/A-18.",
+        "Enable head tracking / TrackIR support in the view settings.",
+        "Recenter the view with your TrackIR default key in the cockpit."
+      ]
+    },
+    {
+      "id": "jumpgate-the-reconstruction-initiative",
+      "display_name": "Jumpgate: The Reconstruction Initiative",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy 2001 MMO; not on current digital stores.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Launch Jumpgate: The Reconstruction Initiative.",
+        "Enable TrackIR head tracking in the controls.",
+        "Recenter the view with your TrackIR default key in the cockpit."
+      ]
+    },
+    {
+      "id": "jumpgate-evolution",
+      "display_name": "Jumpgate Evolution",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Cancelled/unreleased MMO; no retail distribution.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Launch Jumpgate Evolution.",
+        "Enable TrackIR head tracking in the controls.",
+        "Recenter the view with your TrackIR default key."
+      ]
+    },
+    {
+      "id": "kart-racing-pro",
+      "display_name": "Kart Racing PRO",
+      "steam_app_id": 415600,
+      "steam_folder": "Kart Racing Pro",
+      "executable_relpath": "kart.exe",
+      "protocols": [
+        "FreeTrack"
+      ],
+      "notes": "Also distributed direct from PiBoSo; supports FreeTrack natively. Steam installdir name not fully verified.",
+      "setup_steps": [
+        "Start your FreeTrack-compatible tracker before launching the game.",
+        "Launch Kart Racing PRO.",
+        "Enable FreeTrack / head tracking in the game options.",
+        "Recenter the view with your tracker's default recenter key."
+      ]
+    },
+    {
+      "id": "kerbal-space-program",
+      "display_name": "Kerbal Space Program",
+      "steam_app_id": 220200,
+      "steam_folder": "Kerbal Space Program",
+      "executable_relpath": "KSP_x64.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "TrackIR support comes via a community plugin; KSP.exe is the 32-bit variant.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Launch Kerbal Space Program (KSP_x64.exe).",
+        "Enable head tracking via the relevant TrackIR plugin.",
+        "Recenter the view with your TrackIR default key."
+      ]
+    },
+    {
+      "id": "le-mans-ultimate",
+      "display_name": "Le Mans Ultimate",
+      "steam_app_id": 2399420,
+      "steam_folder": "Le Mans Ultimate",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Steam installdir name likely matches; exact executable path not verified.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Launch Le Mans Ultimate.",
+        "Enable TrackIR head tracking in the game's view/camera options.",
+        "Recenter the view with your TrackIR default key while driving."
+      ]
+    },
+    {
+      "id": "lifeless-planet",
+      "display_name": "Lifeless Planet",
+      "steam_app_id": 261530,
+      "executable_relpath": "LifelessPlanet.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "On Steam as Lifeless Planet Premier Edition (261530); installdir/executable not verified.",
+      "setup_steps": [
+        "Start your Tobii Eye Tracking software and calibrate before launching.",
+        "Launch Lifeless Planet.",
+        "Enable Tobii eye tracking in the game options.",
+        "Verify gaze interaction responds before starting play."
+      ]
+    },
+    {
+      "id": "lock-on-1-1-flaming-cliffs",
+      "display_name": "Lock On 1.1: Flaming Cliffs",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy 2005 sim sold via Eagle Dynamics, not verified on Steam.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Launch Lock On 1.1: Flaming Cliffs.",
+        "Enable TrackIR head tracking in the controls.",
+        "Recenter the view with your TrackIR default key in the cockpit."
+      ]
+    },
+    {
+      "id": "lock-on-flaming-cliffs-2",
+      "display_name": "Lock On: Flaming Cliffs 2",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
+      "notes": "Sold via Eagle Dynamics; Steam AppID/installdir not verified.",
+      "setup_steps": [
+        "Start TrackIR or your Tobii software before launching the game.",
+        "Launch Lock On: Flaming Cliffs 2.",
+        "Enable TrackIR / head tracking in the controls.",
+        "Recenter the view with your tracker's default key in the cockpit."
+      ]
+    },
+    {
+      "id": "m4-tank-platoon",
+      "display_name": "M4 Tank Platoon",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy 1998 MicroProse title; not verified on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch M4 Tank Platoon.",
+        "Enable head tracking in the in-game view/control options if present."
+      ]
+    },
+    {
+      "id": "mechwarrior-online",
+      "display_name": "MechWarrior Online",
+      "steam_app_id": 342200,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Steam app is listed as MechWarrior Online Legends (AppID 342200); installdir not verified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch MechWarrior Online.",
+        "Enable TrackIR in the in-game cockpit/options settings."
+      ]
+    },
+    {
+      "id": "megaton-rainfall",
+      "display_name": "Megaton Rainfall",
+      "steam_app_id": 430210,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Steam installdir not verified.",
+      "setup_steps": [
+        "Start the Tobii Eye Tracking software and calibrate BEFORE launching the game.",
+        "Launch Megaton Rainfall.",
+        "Enable Tobii eye/head tracking in the in-game settings."
+      ]
+    },
+    {
+      "id": "micro-flight",
+      "display_name": "Micro Flight",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy 2006 title; not verified on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch Micro Flight.",
+        "Enable head tracking in the in-game view options if present."
+      ]
+    },
+    {
+      "id": "mindball-play",
+      "display_name": "Mindball Play",
+      "steam_app_id": 446850,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Steam installdir not verified.",
+      "setup_steps": [
+        "Start the Tobii Eye Tracking software and calibrate BEFORE launching the game.",
+        "Launch Mindball Play.",
+        "Enable Tobii eye tracking in the in-game settings."
+      ]
+    },
+    {
+      "id": "mig-alley",
+      "display_name": "MiG Alley",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy 1999 Rowan flight sim; not verified on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch MiG Alley.",
+        "Enable head tracking in the in-game view options if present."
+      ]
+    },
+    {
+      "id": "miner-wars",
+      "display_name": "Miner Wars",
+      "steam_app_id": 223430,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Steam app is Miner Wars 2081 (AppID 223430); installdir not verified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch Miner Wars.",
+        "Enable TrackIR in the in-game control/view options."
+      ]
+    },
+    {
+      "id": "miscreated",
+      "display_name": "Miscreated",
+      "steam_app_id": 299740,
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
+      "notes": "Steam installdir not verified; native FreeTrack support is listed.",
+      "setup_steps": [
+        "Start your tracker (TrackIR, or OpenTrack with FreeTrack output) BEFORE launching the game.",
+        "Launch Miscreated.",
+        "Enable head tracking in the in-game settings."
+      ]
+    },
+    {
+      "id": "nascar-racing-2003-season",
+      "display_name": "NASCAR Racing 2003 Season",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Delisted Papyrus title; not available on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch NASCAR Racing 2003 Season.",
+        "Enable TrackIR in the in-game view/control options."
+      ]
+    },
+    {
+      "id": "nascar-simracing",
+      "display_name": "NASCAR SimRacing",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "2005 EA Sports title; not available on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch NASCAR SimRacing.",
+        "Enable TrackIR in the in-game view/control options."
+      ]
+    },
+    {
+      "id": "netkar-pro",
+      "display_name": "netKar Pro",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Kunos sim; distributed via CD key, not on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch netKar Pro.",
+        "Enable TrackIR in the in-game view/control options."
+      ]
+    },
+    {
+      "id": "nitro-stunt-racing",
+      "display_name": "Nitro Stunt Racing",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Nitro Stunt Racing: Stage 1 (2007, Game Seed); Steam listing not verified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch Nitro Stunt Racing.",
+        "Enable TrackIR in the in-game view/control options."
+      ]
+    },
+    {
+      "id": "omsi-the-bus-simulator",
+      "display_name": "OMSI - The Bus Simulator",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Original OMSI (sequel OMSI 2 is AppID 252530); original's Steam listing not verified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch OMSI - The Bus Simulator.",
+        "Enable TrackIR in the in-game view/control options."
+      ]
+    },
+    {
+      "id": "omsi-2",
+      "display_name": "OMSI 2",
+      "steam_app_id": 252530,
+      "steam_folder": "OMSI 2",
+      "executable_relpath": "Omsi.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Start TrackIR (or OpenTrack with Interface = Both) BEFORE launching OMSI 2.",
+        "Launch the game; native TrackIR head movement applies in the cab view.",
+        "Use your TrackIR center binding to recenter the view while driving."
+      ]
+    },
+    {
+      "id": "on-the-road",
+      "display_name": "On The Road",
+      "steam_app_id": 285380,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Steam AppID verified (285380, On The Road - The Truck Simulator); installdir/executable unverified.",
+      "setup_steps": [
+        "Start Tobii Eye Tracking software and complete calibration BEFORE launching the game.",
+        "Launch On The Road and enable the Tobii / extended view option in settings.",
+        "Recalibrate Tobii if the gaze view drifts."
+      ]
+    },
+    {
+      "id": "operation-flashpoint-red-river",
+      "display_name": "Operation Flashpoint: Red River",
+      "steam_app_id": 44340,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Delisted from the Steam store but AppID 44340 is verified; installdir unverified.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) BEFORE launching the game.",
+        "Launch the game; TrackIR head look applies mainly in vehicle/free-look contexts.",
+        "Use your TrackIR center binding to recenter; expect limited coverage on foot."
+      ]
+    },
+    {
+      "id": "pacific-fighters",
+      "display_name": "Pacific Fighters",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR",
+        "Tobii"
+      ],
+      "notes": "2004 retail title later folded into IL-2 Sturmovik: 1946; not a verified standalone Steam app.",
+      "setup_steps": [
+        "Start TrackIR or your tracker software BEFORE launching the sim.",
+        "Enable head tracking in the cockpit/view options.",
+        "Use the recenter binding to reset the cockpit view in flight."
+      ]
+    },
+    {
+      "id": "paws",
+      "display_name": "Paws",
+      "steam_app_id": null,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Steam presence unverified.",
+      "setup_steps": [
+        "Start Tobii Eye Tracking software and complete calibration BEFORE launching the game.",
+        "Launch the game and enable the Tobii eye-tracking option.",
+        "Recalibrate if gaze input drifts."
+      ]
+    },
+    {
+      "id": "prepar3d",
+      "display_name": "Prepar3D",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
+      "notes": "Lockheed Martin licensed download; not distributed on Steam.",
+      "setup_steps": [
+        "Start TrackIR or FreeTrack (via SimConnect) BEFORE launching the sim.",
+        "Launch Prepar3D and confirm head tracking is active in the cockpit view.",
+        "Use the recenter binding to reset the cockpit view."
+      ]
+    },
+    {
+      "id": "project-cars",
+      "display_name": "Project CARS",
+      "steam_app_id": 234630,
+      "steam_folder": "pCars",
+      "executable_relpath": "pCARS64.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) BEFORE launching Project CARS.",
+        "Enable head tracking under Options > Camera/Controls.",
+        "Use your TrackIR center binding to recenter the cockpit view."
+      ]
+    },
+    {
+      "id": "project-torque",
+      "display_name": "Project Torque",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Free-to-play MMO racer; not distributed on Steam.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) BEFORE launching the game.",
+        "Enable head tracking in the in-game view options.",
+        "Use your TrackIR center binding to recenter the view."
+      ]
+    },
+    {
+      "id": "race-the-official-wtcc-game",
+      "display_name": "RACE - The Official WTCC Game",
+      "steam_app_id": 4230,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "On Steam as 'RACE - The WTCC Game' (AppID 4230); installdir unverified.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) BEFORE launching the game.",
+        "Enable head tracking in the cockpit view options.",
+        "Use your TrackIR center binding to recenter the view."
+      ]
+    },
+    {
+      "id": "race-07-official-wtcc-game",
+      "display_name": "RACE 07 - Official WTCC Game",
+      "steam_app_id": 8600,
+      "steam_folder": "race 07",
+      "executable_relpath": "Race_Steam.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) BEFORE launching RACE 07.",
+        "Enable head tracking in the cockpit view options.",
+        "Use your TrackIR center binding to recenter the cockpit view."
+      ]
+    },
+    {
+      "id": "race-driver-grid",
+      "display_name": "Race Driver: GRID",
+      "steam_app_id": 12750,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Delisted from the Steam store but AppID 12750 is verified; installdir unverified.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) BEFORE launching the game.",
+        "Enable head tracking in the cockpit/camera options.",
+        "Use your TrackIR center binding to recenter the view."
+      ]
+    },
+    {
+      "id": "rail-simulator",
+      "display_name": "Rail Simulator",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "2007 retail title (predecessor to RailWorks); not on Steam.",
+      "setup_steps": [
+        "Start TrackIR (Interface = Both) BEFORE launching the game.",
+        "Enable head tracking in the cab view options.",
+        "Use your TrackIR center binding to recenter the view."
+      ]
+    },
+    {
+      "id": "real-farm",
+      "display_name": "Real Farm",
+      "steam_app_id": 573680,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Steam AppID 573680 verified (original Real Farm / Real Farm Sim); installdir unverified.",
+      "setup_steps": [
+        "Start Tobii Eye Tracking software and complete calibration BEFORE launching the game.",
+        "Launch Real Farm and enable the Tobii eye-tracking option in settings.",
+        "Recalibrate if gaze input drifts."
+      ]
+    },
+    {
+      "id": "realflight-9-5s",
+      "display_name": "RealFlight 9.5S",
+      "steam_app_id": 1070820,
+      "steam_folder": "RealFlight 9.5S",
+      "executable_relpath": "RealFlight.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Delivered via Steam (app 1070820); eye tracking requires Tobii Eye Tracking, Tobii Game Hub and OpenTrack rather than a native toggle.",
+      "setup_steps": [
+        "Install Tobii Eye Tracking software and Tobii Game Hub, then calibrate the tracker.",
+        "Start OpenTrack and select the Tobii input before launching.",
+        "Launch RealFlight 9.5S last so it picks up the tracker.",
+        "Use the in-game view options to enable head/eye-driven camera."
+      ]
+    },
+    {
+      "id": "red-baron-3d",
+      "display_name": "Red Baron 3D",
+      "steam_app_id": null,
+      "gog_ids": [
+        "1207663983",
+        "1207658801"
+      ],
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Distributed in the Red Baron Pack (GOG pack ID 1207658801, individual Red Baron 3D ID 1207663983); not sold standalone on Steam.",
+      "setup_steps": [
+        "Launch TrackIR (or OpenTrack with Interface = Both) before starting the game.",
+        "Start Red Baron 3D from the GOG Red Baron Pack install.",
+        "Enable TIR/head view in the game's controls or view options.",
+        "Recenter the view with the TrackIR center key once in the cockpit."
+      ]
+    },
+    {
+      "id": "rise-the-vieneo-province",
+      "display_name": "Rise: The Vieneo Province",
+      "steam_app_id": 795990,
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Launch TrackIR / OpenTrack (Interface = Both) before starting the game.",
+        "Start Rise: The Vieneo Province from Steam.",
+        "Enable head tracking in the game options.",
+        "Recenter the view with the TrackIR center key once in cockpit."
+      ]
+    },
+    {
+      "id": "rogue-system",
+      "display_name": "Rogue System",
+      "steam_app_id": 366000,
+      "protocols": [
+        "Tobii"
+      ],
+      "setup_steps": [
+        "Launch the Tobii Eye Tracking software and calibrate before starting the game.",
+        "Start Rogue System from Steam.",
+        "Enable head/eye tracking in the game options.",
+        "Recenter the view with the configured center key in the cockpit."
+      ]
+    },
+    {
+      "id": "rowan-s-battle-of-britain",
+      "display_name": "Rowan's Battle of Britain",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy 2000 title; no verified Steam or GOG re-release.",
+      "setup_steps": [
+        "Launch TrackIR (or OpenTrack with Interface = Both) before starting the game.",
+        "Start Rowan's Battle of Britain.",
+        "Enable TIR/head view in the game's view controls.",
+        "Recenter the view with the TrackIR center key in the cockpit."
+      ]
+    },
+    {
+      "id": "rust",
+      "display_name": "Rust",
+      "steam_app_id": 252490,
+      "steam_folder": "Rust",
+      "executable_relpath": "RustClient.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Launch TrackIR / OpenTrack (Interface = Both) before starting the game.",
+        "Start Rust from Steam.",
+        "Enable head tracking in the game/input options if available.",
+        "Recenter the view with the TrackIR center key."
+      ]
+    },
+    {
+      "id": "scania-truck-driving-simulator",
+      "display_name": "Scania Truck Driving Simulator",
+      "steam_app_id": 258760,
+      "protocols": [
+        "Tobii"
+      ],
+      "setup_steps": [
+        "Launch the Tobii Eye Tracking software and calibrate before starting the game.",
+        "Start Scania Truck Driving Simulator from Steam.",
+        "Enable head/eye tracking in the game options.",
+        "Recenter the view with the configured center key in the cab."
+      ]
+    },
+    {
+      "id": "serious-sam-hd-the-first-encounter",
+      "display_name": "Serious Sam HD: The First Encounter",
+      "steam_app_id": 41000,
+      "executable_relpath": "Bin\\SamHD.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Tobii eye-tracking features require the Serious Sam Fusion 2017 version, not this original HD build.",
+      "setup_steps": [
+        "Use the Serious Sam Fusion 2017 version for eye-tracking support.",
+        "Launch the Tobii Eye Tracking software and calibrate before starting.",
+        "Start the game from Steam.",
+        "Enable eye tracking in the in-game options."
+      ]
+    },
+    {
+      "id": "serious-sam-3-bfe",
+      "display_name": "Serious Sam 3: BFE",
+      "steam_app_id": 41070,
+      "steam_folder": "Serious Sam 3",
+      "executable_relpath": "Bin\\Sam3.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "setup_steps": [
+        "Launch the Tobii Eye Tracking software and calibrate before starting the game.",
+        "Start Serious Sam 3: BFE from Steam.",
+        "Enable eye tracking in the in-game options.",
+        "Adjust extended view sensitivity to taste."
+      ]
+    },
+    {
+      "id": "shelter-2",
+      "display_name": "Shelter 2",
+      "steam_app_id": 275100,
+      "protocols": [
+        "Tobii"
+      ],
+      "setup_steps": [
+        "Launch the Tobii Eye Tracking software and calibrate before starting the game.",
+        "Start Shelter 2 from Steam.",
+        "Enable eye tracking in the game options.",
+        "Look around naturally to drive the gaze-based camera."
+      ]
+    },
+    {
+      "id": "ship-simulator-2006",
+      "display_name": "Ship Simulator 2006",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Not on Steam; only Ship Simulator 2008 and later are sold there.",
+      "setup_steps": [
+        "Launch TrackIR (or OpenTrack with Interface = Both) before starting the game.",
+        "Start Ship Simulator 2006.",
+        "Enable TIR/head view in the view options.",
+        "Recenter the view with the TrackIR center key."
+      ]
+    },
+    {
+      "id": "ship-simulator-2008",
+      "display_name": "Ship Simulator 2008",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Sold via the publisher's own store, not as a standalone Steam product; the Steam line is Ship Simulator Extremes.",
+      "setup_steps": [
+        "Launch TrackIR (or OpenTrack with Interface = Both) before starting the game.",
+        "Start Ship Simulator 2008.",
+        "Enable TIR/head view in the view options.",
+        "Recenter the view with the TrackIR center key."
+      ]
+    },
+    {
+      "id": "silent-wings",
+      "display_name": "Silent Wings",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Niche 2007 glider sim; no verified Steam or GOG listing.",
+      "setup_steps": [
+        "Launch TrackIR (or OpenTrack with Interface = Both) before starting the game.",
+        "Start Silent Wings.",
+        "Enable TIR/head view in the view options.",
+        "Recenter the view with the TrackIR center key in the cockpit."
+      ]
+    },
+    {
+      "id": "silent-wings-simulator",
+      "display_name": "Silent Wings Simulator",
+      "steam_app_id": null,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Glider sim sold via developer (silentwings.no); Steam AppID unverified.",
+      "setup_steps": [
+        "Install and launch the Tobii Eye Tracking Software first.",
+        "Calibrate your eye tracker before starting the game.",
+        "Launch Silent Wings Simulator and enable head/eye tracking in options."
+      ]
+    },
+    {
+      "id": "simrail-the-railway-simulator",
+      "display_name": "SimRail - The Railway Simulator",
+      "steam_app_id": 1422130,
+      "steam_folder": "SimRail",
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch SimRail from Steam.",
+        "Enable TrackIR / head tracking in the game's control settings."
+      ]
+    },
+    {
+      "id": "skull-and-bones",
+      "display_name": "Skull and Bones",
+      "steam_app_id": 2853730,
+      "steam_folder": "Skull and Bones",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Requires Ubisoft Connect to launch.",
+      "setup_steps": [
+        "Install the Tobii Eye Tracking Software and calibrate your device.",
+        "Launch Skull and Bones (via Ubisoft Connect).",
+        "Enable Tobii features in the in-game settings; auto-detected once running."
+      ]
+    },
+    {
+      "id": "solstice-chronicles-mia",
+      "display_name": "Solstice Chronicles: MIA",
+      "steam_app_id": 528160,
+      "steam_folder": "Solstice Chronicles MIA",
+      "protocols": [
+        "Tobii"
+      ],
+      "setup_steps": [
+        "Install and launch the Tobii Eye Tracking Software first.",
+        "Calibrate your eye tracker before starting the game.",
+        "Launch Solstice Chronicles: MIA and enable Tobii features in options."
+      ]
+    },
+    {
+      "id": "soma",
+      "display_name": "SOMA",
+      "steam_app_id": 282140,
+      "steam_folder": "SOMA",
+      "executable_relpath": "soma.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "setup_steps": [
+        "Install and launch the Tobii Eye Tracking Software first.",
+        "Calibrate your eye tracker before starting the game.",
+        "Launch SOMA; Tobii features are auto-detected in-game."
+      ]
+    },
+    {
+      "id": "space-shuttle-mission-2007",
+      "display_name": "Space Shuttle Mission 2007",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Distributed via developer site/retail; no confirmed Steam page.",
+      "setup_steps": [
+        "Start TrackIR first.",
+        "Launch Space Shuttle Mission 2007.",
+        "Enable TrackIR / head tracking in the game's view options."
+      ]
+    },
+    {
+      "id": "starcrawlers",
+      "display_name": "StarCrawlers",
+      "steam_app_id": 318970,
+      "steam_folder": "StarCrawlers",
+      "protocols": [
+        "Tobii"
+      ],
+      "setup_steps": [
+        "Install and launch the Tobii Eye Tracking Software first.",
+        "Calibrate your eye tracker before starting the game.",
+        "Launch StarCrawlers and enable Tobii features in options."
+      ]
+    },
+    {
+      "id": "starwraith-command",
+      "display_name": "StarWraith Command",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "StarWraith 3D Games title; Steam listing unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch StarWraith Command.",
+        "Enable TrackIR / head tracking in the game's controls."
+      ]
+    },
+    {
+      "id": "starfighter-origins",
+      "display_name": "Starfighter Origins",
+      "steam_app_id": 564950,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Listed on Steam as Starfighter Origins Remastered (App 564950).",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching the game.",
+        "Launch Starfighter Origins from Steam.",
+        "Enable TrackIR / head tracking in the game's options."
+      ]
+    },
+    {
+      "id": "starshatter",
+      "display_name": "Starshatter",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Standalone/open-source release; not on Steam.",
+      "setup_steps": [
+        "Start TrackIR first.",
+        "Launch Starshatter.",
+        "Enable TrackIR / head tracking in the game's view settings."
+      ]
+    },
+    {
+      "id": "steep",
+      "display_name": "Steep",
+      "steam_app_id": 460920,
+      "steam_folder": "Steep",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Requires Ubisoft Connect to launch.",
+      "setup_steps": [
+        "Install the Tobii Eye Tracking Software and calibrate your device.",
+        "Launch Steep (via Ubisoft Connect).",
+        "Enable Tobii features in the in-game settings; auto-detected once running."
+      ]
+    },
+    {
+      "id": "strike-fighters-project-1",
+      "display_name": "Strike Fighters: Project 1",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Third Wire retail/standalone title; not on Steam.",
+      "setup_steps": [
+        "Start TrackIR first.",
+        "Launch Strike Fighters: Project 1.",
+        "Enable TrackIR / head tracking in the game's options."
+      ]
+    },
+    {
+      "id": "take-on-helicopters",
+      "display_name": "Take On Helicopters",
+      "steam_app_id": 65730,
+      "steam_folder": "Take On Helicopters",
+      "executable_relpath": "TakeOnH.exe",
+      "protocols": [
+        "FreeTrack"
+      ],
+      "setup_steps": [
+        "Start your FreeTrack / OpenTrack tracker BEFORE launching the game.",
+        "Launch Take On Helicopters from Steam.",
+        "Enable head tracking (TrackIR/FreeTrack) in the controls menu."
+      ]
+    },
+    {
+      "id": "test-drive-unlimited",
+      "display_name": "Test Drive Unlimited",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Delisted; not currently on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR first.",
+        "Launch Test Drive Unlimited.",
+        "Enable TrackIR / head tracking in the game's options."
+      ]
+    },
+    {
+      "id": "thehunter",
+      "display_name": "theHunter",
+      "steam_app_id": 253710,
+      "steam_folder": "thehunter",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Free-to-play theHunter Classic (AppID 253710); a launcher precedes the main theHunter.exe, exact relpath unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game's options.",
+        "Bind a recenter key before hunting.",
+        "OpenTrack works by emulating the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "thehunter-call-of-the-wild",
+      "display_name": "theHunter: Call of the Wild",
+      "steam_app_id": 518790,
+      "steam_folder": "theHunterCotW",
+      "executable_relpath": "theHunterCotW_F.exe",
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Tobii eye/head tracking is integrated natively.",
+      "setup_steps": [
+        "Launch the Tobii Eye Tracking software and calibrate BEFORE starting the game.",
+        "Enable Tobii / eye tracking in the in-game settings.",
+        "Use Extended View and aim-at-gaze options as desired.",
+        "Recalibrate if head position drifts."
+      ]
+    },
+    {
+      "id": "tiny-combat-arena",
+      "display_name": "Tiny Combat Arena",
+      "steam_app_id": 1347550,
+      "protocols": [
+        "Tobii"
+      ],
+      "notes": "Early Access; Steam installdir and executable path unverified.",
+      "setup_steps": [
+        "Launch the Tobii Eye Tracking software and calibrate BEFORE starting the game.",
+        "Enable Tobii head/eye tracking in the in-game options.",
+        "Use the extended-view controls for cockpit awareness.",
+        "Recenter the view if tracking drifts."
+      ]
+    },
+    {
+      "id": "toca-race-driver-2",
+      "display_name": "TOCA Race Driver 2",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "2004 Codemasters racer; not sold on Steam or GOG (retail/disc only, StarForce DRM).",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Bind a recenter key before racing.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "tower-simulator",
+      "display_name": "Tower Simulator",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "feelThere Tower! 2011 air-traffic-control sim sold direct; the later Tower!2011:SE is on Steam (AppID 620570) but identity vs this entry is unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Bind a recenter key for the tower view.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "train-sim-world-2",
+      "display_name": "Train Sim World 2",
+      "steam_app_id": 1282590,
+      "steam_folder": "Train Sim World 2",
+      "executable_relpath": "WindowsNoEditor\\TS2Prototype\\Binaries\\Win64\\TS2Prototype-Win64-Shipping.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Community reports TrackIR is not actually supported despite the catalog tag; steam_folder casing unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Check the in-game settings for a head-tracking toggle; support is unconfirmed.",
+        "Bind a recenter key for the cab view if tracking works.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "trainz-railroad-simulator-2006",
+      "display_name": "Trainz Railroad Simulator 2006",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Legacy Auran title; not verified on Steam.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Bind a recenter key for the cab view.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "trainz-classic",
+      "display_name": "Trainz Classic",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Trainz Classics standalone series (Auran/N3V); not verified on Steam.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Bind a recenter key for the cab view.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "trainz-simulator-2010",
+      "display_name": "Trainz Simulator 2010",
+      "steam_app_id": 24630,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "On Steam as Trainz Simulator 2010: Engineers Edition (AppID 24630); installdir and exe unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Bind a recenter key for the cab view.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "truck-and-logistics-simulator",
+      "display_name": "Truck and Logistics Simulator",
+      "steam_app_id": 873840,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Simula Games / Aerosoft (AppID 873840); installdir and executable path unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Bind a recenter key for the cab view.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "turismo-carretera",
+      "display_name": "Turismo Carretera",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Argentine rFactor-based stock-car sim (2Pez Games), sold direct; not on Steam or GOG.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR head tracking (6DOF) in the game options.",
+        "Bind a recenter key before racing.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "vector-36",
+      "display_name": "Vector 36",
+      "steam_app_id": 346460,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Red River Studio physics racer (AppID 346460); TrackIR added in a later update; installdir unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR (6DOF) in the game options.",
+        "Bind a recenter key before racing.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "vehicle-simulator",
+      "display_name": "Vehicle Simulator",
+      "steam_app_id": 416190,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Hangsim (Ilan Papini); on Steam (AppID 416190); installdir and exe unverified.",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Bind a recenter key before driving/sailing.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "virtual-sailor",
+      "display_name": "Virtual Sailor",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Hangsim (Ilan Papini) legacy sim sold direct; original Virtual Sailor not on Steam (the newer Virtual Sailor NG is AppID 2153610).",
+      "setup_steps": [
+        "Start TrackIR / OpenTrack (TrackIR protocol) BEFORE launching the game.",
+        "Enable TrackIR head tracking in the game options.",
+        "Bind a recenter key before sailing.",
+        "OpenTrack emulates the TrackIR protocol; no extra plugin needed."
+      ]
+    },
+    {
+      "id": "warbirds",
+      "display_name": "WarBirds",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Input is the 1999 iEntertainment online flight sim; the modern Steam re-release WarBirds - World War II Combat Aviation is the separate app 365620, so this entry stays null.",
+      "setup_steps": [
+        "Start TrackIR before launching WarBirds.",
+        "Enable TrackIR/head-tracking in the game's view or controls options.",
+        "Use the in-game key to recenter the view after the tracker is active."
+      ]
+    },
+    {
+      "id": "wings-of-prey",
+      "display_name": "Wings of Prey",
+      "steam_app_id": 45300,
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Start TrackIR before launching Wings of Prey.",
+        "Enable TrackIR support in the game's control/view settings.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "wings-of-war",
+      "display_name": "Wings of War",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Older aerial combat title with no verified Steam or GOG listing.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Enable head-tracking in the game's view/control options.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "wings-over-europe",
+      "display_name": "Wings Over Europe",
+      "steam_app_id": 281580,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Thirdwire's Wings Over Europe: Cold War Gone Hot, Steam app 281580.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Enable TrackIR in the game's options menu.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "wings-over-flanders-fields-u-e",
+      "display_name": "Wings Over Flanders Fields: U.E.",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "OBD Software WWI sim distributed direct from the developer; no verified Steam/GOG ID.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Enable TrackIR/head-tracking in the in-game settings.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "wings-over-israel",
+      "display_name": "Wings Over Israel",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Thirdwire title sold via the developer's own store; no verified Steam release.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Enable TrackIR in the game's options menu.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "wings-over-the-reich",
+      "display_name": "Wings Over The Reich",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "OBD Software WWII sim distributed direct from the developer; no verified Steam/GOG ID.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Enable TrackIR/head-tracking in the in-game settings.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "wings-over-vietnam",
+      "display_name": "Wings Over Vietnam",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Thirdwire title sold via the developer's own store; no verified Steam release.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Enable TrackIR in the game's options menu.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "world-racing-series",
+      "display_name": "World Racing Series",
+      "steam_app_id": null,
+      "protocols": [
+        "FreeTrack"
+      ],
+      "notes": "PiBoSo sim distributed only via the developer's website; not on Steam.",
+      "setup_steps": [
+        "Start your FreeTrack-compatible tracker (FreeTrack or OpenTrack) before launching the game.",
+        "Enable FreeTrack head-tracking in the game's view/controls settings.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "wwii-battle-tanks-t-34-vs-tiger",
+      "display_name": "WWII Battle Tanks: T-34 vs. Tiger",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "1C/G5 Software tank sim; no verified Steam or GOG listing.",
+      "setup_steps": [
+        "Start TrackIR before launching the game.",
+        "Enable head-tracking in the game's view/control options.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "x-motor-racing",
+      "display_name": "X Motor Racing",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Sold direct from xmotorracing.com; no verified Steam/GOG listing.",
+      "setup_steps": [
+        "Start TrackIR before launching X Motor Racing.",
+        "Enable TrackIR support in the game's options.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "x-plane",
+      "display_name": "X-Plane",
+      "steam_app_id": null,
+      "protocols": [
+        "TrackIR"
+      ],
+      "notes": "Original 1995 X-Plane; distinct from X-Plane 11 (app 269950) and X-Plane 12 (app 2014780). Install path must be set manually.",
+      "setup_steps": [
+        "Start TrackIR before launching X-Plane.",
+        "Enable the TrackIR checkbox in X-Plane's settings.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "x3-albion-prelude",
+      "display_name": "X3: Albion Prelude",
+      "steam_app_id": 201310,
+      "steam_folder": "x3 terran conflict",
+      "executable_relpath": "X3AP.exe",
+      "protocols": [
+        "TrackIR",
+        "FreeTrack"
+      ],
+      "notes": "Albion Prelude installs into the X3: Terran Conflict folder and launches via X3AP.exe.",
+      "setup_steps": [
+        "Start your tracker (TrackIR, or FreeTrack/OpenTrack) before launching the game.",
+        "Enable head-tracking in the game's controls/options.",
+        "Recenter the view in-game once tracking is active."
+      ]
+    },
+    {
+      "id": "x-rebirth",
+      "display_name": "X: Rebirth",
+      "steam_app_id": 2870,
+      "steam_folder": "X Rebirth",
+      "executable_relpath": "XRebirth.exe",
+      "protocols": [
+        "TrackIR"
+      ],
+      "setup_steps": [
+        "Start TrackIR before launching X Rebirth.",
+        "Enable TrackIR/head-tracking in the game's controls.",
+        "Recenter the view in-game once tracking is active."
       ]
     }
   ]
