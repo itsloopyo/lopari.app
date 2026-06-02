@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-05-29",
+  "updated_at": "2026-06-02T08:15:14.339Z",
   "mods": [
     {
       "id": "subnautica",
@@ -54,7 +54,51 @@
           "chord": "Ctrl+Shift+H",
           "description": "Cycles the UDP listen port through 4242, 4243, 4244, 4245 for running multiple game instances on one PC"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "1.1.2",
+          "tag_name": "v1.1.2",
+          "name": "Head Tracking for Subnautica v1.1.2",
+          "html_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/tag/v1.1.2",
+          "published_at": "2026-05-03T19:52:07Z",
+          "zip_filename": "SubnauticaHeadTracking-v1.1.2-installer.zip",
+          "download_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/download/v1.1.2/SubnauticaHeadTracking-v1.1.2-installer.zip",
+          "size_bytes": 761714
+        },
+        "versions": [
+          {
+            "tag_name": "v1.1.2",
+            "version": "1.1.2",
+            "name": "Head Tracking for Subnautica v1.1.2",
+            "html_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/tag/v1.1.2",
+            "published_at": "2026-05-03T19:52:07Z",
+            "zip_filename": "SubnauticaHeadTracking-v1.1.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/download/v1.1.2/SubnauticaHeadTracking-v1.1.2-installer.zip",
+            "size_bytes": 761714
+          },
+          {
+            "tag_name": "v1.1.0",
+            "version": "1.1.0",
+            "name": "Head Tracking for Subnautica v1.1.0",
+            "html_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/tag/v1.1.0",
+            "published_at": "2026-04-30T23:17:50Z",
+            "zip_filename": "SubnauticaHeadTracking-v1.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/download/v1.1.0/SubnauticaHeadTracking-v1.1.0-installer.zip",
+            "size_bytes": 742356
+          },
+          {
+            "tag_name": "v1.0.0",
+            "version": "1.0.0",
+            "name": "Head Tracking for Subnautica v1.0.0",
+            "html_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/tag/v1.0.0",
+            "published_at": "2026-03-28T15:21:21Z",
+            "zip_filename": "SubnauticaHeadTracking-v1.0.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/download/v1.0.0/SubnauticaHeadTracking-v1.0.0-installer.zip",
+            "size_bytes": 83194
+          }
+        ]
+      }
     },
     {
       "id": "obra-dinn",
@@ -104,7 +148,121 @@
           "chord": "Ctrl+Shift+H",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "1.1.1",
+          "tag_name": "v1.1.1",
+          "name": "Head Tracking for Return of the Obra Dinn v1.1.1",
+          "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.1.1",
+          "published_at": "2026-05-03T21:13:50Z",
+          "zip_filename": "ObraDinnHeadTracking-v1.1.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.1.1/ObraDinnHeadTracking-v1.1.1-installer.zip",
+          "size_bytes": 758709
+        },
+        "versions": [
+          {
+            "tag_name": "v1.1.1",
+            "version": "1.1.1",
+            "name": "Head Tracking for Return of the Obra Dinn v1.1.1",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.1.1",
+            "published_at": "2026-05-03T21:13:50Z",
+            "zip_filename": "ObraDinnHeadTracking-v1.1.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.1.1/ObraDinnHeadTracking-v1.1.1-installer.zip",
+            "size_bytes": 758709
+          },
+          {
+            "tag_name": "v1.1.0",
+            "version": "1.1.0",
+            "name": "Head Tracking for Return of the Obra Dinn v1.1.0",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.1.0",
+            "published_at": "2026-04-30T23:22:38Z",
+            "zip_filename": "ObraDinnHeadTracking-v1.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.1.0/ObraDinnHeadTracking-v1.1.0-installer.zip",
+            "size_bytes": 740077
+          },
+          {
+            "tag_name": "v1.0.7",
+            "version": "1.0.7",
+            "name": "Head Tracking for Return of the Obra Dinn v1.0.7",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.0.7",
+            "published_at": "2026-03-26T00:04:12Z",
+            "zip_filename": "ObraDinnHeadTracking-v1.0.7-installer.zip",
+            "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.0.7/ObraDinnHeadTracking-v1.0.7-installer.zip",
+            "size_bytes": 80575
+          },
+          {
+            "tag_name": "v1.0.6",
+            "version": "1.0.6",
+            "name": "Head Tracking for Return of the Obra Dinn v1.0.6",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.0.6",
+            "published_at": "2026-03-13T19:31:00Z",
+            "zip_filename": "ObraDinnHeadTracking-v1.0.6-installer.zip",
+            "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.0.6/ObraDinnHeadTracking-v1.0.6-installer.zip",
+            "size_bytes": 81903
+          },
+          {
+            "tag_name": "v1.0.5",
+            "version": "1.0.5",
+            "name": "Head Tracking for Return of the Obra Dinn v1.0.5",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.0.5",
+            "published_at": "2026-03-13T01:11:36Z",
+            "zip_filename": "ObraDinnHeadTracking-v1.0.5-installer.zip",
+            "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.0.5/ObraDinnHeadTracking-v1.0.5-installer.zip",
+            "size_bytes": 81683
+          },
+          {
+            "tag_name": "v1.0.4",
+            "version": "1.0.4",
+            "name": "Head Tracking for Return of the Obra Dinn v1.0.4",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.0.4",
+            "published_at": "2026-03-10T23:52:16Z",
+            "zip_filename": "ObraDinnHeadTracking-v1.0.4-installer.zip",
+            "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.0.4/ObraDinnHeadTracking-v1.0.4-installer.zip",
+            "size_bytes": 81648
+          },
+          {
+            "tag_name": "v1.0.3",
+            "version": "1.0.3",
+            "name": "Head Tracking for Return of the Obra Dinn v1.0.3",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.0.3",
+            "published_at": "2026-03-08T02:22:01Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.0.2",
+            "version": "1.0.2",
+            "name": "Head Tracking for Return of the Obra Dinn v1.0.2",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.0.2",
+            "published_at": "2026-03-08T01:18:15Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.0.1",
+            "version": "1.0.1",
+            "name": "Head Tracking for Return of the Obra Dinn v1.0.1",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.0.1",
+            "published_at": "2026-03-05T18:52:45Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.0.0",
+            "version": "1.0.0",
+            "name": "Head Tracking for Return of the Obra Dinn v1.0.0",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.0.0",
+            "published_at": "2026-03-04T18:14:36Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          }
+        ]
+      }
     },
     {
       "id": "peak",
@@ -153,7 +311,71 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "1.1.1",
+          "tag_name": "v1.1.1",
+          "name": "Head Tracking for PEAK v1.1.1",
+          "html_url": "https://github.com/itsloopyo/peak-headtracking/releases/tag/v1.1.1",
+          "published_at": "2026-05-03T19:24:09Z",
+          "zip_filename": "PeakHeadTracking-v1.1.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/peak-headtracking/releases/download/v1.1.1/PeakHeadTracking-v1.1.1-installer.zip",
+          "size_bytes": 799418
+        },
+        "versions": [
+          {
+            "tag_name": "v1.1.1",
+            "version": "1.1.1",
+            "name": "Head Tracking for PEAK v1.1.1",
+            "html_url": "https://github.com/itsloopyo/peak-headtracking/releases/tag/v1.1.1",
+            "published_at": "2026-05-03T19:24:09Z",
+            "zip_filename": "PeakHeadTracking-v1.1.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/peak-headtracking/releases/download/v1.1.1/PeakHeadTracking-v1.1.1-installer.zip",
+            "size_bytes": 799418
+          },
+          {
+            "tag_name": "v1.1.0",
+            "version": "1.1.0",
+            "name": "Head Tracking for PEAK v1.1.0",
+            "html_url": "https://github.com/itsloopyo/peak-headtracking/releases/tag/v1.1.0",
+            "published_at": "2026-04-30T23:01:12Z",
+            "zip_filename": "PeakHeadTracking-v1.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/peak-headtracking/releases/download/v1.1.0/PeakHeadTracking-v1.1.0-installer.zip",
+            "size_bytes": 779918
+          },
+          {
+            "tag_name": "v1.0.2",
+            "version": "1.0.2",
+            "name": "Head Tracking for PEAK v1.0.2",
+            "html_url": "https://github.com/itsloopyo/peak-headtracking/releases/tag/v1.0.2",
+            "published_at": "2026-04-11T14:09:05Z",
+            "zip_filename": "PeakHeadTracking-v1.0.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/peak-headtracking/releases/download/v1.0.2/PeakHeadTracking-v1.0.2-installer.zip",
+            "size_bytes": 91833
+          },
+          {
+            "tag_name": "v1.0.1",
+            "version": "1.0.1",
+            "name": "Head Tracking for PEAK v1.0.1",
+            "html_url": "https://github.com/itsloopyo/peak-headtracking/releases/tag/v1.0.1",
+            "published_at": "2026-04-06T20:35:41Z",
+            "zip_filename": "PeakHeadTracking-v1.0.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/peak-headtracking/releases/download/v1.0.1/PeakHeadTracking-v1.0.1-installer.zip",
+            "size_bytes": 91783
+          },
+          {
+            "tag_name": "v1.0.0",
+            "version": "1.0.0",
+            "name": "Head Tracking for PEAK v1.0.0",
+            "html_url": "https://github.com/itsloopyo/peak-headtracking/releases/tag/v1.0.0",
+            "published_at": "2026-04-06T18:27:19Z",
+            "zip_filename": "PeakHeadTracking-v1.0.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/peak-headtracking/releases/download/v1.0.0/PeakHeadTracking-v1.0.0-installer.zip",
+            "size_bytes": 91636
+          }
+        ]
+      }
     },
     {
       "id": "green-hell",
@@ -193,7 +415,101 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between camera-local yaw (default; head yaw pans the screen even at extreme pitch) and world-space yaw (horizon-locked)"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "1.1.2",
+          "tag_name": "v1.1.2",
+          "name": "Head Tracking for Green Hell v1.1.2",
+          "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.1.2",
+          "published_at": "2026-05-03T19:19:12Z",
+          "zip_filename": "GreenHellHeadTracking-v1.1.2-installer.zip",
+          "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.1.2/GreenHellHeadTracking-v1.1.2-installer.zip",
+          "size_bytes": 21116874
+        },
+        "versions": [
+          {
+            "tag_name": "v1.1.2",
+            "version": "1.1.2",
+            "name": "Head Tracking for Green Hell v1.1.2",
+            "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.1.2",
+            "published_at": "2026-05-03T19:19:12Z",
+            "zip_filename": "GreenHellHeadTracking-v1.1.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.1.2/GreenHellHeadTracking-v1.1.2-installer.zip",
+            "size_bytes": 21116874
+          },
+          {
+            "tag_name": "v1.1.1",
+            "version": "1.1.1",
+            "name": "Head Tracking for Green Hell v1.1.1",
+            "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.1.1",
+            "published_at": "2026-05-03T17:22:15Z",
+            "zip_filename": "GreenHellHeadTracking-v1.1.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.1.1/GreenHellHeadTracking-v1.1.1-installer.zip",
+            "size_bytes": 21114597
+          },
+          {
+            "tag_name": "v1.1.0",
+            "version": "1.1.0",
+            "name": "Head Tracking for Green Hell v1.1.0",
+            "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.1.0",
+            "published_at": "2026-04-30T23:01:07Z",
+            "zip_filename": "GreenHellHeadTracking-v1.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.1.0/GreenHellHeadTracking-v1.1.0-installer.zip",
+            "size_bytes": 21097669
+          },
+          {
+            "tag_name": "v1.0.4",
+            "version": "1.0.4",
+            "name": "Head Tracking for Green Hell v1.0.4",
+            "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.0.4",
+            "published_at": "2026-04-19T02:38:22Z",
+            "zip_filename": "GreenHellHeadTracking-v1.0.4-installer.zip",
+            "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.0.4/GreenHellHeadTracking-v1.0.4-installer.zip",
+            "size_bytes": 21087862
+          },
+          {
+            "tag_name": "v1.0.3",
+            "version": "1.0.3",
+            "name": "Head Tracking for Green Hell v1.0.3",
+            "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.0.3",
+            "published_at": "2026-03-26T00:04:20Z",
+            "zip_filename": "GreenHellHeadTracking-v1.0.3-installer.zip",
+            "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.0.3/GreenHellHeadTracking-v1.0.3-installer.zip",
+            "size_bytes": 77560
+          },
+          {
+            "tag_name": "v1.0.2",
+            "version": "1.0.2",
+            "name": "Head Tracking for Green Hell v1.0.2",
+            "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.0.2",
+            "published_at": "2026-03-13T23:54:20Z",
+            "zip_filename": "GreenHellHeadTracking-v1.0.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.0.2/GreenHellHeadTracking-v1.0.2-installer.zip",
+            "size_bytes": 77818
+          },
+          {
+            "tag_name": "v1.0.1",
+            "version": "1.0.1",
+            "name": "Head Tracking for Green Hell v1.0.1",
+            "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.0.1",
+            "published_at": "2026-03-10T22:37:39Z",
+            "zip_filename": "GreenHellHeadTracking-v1.0.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.0.1/GreenHellHeadTracking-v1.0.1-installer.zip",
+            "size_bytes": 77185
+          },
+          {
+            "tag_name": "v1.0.0",
+            "version": "1.0.0",
+            "name": "Head Tracking for Green Hell v1.0.0",
+            "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.0.0",
+            "published_at": "2026-03-08T02:44:12Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          }
+        ]
+      }
     },
     {
       "id": "outer-wilds",
@@ -291,7 +607,71 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.2.1",
+          "tag_name": "v0.2.1",
+          "name": "Head Tracking for Resident Evil Requiem v0.2.1",
+          "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.2.1",
+          "published_at": "2026-05-03T19:26:12Z",
+          "zip_filename": "RE9HeadTracking-v0.2.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.2.1/RE9HeadTracking-v0.2.1-installer.zip",
+          "size_bytes": 13390782
+        },
+        "versions": [
+          {
+            "tag_name": "v0.2.1",
+            "version": "0.2.1",
+            "name": "Head Tracking for Resident Evil Requiem v0.2.1",
+            "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.2.1",
+            "published_at": "2026-05-03T19:26:12Z",
+            "zip_filename": "RE9HeadTracking-v0.2.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.2.1/RE9HeadTracking-v0.2.1-installer.zip",
+            "size_bytes": 13390782
+          },
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Head Tracking for Resident Evil Requiem v0.2.0",
+            "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-04-30T23:02:54Z",
+            "zip_filename": "RE9HeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.2.0/RE9HeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 13939728
+          },
+          {
+            "tag_name": "v0.1.2",
+            "version": "0.1.2",
+            "name": "Head Tracking for Resident Evil Requiem v0.1.2",
+            "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.1.2",
+            "published_at": "2026-04-15T17:15:43Z",
+            "zip_filename": "RE9HeadTracking-v0.1.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.1.2/RE9HeadTracking-v0.1.2-installer.zip",
+            "size_bytes": 220302
+          },
+          {
+            "tag_name": "v0.1.1",
+            "version": "0.1.1",
+            "name": "Head Tracking for Resident Evil Requiem v0.1.1",
+            "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.1.1",
+            "published_at": "2026-04-15T17:00:14Z",
+            "zip_filename": "RE9HeadTracking-v0.1.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.1.1/RE9HeadTracking-v0.1.1-installer.zip",
+            "size_bytes": 220259
+          },
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Head Tracking for Resident Evil Requiem v0.1.0",
+            "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-04-14T19:31:43Z",
+            "zip_filename": "RE9HeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.1.0/RE9HeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 220071
+          }
+        ]
+      }
     },
     {
       "id": "dying-light-2",
@@ -337,7 +717,111 @@
           "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "1.2.1",
+          "tag_name": "v1.2.1",
+          "name": "Head Tracking for Dying Light 2 v1.2.1",
+          "html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/tag/v1.2.1",
+          "published_at": "2026-05-03T19:15:11Z",
+          "zip_filename": "DL2HeadTracking-v1.2.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/download/v1.2.1/DL2HeadTracking-v1.2.1-installer.zip",
+          "size_bytes": 3213425
+        },
+        "versions": [
+          {
+            "tag_name": "v1.2.1",
+            "version": "1.2.1",
+            "name": "Head Tracking for Dying Light 2 v1.2.1",
+            "html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/tag/v1.2.1",
+            "published_at": "2026-05-03T19:15:11Z",
+            "zip_filename": "DL2HeadTracking-v1.2.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/download/v1.2.1/DL2HeadTracking-v1.2.1-installer.zip",
+            "size_bytes": 3213425
+          },
+          {
+            "tag_name": "v1.2.0",
+            "version": "1.2.0",
+            "name": "Head Tracking for Dying Light 2 v1.2.0",
+            "html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/tag/v1.2.0",
+            "published_at": "2026-05-03T17:15:44Z",
+            "zip_filename": "DL2HeadTracking-v1.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/download/v1.2.0/DL2HeadTracking-v1.2.0-installer.zip",
+            "size_bytes": 3211153
+          },
+          {
+            "tag_name": "v1.1.0",
+            "version": "1.1.0",
+            "name": "Head Tracking for Dying Light 2 v1.1.0",
+            "html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/tag/v1.1.0",
+            "published_at": "2026-04-30T22:59:33Z",
+            "zip_filename": "DL2HeadTracking-v1.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/download/v1.1.0/DL2HeadTracking-v1.1.0-installer.zip",
+            "size_bytes": 3189053
+          },
+          {
+            "tag_name": "v1.0.5",
+            "version": "1.0.5",
+            "name": "Head Tracking for Dying Light 2 v1.0.5",
+            "html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/tag/v1.0.5",
+            "published_at": "2026-04-18T18:02:47Z",
+            "zip_filename": "DL2HeadTracking-v1.0.5-installer.zip",
+            "download_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/download/v1.0.5/DL2HeadTracking-v1.0.5-installer.zip",
+            "size_bytes": 3170612
+          },
+          {
+            "tag_name": "v1.0.4",
+            "version": "1.0.4",
+            "name": "Head Tracking for Dying Light 2 v1.0.4",
+            "html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/tag/v1.0.4",
+            "published_at": "2026-03-13T23:22:53Z",
+            "zip_filename": "DL2HeadTracking-v1.0.4-installer.zip",
+            "download_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/download/v1.0.4/DL2HeadTracking-v1.0.4-installer.zip",
+            "size_bytes": 426049
+          },
+          {
+            "tag_name": "v1.0.3",
+            "version": "1.0.3",
+            "name": "Head Tracking for Dying Light 2 v1.0.3",
+            "html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/tag/v1.0.3",
+            "published_at": "2026-03-13T19:31:11Z",
+            "zip_filename": "DL2HeadTracking-v1.0.3-installer.zip",
+            "download_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/download/v1.0.3/DL2HeadTracking-v1.0.3-installer.zip",
+            "size_bytes": 425968
+          },
+          {
+            "tag_name": "v1.0.2",
+            "version": "1.0.2",
+            "name": "Head Tracking for Dying Light 2 v1.0.2",
+            "html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/tag/v1.0.2",
+            "published_at": "2026-03-12T23:11:30Z",
+            "zip_filename": "DL2HeadTracking-v1.0.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/download/v1.0.2/DL2HeadTracking-v1.0.2-installer.zip",
+            "size_bytes": 425311
+          },
+          {
+            "tag_name": "v1.0.1",
+            "version": "1.0.1",
+            "name": "Head Tracking for Dying Light 2 v1.0.1",
+            "html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/tag/v1.0.1",
+            "published_at": "2026-03-10T20:59:20Z",
+            "zip_filename": "DL2HeadTracking-v1.0.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/download/v1.0.1/DL2HeadTracking-v1.0.1-installer.zip",
+            "size_bytes": 425057
+          },
+          {
+            "tag_name": "v1.0.0",
+            "version": "1.0.0",
+            "name": "Head Tracking for Dying Light 2 v1.0.0",
+            "html_url": "https://github.com/itsloopyo/dying-light-2-headtracking/releases/tag/v1.0.0",
+            "published_at": "2026-03-08T01:39:41Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          }
+        ]
+      }
     },
     {
       "id": "bioshock-remastered",
@@ -371,7 +855,71 @@
           "chord": "Ctrl+Shift+G",
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.3.2",
+          "tag_name": "v0.3.2",
+          "name": "BioShock Remastered Head Tracking v0.3.2",
+          "html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/tag/v0.3.2",
+          "published_at": "2026-05-03T19:04:26Z",
+          "zip_filename": "BioshockRemasteredHeadTracking-v0.3.2-installer.zip",
+          "download_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/download/v0.3.2/BioshockRemasteredHeadTracking-v0.3.2-installer.zip",
+          "size_bytes": 387440
+        },
+        "versions": [
+          {
+            "tag_name": "v0.3.2",
+            "version": "0.3.2",
+            "name": "BioShock Remastered Head Tracking v0.3.2",
+            "html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/tag/v0.3.2",
+            "published_at": "2026-05-03T19:04:26Z",
+            "zip_filename": "BioshockRemasteredHeadTracking-v0.3.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/download/v0.3.2/BioshockRemasteredHeadTracking-v0.3.2-installer.zip",
+            "size_bytes": 387440
+          },
+          {
+            "tag_name": "v0.3.1",
+            "version": "0.3.1",
+            "name": "BioShock Remastered Head Tracking v0.3.1",
+            "html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/tag/v0.3.1",
+            "published_at": "2026-05-03T16:16:28Z",
+            "zip_filename": "BioshockRemasteredHeadTracking-v0.3.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/download/v0.3.1/BioshockRemasteredHeadTracking-v0.3.1-installer.zip",
+            "size_bytes": 385021
+          },
+          {
+            "tag_name": "v0.3.0",
+            "version": "0.3.0",
+            "name": "BioShock Remastered Head Tracking v0.3.0",
+            "html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/tag/v0.3.0",
+            "published_at": "2026-04-30T22:57:38Z",
+            "zip_filename": "BioshockRemasteredHeadTracking-v0.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/download/v0.3.0/BioshockRemasteredHeadTracking-v0.3.0-installer.zip",
+            "size_bytes": 368279
+          },
+          {
+            "tag_name": "v0.1.1",
+            "version": "0.1.1",
+            "name": "BioShock Remastered Head Tracking v0.1.1",
+            "html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/tag/v0.1.1",
+            "published_at": "2026-04-19T01:35:46Z",
+            "zip_filename": "BioshockRemasteredHeadTracking-v0.1.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/download/v0.1.1/BioshockRemasteredHeadTracking-v0.1.1-installer.zip",
+            "size_bytes": 345905
+          },
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "BioShock Remastered Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-04-18T14:19:07Z",
+            "zip_filename": "BioshockRemasteredHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/download/v0.1.0/BioshockRemasteredHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 345825
+          }
+        ]
+      }
     },
     {
       "id": "gone-home",
@@ -411,7 +959,121 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between camera-local yaw (default) and horizon-locked world-space yaw"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "1.3.1",
+          "tag_name": "v1.3.1",
+          "name": "Head Tracking for Gone Home v1.3.1",
+          "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.3.1",
+          "published_at": "2026-05-03T19:16:36Z",
+          "zip_filename": "GoneHomeHeadTracking-v1.3.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.3.1/GoneHomeHeadTracking-v1.3.1-installer.zip",
+          "size_bytes": 271307
+        },
+        "versions": [
+          {
+            "tag_name": "v1.3.1",
+            "version": "1.3.1",
+            "name": "Head Tracking for Gone Home v1.3.1",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.3.1",
+            "published_at": "2026-05-03T19:16:36Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.3.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.3.1/GoneHomeHeadTracking-v1.3.1-installer.zip",
+            "size_bytes": 271307
+          },
+          {
+            "tag_name": "v1.3.0",
+            "version": "1.3.0",
+            "name": "Head Tracking for Gone Home v1.3.0",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.3.0",
+            "published_at": "2026-05-03T17:19:12Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.3.0/GoneHomeHeadTracking-v1.3.0-installer.zip",
+            "size_bytes": 269032
+          },
+          {
+            "tag_name": "v1.2.0",
+            "version": "1.2.0",
+            "name": "Head Tracking for Gone Home v1.2.0",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.2.0",
+            "published_at": "2026-04-30T22:57:58Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.2.0/GoneHomeHeadTracking-v1.2.0-installer.zip",
+            "size_bytes": 251065
+          },
+          {
+            "tag_name": "v1.0.6",
+            "version": "1.0.6",
+            "name": "Head Tracking for Gone Home v1.0.6",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.0.6",
+            "published_at": "2026-04-18T14:36:23Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.0.6-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.0.6/GoneHomeHeadTracking-v1.0.6-installer.zip",
+            "size_bytes": 238467
+          },
+          {
+            "tag_name": "v1.0.5",
+            "version": "1.0.5",
+            "name": "Head Tracking for Gone Home v1.0.5",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.0.5",
+            "published_at": "2026-03-28T01:49:27Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.0.5-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.0.5/GoneHomeHeadTracking-v1.0.5-installer.zip",
+            "size_bytes": 237741
+          },
+          {
+            "tag_name": "v1.0.4",
+            "version": "1.0.4",
+            "name": "Head Tracking for Gone Home v1.0.4",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.0.4",
+            "published_at": "2026-03-13T21:10:28Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.0.4-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.0.4/GoneHomeHeadTracking-v1.0.4-installer.zip",
+            "size_bytes": 237816
+          },
+          {
+            "tag_name": "v1.0.3",
+            "version": "1.0.3",
+            "name": "Head Tracking for Gone Home v1.0.3",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.0.3",
+            "published_at": "2026-03-13T19:44:31Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.0.3-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.0.3/GoneHomeHeadTracking-v1.0.3-installer.zip",
+            "size_bytes": 237810
+          },
+          {
+            "tag_name": "v1.0.2",
+            "version": "1.0.2",
+            "name": "Head Tracking for Gone Home v1.0.2",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.0.2",
+            "published_at": "2026-03-13T00:28:38Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.0.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.0.2/GoneHomeHeadTracking-v1.0.2-installer.zip",
+            "size_bytes": 237537
+          },
+          {
+            "tag_name": "v1.0.1",
+            "version": "1.0.1",
+            "name": "Head Tracking for Gone Home v1.0.1",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.0.1",
+            "published_at": "2026-03-10T22:46:07Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.0.0",
+            "version": "1.0.0",
+            "name": "Head Tracking for Gone Home v1.0.0",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.0.0",
+            "published_at": "2026-03-08T01:52:07Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          }
+        ]
+      }
     },
     {
       "id": "cyberpunk-2077",
@@ -464,8 +1126,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260529.5d32902",
-          "built_at": "2026-05-29T23:09:50Z",
+          "version": "0.0.0-nightly.20260601.5d32902",
+          "built_at": "2026-06-01T16:49:44Z",
           "zip_filename": "HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/dev/HeadTracking-dev-installer.zip"
         }
@@ -522,7 +1184,31 @@
           "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Head Tracking for Easy Delivery Co v0.1.0",
+          "html_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-05-16T09:40:02Z",
+          "zip_filename": "EasyDeliveryCoHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/download/v0.1.0/EasyDeliveryCoHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 765346
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Head Tracking for Easy Delivery Co v0.1.0",
+            "html_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-05-16T09:40:02Z",
+            "zip_filename": "EasyDeliveryCoHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/download/v0.1.0/EasyDeliveryCoHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 765346
+          }
+        ]
+      }
     },
     {
       "id": "eternal-afternoon",
@@ -568,7 +1254,51 @@
           "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.2",
+          "tag_name": "v0.1.2",
+          "name": "Head Tracking for Eternal Afternoon v0.1.2",
+          "html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/tag/v0.1.2",
+          "published_at": "2026-05-03T19:45:53Z",
+          "zip_filename": "EternalAfternoonHeadTracking-v0.1.2-installer.zip",
+          "download_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/download/v0.1.2/EternalAfternoonHeadTracking-v0.1.2-installer.zip",
+          "size_bytes": 966248
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.2",
+            "version": "0.1.2",
+            "name": "Head Tracking for Eternal Afternoon v0.1.2",
+            "html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/tag/v0.1.2",
+            "published_at": "2026-05-03T19:45:53Z",
+            "zip_filename": "EternalAfternoonHeadTracking-v0.1.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/download/v0.1.2/EternalAfternoonHeadTracking-v0.1.2-installer.zip",
+            "size_bytes": 966248
+          },
+          {
+            "tag_name": "v0.1.1",
+            "version": "0.1.1",
+            "name": "Head Tracking for Eternal Afternoon v0.1.1",
+            "html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/tag/v0.1.1",
+            "published_at": "2026-05-03T17:17:43Z",
+            "zip_filename": "EternalAfternoonHeadTracking-v0.1.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/download/v0.1.1/EternalAfternoonHeadTracking-v0.1.1-installer.zip",
+            "size_bytes": 963963
+          },
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Head Tracking for Eternal Afternoon v0.1.0",
+            "html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-05-03T15:03:25Z",
+            "zip_filename": "EternalAfternoonHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/download/v0.1.0/EternalAfternoonHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 963859
+          }
+        ]
+      }
     },
     {
       "id": "fallout-new-vegas",
@@ -675,7 +1405,31 @@
           "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Head Tracking for Firewatch v0.1.0",
+          "html_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-05-12T22:33:19Z",
+          "zip_filename": "FirewatchHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/download/v0.1.0/FirewatchHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 18278571
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Head Tracking for Firewatch v0.1.0",
+            "html_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-05-12T22:33:19Z",
+            "zip_filename": "FirewatchHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/download/v0.1.0/FirewatchHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 18278571
+          }
+        ]
+      }
     },
     {
       "id": "painscreek-killings",
@@ -1081,7 +1835,31 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (default) and camera-local yaw"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "v0.1.0",
+          "html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-05-18T01:34:28Z",
+          "zip_filename": "SkyrimSEHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.1.0/SkyrimSEHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 2991355
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "v0.1.0",
+            "html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-05-18T01:34:28Z",
+            "zip_filename": "SkyrimSEHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.1.0/SkyrimSEHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 2991355
+          }
+        ]
+      }
     },
     {
       "id": "subnautica-below-zero",
@@ -1157,7 +1935,71 @@
           "chord": "Ctrl+Shift+G",
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.2.3",
+          "tag_name": "v0.2.3",
+          "name": "Subnautica 2 Head Tracking v0.2.3",
+          "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.2.3",
+          "published_at": "2026-06-02T08:13:37Z",
+          "zip_filename": "Subnautica2HeadTracking-v0.2.3-installer.zip",
+          "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.2.3/Subnautica2HeadTracking-v0.2.3-installer.zip",
+          "size_bytes": 472704
+        },
+        "versions": [
+          {
+            "tag_name": "v0.2.3",
+            "version": "0.2.3",
+            "name": "Subnautica 2 Head Tracking v0.2.3",
+            "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.2.3",
+            "published_at": "2026-06-02T08:13:37Z",
+            "zip_filename": "Subnautica2HeadTracking-v0.2.3-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.2.3/Subnautica2HeadTracking-v0.2.3-installer.zip",
+            "size_bytes": 472704
+          },
+          {
+            "tag_name": "v0.2.2",
+            "version": "0.2.2",
+            "name": "Subnautica 2 Head Tracking v0.2.2",
+            "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.2.2",
+            "published_at": "2026-06-02T07:19:34Z",
+            "zip_filename": "Subnautica2HeadTracking-v0.2.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.2.2/Subnautica2HeadTracking-v0.2.2-installer.zip",
+            "size_bytes": 472533
+          },
+          {
+            "tag_name": "v0.2.1",
+            "version": "0.2.1",
+            "name": "Subnautica 2 Head Tracking v0.2.1",
+            "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.2.1",
+            "published_at": "2026-05-28T17:34:21Z",
+            "zip_filename": "Subnautica2HeadTracking-v0.2.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.2.1/Subnautica2HeadTracking-v0.2.1-installer.zip",
+            "size_bytes": 471979
+          },
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Subnautica 2 Head Tracking v0.2.0",
+            "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-05-24T16:17:50Z",
+            "zip_filename": "Subnautica2HeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.2.0/Subnautica2HeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 461442
+          },
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Subnautica 2 Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-05-23T11:02:22Z",
+            "zip_filename": "Subnautica2HeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.1.0/Subnautica2HeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3195134
+          }
+        ]
+      }
     },
     {
       "id": "tacoma",
@@ -1242,7 +2084,71 @@
           "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.4",
+          "tag_name": "v0.1.4",
+          "name": "Head Tracking for Valheim v0.1.4",
+          "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.4",
+          "published_at": "2026-05-18T22:42:07Z",
+          "zip_filename": "ValheimHeadTracking-v0.1.4-installer.zip",
+          "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.4/ValheimHeadTracking-v0.1.4-installer.zip",
+          "size_bytes": 762376
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.4",
+            "version": "0.1.4",
+            "name": "Head Tracking for Valheim v0.1.4",
+            "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.4",
+            "published_at": "2026-05-18T22:42:07Z",
+            "zip_filename": "ValheimHeadTracking-v0.1.4-installer.zip",
+            "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.4/ValheimHeadTracking-v0.1.4-installer.zip",
+            "size_bytes": 762376
+          },
+          {
+            "tag_name": "v0.1.3",
+            "version": "0.1.3",
+            "name": "Head Tracking for Valheim v0.1.3",
+            "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.3",
+            "published_at": "2026-05-12T22:38:22Z",
+            "zip_filename": "ValheimHeadTracking-v0.1.3-installer.zip",
+            "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.3/ValheimHeadTracking-v0.1.3-installer.zip",
+            "size_bytes": 761264
+          },
+          {
+            "tag_name": "v0.1.2",
+            "version": "0.1.2",
+            "name": "Head Tracking for Valheim v0.1.2",
+            "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.2",
+            "published_at": "2026-05-12T22:19:05Z",
+            "zip_filename": "ValheimHeadTracking-v0.1.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.2/ValheimHeadTracking-v0.1.2-installer.zip",
+            "size_bytes": 761165
+          },
+          {
+            "tag_name": "v0.1.1",
+            "version": "0.1.1",
+            "name": "Head Tracking for Valheim v0.1.1",
+            "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.1",
+            "published_at": "2026-05-12T21:56:15Z",
+            "zip_filename": "ValheimHeadTracking-v0.1.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.1/ValheimHeadTracking-v0.1.1-installer.zip",
+            "size_bytes": 760894
+          },
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Head Tracking for Valheim v0.1.0",
+            "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-05-10T15:11:18Z",
+            "zip_filename": "ValheimHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.0/ValheimHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 760857
+          }
+        ]
+      }
     },
     {
       "id": "witcher-3",
@@ -1399,7 +2305,31 @@
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked world-space yaw and camera-local yaw"
         }
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "BlackAndWhiteHeadTracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-05-24T16:00:49Z",
+          "zip_filename": "BlackAndWhiteHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.1.0/BlackAndWhiteHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 256427
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "BlackAndWhiteHeadTracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-05-24T16:00:49Z",
+            "zip_filename": "BlackAndWhiteHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.1.0/BlackAndWhiteHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 256427
+          }
+        ]
+      }
     },
     {
       "id": "assassins-creed-unity",
@@ -1801,24 +2731,6 @@
       ]
     },
     {
-      "id": "prepar3d-v6",
-      "display_name": "Prepar3D v6",
-      "steam_app_id": null,
-      "steam_folder": "Prepar3D v6",
-      "executable_relpath": "Prepar3D.exe",
-      "protocols": [
-        "TrackIR",
-        "Native"
-      ],
-      "notes": "Lockheed Martin; not on Steam. SimConnect-based; TrackIR requires ChasePlane or ViewTracker - P3D v6 has no native menu toggle.",
-      "setup_steps": [
-        "Start TrackIR / OpenTrack (TrackIR output) BEFORE P3D.",
-        "P3D v6 does NOT have a built-in 'TrackIR Enable' menu - install ChasePlane Pro (recommended) or ViewTracker and use it as the bridge.",
-        "In ChasePlane -> Preferences, tick 'Enable Head Tracking (TrackIR)'. In ViewTracker set Output = 'Prepar3D SimConnect'.",
-        "Numpad 5 recenters; F9 pauses the tracker."
-      ]
-    },
-    {
       "id": "fsx-steam-edition",
       "display_name": "FSX: Steam Edition",
       "steam_app_id": 314160,
@@ -2060,56 +2972,6 @@
       ]
     },
     {
-      "id": "train-sim-world-4",
-      "display_name": "Train Sim World 4",
-      "steam_app_id": 2467660,
-      "steam_folder": "Train Sim World 4",
-      "executable_relpath": "WindowsNoEditor\\TS4Prototype\\Binaries\\Win64\\TS4Prototype-Win64-Shipping.exe",
-      "protocols": [
-        "OpenTrack UDP"
-      ],
-      "notes": "No native TrackIR / FreeTrack support; UE4 title driven through mouse emulation.",
-      "setup_steps": [
-        "TSW4 has NO native TrackIR or FreeTrack support - head look has to be emulated as mouse movement.",
-        "Install FreePIE (andersmalmgren.github.io/FreePIE/) and load a community TrackIR-to-mouse script; alternatively set OpenTrack's Output to 'mouse emulation'.",
-        "In-game: Settings -> Controls -> Camera -> hold the 'Free Look' key while driving the cab to engage the mouse-driven camera the tracker now controls.",
-        "External / drive-past cams ignore the tracker entirely."
-      ]
-    },
-    {
-      "id": "squad",
-      "display_name": "Squad",
-      "steam_app_id": 393380,
-      "steam_folder": "Squad",
-      "executable_relpath": "SquadGame.exe",
-      "protocols": [
-        "OpenTrack UDP"
-      ],
-      "notes": "No native TrackIR / FreeTrack (NaturalPoint's NDA blocks integration in UE4). Head tracking via mouse emulation only.",
-      "setup_steps": [
-        "Squad has NO native TrackIR or FreeTrack support.",
-        "In OpenTrack: Output = 'mouse emulation' and bind the tracker axes to mouse X/Y, or use FreePIE with a community TrackIR-to-mouse script.",
-        "In-game, hold the Alt (free-look) key while the tracker drives the mouse; releasing Alt returns aim to centre.",
-        "For combining with lean (Q/E), most players run a FreePIE script that maps tracker roll to key presses."
-      ]
-    },
-    {
-      "id": "hell-let-loose",
-      "display_name": "Hell Let Loose",
-      "steam_app_id": 686810,
-      "steam_folder": "Hell Let Loose",
-      "executable_relpath": "HLL.exe",
-      "protocols": [
-        "OpenTrack UDP"
-      ],
-      "setup_steps": [
-        "Hell Let Loose does NOT natively support TrackIR or FreeTrack as of 2026.",
-        "Community requests have been open since 2019; the UE4 implementation cost has kept it off the devs' roadmap.",
-        "Closest workaround: OpenTrack → 'mouse emulation' output, driving the free-look camera while you hold right-mouse. Feel is poor.",
-        "Track the official channels (hell-let-loose.com) for any future support announcement."
-      ]
-    },
-    {
       "id": "star-wars-squadrons",
       "display_name": "Star Wars: Squadrons",
       "steam_app_id": 1222730,
@@ -2134,14 +2996,15 @@
       "steam_folder": "Project Wingman",
       "executable_relpath": "Wingman\\Binaries\\Win64\\Wingman-Win64-Shipping.exe",
       "protocols": [
-        "OpenTrack UDP"
+        "FreeTrack",
+        "Tobii"
       ],
-      "notes": "OpenTrack via FreePIE bridge; no native TrackIR.",
+      "notes": "Native FreeTrack (in-game toggle, restored in v1.0.4) and Tobii; no TrackIR SDK - TrackIR users bridge through OpenTrack's FreeTrack output.",
       "setup_steps": [
-        "Project Wingman has no native TrackIR support (Ace Combat clone - by design).",
-        "Install FreePIE from andersmalmgren.github.io/FreePIE/.",
-        "In OpenTrack, set Output = 'FreePIE UDP' and run the community PW bridge script that maps OpenTrack yaw/pitch to right-stick axes.",
-        "In-game: bind 'Look' to the emulated right-stick via Options → Controls."
+        "Start OpenTrack with Output = 'freetrack 2.0 Enhanced' (or any FreeTrack-compatible tracker) BEFORE launching.",
+        "Launch Project Wingman.",
+        "Enable head tracking in Options -> Gameplay.",
+        "Recenter with the in-game recenter binding."
       ]
     },
     {
@@ -2278,24 +3141,6 @@
       ]
     },
     {
-      "id": "ea-sports-wrc",
-      "display_name": "EA SPORTS WRC",
-      "steam_app_id": 1849250,
-      "steam_folder": "EA SPORTS WRC",
-      "executable_relpath": "WRC\\Binaries\\Win64\\WRC-Win64-Shipping.exe",
-      "protocols": [
-        "OpenTrack UDP",
-        "SteamVR"
-      ],
-      "notes": "No native TrackIR / FreeTrack as of 2026 - Codemasters chose not to port the DR2.0 driver. VR is supported via SteamVR.",
-      "setup_steps": [
-        "EA SPORTS WRC has NO native TrackIR or FreeTrack support (confirmed unsupported through 2025).",
-        "If you already use SteamVR, launch WRC in VR and let the headset drive head look - this is the only 'native' path.",
-        "For flat-screen play, install FreePIE + vJoy and run the community TrackIR-to-vJoy bridge; in-game bind the emulated stick to the Look Left/Right/Up/Down axes under Settings -> Controls.",
-        "Head motion (mod or native VR) shows in Dashcam / Bonnet / Cockpit views only."
-      ]
-    },
-    {
       "id": "rfactor-1",
       "display_name": "rFactor",
       "steam_app_id": 37970,
@@ -2415,42 +3260,6 @@
         "Launch AH3 → Options → Options tab → 'Track IR Enabled' → On.",
         "Head motion applies in cockpit views only; external cams are fixed.",
         "Numpad 5 recenters; F9 pauses the tracker."
-      ]
-    },
-    {
-      "id": "freespace-2",
-      "display_name": "FreeSpace 2",
-      "steam_app_id": 273620,
-      "steam_folder": "Freespace 2",
-      "executable_relpath": "fs2_open.exe",
-      "protocols": [
-        "TrackIR",
-        "FreeTrack"
-      ],
-      "notes": "Via FreeSpace Open (SCP); requires the community DLL drop.",
-      "setup_steps": [
-        "Use a FreeSpace Open (SCP) build rather than the stock 1999 exe - get one from scp.indiegames.us.",
-        "Copy NPClient.dll from your TrackIR install (or the FreeTrack equivalent) into the FreeSpace 2 folder.",
-        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching.",
-        "Use the FSO Launcher → Features tab → tick the 'TrackIR' / '-trackir' flag, then launch."
-      ]
-    },
-    {
-      "id": "wing-commander-saga",
-      "display_name": "Wing Commander Saga",
-      "steam_app_id": null,
-      "steam_folder": "Wing Commander Saga",
-      "executable_relpath": "WingCommanderSaga.exe",
-      "protocols": [
-        "TrackIR",
-        "FreeTrack"
-      ],
-      "notes": "Freeware built on FSO engine; standalone installer from wcsaga.com.",
-      "setup_steps": [
-        "Wing Commander Saga is built on the same FSO engine as FreeSpace 2 - setup mirrors it.",
-        "Copy NPClient.dll from your TrackIR install into the Wing Commander Saga folder.",
-        "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching.",
-        "TrackIR is auto-used in cockpit view once the DLL is in place."
       ]
     },
     {
@@ -3322,20 +4131,6 @@
       ]
     },
     {
-      "id": "darkfield-vr",
-      "display_name": "Darkfield VR",
-      "steam_app_id": null,
-      "protocols": [
-        "TrackIR"
-      ],
-      "notes": "Listed on legacy TrackIR-compatible lists; no official in-game setup verified.",
-      "setup_steps": [
-        "Start TrackIR / OpenTrack BEFORE launching the game.",
-        "Enable head tracking in the game options if available.",
-        "Recenter the view with your TrackIR hotkey."
-      ]
-    },
-    {
       "id": "dayz",
       "display_name": "DayZ",
       "steam_app_id": 221100,
@@ -3893,21 +4688,6 @@
       ]
     },
     {
-      "id": "garry-s-mod",
-      "display_name": "Garry's Mod",
-      "steam_app_id": 4000,
-      "steam_folder": "GarrysMod",
-      "executable_relpath": "gmod.exe",
-      "protocols": [
-        "TrackIR"
-      ],
-      "setup_steps": [
-        "Start TrackIR BEFORE launching Garry's Mod.",
-        "Head tracking requires a TrackIR-aware addon or supported gamemode.",
-        "Recenter your view with the TrackIR hotkey."
-      ]
-    },
-    {
       "id": "gp-bikes",
       "display_name": "GP Bikes",
       "steam_app_id": null,
@@ -4087,21 +4867,6 @@
       ]
     },
     {
-      "id": "interactive-gun-range",
-      "display_name": "Interactive Gun Range",
-      "steam_app_id": 2398210,
-      "protocols": [
-        "TrackIR"
-      ],
-      "notes": "Steam AppID 2398210; uses TrackIR mouse-emulation. Installdir/executable not verified.",
-      "setup_steps": [
-        "Start TrackIR before launching the game.",
-        "Launch Interactive Gun Range.",
-        "Enable TrackIR head tracking in the game options.",
-        "Recenter the view with your TrackIR default key."
-      ]
-    },
-    {
       "id": "jane-s-f-a-18",
       "display_name": "Jane's F/A-18",
       "steam_app_id": null,
@@ -4161,23 +4926,6 @@
         "Launch Kart Racing PRO.",
         "Enable FreeTrack / head tracking in the game options.",
         "Recenter the view with your tracker's default recenter key."
-      ]
-    },
-    {
-      "id": "kerbal-space-program",
-      "display_name": "Kerbal Space Program",
-      "steam_app_id": 220200,
-      "steam_folder": "Kerbal Space Program",
-      "executable_relpath": "KSP_x64.exe",
-      "protocols": [
-        "TrackIR"
-      ],
-      "notes": "TrackIR support comes via a community plugin; KSP.exe is the 32-bit variant.",
-      "setup_steps": [
-        "Start TrackIR before launching the game.",
-        "Launch Kerbal Space Program (KSP_x64.exe).",
-        "Enable head tracking via the relevant TrackIR plugin.",
-        "Recenter the view with your TrackIR default key."
       ]
     },
     {
@@ -4614,23 +5362,6 @@
       ]
     },
     {
-      "id": "realflight-9-5s",
-      "display_name": "RealFlight 9.5S",
-      "steam_app_id": 1070820,
-      "steam_folder": "RealFlight 9.5S",
-      "executable_relpath": "RealFlight.exe",
-      "protocols": [
-        "Tobii"
-      ],
-      "notes": "Delivered via Steam (app 1070820); eye tracking requires Tobii Eye Tracking, Tobii Game Hub and OpenTrack rather than a native toggle.",
-      "setup_steps": [
-        "Install Tobii Eye Tracking software and Tobii Game Hub, then calibrate the tracker.",
-        "Start OpenTrack and select the Tobii input before launching.",
-        "Launch RealFlight 9.5S last so it picks up the tracker.",
-        "Use the in-game view options to enable head/eye-driven camera."
-      ]
-    },
-    {
       "id": "red-baron-3d",
       "display_name": "Red Baron 3D",
       "steam_app_id": null,
@@ -4720,22 +5451,6 @@
         "Start Scania Truck Driving Simulator from Steam.",
         "Enable head/eye tracking in the game options.",
         "Recenter the view with the configured center key in the cab."
-      ]
-    },
-    {
-      "id": "serious-sam-hd-the-first-encounter",
-      "display_name": "Serious Sam HD: The First Encounter",
-      "steam_app_id": 41000,
-      "executable_relpath": "Bin\\SamHD.exe",
-      "protocols": [
-        "Tobii"
-      ],
-      "notes": "Tobii eye-tracking features require the Serious Sam Fusion 2017 version, not this original HD build.",
-      "setup_steps": [
-        "Use the Serious Sam Fusion 2017 version for eye-tracking support.",
-        "Launch the Tobii Eye Tracking software and calibrate before starting.",
-        "Start the game from Steam.",
-        "Enable eye tracking in the in-game options."
       ]
     },
     {
@@ -5427,5 +6142,16 @@
         "Recenter the view in-game once tracking is active."
       ]
     }
-  ]
+  ],
+  "launcher": {
+    "version": "0.3.5",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.3.5",
+    "published_at": "2026-06-01T21:08:45Z",
+    "setup_exe": {
+      "name": "Lopari_0.3.5_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.3.5/Lopari_0.3.5_x64-setup.exe",
+      "size_bytes": 3270536
+    },
+    "msi": null
+  }
 }

@@ -1,23 +1,32 @@
 // pixi run update-metadata
 //
-// Republish ../lopari/catalog/mods.json to lopari.app/mods.json with the
-// latest successful nightly workflow run stamped into each mod's
-// `nightly.pinned` block. Subscribers (and the launcher's dev override)
-// fetch lopari.app/mods.json at startup and short-circuit GitHub API
-// nightly lookups when the pin is present - one cheap CDN GET instead
-// of N rate-limited API calls per detail-pane visit.
+// Republish ../lopari/catalog/mods.json with everything the launcher needs
+// to know about installable builds, so it never has to touch the GitHub
+// API at runtime:
 //
-// The lopari repo's catalog is the source of truth for authored data
-// (id, repo, features, hotkeys, known_issues, ...). Pinning is volatile
-// publish-time metadata that doesn't belong in source control, so it's
-// injected here and lives only in the republished mods.json.
+//   - `release` (per released mod): the latest stable release pin plus the
+//     version-picker list.
+//   - `distribution.pinned` (per dev-release mod): the rolling `dev`
+//     pre-release snapshot.
+//   - `launcher` (top-level): the launcher's own latest release, for the
+//     self-update check.
 //
-// Per-mod nightly failures don't abort the run - the mod's nightly
-// block is left without a `pinned` field and the launcher falls back
-// to a live lookup at install time. A non-empty error list at the end
-// exits non-zero so CI / pre-commit can catch a degraded run.
+// The pinned catalog is written to TWO places:
 //
-// Auth is REQUIRED. ~30 mods × 1 call each barely fits the 60/hr
+//   - lopari.app/mods.json - the Pages copy the launcher fetches at runtime
+//     (and re-fetches every 12 hours while it's open).
+//   - ../lopari/catalog/mods.json - the copy baked into the launcher binary
+//     via include_str!, used offline / before the first successful fetch.
+//
+// The lopari repo's catalog stays the source of truth for authored data
+// (id, repo, features, hotkeys, known_issues, ...). Pin blocks are volatile
+// publish-time metadata this script refreshes in place on every run.
+//
+// Per-mod failures don't abort the run - any pin block from the previous
+// run is left in place (its download URLs are still valid), and a non-empty
+// error list at the end exits non-zero so the degraded run is visible.
+//
+// Auth is REQUIRED. ~30 mods x 1-2 calls each barely fits the 60/hr
 // anonymous cap; a retry blows the budget. Token resolution order:
 //
 //   1. $GITHUB_TOKEN env var (any PAT with public_repo read works).
@@ -36,6 +45,17 @@ const CATALOG_PATH = resolve(REPO_ROOT, "..", "lopari", "catalog", "mods.json");
 // raw.githubusercontent.com 404s anonymously; lopari.app is public
 // Pages and reachable without auth.
 const CATALOG_OUT_PATH = resolve(REPO_ROOT, "mods.json");
+
+// The launcher's public release mirror. Source of truth for the launcher
+// self-update pin - the private lopari source repo never gets release tags.
+const LAUNCHER_REPO = "itsloopyo/lopari-releases";
+
+// Git tag of the rolling dev pre-release each mod repo publishes (see
+// cameraunlock-core NightlyRelease.psm1).
+const DEV_RELEASE_TAG = "dev";
+
+// How many stable releases the launcher's version picker can offer.
+const VERSION_LIST_LIMIT = 25;
 
 const TOKEN = resolveToken();
 
@@ -72,6 +92,14 @@ const headers = {
   Authorization: `Bearer ${TOKEN}`,
 };
 
+async function githubJson(url) {
+  const res = await fetch(url, { headers });
+  if (!res.ok) {
+    throw new Error(`GET ${url} -> ${res.status} ${res.statusText}`);
+  }
+  return res.json();
+}
+
 // ---------- catalog ---------------------------------------------------------
 
 const catalog = JSON.parse(readFileSync(CATALOG_PATH, "utf8"));
@@ -81,71 +109,61 @@ console.log(
   `catalog: ${catalog.mods.length} entries total, ${publicMods.length} public (the rest are dev-only).`,
 );
 
-// Nightly surfacing is pinned to `main` everywhere - the launcher's
-// NightlyConfig schema has no `branch` field, so feature/bugfix branches
-// can be pushed and shared privately via direct nightly.link URLs
-// without ever becoming the lopari nightly. Refuse a stray `branch:`
-// override here too so a hand-edit to lopari.app/mods.json can't
-// quietly widen the surface.
-const NIGHTLY_BRANCH = "main";
+function installerAsset(release) {
+  return (release.assets || []).find((a) =>
+    a.name.toLowerCase().endsWith("-installer.zip"),
+  );
+}
 
-async function fetchLatestNightly(repo, nightlyCfg) {
-  if (nightlyCfg.branch && nightlyCfg.branch !== NIGHTLY_BRANCH) {
-    throw new Error(
-      `nightly.branch override (${nightlyCfg.branch}) not allowed - all nightlies are pinned to ${NIGHTLY_BRANCH}`,
-    );
-  }
-  const workflow = nightlyCfg.workflow || "build";
-  const artifactName = resolveArtifactName(repo, nightlyCfg);
-  const url =
-    `https://api.github.com/repos/${repo}/actions/workflows/${workflow}.yml/runs` +
-    `?branch=${NIGHTLY_BRANCH}&status=success&per_page=1`;
+function stripV(tag) {
+  return tag.startsWith("v") ? tag.slice(1) : tag;
+}
 
-  const res = await fetch(url, { headers });
-  if (!res.ok) {
-    throw new Error(`GET ${url} -> ${res.status} ${res.statusText}`);
-  }
-  const body = await res.json();
-  const run = (body.workflow_runs || [])[0];
-  if (!run) return null;
-
-  // Shape matches the launcher's `PinnedNightly` struct in
-  // lopari/src-tauri/src/catalog/mods.rs - five fields, no more.
-  // catalog::validate enforces an https://nightly.link/ host on
-  // download_url, so don't ever emit a different host here.
+// Stable-release channel for a released mod: one /releases call covers both
+// the latest pin and the version-picker list. Shape matches the launcher's
+// `ReleaseChannel` struct (lopari/src-tauri/src/catalog/mods.rs).
+// catalog::validate enforces an https://github.com/ host on every
+// download_url, so don't ever emit a different host here.
+//
+// Pre-releases (the rolling `dev` tag) and drafts are excluded - the dev
+// channel is surfaced separately via `distribution.pinned`, and the version
+// picker is for stable builds only. Returns null when no stable release
+// carries a *-installer.zip yet.
+async function fetchReleaseChannel(repo) {
+  const releases = await githubJson(
+    `https://api.github.com/repos/${repo}/releases?per_page=${VERSION_LIST_LIMIT}`,
+  );
+  const versions = releases
+    .filter((r) => !r.draft && !r.prerelease)
+    .map((r) => {
+      const asset = installerAsset(r);
+      return {
+        tag_name: r.tag_name,
+        version: stripV(r.tag_name),
+        name: r.name || null,
+        html_url: r.html_url,
+        published_at: r.published_at || null,
+        zip_filename: asset ? asset.name : null,
+        download_url: asset ? asset.browser_download_url : null,
+        size_bytes: asset ? asset.size : null,
+      };
+    });
+  const latest = versions.find((v) => v.download_url);
+  if (!latest) return null;
   return {
-    head_sha: run.head_sha,
-    commit_subject:
-      (run.head_commit && firstLine(run.head_commit.message)) || "",
-    created_at: run.created_at,
-    run_html_url: run.html_url,
-    download_url: `https://nightly.link/${repo}/workflows/${workflow}/${NIGHTLY_BRANCH}/${artifactName}.zip`,
+    pinned: {
+      version: latest.version,
+      tag_name: latest.tag_name,
+      name: latest.name,
+      html_url: latest.html_url,
+      published_at: latest.published_at,
+      zip_filename: latest.zip_filename,
+      download_url: latest.download_url,
+      size_bytes: latest.size_bytes,
+    },
+    versions,
   };
 }
-
-function resolveArtifactName(repo, nightlyCfg) {
-  if (nightlyCfg && nightlyCfg.artifact) return nightlyCfg.artifact;
-  const slug = repo.split("/").pop();
-  return deriveArtifactName(slug);
-}
-
-// Mirrors the Rust side `derive_artifact_name` in catalog/mods.rs.
-function deriveArtifactName(slug) {
-  const parts = slug.split("-").map((p) => {
-    if (p.toLowerCase() === "headtracking") return "HeadTracking";
-    return p.charAt(0).toUpperCase() + p.slice(1);
-  });
-  return parts.join("") + "-installer";
-}
-
-function firstLine(s) {
-  return (s || "").split("\n")[0].trimEnd();
-}
-
-// Git tag of the rolling dev pre-release each mod repo publishes (see
-// cameraunlock-core NightlyRelease.psm1). Must match DEV_RELEASE_TAG in
-// the launcher's commands.rs.
-const DEV_RELEASE_TAG = "dev";
 
 // Resolve the latest `dev` pre-release for a mod and shape it into the
 // launcher's `PinnedDevRelease` struct (catalog/mods.rs): four fields,
@@ -153,18 +171,13 @@ const DEV_RELEASE_TAG = "dev";
 // download_url, so don't ever emit a different host here. Returns null
 // when the release exists but has no -installer.zip asset yet.
 async function fetchDevReleasePin(repo) {
-  const url = `https://api.github.com/repos/${repo}/releases/tags/${DEV_RELEASE_TAG}`;
-  const res = await fetch(url, { headers });
-  if (!res.ok) {
-    throw new Error(`GET ${url} -> ${res.status} ${res.statusText}`);
-  }
-  const release = await res.json();
-  const asset = (release.assets || []).find((a) =>
-    a.name.toLowerCase().endsWith("-installer.zip"),
+  const release = await githubJson(
+    `https://api.github.com/repos/${repo}/releases/tags/${DEV_RELEASE_TAG}`,
   );
+  const asset = installerAsset(release);
   if (!asset) return null;
-  // Mirror the launcher's dev_version_from_release: strip the
-  // "Development build " title prefix, else fall back to the tag.
+  // Mirror how the dev publisher titles releases: strip the
+  // "Development build " prefix, else fall back to the tag.
   const name = release.name || "";
   const version = name.startsWith("Development build ")
     ? name.slice("Development build ".length).trim()
@@ -177,33 +190,58 @@ async function fetchDevReleasePin(repo) {
   };
 }
 
+// Launcher self-update pin. Shape matches the launcher's `LauncherPin`
+// struct (catalog/mod.rs). Prefers the NSIS -setup.exe (it handles
+// killing the running launcher); the .msi rides along as a fallback.
+async function fetchLauncherPin() {
+  const release = await githubJson(
+    `https://api.github.com/repos/${LAUNCHER_REPO}/releases/latest`,
+  );
+  const assets = release.assets || [];
+  const pinAsset = (suffix) => {
+    const a = assets.find((x) => x.name.toLowerCase().endsWith(suffix));
+    return a
+      ? { name: a.name, download_url: a.browser_download_url, size_bytes: a.size }
+      : null;
+  };
+  return {
+    version: stripV(release.tag_name),
+    html_url: release.html_url,
+    published_at: release.published_at || null,
+    setup_exe: pinAsset("-setup.exe"),
+    msi: pinAsset(".msi"),
+  };
+}
+
 // ---------- run -------------------------------------------------------------
 
 const errors = [];
-let pinned = 0;
+let releasePinned = 0;
 let devPinned = 0;
 
 // Sequential, not parallel: avoids GitHub's secondary rate limit
 // (concurrent-request throttle) and keeps the failure log in a
-// predictable order. ~30 mods × ~200ms RTT ≈ 6s total.
+// predictable order. ~30 mods x ~200ms RTT = a few seconds total.
 for (const m of publicMods) {
-  const hasNightly = Boolean(m.nightly);
+  const hasRelease = m.released === true;
   const hasDevRelease = m.distribution && m.distribution.type === "dev-release";
-  if (!hasNightly && !hasDevRelease) continue;
+  if (!hasRelease && !hasDevRelease) continue;
   console.log(`[${m.id}] ${m.repo}`);
 
-  if (hasNightly) {
+  if (hasRelease) {
     try {
-      const pin = await fetchLatestNightly(m.repo, m.nightly);
-      if (pin) {
-        m.nightly.pinned = pin;
-        pinned++;
-        console.log(`  pinned ${pin.head_sha.slice(0, 7)} (${pin.created_at})`);
+      const channel = await fetchReleaseChannel(m.repo);
+      if (channel) {
+        m.release = channel;
+        releasePinned++;
+        console.log(
+          `  release pinned ${channel.pinned.version} (${channel.versions.length} versions in picker)`,
+        );
       } else {
-        console.log(`  nightly: no successful runs on ${NIGHTLY_BRANCH} yet`);
+        console.log("  release: no stable release with an -installer.zip yet");
       }
     } catch (e) {
-      console.warn(`  nightly: FAILED - ${e.message}`);
+      console.warn(`  release: FAILED - ${e.message}`);
       errors.push({ mod: m.id, error: e.message });
     }
   }
@@ -225,16 +263,30 @@ for (const m of publicMods) {
   }
 }
 
-// Republish the (possibly mutated) catalog. JSON.stringify with two-
-// space indent matches the source file's style; subscribers fetching
+try {
+  catalog.launcher = await fetchLauncherPin();
+  console.log(`[launcher] ${LAUNCHER_REPO}\n  pinned ${catalog.launcher.version}`);
+} catch (e) {
+  console.warn(`[launcher] FAILED - ${e.message}`);
+  errors.push({ mod: "(launcher)", error: e.message });
+}
+
+catalog.updated_at = new Date().toISOString();
+
+// Two-space indent matches the source file's style; subscribers fetching
 // this file see a normal JSON shape, not a one-liner.
-writeFileSync(
-  CATALOG_OUT_PATH,
-  JSON.stringify(catalog, null, 2) + "\n",
-  "utf8",
-);
+const output = JSON.stringify(catalog, null, 2) + "\n";
+
+// Pages copy: what the launcher fetches at runtime.
+writeFileSync(CATALOG_OUT_PATH, output, "utf8");
+// Write-back to the lopari repo: what gets baked into the launcher binary
+// as the offline / first-run fallback. Commit it there so the next build
+// ships current pins.
+writeFileSync(CATALOG_PATH, output, "utf8");
+
 console.log(
-  `\nwrote ${CATALOG_OUT_PATH}\nmods: ${publicMods.length}, nightly pinned: ${pinned}, dev pinned: ${devPinned}, errors: ${errors.length}`,
+  `\nwrote ${CATALOG_OUT_PATH}\nwrote ${CATALOG_PATH}\n` +
+    `mods: ${publicMods.length}, releases pinned: ${releasePinned}, dev pinned: ${devPinned}, errors: ${errors.length}`,
 );
 
 if (errors.length > 0) {

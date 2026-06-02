@@ -15,8 +15,8 @@ Static site, deployed via GitHub Pages from `main`. No build step for normal edi
 - `CNAME` — custom domain (lopari.app)
 - `.nojekyll` — disables Jekyll processing on GH Pages
 - `scripts/update-latest.mjs` — templater that the release workflow runs
-- `scripts/update-metadata.mjs` — generates `metadata.json` from the lopari catalog (run via `pixi run update-metadata`)
-- `metadata.json` — pre-aggregated release + nightly metadata for every public mod; Lopari fetches this on startup instead of querying GitHub per-mod
+- `scripts/update-metadata.mjs` — regenerates `mods.json` from the lopari catalog (run via `pixi run update-metadata`); also writes the pinned copy back to `../lopari/catalog/mods.json` so the launcher bakes it in as its offline fallback
+- `mods.json` — the lopari catalog with release / dev-build / launcher-update pins for every public mod; Lopari fetches this on startup (and every 12 hours) and never queries the GitHub API itself
 
 ## Deploy
 
