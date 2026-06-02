@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-02T21:02:02.008Z",
+  "updated_at": "2026-06-02T22:17:45.854Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1938,16 +1938,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.3.0",
-          "tag_name": "v0.3.0",
-          "name": "Subnautica 2 Head Tracking v0.3.0",
-          "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.3.0",
-          "published_at": "2026-06-02T20:59:54Z",
-          "zip_filename": "Subnautica2HeadTracking-v0.3.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.3.0/Subnautica2HeadTracking-v0.3.0-installer.zip",
-          "size_bytes": 256485
+          "version": "0.3.1",
+          "tag_name": "v0.3.1",
+          "name": "Subnautica 2 Head Tracking v0.3.1",
+          "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.3.1",
+          "published_at": "2026-06-02T22:15:23Z",
+          "zip_filename": "Subnautica2HeadTracking-v0.3.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.3.1/Subnautica2HeadTracking-v0.3.1-installer.zip",
+          "size_bytes": 247332
         },
         "versions": [
+          {
+            "tag_name": "v0.3.1",
+            "version": "0.3.1",
+            "name": "Subnautica 2 Head Tracking v0.3.1",
+            "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.3.1",
+            "published_at": "2026-06-02T22:15:23Z",
+            "zip_filename": "Subnautica2HeadTracking-v0.3.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.3.1/Subnautica2HeadTracking-v0.3.1-installer.zip",
+            "size_bytes": 247332
+          },
           {
             "tag_name": "v0.3.0",
             "version": "0.3.0",
