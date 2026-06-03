@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-02T22:17:45.854Z",
+  "updated_at": "2026-06-03T22:52:09.429Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1120,7 +1120,14 @@
         {
           "action": "Cycle tracking mode",
           "nav_key": "Page Up",
-          "description": "Currently flips position tracking on/off as a placeholder; the full rotation -> rotation only -> position only cycle lands when 6DOF translation is wired up"
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
       "distribution": {
@@ -1133,7 +1140,6 @@
         }
       },
       "known_issues": [
-        "World-yaw not yet implemented.",
         "Look/aim not decoupled.",
         "Weapons sometimes point off-reticle.",
         "Not comprehensively tested.",
@@ -1344,6 +1350,12 @@
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
       "distribution": {
@@ -1502,25 +1514,30 @@
       "hotkeys": [
         {
           "action": "Recenter",
-          "nav_key": "Home"
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
         },
         {
           "action": "Toggle tracking",
-          "nav_key": "End"
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
         },
         {
-          "action": "Toggle position tracking",
+          "action": "Cycle tracking mode",
           "nav_key": "Page Up",
-          "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way"
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
         },
         {
           "action": "Toggle yaw mode",
           "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         },
         {
           "action": "Toggle aim reticle",
           "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
       ],
@@ -1565,14 +1582,21 @@
           "chord": "Ctrl+Shift+Y"
         },
         {
-          "action": "Toggle 6DOF (head position)",
+          "action": "Cycle tracking mode",
           "nav_key": "Page Up",
-          "chord": "Ctrl+Shift+G"
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
         },
         {
           "action": "Toggle yaw mode (world vs local)",
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H"
+        },
+        {
+          "action": "Toggle aim reticle",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
       ],
       "distribution": {
@@ -1607,30 +1631,25 @@
       "hotkeys": [
         {
           "action": "Recenter view",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+R"
+          "nav_key": "Home"
         },
         {
           "action": "Toggle head tracking",
-          "nav_key": "End",
-          "chord": "Ctrl+Shift+H"
+          "nav_key": "End"
         },
         {
           "action": "Toggle positional tracking",
           "nav_key": "Page Up",
-          "chord": "Ctrl+Shift+P",
           "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way"
         },
         {
           "action": "Toggle yaw mode",
           "nav_key": "Page Down",
-          "chord": "Ctrl+Shift+Y",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         },
         {
           "action": "Toggle aim reticle",
           "nav_key": "Insert",
-          "chord": "Ctrl+Shift+X",
           "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
       ],
@@ -1675,9 +1694,10 @@
           "chord": "Ctrl+Shift+Y"
         },
         {
-          "action": "Toggle 6DOF (head position)",
+          "action": "Cycle tracking mode",
           "nav_key": "Page Up",
-          "chord": "Ctrl+Shift+G"
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
         },
         {
           "action": "Toggle yaw mode (world vs local)",
@@ -1726,9 +1746,10 @@
           "chord": "Ctrl+Shift+Y"
         },
         {
-          "action": "Toggle 6DOF (head position)",
+          "action": "Cycle tracking mode",
           "nav_key": "Page Up",
-          "chord": "Ctrl+Shift+G"
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
         },
         {
           "action": "Toggle yaw mode (world vs local)",
@@ -1824,10 +1845,10 @@
           "chord": "Ctrl+Shift+Y"
         },
         {
-          "action": "Toggle position tracking",
+          "action": "Cycle tracking mode",
           "nav_key": "Page Up",
           "chord": "Ctrl+Shift+G",
-          "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way"
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
         },
         {
           "action": "Toggle yaw mode",
@@ -1934,6 +1955,12 @@
           "nav_key": "Page Up",
           "chord": "Ctrl+Shift+G",
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
       "release": {
@@ -2087,10 +2114,10 @@
           "chord": "Ctrl+Shift+Y"
         },
         {
-          "action": "Toggle positional tracking",
+          "action": "Cycle tracking mode",
           "nav_key": "Page Up",
           "chord": "Ctrl+Shift+G",
-          "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way"
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
         },
         {
           "action": "Toggle yaw mode",
@@ -2453,6 +2480,12 @@
           "chord": "Ctrl+Shift+Y"
         },
         {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
           "action": "Toggle yaw mode",
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H",
@@ -2470,6 +2503,194 @@
       },
       "known_issues": [
         "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "yakuza-0",
+      "public": true,
+      "released": false,
+      "display_name": "Yakuza 0",
+      "repo": "itsloopyo/yakuza-0-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 638970,
+        "steam_folder": "Yakuza 0",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "YAKUZA_0_PATH",
+        "executable_relpath": "media\\Yakuza0.exe"
+      },
+      "description": "Head tracking for Yakuza 0: move your head to look around while the mouse or controller still controls aim and movement, driven by OpenTrack or any compatible UDP head-pose source - no VR headset required.",
+      "features": [
+        "Decoupled look and aim: head moves the camera, the mouse/controller still aims and moves",
+        "Works with any OpenTrack-compatible tracker (phone app, webcam, VR headset, TrackIR)",
+        "World-space or camera-local yaw, toggleable in-game"
+      ],
+      "requirements": [
+        "Yakuza 0 (Steam)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260603.ac1ecd4",
+          "built_at": "2026-06-03T21:56:42Z",
+          "zip_filename": "Yakuza0HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/yakuza-0-headtracking/releases/download/dev/Yakuza0HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
+    },
+    {
+      "id": "sons-of-the-forest",
+      "public": true,
+      "released": false,
+      "display_name": "Sons of the Forest",
+      "repo": "itsloopyo/sons-of-the-forest-headtracking",
+      "install_strategy": "BepInEx5",
+      "game": {
+        "steam_app_id": 1326470,
+        "steam_folder": "Sons Of The Forest",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "SONS_OF_THE_FOREST_PATH",
+        "executable_relpath": "SonsOfTheForest.exe"
+      },
+      "description": "Head tracking for Sons of the Forest using any OpenTrack-compatible tracker (webcam, phone, or VR headset): move your head to look around while your mouse or controller keeps aiming - no VR required.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse/controller",
+        "6DOF positional tracking - lean and peek with head position"
+      ],
+      "requirements": [
+        "Sons of the Forest (Steam)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260603.2b4fd52",
+          "built_at": "2026-06-03T22:24:59Z",
+          "zip_filename": "SonsOfTheForestHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/sons-of-the-forest-headtracking/releases/download/dev/SonsOfTheForestHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
+    },
+    {
+      "id": "yapyap",
+      "public": true,
+      "released": false,
+      "display_name": "YAPYAP",
+      "repo": "itsloopyo/yapyap-headtracking",
+      "install_strategy": "BepInEx5",
+      "game": {
+        "steam_app_id": 3834090,
+        "steam_folder": "YAPYAP",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "YAPYAP_PATH",
+        "executable_relpath": "yapyap.exe"
+      },
+      "description": "Head tracking for YAPYAP that lets you look around with OpenTrack or a phone tracker while mouse or controller aim stays independent - no VR required.",
+      "features": [
+        "Decoupled look and aim: head movement rotates the view while your normal controls keep aiming",
+        "6DOF positional tracking - lean, peek, and shift your viewpoint with supported trackers",
+        "Parallax-correct crosshair that follows the true aim point while the view is head-rotated"
+      ],
+      "requirements": [
+        "YAPYAP (Steam)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260603.01f17b0",
+          "built_at": "2026-06-03T21:56:55Z",
+          "zip_filename": "YapyapHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/yapyap-headtracking/releases/download/dev/YapyapHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
       ]
     }
   ],
@@ -6164,13 +6385,13 @@
     }
   ],
   "launcher": {
-    "version": "0.3.5",
-    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.3.5",
-    "published_at": "2026-06-01T21:08:45Z",
+    "version": "0.3.6",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.3.6",
+    "published_at": "2026-06-02T22:45:03Z",
     "setup_exe": {
-      "name": "Lopari_0.3.5_x64-setup.exe",
-      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.3.5/Lopari_0.3.5_x64-setup.exe",
-      "size_bytes": 3270536
+      "name": "Lopari_0.3.6_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.3.6/Lopari_0.3.6_x64-setup.exe",
+      "size_bytes": 3258684
     },
     "msi": null
   }
