@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-08T23:16:49.152Z",
+  "updated_at": "2026-06-08T23:42:52.149Z",
   "mods": [
     {
       "id": "subnautica",
@@ -6602,13 +6602,13 @@
     }
   ],
   "launcher": {
-    "version": "0.4.0",
-    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.4.0",
-    "published_at": "2026-06-08T22:47:06Z",
+    "version": "0.4.1",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.4.1",
+    "published_at": "2026-06-08T23:42:26Z",
     "setup_exe": {
-      "name": "Lopari_0.4.0_x64-setup.exe",
-      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.4.0/Lopari_0.4.0_x64-setup.exe",
-      "size_bytes": 3389921
+      "name": "Lopari_0.4.1_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.4.1/Lopari_0.4.1_x64-setup.exe",
+      "size_bytes": 3390072
     },
     "msi": null
   }
