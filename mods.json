@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-27T08:17:18.037Z",
+  "updated_at": "2026-06-27T11:08:48.032Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2973,7 +2973,7 @@
         "type": "dev-release",
         "pinned": {
           "version": "0.0.0-nightly.20260627.be1294c",
-          "built_at": "2026-06-27T07:44:32Z",
+          "built_at": "2026-06-27T08:55:25Z",
           "zip_filename": "MetaphorHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/metaphor-refantazio-headtracking/releases/download/dev/MetaphorHeadTracking-dev-installer.zip"
         }
@@ -4028,7 +4028,7 @@
       "id": "watch-dogs-2",
       "display_name": "Watch Dogs 2",
       "steam_app_id": 447040,
-      "steam_folder": "Watch_Dogs 2",
+      "steam_folder": "Watch_Dogs2",
       "executable_relpath": "bin\\WatchDogs2.exe",
       "protocols": [
         "Tobii"
