@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Lopari — a launcher for the head-tracking-capable games on your PC</title>
+<title>Lopari - a launcher for the head-tracking-capable games on your PC</title>
 <meta name="description" content="Lopari is a desktop game launcher. It surfaces the games you have installed that support head tracking, and launches any of them in one click." />
 <meta property="og:title" content="Lopari" />
 <meta property="og:description" content="A launcher for the head-tracking-capable games on your PC." />
@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Saira:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
 
@@ -27,9 +27,8 @@
       <span>Lopari</span>
     </a>
     <nav class="mast-nav" aria-label="Primary">
-      <a href="#what"><i>01</i>What</a>
-      <a href="#how"><i>02</i>How</a>
-      <a href="#download"><i>03</i>Get it</a>
+      <a href="#how"><i>01</i>How</a>
+      <a href="#download"><i>02</i>Get it</a>
     </nav>
   </div>
 </header>
@@ -37,93 +36,61 @@
 <main id="main">
 
 <section class="hero" id="top">
-  <div class="hero-grid" aria-hidden="true">
-    <div class="stage" id="stage">
-      <canvas id="scene"></canvas>
-      <div class="stage-glass"></div>
-      <div class="telemetry" id="telemetry">
-        <span class="tel"><b>YAW</b><em id="t-yaw">+00.0&deg;</em></span>
-        <span class="tel"><b>PITCH</b><em id="t-pitch">+00.0&deg;</em></span>
-      </div>
-      <p class="look-hint" id="hint">move to look around</p>
-    </div>
-  </div>
-
   <div class="hero-copy">
     <p class="rubric"><span class="tick"></span>Desktop game launcher · 6&nbsp;DOF</p>
-    <h1>Move your head. <span>Look around as you play.</span></h1>
+    <h1>Immersive <span>flatscreen gaming</span></h1>
     <p class="standfirst">
-      Lopari surfaces the head-tracking-capable games already installed on your PC —
-      reading your Steam, GOG, Epic, EA, Ubisoft and Xbox libraries — and launches
-      any of them in one click.
+      Lopari surfaces games on your PC which support head tracking, either
+      natively or via third-party mods, and loads them in a click.
     </p>
     <div class="hero-actions">
       <a class="action" href="#download">Get the Windows build</a>
-      <a class="action ghost" href="#what">See how it works</a>
+      <a class="action ghost" href="#how">How it works</a>
     </div>
-  </div>
-</section>
-
-<section class="what" id="what">
-  <div class="sec-head">
-    <p class="kicker"><span class="idx">01</span> What it does</p>
-    <h2 class="section-title">Every head-tracking game you own, in one place.</h2>
+    <p class="hero-spec">Free · Windows 10 &amp; 11 · No account · No telemetry</p>
   </div>
 
-  <div class="prose-grid">
-    <div class="prose-col">
-      <p>Lopari is a launcher first. You open it, you see your library — but filtered: only the games installed on this machine that can be played with head tracking are shown. Everything else stays out of the way.</p>
-      <p>For most of that list, head tracking is something the developer shipped. Elite Dangerous, DCS World, Microsoft Flight Simulator, iRacing, Assetto Corsa, Star Citizen, IL-2, X-Plane — all of them read your tracker out of the box. Lopari gathers the connection details in one place, instead of you hunting through each game's options menu.</p>
-      <p>For the handful of titles where tracking isn't shipped natively, a community mod exists that adds it. Lopari installs that mod for you on first launch, and removes it again when you want vanilla back. Same files you'd touch by hand — one click away, and reversible.</p>
-    </div>
-    <aside class="readout" aria-label="Specifications">
-      <p class="readout-kicker">SYS / SPEC</p>
-      <dl>
-        <div><dt>Platform</dt><dd>Windows 10 · 11</dd></div>
-        <div><dt>Sources</dt><dd>Steam · GOG · Epic · EA · Ubisoft · Xbox</dd></div>
-        <div><dt>Account</dt><dd>None</dd></div>
-        <div><dt>Telemetry</dt><dd>None</dd></div>
-        <div><dt>Price</dt><dd class="hl">Free</dd></div>
-      </dl>
-    </aside>
-  </div>
+  <figure class="hero-shot">
+    <img src="screenshot-hero.png" width="1319" height="981"
+         alt="The Lopari launcher: a sidebar of detected head-tracking games with Skyrim selected, showing its head-tracking controls and setup." />
+  </figure>
 </section>
 
 <section class="how" id="how">
   <div class="sec-head">
-    <p class="kicker"><span class="idx">02</span> How to use it</p>
+    <p class="kicker"><span class="idx">01</span> How it works</p>
     <h2 class="section-title">Surfaces your games. Launches them. Done.</h2>
   </div>
 
   <ol class="steps">
     <li>
       <span class="step-no">01</span>
-      <h3 class="step-title">It finds the games</h3>
-      <p>Open Lopari. It surfaces every game you already own that works with head tracking — some natively, some through a community mod.</p>
+      <h3 class="step-title">It finds your games</h3>
+      <p>Every installed game that supports head tracking - natively, or through a community mod.</p>
     </li>
     <li>
       <span class="step-no">02</span>
       <h3 class="step-title">You launch in one click</h3>
-      <p>Hit play. Lopari opens the game through your store, installing the mod first when one's needed and removing it again when you're done.</p>
+      <p>Hit play. Lopari adds the mod if a game needs one, and takes it back out when you want vanilla.</p>
     </li>
     <li>
       <span class="step-no">03</span>
       <h3 class="step-title">You bring the tracking</h3>
-      <p>You'll still need something that tracks your head — a webcam, a phone, whatever you've got. Lopari surfaces and launches; the rest is up to you.</p>
+      <p>Any head tracker works - a webcam, a phone, whatever you've got.</p>
     </li>
   </ol>
 </section>
 
 <section class="download" id="download">
   <div class="sec-head">
-    <p class="kicker"><span class="idx">03</span> Get it</p>
+    <p class="kicker"><span class="idx">02</span> Get it</p>
     <h2 class="section-title">Public beta. Windows only.</h2>
   </div>
 
   <div class="download-row">
     <div class="download-text">
-      <p>Lopari is in public beta — Windows 10 and Windows 11 only. macOS and Linux are not supported.</p>
-      <p class="small">Heads-up: the installer isn't code-signed yet, so Windows will warn you about an unrecognised publisher. Nothing is wrong — it's expected for a small independent project that hasn't bought a certificate. The steps below tell you exactly what to click, and a SHA256 digest ships with every release so you can verify the bundle yourself.</p>
+      <p>Lopari is in public beta - Windows 10 and Windows 11 only. macOS and Linux are not supported.</p>
+      <p class="small">A SHA256 digest ships with every release so you can verify your download against what CI built.</p>
     </div>
     <div class="download-cta-wrap">
       <!-- LATEST_RELEASE:START -->
@@ -142,35 +109,6 @@
       <!-- LATEST_RELEASE:END -->
     </div>
   </div>
-
-  <div class="install-guide">
-    <h3 class="install-title">Installing on Windows</h3>
-
-    <ol class="install-steps">
-      <li>
-        <p class="install-step-title">Download the installer.</p>
-        <p>Grab the <code>-setup.exe</code> from the latest release.</p>
-      </li>
-      <li>
-        <p class="install-step-title">If your browser warns about the download, keep it.</p>
-        <p>Chrome and Edge sometimes label unsigned downloads as "uncommon" or "may harm your device." Click the dropdown next to the warning and choose <em>Keep</em> (Chrome) or <em>Keep anyway</em> (Edge).</p>
-      </li>
-      <li>
-        <p class="install-step-title">Unblock the file.</p>
-        <p>Windows tags every file downloaded from the internet so it can refuse to run it later. Right-click the downloaded <code>.exe</code> → <strong>Properties</strong> → at the bottom of the General tab, tick <strong>Unblock</strong> → <strong>OK</strong>. Some Windows installs skip straight to step 4; do it anyway, it doesn't hurt.</p>
-      </li>
-      <li>
-        <p class="install-step-title">Run the installer.</p>
-        <p>Double-click the <code>.exe</code>. SmartScreen shows a blue warning that says <em>Windows protected your PC</em> and lists the publisher as <em>Unknown</em>. Click <strong>More info</strong>, then <strong>Run anyway</strong>. The installer takes a few seconds and Lopari appears in your Start menu.</p>
-      </li>
-      <li>
-        <p class="install-step-title">If Windows Defender quarantines it.</p>
-        <p>Occasionally Defender flags unsigned Tauri installers heuristically. Open <strong>Windows Security</strong> → <em>Virus &amp; threat protection</em> → <em>Protection history</em>, find the Lopari entry, and choose <strong>Restore</strong>. Then re-run step 4. The published SHA256 is your independent check that the bundle matches what was built.</p>
-      </li>
-    </ol>
-
-    <p class="install-footnote">When Lopari is code-signed, steps 2, 3, and 4 will go away.</p>
-  </div>
 </section>
 
 </main>
@@ -184,7 +122,7 @@
     <div class="colo-cell">
       <p class="colo-label">Find me</p>
       <ul>
-        <li><a href="https://github.com/itsloopyo/lopari-releases" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://github.com/itsloopyo" target="_blank" rel="noopener">GitHub</a></li>
         <li><a href="https://bsky.app/profile/itsloopyo.bsky.social" target="_blank" rel="noopener">Bluesky · @itsloopyo</a></li>
         <li><a href="https://patreon.com/itsloopyo" target="_blank" rel="noopener">Patreon</a></li>
       </ul>
@@ -205,247 +143,6 @@
 
   <p class="copyline">© 2026 itsloopyo · <span>Head track all the things.</span></p>
 </footer>
-
-<script type="module">
-import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js";
-
-const canvas = document.getElementById("scene");
-const stage = document.getElementById("stage");
-const hint = document.getElementById("hint");
-const yawEl = document.getElementById("t-yaw");
-const pitchEl = document.getElementById("t-pitch");
-const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-
-const fmt = (v) => {
-  const s = v >= 0 ? "+" : "-";
-  let a = Math.abs(v).toFixed(1);
-  if (Number(a) < 10) a = "0" + a;
-  return s + a + "°";
-};
-
-// --- deterministic value noise -------------------------------------------
-const hash = (x, y) => {
-  const s = Math.sin(x * 127.1 + y * 311.7) * 43758.5453;
-  return s - Math.floor(s);
-};
-const lerp = THREE.MathUtils.lerp;
-const smooth = THREE.MathUtils.smoothstep;
-const vnoise = (x, y) => {
-  const xi = Math.floor(x), yi = Math.floor(y), xf = x - xi, yf = y - yi;
-  const u = xf * xf * (3 - 2 * xf), v = yf * yf * (3 - 2 * yf);
-  return lerp(
-    lerp(hash(xi, yi), hash(xi + 1, yi), u),
-    lerp(hash(xi, yi + 1), hash(xi + 1, yi + 1), u),
-    v
-  );
-};
-const fbm = (x, y) => {
-  let a = 0, amp = 0.5, f = 1;
-  for (let i = 0; i < 4; i++) { a += vnoise(x * f, y * f) * amp; f *= 2; amp *= 0.5; }
-  return a;
-};
-// ridged multi-octave noise → sharp alpine ridgelines
-const ridged = (x, z) => {
-  let sum = 0, amp = 1, f = 1, norm = 0;
-  for (let i = 0; i < 5; i++) {
-    const n = 1 - Math.abs(vnoise(x * f, z * f) * 2 - 1);
-    sum += n * n * amp; norm += amp; amp *= 0.5; f *= 2;
-  }
-  return sum / norm;
-};
-// an alpine range seen from the air: tall peaks, deep valleys, open to the horizon
-const heightAt = (x, z) => {
-  const r = ridged(x * 0.0045 + 40, z * 0.0045 + 12);
-  const macro = fbm(x * 0.0016 + 5, z * 0.0016 + 9);
-  return Math.pow(r, 1.4) * 240 + macro * 90 - 70;
-};
-
-let renderer = null;
-try {
-  renderer = new THREE.WebGLRenderer({ canvas, antialias: true, powerPreference: "high-performance" });
-} catch (e) {
-  renderer = null;
-}
-
-if (!renderer) {
-  stage.classList.add("no-webgl"); // CSS gradient fallback stays visible
-} else {
-  start(renderer);
-}
-
-function start(renderer) {
-  let W = stage.clientWidth || 440, H = stage.clientHeight || 440;
-  renderer.setPixelRatio(Math.min(devicePixelRatio, 1.75));
-  renderer.setSize(W, H, false);
-  renderer.setClearColor(0x8ec7ee, 1);
-
-  const scene = new THREE.Scene();
-  scene.fog = new THREE.Fog(0xcfe4f4, 650, 2300);
-
-  const camera = new THREE.PerspectiveCamera(68, W / H, 1, 4500);
-  camera.position.set(0, 360, 620);
-
-  // gradient sky dome — clear high-altitude sky
-  const sky = new THREE.Mesh(
-    new THREE.SphereGeometry(2600, 32, 16),
-    new THREE.ShaderMaterial({
-      side: THREE.BackSide,
-      uniforms: {
-        top: { value: new THREE.Color(0x2f80d6) },
-        mid: { value: new THREE.Color(0x86c1ec) },
-        horizon: { value: new THREE.Color(0xeaf4fb) },
-      },
-      vertexShader: "varying vec3 vP; void main(){ vP = position; gl_Position = projectionMatrix * modelViewMatrix * vec4(position,1.0); }",
-      fragmentShader:
-        "varying vec3 vP; uniform vec3 top; uniform vec3 mid; uniform vec3 horizon;" +
-        "void main(){ float h = normalize(vP).y;" +
-        "vec3 c = mix(horizon, mid, smoothstep(-0.02, 0.16, h));" +
-        "c = mix(c, top, smoothstep(0.14, 0.55, h));" +
-        "gl_FragColor = vec4(c, 1.0); }",
-    })
-  );
-  scene.add(sky);
-
-  scene.add(new THREE.HemisphereLight(0xdcefff, 0x6a7152, 0.95));
-  const sun = new THREE.DirectionalLight(0xfff4df, 1.6);
-  sun.position.set(-260, 340, 180);
-  scene.add(sun);
-
-  scene.add(buildTerrain());
-  scene.add(buildClouds());
-
-  // sun disc high in the sky
-  const glow = new THREE.Sprite(new THREE.SpriteMaterial({
-    color: 0xfff6da, transparent: true, opacity: 0.9, depthWrite: false,
-    blending: THREE.AdditiveBlending, map: discTexture(), fog: false,
-  }));
-  glow.scale.set(150, 150, 1);
-  glow.position.set(-420, 420, -260);
-  scene.add(glow);
-
-  // --- look-around control (renders on demand to spare the CPU) -----------
-  let tx = 0, ty = 0, cx = 0, cy = 0, active = false, running = false;
-  const fwd = new THREE.Vector3();
-  const look = (yawN, pitchN) => {
-    const yaw = yawN * 0.5;
-    const pitch = -pitchN * 0.18 - 0.42; // angled down over the range
-    fwd.set(
-      Math.sin(yaw) * Math.cos(pitch),
-      Math.sin(pitch),
-      -Math.cos(yaw) * Math.cos(pitch)
-    );
-    camera.lookAt(
-      camera.position.x + fwd.x,
-      camera.position.y + fwd.y,
-      camera.position.z + fwd.z
-    );
-    if (yawEl) yawEl.textContent = fmt(THREE.MathUtils.radToDeg(yaw));
-    if (pitchEl) pitchEl.textContent = fmt(THREE.MathUtils.radToDeg(pitchN * 0.18));
-  };
-  const render = () => { look(cx, cy); renderer.render(scene, camera); };
-
-  const loop = () => {
-    cx += (tx - cx) * 0.06;
-    cy += (ty - cy) * 0.06;
-    render();
-    if (Math.abs(tx - cx) > 5e-4 || Math.abs(ty - cy) > 5e-4) {
-      requestAnimationFrame(loop);
-    } else {
-      running = false; // settled → stop rendering entirely
-    }
-  };
-  const kick = () => { if (!running) { running = true; requestAnimationFrame(loop); } };
-
-  const onMove = (e) => {
-    const r = stage.getBoundingClientRect();
-    tx = Math.max(-1, Math.min(1, ((e.clientX - r.left) / r.width - 0.5) * 2));
-    ty = Math.max(-1, Math.min(1, ((e.clientY - r.top) / r.height - 0.5) * 2));
-    if (!active) { active = true; hint && hint.classList.add("gone"); }
-    kick();
-  };
-  const onResize = () => {
-    W = stage.clientWidth; H = stage.clientHeight;
-    if (!W || !H) return;
-    renderer.setSize(W, H, false);
-    camera.aspect = W / H;
-    camera.updateProjectionMatrix();
-    render();
-  };
-  window.addEventListener("resize", onResize, { passive: true });
-
-  if (reduce) { render(); return; }
-
-  window.addEventListener("pointermove", onMove, { passive: true });
-  window.addEventListener("blur", () => { active = false; });
-
-  render(); // static frame at rest; the loop only runs while you move the mouse
-}
-
-function buildTerrain() {
-  const geo = new THREE.PlaneGeometry(3000, 3000, 220, 220);
-  geo.rotateX(-Math.PI / 2);
-  const pos = geo.attributes.position;
-  const cForest = new THREE.Color(0x3c5f37);
-  const cRock = new THREE.Color(0x7a7164);
-  const cScree = new THREE.Color(0xa8a299);
-  const cSnow = new THREE.Color(0xf3f8fc);
-  const colors = new Float32Array(pos.count * 3);
-  const tmp = new THREE.Color();
-  for (let i = 0; i < pos.count; i++) {
-    const x = pos.getX(i), z = pos.getZ(i);
-    const h = heightAt(x, z);
-    pos.setY(i, h);
-    tmp.copy(cForest)
-      .lerp(cRock, smooth(h, 25, 90))
-      .lerp(cScree, smooth(h, 90, 150))
-      .lerp(cSnow, smooth(h, 150, 205));
-    colors[i * 3] = tmp.r; colors[i * 3 + 1] = tmp.g; colors[i * 3 + 2] = tmp.b;
-  }
-  geo.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3));
-  geo.computeVertexNormals();
-  return new THREE.Mesh(
-    geo,
-    new THREE.MeshStandardMaterial({ vertexColors: true, flatShading: true, roughness: 1 })
-  );
-}
-
-function buildClouds() {
-  const group = new THREE.Group();
-  let seed = 7741.13;
-  const rnd = () => { seed = (seed * 16807) % 2147483647; return seed / 2147483647; };
-  const cloudMat = new THREE.MeshStandardMaterial({ color: 0xffffff, flatShading: true, roughness: 1 });
-  const puffGeo = new THREE.IcosahedronGeometry(1, 1);
-  for (let c = 0; c < 18; c++) {
-    const cloud = new THREE.Group();
-    const lobes = 4 + ((rnd() * 4) | 0);
-    for (let l = 0; l < lobes; l++) {
-      const puff = new THREE.Mesh(puffGeo, cloudMat);
-      const r = 24 + rnd() * 28;
-      puff.scale.set(r, r * 0.55, r);
-      puff.position.set((rnd() - 0.5) * 100, (rnd() - 0.5) * 14, (rnd() - 0.5) * 55);
-      cloud.add(puff);
-    }
-    // drifting amongst and below the peaks — sells the view from altitude
-    cloud.position.set((rnd() - 0.5) * 2400, 110 + rnd() * 190, -150 - rnd() * 1700);
-    group.add(cloud);
-  }
-  return group;
-}
-
-function discTexture() {
-  const c = document.createElement("canvas");
-  c.width = c.height = 128;
-  const ctx = c.getContext("2d");
-  const g = ctx.createRadialGradient(64, 64, 0, 64, 64, 64);
-  g.addColorStop(0, "rgba(255,236,200,1)");
-  g.addColorStop(0.35, "rgba(255,196,116,0.7)");
-  g.addColorStop(1, "rgba(255,196,116,0)");
-  ctx.fillStyle = g;
-  ctx.fillRect(0, 0, 128, 128);
-  const tex = new THREE.CanvasTexture(c);
-  return tex;
-}
-</script>
 
 </body>
 </html>

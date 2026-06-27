@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-27T11:08:48.032Z",
+  "updated_at": "2026-06-27T11:40:33.339Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3490,7 +3490,7 @@
     {
       "id": "farming-simulator-22",
       "display_name": "Farming Simulator 22",
-      "steam_app_id": 1248220,
+      "steam_app_id": 1248130,
       "steam_folder": "Farming Simulator 22",
       "executable_relpath": "x64\\FarmingSimulator2022.exe",
       "protocols": [
@@ -3542,12 +3542,12 @@
     {
       "id": "hawx",
       "display_name": "Tom Clancy's H.A.W.X",
-      "steam_app_id": 21600,
       "steam_folder": "Tom Clancy's H.A.W.X",
       "executable_relpath": "hawx_game.exe",
       "protocols": [
         "TrackIR"
       ],
+      "notes": "Delisted from Steam in 2016; not purchasable there. Detected via Ubisoft Connect by executable. No valid steam_app_id (the old 21600 is Age of Booty).",
       "setup_steps": [
         "Start TrackIR (or OpenTrack with TrackIR output) BEFORE HAWX.",
         "HAWX auto-detects TrackIR via the bundled NPClient.dll in the game root.",
@@ -3675,7 +3675,7 @@
     {
       "id": "rfactor-1",
       "display_name": "rFactor",
-      "steam_app_id": 37970,
+      "steam_app_id": 339790,
       "steam_folder": "rFactor",
       "executable_relpath": "rFactor.exe",
       "protocols": [
@@ -3747,13 +3747,12 @@
     {
       "id": "lock-on-modern-air-combat",
       "display_name": "Lock On: Modern Air Combat",
-      "steam_app_id": 7910,
       "steam_folder": "Lock On",
       "executable_relpath": "lockon.exe",
       "protocols": [
         "TrackIR"
       ],
-      "notes": "Precursor to DCS (Flaming Cliffs lineage); TrackIR since 2004.",
+      "notes": "Precursor to DCS (Flaming Cliffs lineage); TrackIR since 2004. Not sold on Steam (the old 7910 is a The Movies DLC); detected by folder/executable only.",
       "setup_steps": [
         "Start TrackIR (or OpenTrack with TrackIR output) BEFORE Lock On.",
         "Auto-detected; no in-game menu toggle.",
@@ -3764,13 +3763,12 @@
     {
       "id": "strike-fighters-2",
       "display_name": "Strike Fighters 2",
-      "steam_app_id": 289760,
       "steam_folder": "Strike Fighters 2",
       "executable_relpath": "StrikeFighters2.exe",
       "protocols": [
         "TrackIR"
       ],
-      "notes": "Third Wire jet combat sim; shared TrackIR profile across the SF2 family ('First Eagles, Wings Over Europe, Strike Fighters').",
+      "notes": "Third Wire jet combat sim; shared TrackIR profile across the SF2 family ('First Eagles, Wings Over Europe, Strike Fighters'). Not sold on Steam (the old 289760 is ROCKETSROCKETSROCKETS); detected by folder/executable only.",
       "setup_steps": [
         "Start TrackIR (or OpenTrack with TrackIR output) BEFORE SF2. On Windows 10/11, right-click both the tracker and StrikeFighters2.exe -> 'Run as administrator'.",
         "SF2 auto-detects TrackIR via NaturalPoint's shared 'First Eagles, Wings Over Europe, Strike Fighters' profile - there is no in-game toggle and no Options.ini edit required.",
@@ -4157,7 +4155,7 @@
       "display_name": "Deus Ex: Mankind Divided",
       "steam_app_id": 337000,
       "steam_folder": "Deus Ex Mankind Divided",
-      "executable_relpath": "dxmd.exe",
+      "executable_relpath": "retail\\DXMD.exe",
       "protocols": [
         "Tobii"
       ],
@@ -4741,10 +4739,12 @@
       "id": "dirt-2",
       "display_name": "DiRT 2",
       "steam_app_id": 12840,
+      "steam_folder": "Dirt 2",
+      "executable_relpath": "dirt2.exe",
       "protocols": [
         "TrackIR"
       ],
-      "notes": "Delisted from Steam (GFWL); AppID 12840 retained on SteamDB, installdir/exe unverified.",
+      "notes": "Delisted from Steam (GFWL); AppID 12840 retained on SteamDB. Owned copies install to common/Dirt 2 with dirt2.exe.",
       "setup_steps": [
         "Start TrackIR / OpenTrack BEFORE launching the game.",
         "Enable TrackIR head tracking in the game options.",
