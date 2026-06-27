@@ -2,7 +2,7 @@
 
 Marketing site for [Lopari](https://github.com/itsloopyo/lopari-releases) - a desktop launcher for the head-tracking-capable games on your PC.
 
-Static site, deployed via GitHub Pages from `main`. No build step for normal edits; the `update-latest` workflow runs on a `repository_dispatch` from the (private) `lopari` source repo whenever a release is cut, and rewrites the download section of `index.html` between the `LATEST_RELEASE` markers.
+Static site, deployed via GitHub Pages from `main`. No build step for normal edits; the `update-latest` workflow runs on a `repository_dispatch` from the (private) `lopari` source repo whenever a release is cut, and rewrites the download links in `index.html` between the `MAST_DOWNLOAD` and `HERO_DOWNLOAD` markers.
 
 ## Files
 

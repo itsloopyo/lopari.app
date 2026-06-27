@@ -27,8 +27,11 @@
       <span>Lopari</span>
     </a>
     <nav class="mast-nav" aria-label="Primary">
-      <a href="#how"><i>01</i>How</a>
-      <a href="#download"><i>02</i>Get it</a>
+      <a href="#how">How it works</a>
+      <a href="https://patreon.com/itsloopyo" target="_blank" rel="noopener">Patreon</a>
+      <!-- MAST_DOWNLOAD:START -->
+      <a class="action mast-cta" href="https://github.com/itsloopyo/lopari-releases/releases/download/v0.4.5/Lopari_0.4.5_x64-setup.exe">Download</a>
+      <!-- MAST_DOWNLOAD:END -->
     </nav>
   </div>
 </header>
@@ -37,78 +40,57 @@
 
 <section class="hero" id="top">
   <div class="hero-copy">
-    <p class="rubric"><span class="tick"></span>Desktop game launcher · 6&nbsp;DOF</p>
     <h1>Immersive <span>flatscreen gaming</span></h1>
+
+    <figure class="hero-shot">
+      <img src="screenshot-hero.png" width="1319" height="981"
+           alt="The Lopari launcher: a sidebar of detected head-tracking games with Skyrim selected, showing its head-tracking controls and setup." />
+    </figure>
+
     <p class="standfirst">
       Lopari surfaces games on your PC which support head tracking, either
-      natively or via third-party mods, and loads them in a click.
+      natively or via unofficial mods, and loads them in a click.
     </p>
+    <!-- HERO_DOWNLOAD:START -->
     <div class="hero-actions">
-      <a class="action" href="#download">Get the Windows build</a>
+      <a class="action big" href="https://github.com/itsloopyo/lopari-releases/releases/download/v0.4.5/Lopari_0.4.5_x64-setup.exe">
+        <span class="action-main">Download for Windows</span>
+        <span class="action-sub">v0.4.5 · 64-bit · free</span>
+      </a>
       <a class="action ghost" href="#how">How it works</a>
     </div>
-    <p class="hero-spec">Free · Windows 10 &amp; 11 · No account · No telemetry</p>
+    <p class="hero-spec">Windows 10 &amp; 11 · No account · No telemetry</p>
+    <details class="download-verify hero-verify">
+      <summary>Verify your download (SHA256)</summary>
+      <p>Optional. Confirm the installer matches what CI built:</p>
+      <pre><code>Get-FileHash .\Lopari_0.4.5_x64-setup.exe -Algorithm SHA256</code></pre>
+      <p>Expected digest for this release:</p>
+      <p><code class="sha-digest">70c867802bd3a8392181f4b5f521009fb7ce373a9ac0e710a953c64a94e0bfc6</code></p>
+    </details>
+    <!-- HERO_DOWNLOAD:END -->
   </div>
-
-  <figure class="hero-shot">
-    <img src="screenshot-hero.png" width="1319" height="981"
-         alt="The Lopari launcher: a sidebar of detected head-tracking games with Skyrim selected, showing its head-tracking controls and setup." />
-  </figure>
 </section>
 
 <section class="how" id="how">
   <div class="sec-head">
-    <p class="kicker"><span class="idx">01</span> How it works</p>
-    <h2 class="section-title">Surfaces your games. Launches them. Done.</h2>
+    <p class="kicker">How it works</p>
+    <h2 class="section-title">Pick a game. Launch it. Done.</h2>
   </div>
 
   <ol class="steps">
     <li>
       <span class="step-no">01</span>
       <h3 class="step-title">It finds your games</h3>
-      <p>Every installed game that supports head tracking - natively, or through a community mod.</p>
+      <p>Every installed game that supports head tracking - natively, or through an unofficial mod.</p>
     </li>
     <li>
       <span class="step-no">02</span>
       <h3 class="step-title">You launch in one click</h3>
       <p>Hit play. Lopari adds the mod if a game needs one, and takes it back out when you want vanilla.</p>
     </li>
-    <li>
-      <span class="step-no">03</span>
-      <h3 class="step-title">You bring the tracking</h3>
-      <p>Any head tracker works - a webcam, a phone, whatever you've got.</p>
-    </li>
   </ol>
-</section>
 
-<section class="download" id="download">
-  <div class="sec-head">
-    <p class="kicker"><span class="idx">02</span> Get it</p>
-    <h2 class="section-title">Public beta. Windows only.</h2>
-  </div>
-
-  <div class="download-row">
-    <div class="download-text">
-      <p>Lopari is in public beta - Windows 10 and Windows 11 only. macOS and Linux are not supported.</p>
-      <p class="small">A SHA256 digest ships with every release so you can verify your download against what CI built.</p>
-    </div>
-    <div class="download-cta-wrap">
-      <!-- LATEST_RELEASE:START -->
-      <p class="download-version">Latest: <strong>Lopari v0.4.5</strong></p>
-      <div class="download-cta">
-        <a class="action" href="https://github.com/itsloopyo/lopari-releases/releases/download/v0.4.5/Lopari_0.4.5_x64-setup.exe">Download for Windows</a>
-        <a class="action plain" href="https://patreon.com/itsloopyo" target="_blank" rel="noopener">Support on Patreon</a>
-      </div>
-      <details class="download-verify">
-        <summary>Verify your download (SHA256)</summary>
-        <p>Optional. If you want to confirm the installer you downloaded matches what CI built, run:</p>
-        <pre><code>Get-FileHash .\Lopari_0.4.5_x64-setup.exe -Algorithm SHA256</code></pre>
-        <p>Expected digest for this release:</p>
-        <p><code class="sha-digest">70c867802bd3a8392181f4b5f521009fb7ce373a9ac0e710a953c64a94e0bfc6</code></p>
-      </details>
-      <!-- LATEST_RELEASE:END -->
-    </div>
-  </div>
+  <p class="how-note"><strong>You bring the tracker.</strong> Lopari launches your games and swaps the mod in and out. The head tracking itself comes from whatever you already use - TrackIR, a Tobii Eye Tracker, or OpenTrack with a webcam or phone.</p>
 </section>
 
 </main>

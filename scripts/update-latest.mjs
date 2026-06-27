@@ -1,6 +1,6 @@
-// Replaces the content between <!-- LATEST_RELEASE:START --> and
-// <!-- LATEST_RELEASE:END --> in index.html with a fresh download block
-// driven by the env vars set by the calling workflow.
+// Rewrites the masthead and hero download links in index.html (between the
+// MAST_DOWNLOAD and HERO_DOWNLOAD markers) with fresh URLs, version, and
+// SHA256 driven by the env vars set by the calling workflow.
 //
 // Run from the repo root: `node scripts/update-latest.mjs`.
 
@@ -20,38 +20,48 @@ for (const [k, v] of Object.entries(env)) {
 }
 
 const indexPath = resolve(process.cwd(), "index.html");
-const html = readFileSync(indexPath, "utf8");
+let html = readFileSync(indexPath, "utf8");
 
-const START = "<!-- LATEST_RELEASE:START -->";
-const END = "<!-- LATEST_RELEASE:END -->";
-const startIdx = html.indexOf(START);
-const endIdx = html.indexOf(END);
-if (startIdx === -1 || endIdx === -1 || endIdx < startIdx) {
-  throw new Error(
-    `couldn't find LATEST_RELEASE markers in index.html - looked for ${START} ... ${END}`
-  );
-}
+const mastBlock = `<!-- MAST_DOWNLOAD:START -->
+      <a class="action mast-cta" href="${escape(env.NSIS_URL)}">Download</a>
+      <!-- MAST_DOWNLOAD:END -->`;
 
-const block = `${START}
-      <p class="download-version">Latest: <strong>Lopari ${escape(env.VERSION)}</strong></p>
-      <div class="download-cta">
-        <a class="action" href="${escape(env.NSIS_URL)}">Download for Windows</a>
-        <a class="action plain" href="https://patreon.com/itsloopyo" target="_blank" rel="noopener">Support on Patreon</a>
-      </div>
-      <details class="download-verify">
-        <summary>Verify your download (SHA256)</summary>
-        <p>Optional. If you want to confirm the installer you downloaded matches what CI built, run:</p>
-        <pre><code>Get-FileHash .\\${escape(env.NSIS_FILENAME)} -Algorithm SHA256</code></pre>
-        <p>Expected digest for this release:</p>
-        <p><code class="sha-digest">${escape(env.NSIS_SHA256)}</code></p>
-      </details>
-      ${END}`;
+const heroBlock = `<!-- HERO_DOWNLOAD:START -->
+    <div class="hero-actions">
+      <a class="action big" href="${escape(env.NSIS_URL)}">
+        <span class="action-main">Download for Windows</span>
+        <span class="action-sub">${escape(env.VERSION)} · 64-bit · free</span>
+      </a>
+      <a class="action ghost" href="#how">How it works</a>
+    </div>
+    <p class="hero-spec">Windows 10 &amp; 11 · No account · No telemetry</p>
+    <details class="download-verify hero-verify">
+      <summary>Verify your download (SHA256)</summary>
+      <p>Optional. Confirm the installer matches what CI built:</p>
+      <pre><code>Get-FileHash .\\${escape(env.NSIS_FILENAME)} -Algorithm SHA256</code></pre>
+      <p>Expected digest for this release:</p>
+      <p><code class="sha-digest">${escape(env.NSIS_SHA256)}</code></p>
+    </details>
+    <!-- HERO_DOWNLOAD:END -->`;
 
-const updated =
-  html.slice(0, startIdx) + block + html.slice(endIdx + END.length);
+html = replaceBlock(html, "MAST_DOWNLOAD", mastBlock);
+html = replaceBlock(html, "HERO_DOWNLOAD", heroBlock);
 
-writeFileSync(indexPath, updated);
+writeFileSync(indexPath, html);
 console.log(`Updated index.html → Lopari ${env.VERSION}`);
+
+function replaceBlock(source, marker, block) {
+  const start = `<!-- ${marker}:START -->`;
+  const end = `<!-- ${marker}:END -->`;
+  const startIdx = source.indexOf(start);
+  const endIdx = source.indexOf(end);
+  if (startIdx === -1 || endIdx === -1 || endIdx < startIdx) {
+    throw new Error(
+      `couldn't find ${marker} markers in index.html - looked for ${start} ... ${end}`
+    );
+  }
+  return source.slice(0, startIdx) + block + source.slice(endIdx + end.length);
+}
 
 function escape(s) {
   return String(s)
