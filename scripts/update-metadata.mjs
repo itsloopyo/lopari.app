@@ -275,14 +275,20 @@ catalog.updated_at = new Date().toISOString();
 
 // Two-space indent matches the source file's style; subscribers fetching
 // this file see a normal JSON shape, not a one-liner.
-const output = JSON.stringify(catalog, null, 2) + "\n";
+const sourceOutput = JSON.stringify(catalog, null, 2) + "\n";
+// Pages copy is world-readable, so non-public entries (in-progress mods
+// not ready to surface) must not ship in it - only public mods.
+const publicOutput =
+  JSON.stringify({ ...catalog, mods: publicMods }, null, 2) + "\n";
 
 // Pages copy: what the launcher fetches at runtime.
-writeFileSync(CATALOG_OUT_PATH, output, "utf8");
-// Write-back to the lopari repo: what gets baked into the launcher binary
-// as the offline / first-run fallback. Commit it there so the next build
-// ships current pins.
-writeFileSync(CATALOG_PATH, output, "utf8");
+writeFileSync(CATALOG_OUT_PATH, publicOutput, "utf8");
+// Write-back to the lopari repo: the hand-authored source of truth, kept
+// whole (non-public entries and all) so they aren't lost. It's also baked
+// into the launcher binary as the offline / first-run fallback; the
+// launcher skips non-public entries at runtime. Commit it there so the
+// next build ships current pins.
+writeFileSync(CATALOG_PATH, sourceOutput, "utf8");
 
 console.log(
   `\nwrote ${CATALOG_OUT_PATH}\nwrote ${CATALOG_PATH}\n` +

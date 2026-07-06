@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-06-27T23:09:15.240Z",
+  "updated_at": "2026-07-05T23:42:09.180Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1898,53 +1898,6 @@
       ]
     },
     {
-      "id": "shadows-of-doubt",
-      "public": false,
-      "released": false,
-      "display_name": "Shadows of Doubt",
-      "repo": "itsloopyo/shadows-of-doubt-headtracking",
-      "install_strategy": "BepInEx6",
-      "game": {
-        "steam_app_id": 986130,
-        "steam_folder": "Shadows of Doubt",
-        "gog_ids": [],
-        "epic_search_paths": [],
-        "env_var": "SHADOWS_OF_DOUBT_PATH",
-        "executable_relpath": "Shadows of Doubt.exe"
-      },
-      "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
-          "action": "Toggle tracking",
-          "nav_key": "End",
-          "chord": "Ctrl+Shift+Y"
-        },
-        {
-          "action": "Cycle tracking mode",
-          "nav_key": "Page Up",
-          "chord": "Ctrl+Shift+G",
-          "description": "Cycles through rotation + position, rotation only, and position only, then back"
-        },
-        {
-          "action": "Toggle yaw mode",
-          "nav_key": "Page Down",
-          "chord": "Ctrl+Shift+H",
-          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
-        }
-      ],
-      "distribution": {
-        "type": "dev-release"
-      },
-      "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
-      ]
-    },
-    {
       "id": "skyrim-special-edition",
       "public": true,
       "released": true,
@@ -2016,47 +1969,6 @@
             "size_bytes": 2991355
           }
         ]
-      }
-    },
-    {
-      "id": "subnautica-below-zero",
-      "display_name": "Subnautica: Below Zero",
-      "repo": "itsloopyo/subnautica-below-zero-headtracking",
-      "install_strategy": "BepInEx5",
-      "game": {
-        "steam_app_id": 848450,
-        "steam_folder": "SubnauticaZero",
-        "gog_ids": [],
-        "epic_search_paths": [
-          "C:\\Program Files\\Epic Games\\SubnauticaZero"
-        ],
-        "env_var": "SubnauticaBelowZeroDir",
-        "executable_relpath": "SubnauticaZero.exe"
-      },
-      "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
-          "action": "Toggle tracking",
-          "nav_key": "End",
-          "chord": "Ctrl+Shift+Y"
-        },
-        {
-          "action": "Toggle 6DOF (head position)",
-          "nav_key": "Page Up",
-          "chord": "Ctrl+Shift+G"
-        },
-        {
-          "action": "Toggle yaw mode (world vs local)",
-          "nav_key": "Page Down",
-          "chord": "Ctrl+Shift+H"
-        }
-      ],
-      "distribution": {
-        "type": "dev-release"
       }
     },
     {
@@ -2195,45 +2107,6 @@
       }
     },
     {
-      "id": "tacoma",
-      "display_name": "Tacoma",
-      "repo": "itsloopyo/tacoma-headtracking",
-      "install_strategy": "BepInEx5",
-      "game": {
-        "steam_app_id": 343860,
-        "steam_folder": "Tacoma",
-        "gog_ids": [],
-        "epic_search_paths": [],
-        "env_var": "TACOMA_PATH",
-        "executable_relpath": "Tacoma.exe"
-      },
-      "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
-          "action": "Toggle tracking",
-          "nav_key": "End",
-          "chord": "Ctrl+Shift+Y"
-        },
-        {
-          "action": "Toggle 6DOF (head position)",
-          "nav_key": "Page Up",
-          "chord": "Ctrl+Shift+G"
-        },
-        {
-          "action": "Toggle yaw mode (world vs local)",
-          "nav_key": "Page Down",
-          "chord": "Ctrl+Shift+H"
-        }
-      ],
-      "distribution": {
-        "type": "dev-release"
-      }
-    },
-    {
       "id": "valheim",
       "public": true,
       "released": true,
@@ -2351,49 +2224,6 @@
             "size_bytes": 760857
           }
         ]
-      }
-    },
-    {
-      "id": "witcher-3",
-      "public": false,
-      "released": false,
-      "display_name": "The Witcher 3: Wild Hunt",
-      "repo": "itsloopyo/witcher-3-headtracking",
-      "install_strategy": "AsiLoader",
-      "game": {
-        "steam_app_id": 292030,
-        "steam_folder": "The Witcher 3",
-        "gog_ids": [],
-        "epic_search_paths": [],
-        "env_var": "WITCHER3_PATH",
-        "executable_relpath": "bin\\x64_dx12\\witcher3.exe"
-      },
-      "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
-          "action": "Toggle tracking",
-          "nav_key": "End",
-          "chord": "Ctrl+Shift+Y"
-        },
-        {
-          "action": "Cycle tracking mode",
-          "nav_key": "Page Up",
-          "chord": "Ctrl+Shift+G",
-          "description": "Cycles through rotation + position, rotation only, and position only, then back"
-        },
-        {
-          "action": "Toggle yaw mode",
-          "nav_key": "Page Down",
-          "chord": "Ctrl+Shift+H",
-          "description": "Switch between horizon-locked yaw and camera-local yaw"
-        }
-      ],
-      "distribution": {
-        "type": "dev-release"
       }
     },
     {
@@ -2862,87 +2692,28 @@
       ]
     },
     {
-      "id": "titanfall-2",
-      "public": false,
-      "released": false,
-      "display_name": "Titanfall 2",
-      "repo": "itsloopyo/titanfall-2-headtracking",
-      "install_strategy": "AsiLoader",
-      "game": {
-        "steam_app_id": 1237970,
-        "steam_folder": "Titanfall2",
-        "gog_ids": [],
-        "epic_search_paths": [],
-        "env_var": "TITANFALL_2_PATH",
-        "executable_relpath": "Titanfall2.exe"
-      },
-      "description": "Decoupled head tracking for Titanfall 2 (Respawn's modified Source Engine): your head moves the view while the mouse or controller still controls aim. Built for the single-player Campaign - keep it off in multiplayer and Frontier Defense.",
-      "features": [
-        "Decoupled look and aim: head rotation is injected into the render view only; the game's aim, projectiles and traces read the clean mouse-controlled camera",
-        "6DOF positional tracking (lean / peek) applied to the render camera origin",
-        "Works with any OpenTrack-compatible source (webcam, phone app, IR clip) at any sample rate",
-        "Per-build PE-fingerprint gating: engages only on client.dll builds it knows, and leaves the game vanilla otherwise"
-      ],
-      "requirements": [
-        "Titanfall 2 (Steam)",
-        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
-      ],
-      "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
-          "action": "Toggle tracking",
-          "nav_key": "End",
-          "chord": "Ctrl+Shift+Y"
-        },
-        {
-          "action": "Cycle tracking mode",
-          "nav_key": "Page Up",
-          "chord": "Ctrl+Shift+G",
-          "description": "Cycles through 6DOF, rotation only, and position only, then back"
-        },
-        {
-          "action": "Toggle yaw mode",
-          "nav_key": "Page Down",
-          "chord": "Ctrl+Shift+H",
-          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
-        }
-      ],
-      "distribution": {
-        "type": "dev-release"
-      },
-      "known_issues": [
-        "Single-player Campaign only; do not use in multiplayer or Frontier Defense.",
-        "Not comprehensively tested.",
-        "No README.gif."
-      ]
-    },
-    {
-      "id": "metaphor",
+      "id": "mirrors-edge",
       "public": true,
       "released": false,
-      "display_name": "Metaphor: ReFantazio",
-      "repo": "itsloopyo/metaphor-refantazio-headtracking",
+      "display_name": "Mirror's Edge",
+      "repo": "itsloopyo/mirrors-edge-headtracking",
       "install_strategy": "AsiLoader",
       "game": {
-        "steam_app_id": 2679460,
-        "steam_folder": "METAPHOR",
+        "steam_app_id": 17410,
+        "steam_folder": "Mirrors Edge",
         "gog_ids": [],
         "epic_search_paths": [],
-        "env_var": "METAPHOR_PATH",
-        "executable_relpath": "METAPHOR.exe"
+        "env_var": "MIRRORS_EDGE_PATH",
+        "executable_relpath": "Binaries\\MirrorsEdge.exe"
       },
-      "description": "Move your head to look around in Metaphor: ReFantazio while your mouse and controller still drive the game's camera and controls, giving you decoupled look without a VR headset.",
+      "description": "Move your head to look around Mirror's Edge while your mouse keeps full control of your aim, driven by any OpenTrack UDP tracker (webcam, phone app, or VR headset) with no VR headset required.",
       "features": [
-        "Decoupled look and aim: head movement turns the view while the mouse and controller keep driving the game's own camera",
-        "6DOF positional tracking: lean and peek by moving your head in space, not just rotating it",
+        "Decoupled look and aim: head tracking moves the camera while the mouse keeps controlling aim",
+        "6DOF positional tracking: lean and peek by moving your head in space",
         "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
       ],
       "requirements": [
-        "Metaphor: ReFantazio (Steam, Windows x64)",
+        "Mirror's Edge (Steam, Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
@@ -2972,14 +2743,80 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260627.1021a69",
-          "built_at": "2026-06-27T22:27:34Z",
-          "zip_filename": "MetaphorHeadTracking-dev-installer.zip",
-          "download_url": "https://github.com/itsloopyo/metaphor-refantazio-headtracking/releases/download/dev/MetaphorHeadTracking-dev-installer.zip"
+          "version": "0.0.0-nightly.20260705.24f17cc",
+          "built_at": "2026-07-05T20:11:50Z",
+          "zip_filename": "MirrorsEdgeHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/mirrors-edge-headtracking/releases/download/dev/MirrorsEdgeHeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
-        "Experimental prototype; core features may be missing or incomplete.",
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
+    },
+    {
+      "id": "rv-there-yet",
+      "public": true,
+      "released": false,
+      "display_name": "RV There Yet?",
+      "repo": "itsloopyo/rv-there-yet-headtracking",
+      "install_strategy": "Shim",
+      "game": {
+        "steam_app_id": 3949040,
+        "steam_folder": "Ride",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "xbox_paths": [
+          "C:\\XboxGames\\RV There Yet\\Content"
+        ],
+        "env_var": "RV_THERE_YET_PATH",
+        "executable_relpath": "Ride\\Binaries\\Win64\\Ride-Win64-Shipping.exe",
+        "xbox_executable_relpath": "Ride\\Binaries\\WinGDK\\Ride-WinGDK-Shipping.exe"
+      },
+      "description": "Move your head to look around RV There Yet? while your mouse or controller keeps full control of your aim, driven by any OpenTrack UDP tracker (webcam, phone app, or VR headset) with no VR headset required.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera while the mouse or controller keeps controlling aim",
+        "6DOF positional tracking: lean and peek by moving your head in space",
+        "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
+      ],
+      "requirements": [
+        "RV There Yet? (Steam or Xbox / Game Pass, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260705.14ea55b",
+          "built_at": "2026-07-05T23:41:16Z",
+          "zip_filename": "RVThereYetHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/download/dev/RVThereYetHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
         "Not comprehensively tested.",
         "No README.gif."
       ]
@@ -3437,24 +3274,6 @@
       ]
     },
     {
-      "id": "gtr-2",
-      "display_name": "GTR 2 - FIA GT Racing Game",
-      "steam_app_id": 8710,
-      "steam_folder": "GTR2",
-      "executable_relpath": "GTR2.exe",
-      "protocols": [
-        "TrackIR",
-        "FreeTrack"
-      ],
-      "notes": "Legacy Simbin racing sim.",
-      "setup_steps": [
-        "Start TrackIR / OpenTrack (Interface = Both) BEFORE GTR 2.",
-        "In-game: Options → Controls → Advanced Controller Settings → 'Use TrackIR' → Yes.",
-        "Head motion only appears in cockpit view.",
-        "If TrackIR isn't detected, copy NPClient.dll from your TrackIR install into the GTR 2 folder."
-      ]
-    },
-    {
       "id": "euro-truck-simulator-2",
       "display_name": "Euro Truck Simulator 2",
       "steam_app_id": 227300,
@@ -3558,7 +3377,7 @@
     {
       "id": "hawx-2",
       "display_name": "Tom Clancy's H.A.W.X 2",
-      "steam_app_id": 15670,
+      "steam_app_id": 48180,
       "steam_folder": "Tom Clancy's H.A.W.X. 2",
       "executable_relpath": "HAWX2Game.exe",
       "protocols": [
@@ -3778,7 +3597,7 @@
     {
       "id": "aces-high-iii",
       "display_name": "Aces High III",
-      "steam_app_id": 1260120,
+      "steam_app_id": 651090,
       "steam_folder": "Aces High III",
       "executable_relpath": "ahiii.exe",
       "protocols": [
@@ -4754,7 +4573,7 @@
     {
       "id": "dirt-3",
       "display_name": "DiRT 3",
-      "steam_app_id": 44320,
+      "steam_app_id": 321040,
       "protocols": [
         "TrackIR"
       ],
@@ -5248,7 +5067,7 @@
       ]
     },
     {
-      "id": "gtr-2-2",
+      "id": "gtr-2",
       "display_name": "GTR 2",
       "steam_app_id": 8790,
       "steam_folder": "GTR 2 - FIA GT Racing Game",
