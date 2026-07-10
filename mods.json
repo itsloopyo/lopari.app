@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-07-10T19:30:46.799Z",
+  "updated_at": "2026-07-10T19:34:28.698Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2890,10 +2890,6 @@
           "download_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/download/dev/RVThereYetHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
-      ],
       "release": {
         "pinned": {
           "version": "0.1.0",

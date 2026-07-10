@@ -278,6 +278,14 @@ for (const m of publicMods) {
         m.released = true;
         promoted.push(m.id);
         console.log("  first stable release found - stamped released: true");
+        // known_issues exists to set pre-release expectations (the
+        // launcher shows it as a warning banner); a mod graduating to a
+        // stable release sheds them. Anything that genuinely survived
+        // the release gets re-added by hand in the authored catalog.
+        if (Array.isArray(m.known_issues) && m.known_issues.length > 0) {
+          console.log(`  cleared ${m.known_issues.length} known issue(s) on promotion`);
+          m.known_issues = [];
+        }
       }
       console.log(
         `  release pinned ${channel.pinned.version} (${channel.versions.length} versions in picker)`,
