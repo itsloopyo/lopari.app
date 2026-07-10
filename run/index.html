@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lopari - run mod</title>
+<link rel="icon" type="image/png" href="/favicon.png" />
+<link rel="stylesheet" href="/styles.css" />
+<style>
+  .run-card { max-width: 28rem; margin: 6rem auto; padding: 2rem; text-align: center; }
+  .run-card h1 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+  .run-card p { color: #555; }
+  .run-card ul { list-style: none; padding: 0; margin-top: 1.5rem; }
+  .run-card li { margin: 0.5rem 0; }
+  .err { color: #b91c1c; }
+</style>
+</head>
+<body>
+
+<main class="run-card">
+  <h1 id="title">Opening Lopari…</h1>
+  <p id="msg">Hand-off in progress. Lopari will ask before installing or launching anything.</p>
+  <ul id="links"></ul>
+</main>
+
+<script>
+// Landing target for "Run in Lopari" links in release announcements.
+// Takes ?repo=owner/name (what the mod's release CI knows) or ?mod=<id>,
+// resolves it against the published catalog, and bounces into the
+// lopari://run deep link. The launcher treats that link as untrusted and
+// confirms with the user before acting, so this page carries nothing but
+// the catalog id.
+(function () {
+  const MOD_ID = /^[a-z0-9][a-z0-9_-]{0,63}$/;
+  const REPO = /^[A-Za-z0-9_.-]+\/[A-Za-z0-9_.-]+$/;
+
+  const params = new URLSearchParams(window.location.search);
+  const modParam = params.get("mod");
+  const repoParam = params.get("repo");
+
+  const title = document.getElementById("title");
+  const msg = document.getElementById("msg");
+  const links = document.getElementById("links");
+
+  function addLink(label, href) {
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.textContent = label;
+    a.href = href;
+    li.appendChild(a);
+    links.appendChild(li);
+  }
+
+  function fail(text, repo) {
+    title.textContent = "Can't hand off to Lopari";
+    title.classList.add("err");
+    msg.textContent = text;
+    if (repo && REPO.test(repo)) {
+      addLink("Download the mod from GitHub instead", "https://github.com/" + repo + "/releases/latest");
+    }
+    addLink("Get Lopari", "/");
+  }
+
+  if ((!modParam || !MOD_ID.test(modParam)) && (!repoParam || !REPO.test(repoParam))) {
+    fail("This link is missing or malformed. Open it from a release announcement.");
+    return;
+  }
+
+  fetch("/mods.json")
+    .then(function (r) {
+      if (!r.ok) throw new Error("catalog fetch failed: " + r.status);
+      return r.json();
+    })
+    .then(function (catalog) {
+      const entry = catalog.mods.find(function (m) {
+        return modParam ? m.id === modParam : m.repo === repoParam;
+      });
+      if (!entry || !MOD_ID.test(entry.id)) {
+        fail("This mod isn't in the Lopari catalog yet. You can still install it by hand.", repoParam);
+        return;
+      }
+
+      title.textContent = "Opening " + entry.display_name + " in Lopari…";
+      const deepLink = "lopari://run?mod=" + encodeURIComponent(entry.id);
+      window.location.replace(deepLink);
+
+      setTimeout(function () {
+        msg.textContent = "If Lopari didn't open automatically:";
+        addLink("Run " + entry.display_name + " in Lopari", deepLink);
+        addLink("Don't have Lopari? Get it here", "/");
+        if (REPO.test(entry.repo)) {
+          addLink("Or download the mod from GitHub", "https://github.com/" + entry.repo + "/releases/latest");
+        }
+      }, 1200);
+    })
+    .catch(function (e) {
+      console.error(e);
+      fail("Couldn't load the mod catalog. Try again in a minute.", repoParam);
+    });
+})();
+</script>
+</body>
+</html>
