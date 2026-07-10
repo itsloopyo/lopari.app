@@ -85,7 +85,7 @@
       window.location.replace(deepLink);
 
       setTimeout(function () {
-        msg.textContent = "If Lopari didn't open automatically:";
+        msg.textContent = "If Lopari didn't open automatically - or opened but nothing happened (older Lopari versions don't understand run links; update from the launcher):";
         addLink("Run " + entry.display_name + " in Lopari", deepLink);
         addLink("Don't have Lopari? Get it here", "/");
         if (REPO.test(entry.repo)) {
