@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-07-10T18:22:48.132Z",
+  "updated_at": "2026-07-10T19:30:46.799Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2831,7 +2831,7 @@
     {
       "id": "rv-there-yet",
       "public": true,
-      "released": false,
+      "released": true,
       "display_name": "RV There Yet?",
       "repo": "itsloopyo/rv-there-yet-headtracking",
       "install_strategy": "Shim",
@@ -2893,7 +2893,31 @@
       "known_issues": [
         "Not comprehensively tested.",
         "No README.gif."
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "RV There Yet Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-07-10T19:30:11Z",
+          "zip_filename": "RVThereYetHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/download/v0.1.0/RVThereYetHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 212111
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "RV There Yet Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-07-10T19:30:11Z",
+            "zip_filename": "RVThereYetHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/download/v0.1.0/RVThereYetHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 212111
+          }
+        ]
+      }
     }
   ],
   "native_games": [
@@ -6569,14 +6593,14 @@
     }
   ],
   "launcher": {
-    "version": "0.4.6",
-    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.4.6",
-    "published_at": "2026-07-06T11:24:10Z",
+    "version": "0.4.7",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.4.7",
+    "published_at": "2026-07-10T19:02:30Z",
     "setup_exe": {
-      "name": "Lopari_0.4.6_x64-setup.exe",
-      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.4.6/Lopari_0.4.6_x64-setup.exe",
-      "size_bytes": 3444304,
-      "sha256": "26406153d6eefa4226962876ab7e3a66ff8904c99583dded6b76332f4a9214cb"
+      "name": "Lopari_0.4.7_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.4.7/Lopari_0.4.7_x64-setup.exe",
+      "size_bytes": 3436592,
+      "sha256": "46b61b351c138e3c90c29c168434d0e0ceb4d3666dce627a3a3f578b1e9af1d4"
     },
     "msi": null
   }
