@@ -4,8 +4,10 @@
 // to know about installable builds, so it never has to touch the GitHub
 // API at runtime:
 //
-//   - `release` (per released mod): the latest stable release pin plus the
-//     version-picker list.
+//   - `release` (per mod with a stable channel): the latest stable release
+//     pin plus the version-picker list. Dev-release mods are polled for a
+//     stable channel too; the first stable release stamps `released: true`,
+//     which is what moves the mod out of the launcher's pre-release section.
 //   - `distribution.pinned` (per dev-release mod): the rolling `dev`
 //     pre-release snapshot.
 //   - `launcher` (top-level): the launcher's own latest release, for the
@@ -22,6 +24,12 @@
 // (id, repo, features, hotkeys, known_issues, ...). Pin blocks are volatile
 // publish-time metadata this script refreshes in place on every run.
 //
+// `--live` runs pins-only against this repo's own mods.json (in and out),
+// never touching ../lopari. That's the CI mode (update-pins.yml): the
+// runner has no private lopari checkout, and pins are the only thing a
+// release changes. Authored-data edits still flow through a full local
+// run, which refreshes both copies.
+//
 // Per-mod failures don't abort the run - any pin block from the previous
 // run is left in place (its download URLs are still valid), and a non-empty
 // error list at the end exits non-zero so the degraded run is visible.
@@ -33,18 +41,22 @@
 //   2. `gh auth token` from the GitHub CLI.
 
 import { execSync } from "node:child_process";
+import { createHash } from "node:crypto";
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(__dirname, "..");
-const CATALOG_PATH = resolve(REPO_ROOT, "..", "lopari", "catalog", "mods.json");
+const LIVE_ONLY = process.argv.includes("--live");
 // Catalog is republished to the Pages site root so the launcher can
 // fetch it from lopari.app/mods.json. The lopari repo is private, so
 // raw.githubusercontent.com 404s anonymously; lopari.app is public
 // Pages and reachable without auth.
 const CATALOG_OUT_PATH = resolve(REPO_ROOT, "mods.json");
+const CATALOG_PATH = LIVE_ONLY
+  ? CATALOG_OUT_PATH
+  : resolve(REPO_ROOT, "..", "lopari", "catalog", "mods.json");
 
 // The launcher's public release mirror. Source of truth for the launcher
 // self-update pin - the private lopari source repo never gets release tags.
@@ -193,29 +205,54 @@ async function fetchDevReleasePin(repo) {
 // Launcher self-update pin. Shape matches the launcher's `LauncherPin`
 // struct (catalog/mod.rs). Prefers the NSIS -setup.exe (it handles
 // killing the running launcher); the .msi rides along as a fallback.
+//
+// Each asset is downloaded and hashed: the launcher's
+// verify_installer_bytes (commands.rs) skips hash verification when the
+// pin has no sha256, so a pin without one silently weakens self-update
+// to a size check. No auth header on the download - it's a public asset
+// and the token must not ride the redirect to the CDN.
 async function fetchLauncherPin() {
   const release = await githubJson(
     `https://api.github.com/repos/${LAUNCHER_REPO}/releases/latest`,
   );
   const assets = release.assets || [];
-  const pinAsset = (suffix) => {
+  const pinAsset = async (suffix) => {
     const a = assets.find((x) => x.name.toLowerCase().endsWith(suffix));
-    return a
-      ? { name: a.name, download_url: a.browser_download_url, size_bytes: a.size }
-      : null;
+    if (!a) return null;
+    const res = await fetch(a.browser_download_url, {
+      headers: { "User-Agent": "lopari-metadata-builder" },
+    });
+    if (!res.ok) {
+      throw new Error(
+        `GET ${a.browser_download_url} -> ${res.status} ${res.statusText}`,
+      );
+    }
+    const bytes = Buffer.from(await res.arrayBuffer());
+    if (bytes.length !== a.size) {
+      throw new Error(
+        `${a.name}: GitHub says ${a.size} bytes, downloaded ${bytes.length}`,
+      );
+    }
+    return {
+      name: a.name,
+      download_url: a.browser_download_url,
+      size_bytes: a.size,
+      sha256: createHash("sha256").update(bytes).digest("hex"),
+    };
   };
   return {
     version: stripV(release.tag_name),
     html_url: release.html_url,
     published_at: release.published_at || null,
-    setup_exe: pinAsset("-setup.exe"),
-    msi: pinAsset(".msi"),
+    setup_exe: await pinAsset("-setup.exe"),
+    msi: await pinAsset(".msi"),
   };
 }
 
 // ---------- run -------------------------------------------------------------
 
 const errors = [];
+const promoted = [];
 let releasePinned = 0;
 let devPinned = 0;
 
@@ -223,27 +260,34 @@ let devPinned = 0;
 // (concurrent-request throttle) and keeps the failure log in a
 // predictable order. ~30 mods x ~200ms RTT = a few seconds total.
 for (const m of publicMods) {
-  const hasRelease = m.released === true;
   const hasDevRelease = m.distribution && m.distribution.type === "dev-release";
-  if (!hasRelease && !hasDevRelease) continue;
+  if (m.released !== true && !hasDevRelease) continue;
   console.log(`[${m.id}] ${m.repo}`);
 
-  if (hasRelease) {
-    try {
-      const channel = await fetchReleaseChannel(m.repo);
-      if (channel) {
-        m.release = channel;
-        releasePinned++;
-        console.log(
-          `  release pinned ${channel.pinned.version} (${channel.versions.length} versions in picker)`,
-        );
-      } else {
-        console.log("  release: no stable release with an -installer.zip yet");
+  try {
+    const channel = await fetchReleaseChannel(m.repo);
+    if (channel) {
+      m.release = channel;
+      releasePinned++;
+      if (m.released !== true) {
+        // First stable release. Stamping `released` is what moves the
+        // mod out of the launcher's pre-release section, hides the
+        // dev-build row and routes installs to the stable channel.
+        // Never unstamped here: yanking a release is a deliberate act,
+        // revert the flag by hand if that ever happens.
+        m.released = true;
+        promoted.push(m.id);
+        console.log("  first stable release found - stamped released: true");
       }
-    } catch (e) {
-      console.warn(`  release: FAILED - ${e.message}`);
-      errors.push({ mod: m.id, error: e.message });
+      console.log(
+        `  release pinned ${channel.pinned.version} (${channel.versions.length} versions in picker)`,
+      );
+    } else if (m.released === true) {
+      console.log("  release: no stable release with an -installer.zip yet");
     }
+  } catch (e) {
+    console.warn(`  release: FAILED - ${e.message}`);
+    errors.push({ mod: m.id, error: e.message });
   }
 
   if (hasDevRelease) {
@@ -288,11 +332,12 @@ writeFileSync(CATALOG_OUT_PATH, publicOutput, "utf8");
 // into the launcher binary as the offline / first-run fallback; the
 // launcher skips non-public entries at runtime. Commit it there so the
 // next build ships current pins.
-writeFileSync(CATALOG_PATH, sourceOutput, "utf8");
+if (!LIVE_ONLY) writeFileSync(CATALOG_PATH, sourceOutput, "utf8");
 
 console.log(
-  `\nwrote ${CATALOG_OUT_PATH}\nwrote ${CATALOG_PATH}\n` +
-    `mods: ${publicMods.length}, releases pinned: ${releasePinned}, dev pinned: ${devPinned}, errors: ${errors.length}`,
+  `\nwrote ${CATALOG_OUT_PATH}${LIVE_ONLY ? "" : `\nwrote ${CATALOG_PATH}`}\n` +
+    `mods: ${publicMods.length}, releases pinned: ${releasePinned}, dev pinned: ${devPinned}, errors: ${errors.length}` +
+    (promoted.length ? `\npromoted to released: ${promoted.join(", ")}` : ""),
 );
 
 if (errors.length > 0) {

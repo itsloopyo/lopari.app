@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-07-10T18:02:49.818Z",
+  "updated_at": "2026-07-10T18:22:48.132Z",
   "mods": [
     {
       "id": "subnautica",
@@ -6575,7 +6575,8 @@
     "setup_exe": {
       "name": "Lopari_0.4.6_x64-setup.exe",
       "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.4.6/Lopari_0.4.6_x64-setup.exe",
-      "size_bytes": 3444304
+      "size_bytes": 3444304,
+      "sha256": "26406153d6eefa4226962876ab7e3a66ff8904c99583dded6b76332f4a9214cb"
     },
     "msi": null
   }

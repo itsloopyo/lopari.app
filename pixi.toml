@@ -25,3 +25,12 @@ description = "Serve lopari.app at http://localhost:4173 and open it in the defa
 [tasks.update-metadata]
 cmd = "node scripts/update-metadata.mjs"
 description = "Republish mods.json with pinned release / dev-build / launcher info for every public mod in the lopari catalog"
+
+# Pins-only refresh of the LIVE mods.json (this repo, in and out) - no
+# ../lopari checkout needed, so CI can run it. update-pins.yml calls this
+# on repository/workflow dispatch from mod releases and on an hourly
+# schedule; the full update-metadata stays the local path for authored
+# catalog changes.
+[tasks.update-pins]
+cmd = "node scripts/update-metadata.mjs --live"
+description = "Refresh release/dev/launcher pins in the live mods.json only (CI-safe)"
