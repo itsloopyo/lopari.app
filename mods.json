@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-07-10T20:59:45.462Z",
+  "updated_at": "2026-07-11T12:06:58.872Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2817,8 +2817,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260705.24f17cc",
-          "built_at": "2026-07-05T20:11:50Z",
+          "version": "0.0.0-nightly.20260711.7ebbdc1",
+          "built_at": "2026-07-11T12:03:26Z",
           "zip_filename": "MirrorsEdgeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/mirrors-edge-headtracking/releases/download/dev/MirrorsEdgeHeadTracking-dev-installer.zip"
         }
