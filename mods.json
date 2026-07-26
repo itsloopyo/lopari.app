@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-07-20T16:02:28.473Z",
+  "updated_at": "2026-07-26T02:37:38.762Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2289,8 +2289,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260607.f017fae",
-          "built_at": "2026-06-07T22:01:50Z",
+          "version": "0.0.0-nightly.20260726.2976159",
+          "built_at": "2026-07-26T01:57:02Z",
           "zip_filename": "WobblyLifeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/wobbly-life-headtracking/releases/download/dev/WobblyLifeHeadTracking-dev-installer.zip"
         }
@@ -6599,14 +6599,14 @@
     }
   ],
   "launcher": {
-    "version": "0.4.9",
-    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.4.9",
-    "published_at": "2026-07-20T15:55:52Z",
+    "version": "0.4.10",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.4.10",
+    "published_at": "2026-07-26T02:32:37Z",
     "setup_exe": {
-      "name": "Lopari_0.4.9_x64-setup.exe",
-      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.4.9/Lopari_0.4.9_x64-setup.exe",
-      "size_bytes": 3439632,
-      "sha256": "2559a2e26e10c4f7a58cdcd47fd60f1eb990acacbb280c0f1068af44d200265f"
+      "name": "Lopari_0.4.10_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.4.10/Lopari_0.4.10_x64-setup.exe",
+      "size_bytes": 3441520,
+      "sha256": "3eb91d1251fb9c85e578bdc03c341d7bfbf03932b0a1dcc83b72a8cd655607a8"
     },
     "msi": null
   }
