@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-03T19:43:00.216Z",
+  "updated_at": "2026-08-03T20:14:54.209Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2373,16 +2373,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.2",
-          "tag_name": "v0.1.2",
-          "name": "BlackAndWhiteHeadTracking v0.1.2",
-          "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.1.2",
-          "published_at": "2026-06-07T16:26:14Z",
-          "zip_filename": "BlackAndWhiteHeadTracking-v0.1.2-installer.zip",
-          "download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.1.2/BlackAndWhiteHeadTracking-v0.1.2-installer.zip",
-          "size_bytes": 264929
+          "version": "0.1.4",
+          "tag_name": "v0.1.4",
+          "name": "BlackAndWhiteHeadTracking v0.1.4",
+          "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.1.4",
+          "published_at": "2026-08-03T20:14:31Z",
+          "zip_filename": "BlackAndWhiteHeadTracking-v0.1.4-installer.zip",
+          "download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.1.4/BlackAndWhiteHeadTracking-v0.1.4-installer.zip",
+          "size_bytes": 267504
         },
         "versions": [
+          {
+            "tag_name": "v0.1.4",
+            "version": "0.1.4",
+            "name": "BlackAndWhiteHeadTracking v0.1.4",
+            "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.1.4",
+            "published_at": "2026-08-03T20:14:31Z",
+            "zip_filename": "BlackAndWhiteHeadTracking-v0.1.4-installer.zip",
+            "download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.1.4/BlackAndWhiteHeadTracking-v0.1.4-installer.zip",
+            "size_bytes": 267504
+          },
           {
             "tag_name": "v0.1.2",
             "version": "0.1.2",
