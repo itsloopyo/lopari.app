@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-03T20:23:32.736Z",
+  "updated_at": "2026-08-03T20:26:13.849Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1389,16 +1389,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.4",
-          "tag_name": "v0.1.4",
-          "name": "Head Tracking for Eternal Afternoon v0.1.4",
-          "html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/tag/v0.1.4",
-          "published_at": "2026-06-07T19:05:54Z",
-          "zip_filename": "EternalAfternoonHeadTracking-v0.1.4-installer.zip",
-          "download_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/download/v0.1.4/EternalAfternoonHeadTracking-v0.1.4-installer.zip",
-          "size_bytes": 1146064
+          "version": "0.1.5",
+          "tag_name": "v0.1.5",
+          "name": "Head Tracking for Eternal Afternoon v0.1.5",
+          "html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/tag/v0.1.5",
+          "published_at": "2026-08-03T20:25:46Z",
+          "zip_filename": "EternalAfternoonHeadTracking-v0.1.5-installer.zip",
+          "download_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/download/v0.1.5/EternalAfternoonHeadTracking-v0.1.5-installer.zip",
+          "size_bytes": 1149733
         },
         "versions": [
+          {
+            "tag_name": "v0.1.5",
+            "version": "0.1.5",
+            "name": "Head Tracking for Eternal Afternoon v0.1.5",
+            "html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/tag/v0.1.5",
+            "published_at": "2026-08-03T20:25:46Z",
+            "zip_filename": "EternalAfternoonHeadTracking-v0.1.5-installer.zip",
+            "download_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/download/v0.1.5/EternalAfternoonHeadTracking-v0.1.5-installer.zip",
+            "size_bytes": 1149733
+          },
           {
             "tag_name": "v0.1.4",
             "version": "0.1.4",
