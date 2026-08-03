@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-03T21:38:08.199Z",
+  "updated_at": "2026-08-03T21:45:17.896Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2273,16 +2273,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.5",
-          "tag_name": "v0.1.5",
-          "name": "Head Tracking for Valheim v0.1.5",
-          "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.1.5",
-          "published_at": "2026-06-07T19:53:59Z",
-          "zip_filename": "ValheimHeadTracking-v0.1.5-installer.zip",
-          "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.1.5/ValheimHeadTracking-v0.1.5-installer.zip",
-          "size_bytes": 775778
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Head Tracking for Valheim v0.2.0",
+          "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-08-03T21:44:48Z",
+          "zip_filename": "ValheimHeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.2.0/ValheimHeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 779400
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Head Tracking for Valheim v0.2.0",
+            "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-08-03T21:44:48Z",
+            "zip_filename": "ValheimHeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.2.0/ValheimHeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 779400
+          },
           {
             "tag_name": "v0.1.5",
             "version": "0.1.5",
