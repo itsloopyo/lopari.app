@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-03T21:31:15.276Z",
+  "updated_at": "2026-08-03T21:31:52.890Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2018,16 +2018,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.1",
-          "tag_name": "v0.1.1",
-          "name": "v0.1.1",
-          "html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/tag/v0.1.1",
-          "published_at": "2026-06-08T21:22:00Z",
-          "zip_filename": "SkyrimSEHeadTracking-v0.1.1-installer.zip",
-          "download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.1.1/SkyrimSEHeadTracking-v0.1.1-installer.zip",
-          "size_bytes": 3045540
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "v0.2.0",
+          "html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-08-03T21:31:25Z",
+          "zip_filename": "SkyrimSEHeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.2.0/SkyrimSEHeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 3047644
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "v0.2.0",
+            "html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-08-03T21:31:25Z",
+            "zip_filename": "SkyrimSEHeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.2.0/SkyrimSEHeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 3047644
+          },
           {
             "tag_name": "v0.1.1",
             "version": "0.1.1",
