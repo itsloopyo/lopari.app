@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-03T22:39:25.515Z",
+  "updated_at": "2026-08-03T23:20:14.907Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1721,8 +1721,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.1-nightly.20260608.b65eb6d",
-          "built_at": "2026-06-08T17:37:37Z",
+          "version": "0.0.1-nightly.20260803.7b0e1ea",
+          "built_at": "2026-08-03T22:43:04Z",
           "zip_filename": "PainscreekHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/download/dev/PainscreekHeadTracking-dev-installer.zip"
         }
@@ -2429,8 +2429,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260726.2976159",
-          "built_at": "2026-07-26T01:57:02Z",
+          "version": "0.0.0-nightly.20260803.d1a5514",
+          "built_at": "2026-08-03T22:44:11Z",
           "zip_filename": "WobblyLifeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/wobbly-life-headtracking/releases/download/dev/WobblyLifeHeadTracking-dev-installer.zip"
         }
@@ -2725,8 +2725,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260607.7f52a6c",
-          "built_at": "2026-06-07T20:11:19Z",
+          "version": "0.0.0-nightly.20260803.de04f73",
+          "built_at": "2026-08-03T22:45:50Z",
           "zip_filename": "Yakuza0HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/yakuza-0-headtracking/releases/download/dev/Yakuza0HeadTracking-dev-installer.zip"
         }
@@ -2787,8 +2787,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260607.3733137",
-          "built_at": "2026-06-07T20:28:48Z",
+          "version": "0.0.0-nightly.20260803.343057c",
+          "built_at": "2026-08-03T22:42:03Z",
           "zip_filename": "SonsOfTheForestHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/sons-of-the-forest-headtracking/releases/download/dev/SonsOfTheForestHeadTracking-dev-installer.zip"
         }
@@ -2850,8 +2850,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260607.457998a",
-          "built_at": "2026-06-07T21:53:17Z",
+          "version": "0.0.0-nightly.20260803.1615059",
+          "built_at": "2026-08-03T22:47:29Z",
           "zip_filename": "YapyapHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/yapyap-headtracking/releases/download/dev/YapyapHeadTracking-dev-installer.zip"
         }
