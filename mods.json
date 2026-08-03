@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-03T21:04:39.013Z",
+  "updated_at": "2026-08-03T21:07:44.860Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1068,16 +1068,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.3.2",
-          "tag_name": "v1.3.2",
-          "name": "Head Tracking for Gone Home v1.3.2",
-          "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.3.2",
-          "published_at": "2026-06-08T16:50:12Z",
-          "zip_filename": "GoneHomeHeadTracking-v1.3.2-installer.zip",
-          "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.3.2/GoneHomeHeadTracking-v1.3.2-installer.zip",
-          "size_bytes": 454468
+          "version": "1.4.0",
+          "tag_name": "v1.4.0",
+          "name": "Head Tracking for Gone Home v1.4.0",
+          "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.4.0",
+          "published_at": "2026-08-03T21:07:15Z",
+          "zip_filename": "GoneHomeHeadTracking-v1.4.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.4.0/GoneHomeHeadTracking-v1.4.0-installer.zip",
+          "size_bytes": 455664
         },
         "versions": [
+          {
+            "tag_name": "v1.4.0",
+            "version": "1.4.0",
+            "name": "Head Tracking for Gone Home v1.4.0",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.4.0",
+            "published_at": "2026-08-03T21:07:15Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.4.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.4.0/GoneHomeHeadTracking-v1.4.0-installer.zip",
+            "size_bytes": 455664
+          },
           {
             "tag_name": "v1.3.2",
             "version": "1.3.2",
