@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-03T21:13:14.152Z",
+  "updated_at": "2026-08-03T21:16:59.909Z",
   "mods": [
     {
       "id": "subnautica",
@@ -354,16 +354,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.1.2",
-          "tag_name": "v1.1.2",
-          "name": "Head Tracking for PEAK v1.1.2",
-          "html_url": "https://github.com/itsloopyo/peak-headtracking/releases/tag/v1.1.2",
-          "published_at": "2026-06-07T20:03:48Z",
-          "zip_filename": "PeakHeadTracking-v1.1.2-installer.zip",
-          "download_url": "https://github.com/itsloopyo/peak-headtracking/releases/download/v1.1.2/PeakHeadTracking-v1.1.2-installer.zip",
-          "size_bytes": 806995
+          "version": "1.2.0",
+          "tag_name": "v1.2.0",
+          "name": "Head Tracking for PEAK v1.2.0",
+          "html_url": "https://github.com/itsloopyo/peak-headtracking/releases/tag/v1.2.0",
+          "published_at": "2026-08-03T21:16:28Z",
+          "zip_filename": "PeakHeadTracking-v1.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/peak-headtracking/releases/download/v1.2.0/PeakHeadTracking-v1.2.0-installer.zip",
+          "size_bytes": 810760
         },
         "versions": [
+          {
+            "tag_name": "v1.2.0",
+            "version": "1.2.0",
+            "name": "Head Tracking for PEAK v1.2.0",
+            "html_url": "https://github.com/itsloopyo/peak-headtracking/releases/tag/v1.2.0",
+            "published_at": "2026-08-03T21:16:28Z",
+            "zip_filename": "PeakHeadTracking-v1.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/peak-headtracking/releases/download/v1.2.0/PeakHeadTracking-v1.2.0-installer.zip",
+            "size_bytes": 810760
+          },
           {
             "tag_name": "v1.1.2",
             "version": "1.1.2",
