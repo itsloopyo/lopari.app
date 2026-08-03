@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-03T21:45:17.896Z",
+  "updated_at": "2026-08-03T22:12:24.621Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1299,8 +1299,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260607.1060b9e",
-          "built_at": "2026-06-07T22:03:43Z",
+          "version": "0.0.0-nightly.20260803.f5b5364",
+          "built_at": "2026-08-03T22:06:09Z",
           "zip_filename": "HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/dev/HeadTracking-dev-installer.zip"
         }
@@ -1515,7 +1515,7 @@
     {
       "id": "fallout-new-vegas",
       "public": true,
-      "released": false,
+      "released": true,
       "display_name": "Fallout: New Vegas",
       "repo": "itsloopyo/fallout-new-vegas-headtracking",
       "install_strategy": "AsiLoader",
@@ -1573,11 +1573,31 @@
           "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/dev/FalloutNVHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [
-        "Skybox affected by positional tracking.",
-        "Not comprehensively tested.",
-        "No README.gif."
-      ]
+      "known_issues": [],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Head Tracking for Fallout: New Vegas v0.1.0",
+          "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-08-03T22:11:54Z",
+          "zip_filename": "FalloutNVHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.1.0/FalloutNVHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 212011
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Head Tracking for Fallout: New Vegas v0.1.0",
+            "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-08-03T22:11:54Z",
+            "zip_filename": "FalloutNVHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.1.0/FalloutNVHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 212011
+          }
+        ]
+      }
     },
     {
       "id": "firewatch",
@@ -2569,8 +2589,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260607.905d6ec",
-          "built_at": "2026-06-07T19:57:10Z",
+          "version": "0.0.0-nightly.20260803.9ed918e",
+          "built_at": "2026-08-03T21:58:38Z",
           "zip_filename": "AssassinsCreedUnityHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/assassins-creed-unity-headtracking/releases/download/dev/AssassinsCreedUnityHeadTracking-dev-installer.zip"
         }
@@ -2633,8 +2653,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260607.bad7846",
-          "built_at": "2026-06-07T19:54:35Z",
+          "version": "0.0.0-nightly.20260803.0de60ba",
+          "built_at": "2026-08-03T22:01:49Z",
           "zip_filename": "AbzuHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/abzu-headtracking/releases/download/dev/AbzuHeadTracking-dev-installer.zip"
         }
