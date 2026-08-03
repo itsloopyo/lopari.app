@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-03T22:12:24.621Z",
+  "updated_at": "2026-08-03T22:39:25.515Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1780,8 +1780,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260607.4ad29a4",
-          "built_at": "2026-06-07T20:03:54Z",
+          "version": "0.0.0-nightly.20260803.2c76f28",
+          "built_at": "2026-08-03T22:38:05Z",
           "zip_filename": "RE2HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/download/dev/RE2HeadTracking-dev-installer.zip"
         }
@@ -1838,8 +1838,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260608.bc6d365",
-          "built_at": "2026-06-08T20:41:42Z",
+          "version": "0.0.0-nightly.20260803.c045acf",
+          "built_at": "2026-08-03T22:38:20Z",
           "zip_filename": "RE3HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/resident-evil-3-headtracking/releases/download/dev/RE3HeadTracking-dev-installer.zip"
         }
@@ -1892,8 +1892,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260608.0bd49a6",
-          "built_at": "2026-06-08T21:20:55Z",
+          "version": "0.0.0-nightly.20260803.587c184",
+          "built_at": "2026-08-03T22:38:22Z",
           "zip_filename": "RE4HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/resident-evil-4-headtracking/releases/download/dev/RE4HeadTracking-dev-installer.zip"
         }
@@ -1944,8 +1944,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260608.c521742",
-          "built_at": "2026-06-08T20:29:16Z",
+          "version": "0.0.0-nightly.20260803.8ce3ce1",
+          "built_at": "2026-08-03T22:38:26Z",
           "zip_filename": "RE7HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/resident-evil-7-headtracking/releases/download/dev/RE7HeadTracking-dev-installer.zip"
         }
@@ -1996,8 +1996,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260608.2488eb3",
-          "built_at": "2026-06-08T20:28:42Z",
+          "version": "0.0.0-nightly.20260803.eb97831",
+          "built_at": "2026-08-03T22:38:28Z",
           "zip_filename": "RE8HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/resident-evil-village-headtracking/releases/download/dev/RE8HeadTracking-dev-installer.zip"
         }
@@ -2133,16 +2133,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.4.1",
-          "tag_name": "v0.4.1",
-          "name": "Subnautica 2 Head Tracking v0.4.1",
-          "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.4.1",
-          "published_at": "2026-07-15T09:40:12Z",
-          "zip_filename": "Subnautica2HeadTracking-v0.4.1-installer.zip",
-          "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.4.1/Subnautica2HeadTracking-v0.4.1-installer.zip",
-          "size_bytes": 253578
+          "version": "0.5.0",
+          "tag_name": "v0.5.0",
+          "name": "Subnautica 2 Head Tracking v0.5.0",
+          "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.5.0",
+          "published_at": "2026-08-03T22:39:00Z",
+          "zip_filename": "Subnautica2HeadTracking-v0.5.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.5.0/Subnautica2HeadTracking-v0.5.0-installer.zip",
+          "size_bytes": 254035
         },
         "versions": [
+          {
+            "tag_name": "v0.5.0",
+            "version": "0.5.0",
+            "name": "Subnautica 2 Head Tracking v0.5.0",
+            "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.5.0",
+            "published_at": "2026-08-03T22:39:00Z",
+            "zip_filename": "Subnautica2HeadTracking-v0.5.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.5.0/Subnautica2HeadTracking-v0.5.0-installer.zip",
+            "size_bytes": 254035
+          },
           {
             "tag_name": "v0.4.1",
             "version": "0.4.1",
@@ -2967,8 +2977,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260711.7ebbdc1",
-          "built_at": "2026-07-11T12:03:26Z",
+          "version": "0.0.0-nightly.20260803.c7a39f8",
+          "built_at": "2026-08-03T22:37:49Z",
           "zip_filename": "MirrorsEdgeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/mirrors-edge-headtracking/releases/download/dev/MirrorsEdgeHeadTracking-dev-installer.zip"
         }
