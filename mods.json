@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-03T23:20:14.907Z",
+  "updated_at": "2026-08-04T03:39:00.301Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2913,8 +2913,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260627.1021a69",
-          "built_at": "2026-06-27T22:27:34Z",
+          "version": "0.0.0-nightly.20260803.923178a",
+          "built_at": "2026-08-03T23:25:02Z",
           "zip_filename": "MetaphorHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/metaphor-refantazio-headtracking/releases/download/dev/MetaphorHeadTracking-dev-installer.zip"
         }
