@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-05T06:42:52.257Z",
+  "updated_at": "2026-08-09T17:51:25.439Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3081,6 +3081,171 @@
             "zip_filename": "RVThereYetHeadTracking-v0.1.0-installer.zip",
             "download_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/download/v0.1.0/RVThereYetHeadTracking-v0.1.0-installer.zip",
             "size_bytes": 212111
+          }
+        ]
+      }
+    },
+    {
+      "id": "assetto-corsa-evo",
+      "public": true,
+      "released": true,
+      "display_name": "Assetto Corsa EVO",
+      "repo": "itsloopyo/assetto-corsa-evo-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 3058630,
+        "steam_folder": "Assetto Corsa EVO",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "ASSETTO_CORSA_EVO_PATH",
+        "executable_relpath": "AssettoCorsaEVO.exe"
+      },
+      "description": "Move your head to look around the cockpit of Assetto Corsa EVO while the car, the physics and every input stay exactly as they were, driven by any OpenTrack UDP tracker (webcam, phone app, or VR headset) with no VR headset required.",
+      "features": [
+        "Decoupled view and driving: your head moves the camera, the car and every input stay untouched",
+        "6DOF positional tracking: lean into an apex, peek round the A-pillar, check your mirrors",
+        "Works in every driving view: cockpit, dash, bonnet, fixed external and the chase cam"
+      ],
+      "requirements": [
+        "Assetto Corsa EVO (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260808.5b8fe48",
+          "built_at": "2026-08-08T10:49:46Z",
+          "zip_filename": "AssettoCorsaEvoHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/dev/AssettoCorsaEvoHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Assetto Corsa EVO is in early access and patches often. The mod stays dormant on a build it has no profile for, rather than hooking a camera it does not recognise."
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Assetto Corsa EVO Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-08-09T17:50:46Z",
+          "zip_filename": "AssettoCorsaEvoHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v0.1.0/AssettoCorsaEvoHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 2964975
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Assetto Corsa EVO Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-08-09T17:50:46Z",
+            "zip_filename": "AssettoCorsaEvoHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v0.1.0/AssettoCorsaEvoHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 2964975
+          }
+        ]
+      }
+    },
+    {
+      "id": "red-eclipse",
+      "public": true,
+      "released": true,
+      "display_name": "Red Eclipse",
+      "repo": "itsloopyo/red-eclipse-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 967460,
+        "steam_folder": "Red Eclipse",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "RED_ECLIPSE_PATH",
+        "executable_relpath": "bin\\amd64\\redeclipse.exe"
+      },
+      "description": "Look around freely in Red Eclipse while your mouse keeps full control of your aim, driven by any OpenTrack UDP tracker such as a webcam or phone app. Red Eclipse is a free open-source arena shooter, so this costs nothing to try.",
+      "features": [
+        "Decoupled look and aim: your head moves the view, the mouse still decides where shots land",
+        "Crosshair compensation: the crosshair is drawn on the point the shot will actually hit, through roll, horizon-locked yaw and lean",
+        "6DOF positional tracking with per-axis sensitivity, limits and smoothing",
+        "Resolves the game's functions by name from the debug symbols Red Eclipse ships, so game patches do not break it"
+      ],
+      "requirements": [
+        "Red Eclipse 2.0.9 (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "known_issues": [
+        "Head tracking stays off until you are in a match, so nothing moves in menus or the editor.",
+        "Axis directions have not yet been confirmed against a live tracker in game. If a movement goes the wrong way, flip the matching Invert key in RedEclipseHeadTracking.ini."
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Red Eclipse Head Tracking v0.2.0",
+          "html_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-08-09T17:46:39Z",
+          "zip_filename": "RedEclipseHeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/download/v0.2.0/RedEclipseHeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 3012666
+        },
+        "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Red Eclipse Head Tracking v0.2.0",
+            "html_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-08-09T17:46:39Z",
+            "zip_filename": "RedEclipseHeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/download/v0.2.0/RedEclipseHeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 3012666
           }
         ]
       }
