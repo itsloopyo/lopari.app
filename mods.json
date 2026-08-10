@@ -3221,10 +3221,7 @@
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
-      "known_issues": [
-        "Head tracking stays off until you are in a match, so nothing moves in menus or the editor.",
-        "Axis directions have not yet been confirmed against a live tracker in game. If a movement goes the wrong way, flip the matching Invert key in RedEclipseHeadTracking.ini."
-      ],
+      "known_issues": [],
       "release": {
         "pinned": {
           "version": "0.2.0",
