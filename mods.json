@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-11T11:34:49.551Z",
+  "updated_at": "2026-08-11T11:36:49.974Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1259,18 +1259,15 @@
         "env_var": "CYBERPUNK_2077_PATH",
         "executable_relpath": "bin\\x64\\Cyberpunk2077.exe"
       },
-      "description": "A Cyber Engine Tweaks (CET) mod that enables 3DOF head tracking in Cyberpunk 2077 using OpenTrack UDP protocol. Look around Night City naturally by moving your head.",
+      "description": "Move your head to look around Night City while your mouse or controller keeps full control of your aim, so you can lean into corners, peek around cover and glance at your passenger without losing your shot. Driven by any OpenTrack UDP tracker: webcam, phone app or VR headset.",
       "features": [
-        "3DOF head tracking (yaw, pitch, roll)",
-        "Decoupled look + aim: head moves view, mouse stays on target",
-        "Soft look clamps to keep the view natural around extremes",
-        "Works with any OpenTrack UDP source (phone app, webcam, TrackIR)"
+        "Decoupled look and aim: your head moves the camera, the mouse or controller still decides where shots land",
+        "6DOF positional tracking: lean into corners, peek around cover and look across the cabin while driving",
+        "Projectile gunfire in place of hitscan, which is what lets shots leave the barrel rather than the camera, applied through TweakXL and fully reverted when you remove the mod"
       ],
       "requirements": [
-        "Cyberpunk 2077 v1.6 or later (tested with v2.x)",
-        "Cyber Engine Tweaks v1.37.1+",
-        "OpenTrack v2023.1.0+ or equivalent",
-        "A head-tracking device or source"
+        "Cyberpunk 2077 v2.x (Steam or GOG, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
         {
@@ -1305,7 +1302,9 @@
           "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/dev/HeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [],
+      "known_issues": [
+        "Some unique and quest weapons do not decouple look and aim: 23 of them, the MA70, the AirDrop variants, Nova Doom Doom and Saratoga Maelstrom among them, keep their own attack records and stay on hitscan, so your aim follows your head while one is equipped. Every standard weapon is covered."
+      ],
       "release": {
         "pinned": {
           "version": "0.2.0",
