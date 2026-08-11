@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-09T17:51:25.439Z",
+  "updated_at": "2026-08-11T01:32:13.632Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1299,8 +1299,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260803.f5b5364",
-          "built_at": "2026-08-03T22:06:09Z",
+          "version": "0.1.0-nightly.20260811.0bea877",
+          "built_at": "2026-08-11T01:31:46Z",
           "zip_filename": "HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/dev/HeadTracking-dev-installer.zip"
         }
