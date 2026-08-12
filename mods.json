@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-12T09:43:34.302Z",
+  "updated_at": "2026-08-12T14:56:51.587Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3166,25 +3166,25 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Assetto Corsa EVO Head Tracking v0.1.0",
-          "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-08-09T17:50:46Z",
-          "zip_filename": "AssettoCorsaEvoHeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v0.1.0/AssettoCorsaEvoHeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 2964975
+          "version": "1.0.0",
+          "tag_name": "v1.0.0",
+          "name": "Assetto Corsa EVO Head Tracking v1.0.0",
+          "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v1.0.0",
+          "published_at": "2026-08-12T14:48:32Z",
+          "zip_filename": "AssettoCorsaEvoHeadTracking-v1.0.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v1.0.0/AssettoCorsaEvoHeadTracking-v1.0.0-installer.zip",
+          "size_bytes": 2965105
         },
         "versions": [
           {
-            "tag_name": "v0.1.0",
-            "version": "0.1.0",
-            "name": "Assetto Corsa EVO Head Tracking v0.1.0",
-            "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v0.1.0",
-            "published_at": "2026-08-09T17:50:46Z",
-            "zip_filename": "AssettoCorsaEvoHeadTracking-v0.1.0-installer.zip",
-            "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v0.1.0/AssettoCorsaEvoHeadTracking-v0.1.0-installer.zip",
-            "size_bytes": 2964975
+            "tag_name": "v1.0.0",
+            "version": "1.0.0",
+            "name": "Assetto Corsa EVO Head Tracking v1.0.0",
+            "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v1.0.0",
+            "published_at": "2026-08-12T14:48:32Z",
+            "zip_filename": "AssettoCorsaEvoHeadTracking-v1.0.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v1.0.0/AssettoCorsaEvoHeadTracking-v1.0.0-installer.zip",
+            "size_bytes": 2965105
           }
         ]
       }
