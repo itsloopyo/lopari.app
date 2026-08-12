@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-12T14:56:51.587Z",
+  "updated_at": "2026-08-12T22:40:55.567Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3170,10 +3170,10 @@
           "tag_name": "v1.0.0",
           "name": "Assetto Corsa EVO Head Tracking v1.0.0",
           "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v1.0.0",
-          "published_at": "2026-08-12T14:48:32Z",
+          "published_at": "2026-08-12T22:14:40Z",
           "zip_filename": "AssettoCorsaEvoHeadTracking-v1.0.0-installer.zip",
           "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v1.0.0/AssettoCorsaEvoHeadTracking-v1.0.0-installer.zip",
-          "size_bytes": 2965105
+          "size_bytes": 2960160
         },
         "versions": [
           {
@@ -3181,10 +3181,10 @@
             "version": "1.0.0",
             "name": "Assetto Corsa EVO Head Tracking v1.0.0",
             "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v1.0.0",
-            "published_at": "2026-08-12T14:48:32Z",
+            "published_at": "2026-08-12T22:14:40Z",
             "zip_filename": "AssettoCorsaEvoHeadTracking-v1.0.0-installer.zip",
             "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v1.0.0/AssettoCorsaEvoHeadTracking-v1.0.0-installer.zip",
-            "size_bytes": 2965105
+            "size_bytes": 2960160
           }
         ]
       }
@@ -3327,15 +3327,14 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260812.eb8f1a3",
-          "built_at": "2026-08-12T09:39:34Z",
+          "version": "0.0.0-nightly.20260812.77c4d80",
+          "built_at": "2026-08-12T22:35:29Z",
           "zip_filename": "AlienIsolationHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/alien-isolation-headtracking/releases/download/dev/AlienIsolationHeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
-        "Not exhaustively tested. Head tracking, aim decoupling and 6DOF position all work in game, but only a small part of the campaign has been played through, so expect rough edges in situations the mod has not seen yet.",
-        "The space suit helmet does not track the head. The helmet stays fixed to the body, so you look around inside a helmet frame that does not move with you."
+        "Not exhaustively tested. Head tracking, aim decoupling and 6DOF position all work in game, but only a small part of the campaign has been played through, so expect rough edges in situations the mod has not seen yet."
       ]
     }
   ],
