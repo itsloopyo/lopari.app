@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-11T11:36:49.974Z",
+  "updated_at": "2026-08-12T09:43:34.302Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3264,6 +3264,79 @@
           }
         ]
       }
+    },
+    {
+      "id": "alien-isolation",
+      "public": true,
+      "released": false,
+      "display_name": "Alien: Isolation",
+      "repo": "itsloopyo/alien-isolation-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 214490,
+        "steam_folder": "Alien Isolation",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "ALIEN_ISOLATION_PATH",
+        "executable_relpath": "AI.exe"
+      },
+      "description": "6DOF head tracking for Alien: Isolation that moves the in-game camera with your head while your mouse or controller keeps aiming, driven by any OpenTrack UDP tracker such as a webcam or phone app, with no VR headset required.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
+        "6DOF positional tracking: lean and peek with head position",
+        "Aim-locked reticle and use prompts: the reticle and the E USE prompt sit where the gun actually points"
+      ],
+      "requirements": [
+        "Alien: Isolation (Steam, the 2015 retail build)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Toggle frustum widening",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U"
+        },
+        {
+          "action": "Cycle injection mode",
+          "nav_key": "Delete",
+          "chord": "Ctrl+Shift+J"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260812.eb8f1a3",
+          "built_at": "2026-08-12T09:39:34Z",
+          "zip_filename": "AlienIsolationHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/alien-isolation-headtracking/releases/download/dev/AlienIsolationHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not exhaustively tested. Head tracking, aim decoupling and 6DOF position all work in game, but only a small part of the campaign has been played through, so expect rough edges in situations the mod has not seen yet.",
+        "The space suit helmet does not track the head. The helmet stays fixed to the body, so you look around inside a helmet frame that does not move with you."
+      ]
     }
   ],
   "native_games": [
