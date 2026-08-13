@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-12T22:40:55.567Z",
+  "updated_at": "2026-08-13T23:41:06.505Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3152,15 +3152,6 @@
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
-      "distribution": {
-        "type": "dev-release",
-        "pinned": {
-          "version": "0.0.0-nightly.20260808.5b8fe48",
-          "built_at": "2026-08-08T10:49:46Z",
-          "zip_filename": "AssettoCorsaEvoHeadTracking-dev-installer.zip",
-          "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/dev/AssettoCorsaEvoHeadTracking-dev-installer.zip"
-        }
-      },
       "known_issues": [
         "Assetto Corsa EVO is in early access and patches often. The mod stays dormant on a build it has no profile for, rather than hooking a camera it does not recognise."
       ],
@@ -3336,6 +3327,70 @@
       "known_issues": [
         "Not exhaustively tested. Head tracking, aim decoupling and 6DOF position all work in game, but only a small part of the campaign has been played through, so expect rough edges in situations the mod has not seen yet."
       ]
+    },
+    {
+      "id": "minecraft",
+      "public": true,
+      "released": false,
+      "display_name": "Minecraft: Bedrock Edition",
+      "repo": "itsloopyo/minecraft-bedrock-edition-headtracking",
+      "install_strategy": "Shim",
+      "game": {
+        "steam_app_id": null,
+        "steam_folder": null,
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "executable_relpath": "Minecraft.Windows.exe",
+        "msix_identity_name": "Microsoft.MinecraftUWP",
+        "modded_executable_relpath": "MinecraftHeadTrackingLauncher.exe"
+      },
+      "description": "Head tracking for Minecraft for Windows (Bedrock Edition). Your head moves the view while the mouse still controls where you aim, mine and build. Bedrock installs to a read-only Store folder, so the launcher keeps the mod in its own folder and starts the game through it.",
+      "features": [
+        "Decoupled look and aim: your head moves the camera, the mouse keeps aiming and the block-target outline stays where the mouse points",
+        "Full 6DOF: yaw, pitch and roll, plus leaning and moving your head to shift the viewpoint",
+        "Disables itself when the pvp game rule is on and another player is in the session, so it cannot be used as a freelook cheat"
+      ],
+      "requirements": [
+        "Minecraft for Windows (Bedrock Edition) from the Microsoft Store or Xbox app",
+        "Windows 10 version 1903 or newer, x64",
+        "OpenTrack or any OpenTrack UDP-compatible tracker"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through normal 6DOF, rotation only, position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked world-space yaw and camera-local yaw"
+        }
+      ],
+      "known_issues": [
+        "Not comprehensively tested."
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260813.40a1832",
+          "built_at": "2026-08-13T23:25:43Z",
+          "zip_filename": "MinecraftHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/download/dev/MinecraftHeadTracking-dev-installer.zip"
+        }
+      }
     }
   ],
   "native_games": [
