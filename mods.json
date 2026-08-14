@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-14T13:41:41.348Z",
+  "updated_at": "2026-08-14T14:25:22.773Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3417,6 +3417,68 @@
           }
         ]
       }
+    },
+    {
+      "id": "repo",
+      "public": true,
+      "released": false,
+      "display_name": "R.E.P.O.",
+      "repo": "itsloopyo/repo-headtracking",
+      "install_strategy": "BepInEx5",
+      "game": {
+        "steam_app_id": 3241660,
+        "steam_folder": "REPO",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "REPO_PATH",
+        "executable_relpath": "REPO.exe"
+      },
+      "description": "6DOF head tracking for R.E.P.O. that lets you look around independently of where you aim, driven by any OpenTrack UDP tracker such as a webcam or phone app, with no VR headset required.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
+        "6DOF positional tracking: lean and peek with head position",
+        "The flashlight follows your head, pointing where you look rather than where your body aims"
+      ],
+      "requirements": [
+        "R.E.P.O. (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260814.d477fc4",
+          "built_at": "2026-08-14T14:18:53Z",
+          "zip_filename": "REPOHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/repo-headtracking/releases/download/dev/REPOHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
     }
   ],
   "native_games": [
