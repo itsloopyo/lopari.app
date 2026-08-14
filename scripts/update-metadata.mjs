@@ -104,8 +104,12 @@ const headers = {
   Authorization: `Bearer ${TOKEN}`,
 };
 
-async function githubJson(url) {
+// `allow404` is for probing a resource whose absence is a real answer rather
+// than a broken run - the rolling `dev` release of a mod that has not shipped
+// a nightly yet. Every other status still throws.
+async function githubJson(url, { allow404 = false } = {}) {
   const res = await fetch(url, { headers });
+  if (res.status === 404 && allow404) return null;
   if (!res.ok) {
     throw new Error(`GET ${url} -> ${res.status} ${res.statusText}`);
   }
@@ -180,14 +184,28 @@ async function fetchReleaseChannel(repo) {
 // Resolve the latest `dev` pre-release for a mod and shape it into the
 // launcher's `PinnedDevRelease` struct (catalog/mods.rs): four fields,
 // no more. catalog::validate enforces an https://github.com/ host on
-// download_url, so don't ever emit a different host here. Returns null
-// when the release exists but has no -installer.zip asset yet.
+// download_url, so don't ever emit a different host here.
+//
+// Returns `{ pin: null, reason }` for the two ways the dev channel comes up
+// empty - the mod has not published a nightly (or the release was deleted),
+// and the release is there without an -installer.zip. Both are ordinary
+// states of a repo mid-flight, not run failures, and the reason keeps them
+// apart in the log.
 async function fetchDevReleasePin(repo) {
   const release = await githubJson(
     `https://api.github.com/repos/${repo}/releases/tags/${DEV_RELEASE_TAG}`,
+    { allow404: true },
   );
+  if (!release) {
+    return { pin: null, reason: `no '${DEV_RELEASE_TAG}' release published` };
+  }
   const asset = installerAsset(release);
-  if (!asset) return null;
+  if (!asset) {
+    return {
+      pin: null,
+      reason: `'${DEV_RELEASE_TAG}' release has no -installer.zip yet`,
+    };
+  }
   // Mirror how the dev publisher titles releases: strip the
   // "Development build " prefix, else fall back to the tag.
   const name = release.name || "";
@@ -195,10 +213,12 @@ async function fetchDevReleasePin(repo) {
     ? name.slice("Development build ".length).trim()
     : release.tag_name || DEV_RELEASE_TAG;
   return {
-    version,
-    built_at: release.published_at || "",
-    zip_filename: asset.name,
-    download_url: asset.browser_download_url,
+    pin: {
+      version,
+      built_at: release.published_at || "",
+      zip_filename: asset.name,
+      download_url: asset.browser_download_url,
+    },
   };
 }
 
@@ -300,13 +320,19 @@ for (const m of publicMods) {
 
   if (hasDevRelease) {
     try {
-      const pin = await fetchDevReleasePin(m.repo);
+      const { pin, reason } = await fetchDevReleasePin(m.repo);
       if (pin) {
         m.distribution.pinned = pin;
         devPinned++;
         console.log(`  dev pinned ${pin.version} (${pin.built_at})`);
+      } else if (m.distribution.pinned) {
+        // An old pin addresses an asset under the same rolling `dev` tag, so
+        // once that tag has nothing downloadable the pinned URL 404s too.
+        // Publishing it would hand the launcher a dead download.
+        delete m.distribution.pinned;
+        console.log(`  dev: ${reason} - dropped the stale pin`);
       } else {
-        console.log(`  dev: '${DEV_RELEASE_TAG}' release has no -installer.zip yet`);
+        console.log(`  dev: ${reason}`);
       }
     } catch (e) {
       console.warn(`  dev: FAILED - ${e.message}`);
