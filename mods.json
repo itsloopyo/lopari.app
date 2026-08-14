@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-14T00:04:25.594Z",
+  "updated_at": "2026-08-14T08:34:59.753Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3385,8 +3385,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260813.40a1832",
-          "built_at": "2026-08-13T23:25:43Z",
+          "version": "0.0.0-nightly.20260814.d650cde",
+          "built_at": "2026-08-14T08:33:07Z",
           "zip_filename": "MinecraftHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/download/dev/MinecraftHeadTracking-dev-installer.zip"
         }
