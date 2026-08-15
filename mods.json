@@ -3479,6 +3479,69 @@
       "known_issues": [
         "Not comprehensively tested."
       ]
+    },
+    {
+      "id": "assetto-corsa-rally",
+      "public": true,
+      "released": true,
+      "display_name": "Assetto Corsa Rally",
+      "repo": "itsloopyo/assetto-corsa-rally-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 3917090,
+        "steam_folder": "Assetto Corsa Rally",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "ASSETTO_CORSA_RALLY_PATH",
+        "executable_relpath": "acr\\Binaries\\Win64\\acr.exe"
+      },
+      "description": "6DOF head tracking for Assetto Corsa Rally via OpenTrack. Your head moves the camera, driving inputs are untouched.",
+      "requirements": [
+        "Assetto Corsa Rally (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
+      ],
+      "release": {
+        "pinned": {
+          "version": "1.0.0",
+          "tag_name": "v1.0.0",
+          "name": "Assetto Corsa Rally Head Tracking v1.0.0",
+          "html_url": "https://github.com/itsloopyo/assetto-corsa-rally-headtracking/releases/tag/v1.0.0",
+          "published_at": "2026-08-15T20:52:57Z",
+          "zip_filename": "AssettoCorsaRallyHeadTracking-v1.0.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/assetto-corsa-rally-headtracking/releases/download/v1.0.0/AssettoCorsaRallyHeadTracking-v1.0.0-installer.zip",
+          "size_bytes": 3008992
+        },
+        "versions": [
+          {
+            "tag_name": "v1.0.0",
+            "version": "1.0.0",
+            "name": "Assetto Corsa Rally Head Tracking v1.0.0",
+            "html_url": "https://github.com/itsloopyo/assetto-corsa-rally-headtracking/releases/tag/v1.0.0",
+            "published_at": "2026-08-15T20:52:57Z",
+            "zip_filename": "AssettoCorsaRallyHeadTracking-v1.0.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/assetto-corsa-rally-headtracking/releases/download/v1.0.0/AssettoCorsaRallyHeadTracking-v1.0.0-installer.zip",
+            "size_bytes": 3008992
+          }
+        ]
+      }
     }
   ],
   "native_games": [
