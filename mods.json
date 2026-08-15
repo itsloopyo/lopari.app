@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-15T22:45:22.678Z",
+  "updated_at": "2026-08-15T22:48:43.993Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3144,12 +3144,6 @@
           "nav_key": "Page Up",
           "chord": "Ctrl+Shift+G",
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
-        },
-        {
-          "action": "Toggle yaw mode",
-          "nav_key": "Page Down",
-          "chord": "Ctrl+Shift+H",
-          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
       "known_issues": [
@@ -3505,13 +3499,7 @@
         "env_var": "ASSETTO_CORSA_RALLY_PATH",
         "executable_relpath": "acr\\Binaries\\Win64\\acr.exe"
       },
-      "description": "Move your head to look around the cockpit of Assetto Corsa Rally while the car, the physics and every input stay exactly as they were, driven by any OpenTrack UDP tracker (webcam, phone app, or VR headset) with no VR headset required.",
-      "features": [
-        "Decoupled view and driving: your head moves the camera, the car and every input stay untouched",
-        "6DOF positional tracking sized for a rally cabin: lean into an apex, peek round the A-pillar, look through the side glass",
-        "Head turns stay level with the horizon however far the car is banked or pitched",
-        "Nothing is pinned to a game address, so a game patch does not need a mod update"
-      ],
+      "description": "6DOF head tracking for Assetto Corsa Rally via OpenTrack. Your head moves the camera, driving inputs are untouched.",
       "requirements": [
         "Assetto Corsa Rally (Steam, Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
