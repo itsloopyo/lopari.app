@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-15T22:05:18.380Z",
+  "updated_at": "2026-08-15T22:44:45.223Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3526,16 +3526,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.0.1",
-          "tag_name": "v1.0.1",
-          "name": "Assetto Corsa Rally Head Tracking v1.0.1",
-          "html_url": "https://github.com/itsloopyo/assetto-corsa-rally-headtracking/releases/tag/v1.0.1",
-          "published_at": "2026-08-15T22:04:50Z",
-          "zip_filename": "AssettoCorsaRallyHeadTracking-v1.0.1-installer.zip",
-          "download_url": "https://github.com/itsloopyo/assetto-corsa-rally-headtracking/releases/download/v1.0.1/AssettoCorsaRallyHeadTracking-v1.0.1-installer.zip",
-          "size_bytes": 3010763
+          "version": "1.0.2",
+          "tag_name": "v1.0.2",
+          "name": "Assetto Corsa Rally Head Tracking v1.0.2",
+          "html_url": "https://github.com/itsloopyo/assetto-corsa-rally-headtracking/releases/tag/v1.0.2",
+          "published_at": "2026-08-15T22:44:15Z",
+          "zip_filename": "AssettoCorsaRallyHeadTracking-v1.0.2-installer.zip",
+          "download_url": "https://github.com/itsloopyo/assetto-corsa-rally-headtracking/releases/download/v1.0.2/AssettoCorsaRallyHeadTracking-v1.0.2-installer.zip",
+          "size_bytes": 3010926
         },
         "versions": [
+          {
+            "tag_name": "v1.0.2",
+            "version": "1.0.2",
+            "name": "Assetto Corsa Rally Head Tracking v1.0.2",
+            "html_url": "https://github.com/itsloopyo/assetto-corsa-rally-headtracking/releases/tag/v1.0.2",
+            "published_at": "2026-08-15T22:44:15Z",
+            "zip_filename": "AssettoCorsaRallyHeadTracking-v1.0.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/assetto-corsa-rally-headtracking/releases/download/v1.0.2/AssettoCorsaRallyHeadTracking-v1.0.2-installer.zip",
+            "size_bytes": 3010926
+          },
           {
             "tag_name": "v1.0.1",
             "version": "1.0.1",
