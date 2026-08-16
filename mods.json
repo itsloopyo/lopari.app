@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-15T22:48:43.993Z",
+  "updated_at": "2026-08-16T11:50:46.859Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3566,6 +3566,73 @@
           }
         ]
       }
+    },
+    {
+      "id": "fallout-4",
+      "public": true,
+      "released": false,
+      "display_name": "Fallout 4",
+      "repo": "itsloopyo/fallout-4-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 377160,
+        "steam_folder": "Fallout 4",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "FALLOUT_4_PATH",
+        "executable_relpath": "Fallout4.exe"
+      },
+      "description": "6DOF head tracking for Fallout 4 via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming the weapon.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
+        "6DOF positional tracking: lean and peek with head position",
+        "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
+      ],
+      "requirements": [
+        "Fallout 4 (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Next tracker source",
+          "chord": "Ctrl+Shift+U"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260816.4d6c03a",
+          "built_at": "2026-08-16T11:40:15Z",
+          "zip_filename": "Fallout4HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/fallout-4-headtracking/releases/download/dev/Fallout4HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "The ASI loader installs as dxgi.dll, the only proxy slot Fallout4.exe imports. If you already run ReShade as dxgi.dll the loader is left alone and the mod never loads, so rename ReShade to d3d11.dll first."
+      ]
     }
   ],
   "native_games": [
