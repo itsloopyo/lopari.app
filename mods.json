@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-17T21:37:53.734Z",
+  "updated_at": "2026-08-17T22:21:29.993Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2321,16 +2321,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.2.0",
-          "tag_name": "v0.2.0",
-          "name": "Head Tracking for Valheim v0.2.0",
-          "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.2.0",
-          "published_at": "2026-08-03T21:44:48Z",
-          "zip_filename": "ValheimHeadTracking-v0.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.2.0/ValheimHeadTracking-v0.2.0-installer.zip",
-          "size_bytes": 779400
+          "version": "0.2.1",
+          "tag_name": "v0.2.1",
+          "name": "Head Tracking for Valheim v0.2.1",
+          "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.2.1",
+          "published_at": "2026-08-17T22:21:04Z",
+          "zip_filename": "ValheimHeadTracking-v0.2.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.2.1/ValheimHeadTracking-v0.2.1-installer.zip",
+          "size_bytes": 793803
         },
         "versions": [
+          {
+            "tag_name": "v0.2.1",
+            "version": "0.2.1",
+            "name": "Head Tracking for Valheim v0.2.1",
+            "html_url": "https://github.com/itsloopyo/valheim-headtracking/releases/tag/v0.2.1",
+            "published_at": "2026-08-17T22:21:04Z",
+            "zip_filename": "ValheimHeadTracking-v0.2.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/valheim-headtracking/releases/download/v0.2.1/ValheimHeadTracking-v0.2.1-installer.zip",
+            "size_bytes": 793803
+          },
           {
             "tag_name": "v0.2.0",
             "version": "0.2.0",
@@ -3403,10 +3413,10 @@
           "tag_name": "v1.0.0",
           "name": "Minecraft Head Tracking v1.0.0",
           "html_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/tag/v1.0.0",
-          "published_at": "2026-08-17T21:37:26Z",
+          "published_at": "2026-08-17T22:11:23Z",
           "zip_filename": "MinecraftHeadTracking-v1.0.0-installer.zip",
           "download_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/download/v1.0.0/MinecraftHeadTracking-v1.0.0-installer.zip",
-          "size_bytes": 266136
+          "size_bytes": 266040
         },
         "versions": [
           {
@@ -3414,10 +3424,10 @@
             "version": "1.0.0",
             "name": "Minecraft Head Tracking v1.0.0",
             "html_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/tag/v1.0.0",
-            "published_at": "2026-08-17T21:37:26Z",
+            "published_at": "2026-08-17T22:11:23Z",
             "zip_filename": "MinecraftHeadTracking-v1.0.0-installer.zip",
             "download_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/download/v1.0.0/MinecraftHeadTracking-v1.0.0-installer.zip",
-            "size_bytes": 266136
+            "size_bytes": 266040
           }
         ]
       }
