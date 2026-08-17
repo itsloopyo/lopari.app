@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-17T23:46:34.785Z",
+  "updated_at": "2026-08-17T23:49:17.242Z",
   "mods": [
     {
       "id": "subnautica",
@@ -181,16 +181,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.2.0",
-          "tag_name": "v1.2.0",
-          "name": "Head Tracking for Return of the Obra Dinn v1.2.0",
-          "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.2.0",
-          "published_at": "2026-08-03T21:26:22Z",
-          "zip_filename": "ObraDinnHeadTracking-v1.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.2.0/ObraDinnHeadTracking-v1.2.0-installer.zip",
-          "size_bytes": 776690
+          "version": "1.2.1",
+          "tag_name": "v1.2.1",
+          "name": "Head Tracking for Return of the Obra Dinn v1.2.1",
+          "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.2.1",
+          "published_at": "2026-08-17T23:48:48Z",
+          "zip_filename": "ObraDinnHeadTracking-v1.2.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.2.1/ObraDinnHeadTracking-v1.2.1-installer.zip",
+          "size_bytes": 790277
         },
         "versions": [
+          {
+            "tag_name": "v1.2.1",
+            "version": "1.2.1",
+            "name": "Head Tracking for Return of the Obra Dinn v1.2.1",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.2.1",
+            "published_at": "2026-08-17T23:48:48Z",
+            "zip_filename": "ObraDinnHeadTracking-v1.2.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.2.1/ObraDinnHeadTracking-v1.2.1-installer.zip",
+            "size_bytes": 790277
+          },
           {
             "tag_name": "v1.2.0",
             "version": "1.2.0",
