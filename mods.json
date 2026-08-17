@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-17T23:41:17.473Z",
+  "updated_at": "2026-08-17T23:42:01.799Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2897,16 +2897,26 @@
       "known_issues": [],
       "release": {
         "pinned": {
-          "version": "0.0.1",
-          "tag_name": "v0.0.1",
-          "name": "Head Tracking for YAPYAP v0.0.1",
-          "html_url": "https://github.com/itsloopyo/yapyap-headtracking/releases/tag/v0.0.1",
-          "published_at": "2026-08-17T23:40:54Z",
-          "zip_filename": "YapyapHeadTracking-v0.0.1-installer.zip",
-          "download_url": "https://github.com/itsloopyo/yapyap-headtracking/releases/download/v0.0.1/YapyapHeadTracking-v0.0.1-installer.zip",
-          "size_bytes": 793074
+          "version": "0.0.2",
+          "tag_name": "v0.0.2",
+          "name": "Head Tracking for YAPYAP v0.0.2",
+          "html_url": "https://github.com/itsloopyo/yapyap-headtracking/releases/tag/v0.0.2",
+          "published_at": "2026-08-17T23:41:33Z",
+          "zip_filename": "YapyapHeadTracking-v0.0.2-installer.zip",
+          "download_url": "https://github.com/itsloopyo/yapyap-headtracking/releases/download/v0.0.2/YapyapHeadTracking-v0.0.2-installer.zip",
+          "size_bytes": 793103
         },
         "versions": [
+          {
+            "tag_name": "v0.0.2",
+            "version": "0.0.2",
+            "name": "Head Tracking for YAPYAP v0.0.2",
+            "html_url": "https://github.com/itsloopyo/yapyap-headtracking/releases/tag/v0.0.2",
+            "published_at": "2026-08-17T23:41:33Z",
+            "zip_filename": "YapyapHeadTracking-v0.0.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/yapyap-headtracking/releases/download/v0.0.2/YapyapHeadTracking-v0.0.2-installer.zip",
+            "size_bytes": 793103
+          },
           {
             "tag_name": "v0.0.1",
             "version": "0.0.1",
