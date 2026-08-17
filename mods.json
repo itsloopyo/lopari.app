@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-17T23:45:05.997Z",
+  "updated_at": "2026-08-17T23:46:34.785Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1674,16 +1674,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.1",
-          "tag_name": "v0.1.1",
-          "name": "Head Tracking for Firewatch v0.1.1",
-          "html_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/tag/v0.1.1",
-          "published_at": "2026-06-07T19:36:20Z",
-          "zip_filename": "FirewatchHeadTracking-v0.1.1-installer.zip",
-          "download_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/download/v0.1.1/FirewatchHeadTracking-v0.1.1-installer.zip",
-          "size_bytes": 18293710
+          "version": "0.1.2",
+          "tag_name": "v0.1.2",
+          "name": "Head Tracking for Firewatch v0.1.2",
+          "html_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/tag/v0.1.2",
+          "published_at": "2026-08-17T23:46:06Z",
+          "zip_filename": "FirewatchHeadTracking-v0.1.2-installer.zip",
+          "download_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/download/v0.1.2/FirewatchHeadTracking-v0.1.2-installer.zip",
+          "size_bytes": 18311102
         },
         "versions": [
+          {
+            "tag_name": "v0.1.2",
+            "version": "0.1.2",
+            "name": "Head Tracking for Firewatch v0.1.2",
+            "html_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/tag/v0.1.2",
+            "published_at": "2026-08-17T23:46:06Z",
+            "zip_filename": "FirewatchHeadTracking-v0.1.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/download/v0.1.2/FirewatchHeadTracking-v0.1.2-installer.zip",
+            "size_bytes": 18311102
+          },
           {
             "tag_name": "v0.1.1",
             "version": "0.1.1",
