@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-18T00:00:42.260Z",
+  "updated_at": "2026-08-18T00:59:04.299Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1128,16 +1128,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.4.0",
-          "tag_name": "v1.4.0",
-          "name": "Head Tracking for Gone Home v1.4.0",
-          "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.4.0",
-          "published_at": "2026-08-03T21:07:15Z",
-          "zip_filename": "GoneHomeHeadTracking-v1.4.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.4.0/GoneHomeHeadTracking-v1.4.0-installer.zip",
-          "size_bytes": 455664
+          "version": "1.4.2",
+          "tag_name": "v1.4.2",
+          "name": "Head Tracking for Gone Home v1.4.2",
+          "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.4.2",
+          "published_at": "2026-08-18T00:58:38Z",
+          "zip_filename": "GoneHomeHeadTracking-v1.4.2-installer.zip",
+          "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.4.2/GoneHomeHeadTracking-v1.4.2-installer.zip",
+          "size_bytes": 469636
         },
         "versions": [
+          {
+            "tag_name": "v1.4.2",
+            "version": "1.4.2",
+            "name": "Head Tracking for Gone Home v1.4.2",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.4.2",
+            "published_at": "2026-08-18T00:58:38Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.4.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.4.2/GoneHomeHeadTracking-v1.4.2-installer.zip",
+            "size_bytes": 469636
+          },
           {
             "tag_name": "v1.4.0",
             "version": "1.4.0",
@@ -1789,8 +1799,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.1-nightly.20260803.7b0e1ea",
-          "built_at": "2026-08-03T22:43:04Z",
+          "version": "0.0.2-nightly.20260818.6cb9d8b",
+          "built_at": "2026-08-18T00:50:59Z",
           "zip_filename": "PainscreekHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/download/dev/PainscreekHeadTracking-dev-installer.zip"
         }
@@ -3575,8 +3585,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260814.d477fc4",
-          "built_at": "2026-08-14T14:18:53Z",
+          "version": "0.0.0-nightly.20260818.a9647ce",
+          "built_at": "2026-08-18T00:48:36Z",
           "zip_filename": "REPOHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/repo-headtracking/releases/download/dev/REPOHeadTracking-dev-installer.zip"
         }
