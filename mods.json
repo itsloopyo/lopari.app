@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-18T00:59:04.299Z",
+  "updated_at": "2026-08-18T01:10:41.786Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3510,16 +3510,26 @@
       },
       "release": {
         "pinned": {
-          "version": "1.0.0",
-          "tag_name": "v1.0.0",
-          "name": "Minecraft Head Tracking v1.0.0",
-          "html_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/tag/v1.0.0",
-          "published_at": "2026-08-17T22:11:23Z",
-          "zip_filename": "MinecraftHeadTracking-v1.0.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/download/v1.0.0/MinecraftHeadTracking-v1.0.0-installer.zip",
-          "size_bytes": 266040
+          "version": "1.0.1",
+          "tag_name": "v1.0.1",
+          "name": "Minecraft Head Tracking v1.0.1",
+          "html_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/tag/v1.0.1",
+          "published_at": "2026-08-18T01:10:11Z",
+          "zip_filename": "MinecraftHeadTracking-v1.0.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/download/v1.0.1/MinecraftHeadTracking-v1.0.1-installer.zip",
+          "size_bytes": 272596
         },
         "versions": [
+          {
+            "tag_name": "v1.0.1",
+            "version": "1.0.1",
+            "name": "Minecraft Head Tracking v1.0.1",
+            "html_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/tag/v1.0.1",
+            "published_at": "2026-08-18T01:10:11Z",
+            "zip_filename": "MinecraftHeadTracking-v1.0.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/download/v1.0.1/MinecraftHeadTracking-v1.0.1-installer.zip",
+            "size_bytes": 272596
+          },
           {
             "tag_name": "v1.0.0",
             "version": "1.0.0",
