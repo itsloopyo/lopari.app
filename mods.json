@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-18T20:39:55.445Z",
+  "updated_at": "2026-08-18T22:18:47.571Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3788,7 +3788,7 @@
     {
       "id": "edith-finch",
       "public": true,
-      "released": false,
+      "released": true,
       "display_name": "What Remains of Edith Finch",
       "repo": "itsloopyo/what-remains-of-edith-finch-headtracking",
       "install_strategy": "AsiLoader",
@@ -3838,9 +3838,31 @@
           "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/dev/EdithFinchHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [
-        "Not comprehensively tested."
-      ]
+      "known_issues": [],
+      "release": {
+        "pinned": {
+          "version": "1.0.0",
+          "tag_name": "v1.0.0",
+          "name": "What Remains of Edith Finch Head Tracking v1.0.0",
+          "html_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/tag/v1.0.0",
+          "published_at": "2026-08-18T22:18:14Z",
+          "zip_filename": "EdithFinchHeadTracking-v1.0.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/v1.0.0/EdithFinchHeadTracking-v1.0.0-installer.zip",
+          "size_bytes": 3024930
+        },
+        "versions": [
+          {
+            "tag_name": "v1.0.0",
+            "version": "1.0.0",
+            "name": "What Remains of Edith Finch Head Tracking v1.0.0",
+            "html_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/tag/v1.0.0",
+            "published_at": "2026-08-18T22:18:14Z",
+            "zip_filename": "EdithFinchHeadTracking-v1.0.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/v1.0.0/EdithFinchHeadTracking-v1.0.0-installer.zip",
+            "size_bytes": 3024930
+          }
+        ]
+      }
     },
     {
       "id": "control-ultimate-edition",
