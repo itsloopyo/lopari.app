@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-18T01:10:41.786Z",
+  "updated_at": "2026-08-18T01:19:47.882Z",
   "mods": [
     {
       "id": "subnautica",
@@ -518,16 +518,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.2.0",
-          "tag_name": "v1.2.0",
-          "name": "Head Tracking for Green Hell v1.2.0",
-          "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.2.0",
-          "published_at": "2026-08-03T21:12:51Z",
-          "zip_filename": "GreenHellHeadTracking-v1.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.2.0/GreenHellHeadTracking-v1.2.0-installer.zip",
-          "size_bytes": 21135811
+          "version": "1.2.2",
+          "tag_name": "v1.2.2",
+          "name": "Head Tracking for Green Hell v1.2.2",
+          "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.2.2",
+          "published_at": "2026-08-18T01:19:24Z",
+          "zip_filename": "GreenHellHeadTracking-v1.2.2-installer.zip",
+          "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.2.2/GreenHellHeadTracking-v1.2.2-installer.zip",
+          "size_bytes": 21150475
         },
         "versions": [
+          {
+            "tag_name": "v1.2.2",
+            "version": "1.2.2",
+            "name": "Head Tracking for Green Hell v1.2.2",
+            "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.2.2",
+            "published_at": "2026-08-18T01:19:24Z",
+            "zip_filename": "GreenHellHeadTracking-v1.2.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.2.2/GreenHellHeadTracking-v1.2.2-installer.zip",
+            "size_bytes": 21150475
+          },
           {
             "tag_name": "v1.2.0",
             "version": "1.2.0",
