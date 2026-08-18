@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-18T16:16:06.378Z",
+  "updated_at": "2026-08-18T20:39:55.445Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3893,6 +3893,63 @@
           "built_at": "2026-08-18T15:59:15Z",
           "zip_filename": "ControlHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/control-ultimate-edition-headtracking/releases/download/dev/ControlHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "portal-2",
+      "public": true,
+      "released": false,
+      "display_name": "Portal 2",
+      "repo": "itsloopyo/portal-2-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 620,
+        "steam_folder": "Portal 2",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "PORTAL_2_PATH",
+        "executable_relpath": "portal2.exe"
+      },
+      "description": "6DOF head tracking for Portal 2 via OpenTrack. Your head moves the camera, the mouse still points the portal gun.",
+      "requirements": [
+        "Portal 2 (Steam, Windows)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260818.8ae2f22",
+          "built_at": "2026-08-18T20:36:16Z",
+          "zip_filename": "Portal2HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/portal-2-headtracking/releases/download/dev/Portal2HeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
