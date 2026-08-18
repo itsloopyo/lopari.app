@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-18T01:38:04.550Z",
+  "updated_at": "2026-08-18T09:02:29.874Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3783,6 +3783,64 @@
       "known_issues": [
         "Not comprehensively tested.",
         "The ASI loader installs as dxgi.dll, the only proxy slot Fallout4.exe imports. If you already run ReShade as dxgi.dll the loader is left alone and the mod never loads, so rename ReShade to d3d11.dll first."
+      ]
+    },
+    {
+      "id": "edith-finch",
+      "public": true,
+      "released": false,
+      "display_name": "What Remains of Edith Finch",
+      "repo": "itsloopyo/what-remains-of-edith-finch-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 501300,
+        "steam_folder": "EdithFinch",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "EDITH_FINCH_PATH",
+        "executable_relpath": "FinchGame\\Binaries\\Win64\\FinchGame.exe"
+      },
+      "description": "6DOF head tracking for What Remains of Edith Finch via OpenTrack. Your head moves the camera, the mouse or controller still drives look and interaction.",
+      "requirements": [
+        "What Remains of Edith Finch (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Recenter",
+          "nav_key": "Home",
+          "chord": "Ctrl+Shift+T"
+        },
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260818.a4c0f26",
+          "built_at": "2026-08-18T01:34:24Z",
+          "zip_filename": "EdithFinchHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/dev/EdithFinchHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "The game ships an older UE4SS Lua head tracking mod that listens on UDP 5252 and couples look into aim. Installing this mod does not disable it; turn it off in FinchGame\\Binaries\\Win64\\Mods\\mods.txt if it interferes."
       ]
     }
   ],
