@@ -3839,8 +3839,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "The game ships an older UE4SS Lua head tracking mod that listens on UDP 5252 and couples look into aim. Installing this mod does not disable it; turn it off in FinchGame\\Binaries\\Win64\\Mods\\mods.txt if it interferes."
+        "Not comprehensively tested."
       ]
     }
   ],
