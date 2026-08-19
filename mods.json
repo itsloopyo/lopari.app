@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-18T22:18:47.571Z",
+  "updated_at": "2026-08-19T13:18:04.579Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1357,16 +1357,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.2.0",
-          "tag_name": "v0.2.0",
-          "name": "Cyberpunk 2077 HeadTracking v0.2.0",
-          "html_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/tag/v0.2.0",
-          "published_at": "2026-08-11T11:34:18Z",
-          "zip_filename": "HeadTracking-v0.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/v0.2.0/HeadTracking-v0.2.0-installer.zip",
-          "size_bytes": 37027472
+          "version": "0.3.0",
+          "tag_name": "v0.3.0",
+          "name": "Cyberpunk 2077 HeadTracking v0.3.0",
+          "html_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/tag/v0.3.0",
+          "published_at": "2026-08-19T13:17:29Z",
+          "zip_filename": "HeadTracking-v0.3.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/v0.3.0/HeadTracking-v0.3.0-installer.zip",
+          "size_bytes": 37065329
         },
         "versions": [
+          {
+            "tag_name": "v0.3.0",
+            "version": "0.3.0",
+            "name": "Cyberpunk 2077 HeadTracking v0.3.0",
+            "html_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/tag/v0.3.0",
+            "published_at": "2026-08-19T13:17:29Z",
+            "zip_filename": "HeadTracking-v0.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/v0.3.0/HeadTracking-v0.3.0-installer.zip",
+            "size_bytes": 37065329
+          },
           {
             "tag_name": "v0.2.0",
             "version": "0.2.0",
