@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T12:56:19.286Z",
+  "updated_at": "2026-08-20T13:11:32.837Z",
   "mods": [
     {
       "id": "subnautica",
@@ -766,16 +766,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.2.2",
-          "tag_name": "v0.2.2",
-          "name": "Head Tracking for Resident Evil Requiem v0.2.2",
-          "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.2.2",
-          "published_at": "2026-06-07T19:38:59Z",
-          "zip_filename": "RE9HeadTracking-v0.2.2-installer.zip",
-          "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.2.2/RE9HeadTracking-v0.2.2-installer.zip",
-          "size_bytes": 13406220
+          "version": "0.3.0",
+          "tag_name": "v0.3.0",
+          "name": "Head Tracking for Resident Evil Requiem v0.3.0",
+          "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.3.0",
+          "published_at": "2026-08-20T13:10:57Z",
+          "zip_filename": "RE9HeadTracking-v0.3.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.3.0/RE9HeadTracking-v0.3.0-installer.zip",
+          "size_bytes": 13451626
         },
         "versions": [
+          {
+            "tag_name": "v0.3.0",
+            "version": "0.3.0",
+            "name": "Head Tracking for Resident Evil Requiem v0.3.0",
+            "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.3.0",
+            "published_at": "2026-08-20T13:10:57Z",
+            "zip_filename": "RE9HeadTracking-v0.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.3.0/RE9HeadTracking-v0.3.0-installer.zip",
+            "size_bytes": 13451626
+          },
           {
             "tag_name": "v0.2.2",
             "version": "0.2.2",
@@ -1998,8 +2008,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260803.2c76f28",
-          "built_at": "2026-08-03T22:38:05Z",
+          "version": "0.0.0-nightly.20260820.5cc9ac6",
+          "built_at": "2026-08-20T13:05:06Z",
           "zip_filename": "RE2HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/download/dev/RE2HeadTracking-dev-installer.zip"
         }
@@ -2077,8 +2087,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260803.c045acf",
-          "built_at": "2026-08-03T22:38:20Z",
+          "version": "0.0.0-nightly.20260820.234785c",
+          "built_at": "2026-08-20T13:03:04Z",
           "zip_filename": "RE3HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/resident-evil-3-headtracking/releases/download/dev/RE3HeadTracking-dev-installer.zip"
         }
@@ -2131,8 +2141,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260803.587c184",
-          "built_at": "2026-08-03T22:38:22Z",
+          "version": "0.0.0-nightly.20260820.3398b80",
+          "built_at": "2026-08-20T13:04:41Z",
           "zip_filename": "RE4HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/resident-evil-4-headtracking/releases/download/dev/RE4HeadTracking-dev-installer.zip"
         }
@@ -2183,8 +2193,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260803.8ce3ce1",
-          "built_at": "2026-08-03T22:38:26Z",
+          "version": "0.0.0-nightly.20260820.8322e7a",
+          "built_at": "2026-08-20T13:06:48Z",
           "zip_filename": "RE7HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/resident-evil-7-headtracking/releases/download/dev/RE7HeadTracking-dev-installer.zip"
         }
@@ -2235,8 +2245,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260803.eb97831",
-          "built_at": "2026-08-03T22:38:28Z",
+          "version": "0.0.0-nightly.20260820.56c327d",
+          "built_at": "2026-08-20T13:08:10Z",
           "zip_filename": "RE8HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/resident-evil-village-headtracking/releases/download/dev/RE8HeadTracking-dev-installer.zip"
         }
