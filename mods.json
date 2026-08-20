@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T14:56:16.584Z",
+  "updated_at": "2026-08-20T14:58:50.971Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1978,8 +1978,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.2-nightly.20260818.6cb9d8b",
-          "built_at": "2026-08-18T00:50:59Z",
+          "version": "0.1.0-nightly.20260820.e4b385b",
+          "built_at": "2026-08-20T14:56:19Z",
           "zip_filename": "PainscreekHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/download/dev/PainscreekHeadTracking-dev-installer.zip"
         }
@@ -4246,8 +4246,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260818.8ae2f22",
-          "built_at": "2026-08-18T20:36:16Z",
+          "version": "0.2.0-nightly.20260820.13cca84",
+          "built_at": "2026-08-20T14:57:50Z",
           "zip_filename": "Portal2HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/portal-2-headtracking/releases/download/dev/Portal2HeadTracking-dev-installer.zip"
         }
