@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T12:53:47.849Z",
+  "updated_at": "2026-08-20T12:56:19.286Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1953,7 +1953,7 @@
     {
       "id": "resident-evil-2",
       "public": true,
-      "released": false,
+      "released": true,
       "display_name": "Resident Evil 2",
       "repo": "itsloopyo/resident-evil-2-headtracking",
       "install_strategy": "REFramework",
@@ -2004,10 +2004,31 @@
           "download_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/download/dev/RE2HeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
-      ]
+      "known_issues": [],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "RE2HeadTracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-08-20T12:55:51Z",
+          "zip_filename": "RE2HeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/download/v0.1.0/RE2HeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 13432292
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "RE2HeadTracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-08-20T12:55:51Z",
+            "zip_filename": "RE2HeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/download/v0.1.0/RE2HeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 13432292
+          }
+        ]
+      }
     },
     {
       "id": "resident-evil-3",
