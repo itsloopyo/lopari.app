@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T10:48:38.602Z",
+  "updated_at": "2026-08-20T11:57:09.175Z",
   "mods": [
     {
       "id": "subnautica",
@@ -528,16 +528,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.2.2",
-          "tag_name": "v1.2.2",
-          "name": "Head Tracking for Green Hell v1.2.2",
-          "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.2.2",
-          "published_at": "2026-08-18T01:19:24Z",
-          "zip_filename": "GreenHellHeadTracking-v1.2.2-installer.zip",
-          "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.2.2/GreenHellHeadTracking-v1.2.2-installer.zip",
-          "size_bytes": 21150475
+          "version": "1.3.0",
+          "tag_name": "v1.3.0",
+          "name": "Head Tracking for Green Hell v1.3.0",
+          "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.3.0",
+          "published_at": "2026-08-20T11:56:37Z",
+          "zip_filename": "GreenHellHeadTracking-v1.3.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.3.0/GreenHellHeadTracking-v1.3.0-installer.zip",
+          "size_bytes": 21151189
         },
         "versions": [
+          {
+            "tag_name": "v1.3.0",
+            "version": "1.3.0",
+            "name": "Head Tracking for Green Hell v1.3.0",
+            "html_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/tag/v1.3.0",
+            "published_at": "2026-08-20T11:56:37Z",
+            "zip_filename": "GreenHellHeadTracking-v1.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/green-hell-headtracking/releases/download/v1.3.0/GreenHellHeadTracking-v1.3.0-installer.zip",
+            "size_bytes": 21151189
+          },
           {
             "tag_name": "v1.2.2",
             "version": "1.2.2",
@@ -3884,8 +3894,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260816.4d6c03a",
-          "built_at": "2026-08-16T11:40:15Z",
+          "version": "0.0.0-nightly.20260820.9f267fd",
+          "built_at": "2026-08-20T11:55:56Z",
           "zip_filename": "Fallout4HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/fallout-4-headtracking/releases/download/dev/Fallout4HeadTracking-dev-installer.zip"
         }
