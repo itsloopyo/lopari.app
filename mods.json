@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T14:25:38.823Z",
+  "updated_at": "2026-08-20T14:36:59.153Z",
   "mods": [
     {
       "id": "subnautica",
@@ -23,7 +23,6 @@
       "features": [
         "Head moves the view; mouse + aim stay independent",
         "6DOF position tracking (peek around corners, lean into HUD)",
-        "Auto-recenters on first packet after a reconnect",
         "Pauses automatically in menus, loading screens, cutscenes",
         "UI/canvas compensation - HUD markers stay where they should"
       ],
@@ -1940,7 +1939,7 @@
     {
       "id": "painscreek-killings",
       "public": true,
-      "released": true,
+      "released": false,
       "display_name": "The Painscreek Killings",
       "repo": "itsloopyo/the-painscreek-killings-headtracking",
       "install_strategy": "MonoCecil",
@@ -1985,36 +1984,15 @@
           "download_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/download/dev/PainscreekHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [],
-      "release": {
-        "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Head Tracking for The Painscreek Killings v0.1.0",
-          "html_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-08-20T13:27:18Z",
-          "zip_filename": "PainscreekHeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/download/v0.1.0/PainscreekHeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 1132185
-        },
-        "versions": [
-          {
-            "tag_name": "v0.1.0",
-            "version": "0.1.0",
-            "name": "Head Tracking for The Painscreek Killings v0.1.0",
-            "html_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/tag/v0.1.0",
-            "published_at": "2026-08-20T13:27:18Z",
-            "zip_filename": "PainscreekHeadTracking-v0.1.0-installer.zip",
-            "download_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/download/v0.1.0/PainscreekHeadTracking-v0.1.0-installer.zip",
-            "size_bytes": 1132185
-          }
-        ]
-      }
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "resident-evil-2",
       "public": true,
-      "released": true,
+      "released": false,
       "display_name": "Resident Evil 2",
       "repo": "itsloopyo/resident-evil-2-headtracking",
       "install_strategy": "REFramework",
@@ -2065,31 +2043,10 @@
           "download_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/download/dev/RE2HeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [],
-      "release": {
-        "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "RE2HeadTracking v0.1.0",
-          "html_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-08-20T12:55:51Z",
-          "zip_filename": "RE2HeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/download/v0.1.0/RE2HeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 13432292
-        },
-        "versions": [
-          {
-            "tag_name": "v0.1.0",
-            "version": "0.1.0",
-            "name": "RE2HeadTracking v0.1.0",
-            "html_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/tag/v0.1.0",
-            "published_at": "2026-08-20T12:55:51Z",
-            "zip_filename": "RE2HeadTracking-v0.1.0-installer.zip",
-            "download_url": "https://github.com/itsloopyo/resident-evil-2-headtracking/releases/download/v0.1.0/RE2HeadTracking-v0.1.0-installer.zip",
-            "size_bytes": 13432292
-          }
-        ]
-      }
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "resident-evil-3",
@@ -2769,8 +2726,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260803.d1a5514",
-          "built_at": "2026-08-03T22:44:11Z",
+          "version": "0.0.0-nightly.20260820.15a74e2",
+          "built_at": "2026-08-20T14:27:51Z",
           "zip_filename": "WobblyLifeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/wobbly-life-headtracking/releases/download/dev/WobblyLifeHeadTracking-dev-installer.zip"
         }
@@ -2915,7 +2872,6 @@
       "features": [
         "Head nudges the third-person camera; mouse + aim untouched",
         "6DOF position tracking, tuned to ACU's tight follow camera",
-        "Auto-recenter on first packet after reconnect",
         "Pauses in menus and loading screens"
       ],
       "requirements": [
@@ -3075,8 +3031,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260803.de04f73",
-          "built_at": "2026-08-03T22:45:50Z",
+          "version": "0.0.0-nightly.20260820.24bc0ea",
+          "built_at": "2026-08-20T14:28:37Z",
           "zip_filename": "Yakuza0HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/yakuza-0-headtracking/releases/download/dev/Yakuza0HeadTracking-dev-installer.zip"
         }
@@ -3089,7 +3045,7 @@
     {
       "id": "sons-of-the-forest",
       "public": true,
-      "released": true,
+      "released": false,
       "display_name": "Sons of the Forest",
       "repo": "itsloopyo/sons-of-the-forest-headtracking",
       "install_strategy": "BepInEx6",
@@ -3143,31 +3099,10 @@
           "download_url": "https://github.com/itsloopyo/sons-of-the-forest-headtracking/releases/download/dev/SonsOfTheForestHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [],
-      "release": {
-        "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Head Tracking for Sons of the Forest v0.1.0",
-          "html_url": "https://github.com/itsloopyo/sons-of-the-forest-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-08-20T13:17:40Z",
-          "zip_filename": "SonsOfTheForestHeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/sons-of-the-forest-headtracking/releases/download/v0.1.0/SonsOfTheForestHeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 34274004
-        },
-        "versions": [
-          {
-            "tag_name": "v0.1.0",
-            "version": "0.1.0",
-            "name": "Head Tracking for Sons of the Forest v0.1.0",
-            "html_url": "https://github.com/itsloopyo/sons-of-the-forest-headtracking/releases/tag/v0.1.0",
-            "published_at": "2026-08-20T13:17:40Z",
-            "zip_filename": "SonsOfTheForestHeadTracking-v0.1.0-installer.zip",
-            "download_url": "https://github.com/itsloopyo/sons-of-the-forest-headtracking/releases/download/v0.1.0/SonsOfTheForestHeadTracking-v0.1.0-installer.zip",
-            "size_bytes": 34274004
-          }
-        ]
-      }
+      "known_issues": [
+        "Not comprehensively tested.",
+        "No README.gif."
+      ]
     },
     {
       "id": "yapyap",
