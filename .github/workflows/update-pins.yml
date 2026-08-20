@@ -34,24 +34,35 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6
+        with:
+          ref: main
 
       - uses: prefix-dev/setup-pixi@5185adfbffb4bd703da3010310260805d89ebb11 # v0.9.6
 
-      - name: Refresh pins
+      - name: Refresh pins, commit and push if they moved
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: pixi run update-pins
-
-      - name: Commit and push if pins moved
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # updated_at changes on every run; only commit when a pin
-          # actually moved so the history isn't hourly noise.
-          if git diff --numstat mods.json | awk '{exit !($1 <= 1 && $2 <= 1)}'; then
-            echo "No pin changes - skipping commit."
-            exit 0
-          fi
-          git add mods.json
-          git commit -m "catalog: refresh release/dev/launcher pins"
-          git push
+          # A dispatch created while another pin run is in flight resolves its
+          # ref before that run pushes, so this one's push is rejected as
+          # non-fast-forward. Regenerate against the new tip rather than
+          # rebasing a generated file.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            git reset --hard origin/main
+            pixi run update-pins
+            # updated_at changes on every run; only commit when a pin
+            # actually moved so the history isn't hourly noise.
+            if git diff --numstat mods.json | awk '{exit !($1 <= 1 && $2 <= 1)}'; then
+              echo "No pin changes - skipping commit."
+              exit 0
+            fi
+            git add mods.json
+            git commit -m "catalog: refresh release/dev/launcher pins"
+            if git push; then exit 0; fi
+            echo "Push rejected by a concurrent pin run - regenerating (attempt $attempt)."
+          done
+          echo "::error::Could not land the pin refresh after 3 attempts."
+          exit 1
