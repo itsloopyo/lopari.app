@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T14:58:50.971Z",
+  "updated_at": "2026-08-20T20:48:00.317Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3711,8 +3711,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260820.540e450",
-          "built_at": "2026-08-20T09:46:17Z",
+          "version": "0.0.0-nightly.20260820.d47b5b9",
+          "built_at": "2026-08-20T20:09:20Z",
           "zip_filename": "AlienIsolationHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/alien-isolation-headtracking/releases/download/dev/AlienIsolationHeadTracking-dev-installer.zip"
         }
