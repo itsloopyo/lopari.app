@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T14:54:55.547Z",
+  "updated_at": "2026-08-20T14:55:36.814Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3101,13 +3101,7 @@
         }
       ],
       "distribution": {
-        "type": "dev-release",
-        "pinned": {
-          "version": "0.0.0-nightly.20260803.343057c",
-          "built_at": "2026-08-03T22:42:03Z",
-          "zip_filename": "SonsOfTheForestHeadTracking-dev-installer.zip",
-          "download_url": "https://github.com/itsloopyo/sons-of-the-forest-headtracking/releases/download/dev/SonsOfTheForestHeadTracking-dev-installer.zip"
-        }
+        "type": "dev-release"
       },
       "known_issues": [
         "Not comprehensively tested.",
