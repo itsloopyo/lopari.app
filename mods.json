@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T11:57:09.175Z",
+  "updated_at": "2026-08-20T12:21:12.063Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1824,16 +1824,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.2",
-          "tag_name": "v0.1.2",
-          "name": "Head Tracking for Firewatch v0.1.2",
-          "html_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/tag/v0.1.2",
-          "published_at": "2026-08-17T23:46:06Z",
-          "zip_filename": "FirewatchHeadTracking-v0.1.2-installer.zip",
-          "download_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/download/v0.1.2/FirewatchHeadTracking-v0.1.2-installer.zip",
-          "size_bytes": 18311102
+          "version": "0.3.0",
+          "tag_name": "v0.3.0",
+          "name": "Head Tracking for Firewatch v0.3.0",
+          "html_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/tag/v0.3.0",
+          "published_at": "2026-08-20T12:20:38Z",
+          "zip_filename": "FirewatchHeadTracking-v0.3.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/download/v0.3.0/FirewatchHeadTracking-v0.3.0-installer.zip",
+          "size_bytes": 18311804
         },
         "versions": [
+          {
+            "tag_name": "v0.3.0",
+            "version": "0.3.0",
+            "name": "Head Tracking for Firewatch v0.3.0",
+            "html_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/tag/v0.3.0",
+            "published_at": "2026-08-20T12:20:38Z",
+            "zip_filename": "FirewatchHeadTracking-v0.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/firewatch-headtracking/releases/download/v0.3.0/FirewatchHeadTracking-v0.3.0-installer.zip",
+            "size_bytes": 18311804
+          },
           {
             "tag_name": "v0.1.2",
             "version": "0.1.2",
@@ -3226,8 +3236,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260803.c7a39f8",
-          "built_at": "2026-08-03T22:37:49Z",
+          "version": "0.0.0-nightly.20260820.fbac051",
+          "built_at": "2026-08-20T11:57:54Z",
           "zip_filename": "MirrorsEdgeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/mirrors-edge-headtracking/releases/download/dev/MirrorsEdgeHeadTracking-dev-installer.zip"
         }
