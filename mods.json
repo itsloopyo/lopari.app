@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T13:22:10.308Z",
+  "updated_at": "2026-08-20T13:27:47.512Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1930,7 +1930,7 @@
     {
       "id": "painscreek-killings",
       "public": true,
-      "released": false,
+      "released": true,
       "display_name": "The Painscreek Killings",
       "repo": "itsloopyo/the-painscreek-killings-headtracking",
       "install_strategy": "MonoCecil",
@@ -1975,10 +1975,31 @@
           "download_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/download/dev/PainscreekHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
-      ]
+      "known_issues": [],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Head Tracking for The Painscreek Killings v0.1.0",
+          "html_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-08-20T13:27:18Z",
+          "zip_filename": "PainscreekHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/download/v0.1.0/PainscreekHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 1132185
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Head Tracking for The Painscreek Killings v0.1.0",
+            "html_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-08-20T13:27:18Z",
+            "zip_filename": "PainscreekHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/the-painscreek-killings-headtracking/releases/download/v0.1.0/PainscreekHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 1132185
+          }
+        ]
+      }
     },
     {
       "id": "resident-evil-2",
