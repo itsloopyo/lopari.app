@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T14:36:59.153Z",
+  "updated_at": "2026-08-20T14:54:55.547Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2400,16 +2400,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.5.0",
-          "tag_name": "v0.5.0",
-          "name": "Subnautica 2 Head Tracking v0.5.0",
-          "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.5.0",
-          "published_at": "2026-08-03T22:39:00Z",
-          "zip_filename": "Subnautica2HeadTracking-v0.5.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.5.0/Subnautica2HeadTracking-v0.5.0-installer.zip",
-          "size_bytes": 254035
+          "version": "0.6.0",
+          "tag_name": "v0.6.0",
+          "name": "Subnautica 2 Head Tracking v0.6.0",
+          "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.6.0",
+          "published_at": "2026-08-20T14:54:17Z",
+          "zip_filename": "Subnautica2HeadTracking-v0.6.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.6.0/Subnautica2HeadTracking-v0.6.0-installer.zip",
+          "size_bytes": 283921
         },
         "versions": [
+          {
+            "tag_name": "v0.6.0",
+            "version": "0.6.0",
+            "name": "Subnautica 2 Head Tracking v0.6.0",
+            "html_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/tag/v0.6.0",
+            "published_at": "2026-08-20T14:54:17Z",
+            "zip_filename": "Subnautica2HeadTracking-v0.6.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-2-headtracking/releases/download/v0.6.0/Subnautica2HeadTracking-v0.6.0-installer.zip",
+            "size_bytes": 283921
+          },
           {
             "tag_name": "v0.5.0",
             "version": "0.5.0",
@@ -3768,16 +3778,26 @@
       },
       "release": {
         "pinned": {
-          "version": "1.0.1",
-          "tag_name": "v1.0.1",
-          "name": "Minecraft Head Tracking v1.0.1",
-          "html_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/tag/v1.0.1",
-          "published_at": "2026-08-18T01:10:11Z",
-          "zip_filename": "MinecraftHeadTracking-v1.0.1-installer.zip",
-          "download_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/download/v1.0.1/MinecraftHeadTracking-v1.0.1-installer.zip",
-          "size_bytes": 272596
+          "version": "1.1.0",
+          "tag_name": "v1.1.0",
+          "name": "Minecraft Head Tracking v1.1.0",
+          "html_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/tag/v1.1.0",
+          "published_at": "2026-08-20T14:54:22Z",
+          "zip_filename": "MinecraftHeadTracking-v1.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/download/v1.1.0/MinecraftHeadTracking-v1.1.0-installer.zip",
+          "size_bytes": 275772
         },
         "versions": [
+          {
+            "tag_name": "v1.1.0",
+            "version": "1.1.0",
+            "name": "Minecraft Head Tracking v1.1.0",
+            "html_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/tag/v1.1.0",
+            "published_at": "2026-08-20T14:54:22Z",
+            "zip_filename": "MinecraftHeadTracking-v1.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/minecraft-bedrock-edition-headtracking/releases/download/v1.1.0/MinecraftHeadTracking-v1.1.0-installer.zip",
+            "size_bytes": 275772
+          },
           {
             "tag_name": "v1.0.1",
             "version": "1.0.1",
