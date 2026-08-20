@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-20T12:25:26.657Z",
+  "updated_at": "2026-08-20T12:53:47.849Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3192,8 +3192,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260817.3fae81f",
-          "built_at": "2026-08-17T21:30:18Z",
+          "version": "0.0.0-nightly.20260820.4bca980",
+          "built_at": "2026-08-20T12:48:51Z",
           "zip_filename": "MetaphorHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/metaphor-refantazio-headtracking/releases/download/dev/MetaphorHeadTracking-dev-installer.zip"
         }
@@ -3518,16 +3518,26 @@
       "known_issues": [],
       "release": {
         "pinned": {
-          "version": "0.2.0",
-          "tag_name": "v0.2.0",
-          "name": "Red Eclipse Head Tracking v0.2.0",
-          "html_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/tag/v0.2.0",
-          "published_at": "2026-08-09T17:46:39Z",
-          "zip_filename": "RedEclipseHeadTracking-v0.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/download/v0.2.0/RedEclipseHeadTracking-v0.2.0-installer.zip",
-          "size_bytes": 3012666
+          "version": "0.3.0",
+          "tag_name": "v0.3.0",
+          "name": "Red Eclipse Head Tracking v0.3.0",
+          "html_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/tag/v0.3.0",
+          "published_at": "2026-08-20T12:53:20Z",
+          "zip_filename": "RedEclipseHeadTracking-v0.3.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/download/v0.3.0/RedEclipseHeadTracking-v0.3.0-installer.zip",
+          "size_bytes": 3025821
         },
         "versions": [
+          {
+            "tag_name": "v0.3.0",
+            "version": "0.3.0",
+            "name": "Red Eclipse Head Tracking v0.3.0",
+            "html_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/tag/v0.3.0",
+            "published_at": "2026-08-20T12:53:20Z",
+            "zip_filename": "RedEclipseHeadTracking-v0.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/download/v0.3.0/RedEclipseHeadTracking-v0.3.0-installer.zip",
+            "size_bytes": 3025821
+          },
           {
             "tag_name": "v0.2.0",
             "version": "0.2.0",
@@ -3755,8 +3765,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260818.a9647ce",
-          "built_at": "2026-08-18T00:48:36Z",
+          "version": "0.0.0-nightly.20260820.44a2cc5",
+          "built_at": "2026-08-20T12:47:11Z",
           "zip_filename": "REPOHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/repo-headtracking/releases/download/dev/REPOHeadTracking-dev-installer.zip"
         }
