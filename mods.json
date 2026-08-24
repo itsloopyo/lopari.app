@@ -4318,9 +4318,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "There is no recenter hotkey; center the pose in your tracker app instead.",
-        "Pinball FX patches often. The mod carries a profile for the Steam 2026-05-21 build and stays dormant on a build it has no profile for, rather than hooking a camera it does not recognise."
+        "Not comprehensively tested."
       ]
     }
   ],
