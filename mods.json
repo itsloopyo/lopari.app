@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-22T11:38:12.194Z",
+  "updated_at": "2026-08-24T00:54:20.252Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4264,6 +4264,63 @@
       },
       "known_issues": [
         "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "pinball-fx",
+      "public": true,
+      "released": false,
+      "display_name": "Pinball FX",
+      "repo": "itsloopyo/pinball-fx-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 2328760,
+        "steam_folder": "Pinball FX",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "PINBALL_FX_PATH",
+        "executable_relpath": "PinballFX\\Binaries\\Win64\\PinballFX-Win64-Shipping.exe"
+      },
+      "description": "6DOF head tracking for Pinball FX via OpenTrack. Your head moves the camera, so you can lean to see past a ramp or under an upper playfield on a normal monitor.",
+      "features": [
+        "6DOF positional tracking: lean and move your head for the parallax to see past table geometry"
+      ],
+      "requirements": [
+        "Pinball FX (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260823.ebece68",
+          "built_at": "2026-08-23T23:30:04Z",
+          "zip_filename": "PinballFXHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/pinball-fx-headtracking/releases/download/dev/PinballFXHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "There is no recenter hotkey; center the pose in your tracker app instead.",
+        "Pinball FX patches often. The mod carries a profile for the Steam 2026-05-21 build and stays dormant on a build it has no profile for, rather than hooking a camera it does not recognise."
       ]
     }
   ],
