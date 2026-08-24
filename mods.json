@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-24T19:01:16.622Z",
+  "updated_at": "2026-08-24T19:33:51.607Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4371,6 +4371,62 @@
           "built_at": "2026-08-24T08:36:56Z",
           "zip_filename": "KingdomComeDeliverance2HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/kingdom-come-deliverance-2-headtracking/releases/download/dev/KingdomComeDeliverance2HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "kingdom-come-deliverance",
+      "public": true,
+      "released": false,
+      "display_name": "Kingdom Come: Deliverance",
+      "repo": "itsloopyo/kingdom-come-deliverance-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 379430,
+        "steam_folder": "KingdomComeDeliverance",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "KINGDOM_COME_DELIVERANCE_PATH",
+        "executable_relpath": "Bin\\Win64\\KingdomCome.exe"
+      },
+      "description": "6DOF head tracking for Kingdom Come: Deliverance via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
+        "6DOF positional tracking: lean and peek with head position"
+      ],
+      "requirements": [
+        "Kingdom Come: Deliverance (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260824.95cd6d8",
+          "built_at": "2026-08-24T19:16:19Z",
+          "zip_filename": "KingdomComeDeliveranceHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/kingdom-come-deliverance-headtracking/releases/download/dev/KingdomComeDeliveranceHeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
