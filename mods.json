@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-24T19:33:51.607Z",
+  "updated_at": "2026-08-25T09:01:20.859Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4311,8 +4311,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260824.757b491",
-          "built_at": "2026-08-24T18:26:19Z",
+          "version": "0.0.0-nightly.20260825.9f8cba8",
+          "built_at": "2026-08-25T08:27:02Z",
           "zip_filename": "PinballFXHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/pinball-fx-headtracking/releases/download/dev/PinballFXHeadTracking-dev-installer.zip"
         }
