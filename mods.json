@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-25T18:29:51.762Z",
+  "updated_at": "2026-08-25T19:49:13.089Z",
   "mods": [
     {
       "id": "subnautica",
@@ -785,16 +785,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.3.0",
-          "tag_name": "v0.3.0",
-          "name": "Head Tracking for Resident Evil Requiem v0.3.0",
-          "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.3.0",
-          "published_at": "2026-08-20T13:10:57Z",
-          "zip_filename": "RE9HeadTracking-v0.3.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.3.0/RE9HeadTracking-v0.3.0-installer.zip",
-          "size_bytes": 13451626
+          "version": "0.4.0",
+          "tag_name": "v0.4.0",
+          "name": "Head Tracking for Resident Evil Requiem v0.4.0",
+          "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.4.0",
+          "published_at": "2026-08-25T19:48:36Z",
+          "zip_filename": "RE9HeadTracking-v0.4.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.4.0/RE9HeadTracking-v0.4.0-installer.zip",
+          "size_bytes": 13451647
         },
         "versions": [
+          {
+            "tag_name": "v0.4.0",
+            "version": "0.4.0",
+            "name": "Head Tracking for Resident Evil Requiem v0.4.0",
+            "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.4.0",
+            "published_at": "2026-08-25T19:48:36Z",
+            "zip_filename": "RE9HeadTracking-v0.4.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.4.0/RE9HeadTracking-v0.4.0-installer.zip",
+            "size_bytes": 13451647
+          },
           {
             "tag_name": "v0.3.0",
             "version": "0.3.0",
