@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-25T09:42:33.535Z",
+  "updated_at": "2026-08-25T18:29:51.762Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3247,6 +3247,70 @@
           }
         ]
       }
+    },
+    {
+      "id": "titanfall-2",
+      "public": true,
+      "released": false,
+      "display_name": "Titanfall 2",
+      "repo": "itsloopyo/titanfall-2-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 1237970,
+        "steam_folder": "Titanfall2",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "TITANFALL_2_PATH",
+        "executable_relpath": "Titanfall2.exe"
+      },
+      "description": "Decoupled head tracking for Titanfall 2 (Respawn's modified Source Engine): your head moves the view while the mouse or controller still controls aim. Built for the single-player Campaign - keep it off in multiplayer and Frontier Defense.",
+      "features": [
+        "Decoupled look and aim: head rotation is injected into the render view only; the game's aim, projectiles and traces read the clean mouse-controlled camera",
+        "6DOF positional tracking (lean / peek) applied to the render camera origin",
+        "Works with any OpenTrack-compatible source (webcam, phone app, IR clip) at any sample rate",
+        "Per-build PE-fingerprint gating: engages only on client.dll builds it knows, and leaves the game vanilla otherwise"
+      ],
+      "requirements": [
+        "Titanfall 2 (Steam)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Cycles what aiming down sights does: tracking paused, tracking on with an aim marker, or tracking on without one"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260825.c8416f0",
+          "built_at": "2026-08-25T18:25:44Z",
+          "zip_filename": "Titanfall2HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/titanfall-2-headtracking/releases/download/dev/Titanfall2HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
     },
     {
       "id": "metaphor",
