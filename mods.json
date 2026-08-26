@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-26T20:42:41.860Z",
+  "updated_at": "2026-08-26T21:38:33.196Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2302,6 +2302,62 @@
       "known_issues": [
         "Not comprehensively tested.",
         "No README.gif."
+      ]
+    },
+    {
+      "id": "shadows-of-doubt",
+      "public": true,
+      "released": false,
+      "display_name": "Shadows of Doubt",
+      "repo": "itsloopyo/shadows-of-doubt-headtracking",
+      "install_strategy": "BepInEx6",
+      "game": {
+        "steam_app_id": 986130,
+        "steam_folder": "Shadows of Doubt",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "SHADOWS_OF_DOUBT_PATH",
+        "executable_relpath": "Shadows of Doubt.exe"
+      },
+      "description": "6DOF head tracking for Shadows of Doubt via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
+        "6DOF positional tracking: lean and peek with head position"
+      ],
+      "requirements": [
+        "Shadows of Doubt (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "1.0.4-nightly.20260826.de7d327",
+          "built_at": "2026-08-26T21:26:23Z",
+          "zip_filename": "ShadowsOfDoubtHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/shadows-of-doubt-headtracking/releases/download/dev/ShadowsOfDoubtHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
       ]
     },
     {
