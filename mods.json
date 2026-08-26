@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-25T19:49:13.089Z",
+  "updated_at": "2026-08-26T15:14:12.619Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4511,6 +4511,62 @@
           "built_at": "2026-08-24T19:16:19Z",
           "zip_filename": "KingdomComeDeliveranceHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/kingdom-come-deliverance-headtracking/releases/download/dev/KingdomComeDeliveranceHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "pacific-drive",
+      "public": true,
+      "released": false,
+      "display_name": "Pacific Drive",
+      "repo": "itsloopyo/pacific-drive-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 1458140,
+        "steam_folder": "Pacific Drive",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "PACIFIC_DRIVE_PATH",
+        "executable_relpath": "PenDriverPro\\Binaries\\Win64\\PenDriverPro-Win64-Shipping.exe"
+      },
+      "description": "6DOF head tracking for Pacific Drive via OpenTrack. Your head moves the camera, the mouse or controller keeps driving, aiming and interacting.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, aim and interaction stay on your mouse or controller",
+        "6DOF positional tracking: lean and peek with head position"
+      ],
+      "requirements": [
+        "Pacific Drive (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260826.dbdf382",
+          "built_at": "2026-08-26T14:44:24Z",
+          "zip_filename": "PacificDriveHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/pacific-drive-headtracking/releases/download/dev/PacificDriveHeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
