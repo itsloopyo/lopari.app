@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-26T21:50:39.940Z",
+  "updated_at": "2026-08-28T02:10:06.016Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2830,8 +2830,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260820.15a74e2",
-          "built_at": "2026-08-20T14:27:51Z",
+          "version": "0.0.0-nightly.20260828.8a5a8a3",
+          "built_at": "2026-08-28T01:49:37Z",
           "zip_filename": "WobblyLifeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/wobbly-life-headtracking/releases/download/dev/WobblyLifeHeadTracking-dev-installer.zip"
         }
@@ -4641,6 +4641,66 @@
           "built_at": "2026-08-26T14:44:24Z",
           "zip_filename": "PacificDriveHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/pacific-drive-headtracking/releases/download/dev/PacificDriveHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "prey",
+      "public": true,
+      "released": false,
+      "display_name": "Prey",
+      "repo": "itsloopyo/prey-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 480490,
+        "steam_folder": "Prey",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "PREY_PATH",
+        "executable_relpath": "Binaries\\Danielle\\x64\\Release\\Prey.exe"
+      },
+      "description": "6DOF head tracking for Prey (2017) via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming. Campaign only: Mooncrash and Typhon Hunter run from a separate DLL the mod does not recognise, so they render vanilla.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
+        "6DOF positional tracking: lean and peek with head position"
+      ],
+      "requirements": [
+        "Prey (2017) (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Next tracker source",
+          "chord": "Ctrl+Shift+U"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260828.f3d9739",
+          "built_at": "2026-08-28T01:15:22Z",
+          "zip_filename": "PreyHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/prey-headtracking/releases/download/dev/PreyHeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
