@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-29T04:10:14.845Z",
+  "updated_at": "2026-08-29T09:05:45.715Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3396,8 +3396,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260825.c8416f0",
-          "built_at": "2026-08-25T18:25:44Z",
+          "version": "0.0.0-nightly.20260829.aeb1f93",
+          "built_at": "2026-08-29T04:24:08Z",
           "zip_filename": "Titanfall2HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/titanfall-2-headtracking/releases/download/dev/Titanfall2HeadTracking-dev-installer.zip"
         }
