@@ -19,12 +19,12 @@ description = "Serve lopari.app at http://localhost:4173 and open it in the defa
 # Republish ../lopari/catalog/mods.json to mods.json with release, dev-build,
 # and launcher-update pins stamped in. The launcher reads mods.json as its
 # only source of build availability - it never queries the GitHub API - so
-# run this whenever a mod ships a release or dev build, then commit + push
-# BOTH this repo (live copy) and ../lopari (baked offline fallback).
-# Authenticates via $GITHUB_TOKEN or `gh auth token`.
+# run this whenever a mod ships a release or dev build. Both copies are
+# committed for you (see scripts/commit-catalog.mjs); pushing them stays
+# manual. Authenticates via $GITHUB_TOKEN or `gh auth token`.
 [tasks.update-metadata]
-cmd = "node scripts/update-metadata.mjs"
-description = "Republish mods.json with pinned release / dev-build / launcher info for every public mod in the lopari catalog"
+cmd = "node scripts/update-metadata.mjs && node scripts/commit-catalog.mjs"
+description = "Republish and commit mods.json with pinned release / dev-build / launcher info for every public mod in the lopari catalog"
 
 # Pins-only refresh of the LIVE mods.json (this repo, in and out) - no
 # ../lopari checkout needed, so CI can run it. update-pins.yml calls this
