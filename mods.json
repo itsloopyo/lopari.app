@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-30T11:13:13.420Z",
+  "updated_at": "2026-08-30T19:52:27.590Z",
   "mods": [
     {
       "id": "subnautica",
@@ -32,11 +32,6 @@
       ],
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -52,6 +47,12 @@
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H",
           "description": "Cycles the UDP listen port through 4242, 4243, 4244, 4245 for running multiple game instances on one PC"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
       "release": {
@@ -159,7 +160,9 @@
       "game": {
         "steam_app_id": 653530,
         "steam_folder": "ObraDinn",
-        "gog_ids": [],
+        "gog_ids": [
+          "1108393852"
+        ],
         "epic_search_paths": [],
         "env_var": "OBRA_DINN_PATH",
         "executable_relpath": "ObraDinn.exe"
@@ -175,11 +178,6 @@
         "OpenTrack or any TrackIR/FreeTrack-compatible source"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -389,11 +387,6 @@
       ],
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -409,6 +402,12 @@
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Toggle reticle",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Toggle reticle compensation on/off"
         }
       ],
       "release": {
@@ -532,11 +531,6 @@
         "executable_relpath": "GH.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -724,11 +718,6 @@
       ],
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -758,11 +747,6 @@
         "executable_relpath": "re9.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -892,11 +876,6 @@
         "executable_relpath": "ph\\work\\bin\\x64\\DyingLightGame_x64_rwdi.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -1073,11 +1052,6 @@
       },
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -1087,6 +1061,12 @@
           "nav_key": "Page Up",
           "chord": "Ctrl+Shift+G",
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
       "release": {
@@ -1194,17 +1174,14 @@
       "game": {
         "steam_app_id": 232430,
         "steam_folder": "Gone Home",
-        "gog_ids": [],
+        "gog_ids": [
+          "1207665163"
+        ],
         "epic_search_paths": [],
         "env_var": "GONEHOME_PATH",
         "executable_relpath": "GoneHome.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -1408,11 +1385,6 @@
       ],
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -1428,6 +1400,12 @@
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Cycle how the view behaves while aiming down sights"
         }
       ],
       "distribution": {
@@ -1557,17 +1535,17 @@
       "game": {
         "steam_app_id": 3293010,
         "steam_folder": "Easy Delivery Co",
-        "gog_ids": [],
+        "gog_ids": [
+          "1186701134"
+        ],
         "epic_search_paths": [],
+        "xbox_paths": [
+          "C:\\XboxGames\\Easy Delivery Co\\Content"
+        ],
         "env_var": "EASY_DELIVERY_CO_PATH",
         "executable_relpath": "EasyDeliveryCo.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -1673,11 +1651,6 @@
         "executable_relpath": "Eternal Afternoon.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter view",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle head tracking",
           "nav_key": "End",
@@ -1802,7 +1775,8 @@
         ],
         "epic_search_paths": [
           "C:\\Program Files\\Epic Games\\FalloutNewVegas\\Fallout New Vegas English",
-          "C:\\Program Files\\Epic Games\\FalloutNewVegas"
+          "C:\\Program Files\\Epic Games\\FalloutNewVegas",
+          "D:\\Epic Games\\FalloutNewVegas\\Fallout New Vegas English"
         ],
         "env_var": "FalloutNVPath",
         "executable_relpath": "FalloutNV.exe",
@@ -1810,11 +1784,6 @@
         "modded_launcher_hint": "Fallout: New Vegas loads head tracking through xNVSE, but nvse_loader.exe wasn't found next to FalloutNV.exe. Install xNVSE 6.4.1 or newer (github.com/xNVSE/NVSE/releases) into your game folder, then launch again. Strongly recommended: New Vegas Tick Fix / NVTF (nexusmods.com/newvegas/mods/66537) for smooth head-tracked camera motion."
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -1894,17 +1863,17 @@
       "game": {
         "steam_app_id": 383870,
         "steam_folder": "Firewatch",
-        "gog_ids": [],
+        "gog_ids": [
+          "1459256379"
+        ],
         "epic_search_paths": [],
+        "xbox_paths": [
+          "C:\\XboxGames\\Firewatch\\Content"
+        ],
         "env_var": "FIREWATCH_PATH",
         "executable_relpath": "Firewatch.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -2004,17 +1973,14 @@
       "game": {
         "steam_app_id": 624270,
         "steam_folder": "The Painscreek Killings",
-        "gog_ids": [],
+        "gog_ids": [
+          "1128731640"
+        ],
         "epic_search_paths": [],
         "env_var": "PAINSCREEK_PATH",
         "executable_relpath": "Painscreek.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -2057,17 +2023,14 @@
       "game": {
         "steam_app_id": 883710,
         "steam_folder": "RESIDENT EVIL 2  BIOHAZARD RE2",
-        "gog_ids": [],
+        "gog_ids": [
+          "1534123252"
+        ],
         "epic_search_paths": [],
         "env_var": "RE2_PATH",
         "executable_relpath": "re2.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -2084,12 +2047,6 @@
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
-        },
-        {
-          "action": "Toggle aim reticle",
-          "nav_key": "Insert",
-          "chord": "Ctrl+Shift+U",
-          "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
       ],
       "distribution": {
@@ -2116,17 +2073,14 @@
       "game": {
         "steam_app_id": 952060,
         "steam_folder": "RE3",
-        "gog_ids": [],
+        "gog_ids": [
+          "1266089300"
+        ],
         "epic_search_paths": [],
         "env_var": "RE3_PATH",
         "executable_relpath": "re3.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -2142,12 +2096,6 @@
           "action": "Toggle yaw mode (world vs local)",
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H"
-        },
-        {
-          "action": "Toggle aim reticle",
-          "nav_key": "Insert",
-          "chord": "Ctrl+Shift+U",
-          "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
       ],
       "distribution": {
@@ -2181,27 +2129,21 @@
       },
       "hotkeys": [
         {
-          "action": "Recenter view",
-          "nav_key": "Home"
-        },
-        {
           "action": "Toggle head tracking",
-          "nav_key": "End"
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
         },
         {
           "action": "Toggle positional tracking",
           "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
           "description": "Toggle 6DOF position tracking on/off; rotation keeps tracking either way"
         },
         {
           "action": "Toggle yaw mode",
           "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
-        },
-        {
-          "action": "Toggle aim reticle",
-          "nav_key": "Insert",
-          "description": "Toggle a faint dot in the screen center marking where head-aim points"
         }
       ],
       "distribution": {
@@ -2234,11 +2176,6 @@
         "executable_relpath": "re7.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -2287,11 +2224,6 @@
       },
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -2332,7 +2264,9 @@
       "game": {
         "steam_app_id": 986130,
         "steam_folder": "Shadows of Doubt",
-        "gog_ids": [],
+        "gog_ids": [
+          "1755185542"
+        ],
         "epic_search_paths": [],
         "env_var": "SHADOWS_OF_DOUBT_PATH",
         "executable_relpath": "Shadows of Doubt.exe"
@@ -2388,17 +2322,14 @@
       "game": {
         "steam_app_id": 489830,
         "steam_folder": "Skyrim Special Edition",
-        "gog_ids": [],
+        "gog_ids": [
+          "1711230643"
+        ],
         "epic_search_paths": [],
         "env_var": "SKYRIM_SE_PATH",
         "executable_relpath": "SkyrimSE.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -2484,16 +2415,14 @@
         "steam_folder": "Subnautica2",
         "gog_ids": [],
         "epic_search_paths": [],
+        "xbox_paths": [
+          "C:\\XboxGames\\Subnautica 2\\Content"
+        ],
         "env_var": "SUBNAUTICA_2_PATH",
         "executable_relpath": "Subnautica2\\Binaries\\Win64\\Subnautica2-Win64-Shipping.exe",
         "xbox_executable_relpath": "Subnautica2\\Binaries\\WinGDK\\Subnautica2-WinGDK-Shipping.exe"
       },
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -2664,11 +2593,6 @@
       },
       "hotkeys": [
         {
-          "action": "Recenter view",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle head tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -2825,11 +2749,6 @@
       "description": "Head tracking for Wobbly Life. Decouples look from aim so you can glance around the world while the mouse or controller still drives aim and movement. Supports up to 4 local players in couch co-op - each player needs their own OpenTrack source on a separate UDP port (P1 4242, P2 4243, P3 4244, P4 4245). Online multiplayer is unaffected: tracking is client-side only and is not transmitted to other clients.",
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -2899,11 +2818,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -3004,11 +2918,6 @@
       ],
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -3052,7 +2961,9 @@
       "game": {
         "steam_app_id": 384190,
         "steam_folder": "ABZU",
-        "gog_ids": [],
+        "gog_ids": [
+          "1622602219"
+        ],
         "epic_search_paths": [],
         "env_var": "ABZU_PATH",
         "executable_relpath": "AbzuGame\\Binaries\\Win64\\AbzuGame-Win64-Shipping.exe"
@@ -3067,11 +2978,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -3113,7 +3019,9 @@
       "game": {
         "steam_app_id": 638970,
         "steam_folder": "Yakuza 0",
-        "gog_ids": [],
+        "gog_ids": [
+          "1103602225"
+        ],
         "epic_search_paths": [],
         "env_var": "YAKUZA_0_PATH",
         "executable_relpath": "media\\Yakuza0.exe"
@@ -3129,11 +3037,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -3192,11 +3095,6 @@
       ],
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -3254,11 +3152,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -3433,11 +3326,6 @@
       ],
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -3479,8 +3367,10 @@
       "install_strategy": "AsiLoader",
       "game": {
         "steam_app_id": 17410,
-        "steam_folder": "Mirrors Edge",
-        "gog_ids": [],
+        "steam_folder": "mirrors edge",
+        "gog_ids": [
+          "1893001152"
+        ],
         "epic_search_paths": [],
         "env_var": "MIRRORS_EDGE_PATH",
         "executable_relpath": "Binaries\\MirrorsEdge.exe"
@@ -3496,11 +3386,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -3563,11 +3448,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -3666,11 +3546,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -3779,11 +3654,6 @@
       ],
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -3847,7 +3717,9 @@
       "game": {
         "steam_app_id": 214490,
         "steam_folder": "Alien Isolation",
-        "gog_ids": [],
+        "gog_ids": [
+          "1744178250"
+        ],
         "epic_search_paths": [],
         "env_var": "ALIEN_ISOLATION_PATH",
         "executable_relpath": "AI.exe"
@@ -3863,11 +3735,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -3921,8 +3788,8 @@
         "steam_folder": null,
         "gog_ids": [],
         "epic_search_paths": [],
-        "executable_relpath": "Minecraft.Windows.exe",
         "msix_identity_name": "Microsoft.MinecraftUWP",
+        "executable_relpath": "Minecraft.Windows.exe",
         "modded_executable_relpath": "MinecraftHeadTrackingLauncher.exe"
       },
       "description": "Head tracking for Minecraft for Windows (Bedrock Edition). Your head moves the view while the mouse still controls where you aim, mine and build. Bedrock installs to a read-only Store folder, so the launcher keeps the mod in its own folder and starts the game through it.",
@@ -3937,11 +3804,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -4046,11 +3908,6 @@
       ],
       "hotkeys": [
         {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
-        {
           "action": "Toggle tracking",
           "nav_key": "End",
           "chord": "Ctrl+Shift+Y"
@@ -4102,11 +3959,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -4194,7 +4046,9 @@
       "game": {
         "steam_app_id": 377160,
         "steam_folder": "Fallout 4",
-        "gog_ids": [],
+        "gog_ids": [
+          "1998527297"
+        ],
         "epic_search_paths": [],
         "env_var": "FALLOUT_4_PATH",
         "executable_relpath": "Fallout4.exe"
@@ -4210,11 +4064,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -4240,8 +4089,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260820.9f267fd",
-          "built_at": "2026-08-20T11:55:56Z",
+          "version": "0.0.0-nightly.20260830.39f1c5e",
+          "built_at": "2026-08-30T19:47:14Z",
           "zip_filename": "Fallout4HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/fallout-4-headtracking/releases/download/dev/Fallout4HeadTracking-dev-installer.zip"
         }
@@ -4261,7 +4110,9 @@
       "game": {
         "steam_app_id": 501300,
         "steam_folder": "EdithFinch",
-        "gog_ids": [],
+        "gog_ids": [
+          "1651927092"
+        ],
         "epic_search_paths": [],
         "env_var": "EDITH_FINCH_PATH",
         "executable_relpath": "FinchGame\\Binaries\\Win64\\FinchGame.exe"
@@ -4272,11 +4123,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -4350,7 +4196,9 @@
       "game": {
         "steam_app_id": 870780,
         "steam_folder": "Control",
-        "gog_ids": [],
+        "gog_ids": [
+          "2049187585"
+        ],
         "epic_search_paths": [],
         "env_var": "CONTROL_PATH",
         "executable_relpath": "Control_DX12.exe"
@@ -4361,11 +4209,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -4418,11 +4261,6 @@
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
-        {
-          "action": "Recenter",
-          "nav_key": "Home",
-          "chord": "Ctrl+Shift+T"
-        },
         {
           "action": "Toggle tracking",
           "nav_key": "End",
@@ -4494,6 +4332,66 @@
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Widen the field of view",
+          "chord": "Ctrl+Shift+Q",
+          "description": "Adds 1 degree per press to the field of view each table view asks for; the game ships no FOV control of its own"
+        },
+        {
+          "action": "Narrow the field of view",
+          "chord": "Ctrl+Shift+A",
+          "description": "Takes 1 degree per press off the field of view"
+        },
+        {
+          "action": "Dolly the camera in",
+          "chord": "Ctrl+Shift+W",
+          "description": "Moves the camera 1cm per press along the line of sight, which pushes in without moving the aim point"
+        },
+        {
+          "action": "Dolly the camera out",
+          "chord": "Ctrl+Shift+S",
+          "description": "Pulls the camera back 1cm per press along the line of sight"
+        },
+        {
+          "action": "Raise the camera",
+          "chord": "Ctrl+Shift+E",
+          "description": "Shifts the camera 1cm per press up across the view"
+        },
+        {
+          "action": "Lower the camera",
+          "chord": "Ctrl+Shift+D",
+          "description": "Shifts the camera 1cm per press down across the view"
+        },
+        {
+          "action": "Shift the camera right",
+          "chord": "Ctrl+Shift+R",
+          "description": "Shifts the camera 1cm per press right across the view"
+        },
+        {
+          "action": "Shift the camera left",
+          "chord": "Ctrl+Shift+F",
+          "description": "Shifts the camera 1cm per press left across the view"
+        },
+        {
+          "action": "Back to the game's own camera",
+          "chord": "Ctrl+Shift+Z",
+          "description": "Zeroes the FOV offset and the three camera offsets, so the shot is the one the game placed. Writes nothing to the INI"
+        },
+        {
+          "action": "Back to the last saved framing",
+          "chord": "Ctrl+Shift+X",
+          "description": "Puts the four values back to the saved set, so Z and X flip between the stock shot and yours"
+        },
+        {
+          "action": "Keep the lean you are holding",
+          "chord": "Ctrl+Shift+V",
+          "description": "Adds the lean your tracker is reporting right now into the camera offsets, so the view stays there once you sit back up"
+        },
+        {
+          "action": "Save the camera framing",
+          "chord": "Ctrl+Shift+M",
+          "description": "Writes the FOV offset and the three camera offsets into [Camera] in HeadTracking.ini, so they come back next launch"
         }
       ],
       "distribution": {
@@ -4519,7 +4417,9 @@
       "game": {
         "steam_app_id": 1771300,
         "steam_folder": "KingdomComeDeliverance2",
-        "gog_ids": [],
+        "gog_ids": [
+          "1076704248"
+        ],
         "epic_search_paths": [],
         "env_var": "KINGDOM_COME_DELIVERANCE_2_PATH",
         "executable_relpath": "Bin\\Win64MasterMasterSteamPGO\\KingdomCome.exe"
@@ -4575,7 +4475,9 @@
       "game": {
         "steam_app_id": 379430,
         "steam_folder": "KingdomComeDeliverance",
-        "gog_ids": [],
+        "gog_ids": [
+          "1719198803"
+        ],
         "epic_search_paths": [],
         "env_var": "KINGDOM_COME_DELIVERANCE_PATH",
         "executable_relpath": "Bin\\Win64\\KingdomCome.exe"
@@ -4687,7 +4589,9 @@
       "game": {
         "steam_app_id": 480490,
         "steam_folder": "Prey",
-        "gog_ids": [],
+        "gog_ids": [
+          "1158493447"
+        ],
         "epic_search_paths": [],
         "env_var": "PREY_PATH",
         "executable_relpath": "Binaries\\Danielle\\x64\\Release\\Prey.exe"
@@ -4722,6 +4626,12 @@
         {
           "action": "Next tracker source",
           "chord": "Ctrl+Shift+U"
+        },
+        {
+          "action": "Toggle body-follows-head",
+          "nav_key": "Delete",
+          "chord": "Ctrl+Shift+J",
+          "description": "Carry the first-person body with your head - wanted in the space suit, not with a gun in hand"
         }
       ],
       "distribution": {
