@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-30T10:59:31.226Z",
+  "updated_at": "2026-08-30T11:07:41.434Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4731,6 +4731,64 @@
           "built_at": "2026-08-28T01:15:22Z",
           "zip_filename": "PreyHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/prey-headtracking/releases/download/dev/PreyHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "still-wakes-the-deep",
+      "public": true,
+      "released": false,
+      "display_name": "Still Wakes the Deep",
+      "repo": "itsloopyo/still-wakes-the-deep-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 1622910,
+        "steam_folder": "Still Wakes the Deep",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "STILL_WAKES_THE_DEEP_PATH",
+        "executable_relpath": "Habitat\\Binaries\\Win64\\StillWakesTheDeep.exe"
+      },
+      "description": "6DOF head tracking for Still Wakes the Deep via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming. The torch beam follows your head, and the mod adds a field-of-view offset the game ships without.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
+        "6DOF positional tracking: lean and peek with head position",
+        "Torch follows your head: the beam lights where you look, not where the mouse points",
+        "Field-of-view offset: the game has no FOV setting of its own, the mod adds one"
+      ],
+      "requirements": [
+        "Still Wakes the Deep (Steam, Windows x64)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260830.93cb371",
+          "built_at": "2026-08-30T11:02:42Z",
+          "zip_filename": "StillWakesTheDeepHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/download/dev/StillWakesTheDeepHeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
