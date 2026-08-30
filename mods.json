@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-30T11:07:41.434Z",
+  "updated_at": "2026-08-30T11:11:30.165Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4790,10 +4790,7 @@
           "zip_filename": "StillWakesTheDeepHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/download/dev/StillWakesTheDeepHeadTracking-dev-installer.zip"
         }
-      },
-      "known_issues": [
-        "Not comprehensively tested."
-      ]
+      }
     }
   ],
   "native_games": [
