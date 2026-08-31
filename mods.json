@@ -4773,9 +4773,6 @@
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
-      "known_issues": [
-        "Not comprehensively tested."
-      ],
       "release": {
         "pinned": {
           "version": "0.1.0",
