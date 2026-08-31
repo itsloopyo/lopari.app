@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-31T13:54:52.963Z",
+  "updated_at": "2026-08-31T19:57:16.702Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3789,6 +3789,7 @@
         "gog_ids": [],
         "epic_search_paths": [],
         "msix_identity_name": "Microsoft.MinecraftUWP",
+        "env_var": "MINECRAFT_BEDROCK_PATH",
         "executable_relpath": "Minecraft.Windows.exe",
         "modded_executable_relpath": "MinecraftHeadTrackingLauncher.exe"
       },
@@ -4722,6 +4723,80 @@
             "zip_filename": "StillWakesTheDeepHeadTracking-v0.2.0-installer.zip",
             "download_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/download/v0.2.0/StillWakesTheDeepHeadTracking-v0.2.0-installer.zip",
             "size_bytes": 3045546
+          }
+        ]
+      }
+    },
+    {
+      "id": "half-life-2",
+      "public": true,
+      "released": true,
+      "display_name": "Half-Life 2",
+      "repo": "itsloopyo/half-life-2-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 220,
+        "steam_folder": "Half-Life 2",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "HALF_LIFE_2_PATH",
+        "executable_relpath": "hl2.exe"
+      },
+      "description": "6DOF head tracking for Half-Life 2 via OpenTrack. Your head moves the camera the frame is rendered from, while the mouse or controller keeps aiming, and the crosshair is redrawn on the point the shot actually goes to. Steam Win32 only, on the build whose client.dll is dated 27 June 2025 - on any other build the mod stays dormant and the game runs vanilla.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, the mouse or controller still controls where you shoot",
+        "6DOF positional tracking: yaw, pitch and roll, plus lean, peek and duck",
+        "Crosshair tracks the shot: the reticle is drawn on the point the clean aim traces to, not the head-moved view centre",
+        "Optional field-of-view override for the world and the viewmodel, applied as a ratio so weapon and suit zooms still scale"
+      ],
+      "requirements": [
+        "Half-Life 2 (Steam, app 220) on the build whose hl2\\bin\\client.dll is dated 27 June 2025",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11 - the game is a 32-bit process, so the mod and its loader are x86"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "known_issues": [
+        "Not comprehensively tested."
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Half-Life 2 Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/half-life-2-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-08-31T19:42:20Z",
+          "zip_filename": "HalfLife2HeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/half-life-2-headtracking/releases/download/v0.1.0/HalfLife2HeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 4203616
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Half-Life 2 Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/half-life-2-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-08-31T19:42:20Z",
+            "zip_filename": "HalfLife2HeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/half-life-2-headtracking/releases/download/v0.1.0/HalfLife2HeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 4203616
           }
         ]
       }
