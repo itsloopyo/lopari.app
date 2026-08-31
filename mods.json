@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-31T19:57:16.702Z",
+  "updated_at": "2026-08-31T20:25:41.843Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4742,7 +4742,7 @@
         "env_var": "HALF_LIFE_2_PATH",
         "executable_relpath": "hl2.exe"
       },
-      "description": "6DOF head tracking for Half-Life 2 via OpenTrack. Your head moves the camera the frame is rendered from, while the mouse or controller keeps aiming, and the crosshair is redrawn on the point the shot actually goes to. Steam Win32 only, on the build whose client.dll is dated 27 June 2025 - on any other build the mod stays dormant and the game runs vanilla.",
+      "description": "6DOF head tracking for Half-Life 2 via OpenTrack. Your head moves the camera the frame is rendered from, while the mouse or controller keeps aiming, and the crosshair is redrawn on the point the shot actually goes to. Steam Win32 only, on the client.dll dated 27 June 2025 that Steam app 220 ships on its default branch - whose campaign covers Half-Life 2, Episode One and Episode Two - and on its steam_legacy branch. On any other build the mod stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, the mouse or controller still controls where you shoot",
         "6DOF positional tracking: yaw, pitch and roll, plus lean, peek and duck",
@@ -4750,7 +4750,7 @@
         "Optional field-of-view override for the world and the viewmodel, applied as a ratio so weapon and suit zooms still scale"
       ],
       "requirements": [
-        "Half-Life 2 (Steam, app 220) on the build whose hl2\\bin\\client.dll is dated 27 June 2025",
+        "Half-Life 2 (Steam, app 220) on the build whose client.dll is dated 27 June 2025 - either the default branch, which launches the campaign covering Half-Life 2 and both episodes, or the steam_legacy branch, which launches the base campaign on its own",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11 - the game is a 32-bit process, so the mod and its loader are x86"
       ],
@@ -4774,6 +4774,8 @@
         }
       ],
       "known_issues": [
+        "Launching Episode One (app 380) or Episode Two (app 420) from your Steam library leaves the mod dormant - those load a different client.dll. Play the episodes through Half-Life 2 itself (app 220), where the mod is active.",
+        "Lost Coast and Deathmatch each load their own client.dll and leave the mod dormant.",
         "Not comprehensively tested."
       ],
       "release": {
