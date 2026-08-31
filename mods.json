@@ -4774,8 +4774,6 @@
         }
       ],
       "known_issues": [
-        "Launching Episode One (app 380) or Episode Two (app 420) from your Steam library leaves the mod dormant - those load a different client.dll. Play the episodes through Half-Life 2 itself (app 220), where the mod is active.",
-        "Lost Coast and Deathmatch each load their own client.dll and leave the mod dormant.",
         "Not comprehensively tested."
       ],
       "release": {
