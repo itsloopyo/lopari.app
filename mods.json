@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-08-30T22:16:56.537Z",
+  "updated_at": "2026-08-31T13:54:52.963Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4089,8 +4089,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260830.1b200ce",
-          "built_at": "2026-08-30T22:15:10Z",
+          "version": "0.0.0-nightly.20260831.6ec12a7",
+          "built_at": "2026-08-31T10:33:25Z",
           "zip_filename": "Fallout4HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/fallout-4-headtracking/releases/download/dev/Fallout4HeadTracking-dev-installer.zip"
         }
