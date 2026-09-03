@@ -347,12 +347,31 @@ a { color: inherit; }
 }
 .bring h2 { font-family: var(--disp); font-size: 20px; margin-bottom: 9px; }
 .bring p { font-size: 15.5px; line-height: 1.62; max-width: 64ch; }
-.bring a {
-  color: #5c1e10;
+.picks {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+.pick {
+  background: var(--cream);
+  border-radius: 5px;
+  padding: 16px 18px;
+}
+.pick h3 {
+  font-family: var(--disp);
+  font-size: 17px;
+  line-height: 1.2;
+  margin-bottom: 7px;
+}
+.pick p { font-size: 14.5px; line-height: 1.55; color: var(--ink-2); max-width: none; }
+.pick p + p { margin-top: 8px; }
+.pick a {
+  color: var(--rust);
   font-weight: 700;
   text-underline-offset: 3px;
 }
-
+.pick a:hover { color: var(--rust-dk); }
 .download-verify {
   width: min(660px, 100%);
   margin-top: 20px;

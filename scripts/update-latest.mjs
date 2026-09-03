@@ -39,7 +39,7 @@ const heroBlock = `<!-- HERO_DOWNLOAD:START -->
       <span class="action-sub">${escape(env.VERSION)} · 64-bit · free</span>
     </a>
   </div>
-  <p class="hero-spec">Windows 10 &amp; 11 · No account · No telemetry</p>
+  <p class="hero-spec">Windows 10 &amp; 11 · No headset · No account · No telemetry</p>
   <details class="download-verify">
     <summary>Verify your download (SHA256)</summary>
     <p>Optional. Confirm the installer matches what CI built:</p>
