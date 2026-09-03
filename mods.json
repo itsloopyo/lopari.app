@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-03T07:16:35.327Z",
+  "updated_at": "2026-09-03T21:19:59.116Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4174,16 +4174,26 @@
       "known_issues": [],
       "release": {
         "pinned": {
-          "version": "1.1.0",
-          "tag_name": "v1.1.0",
-          "name": "What Remains of Edith Finch Head Tracking v1.1.0",
-          "html_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/tag/v1.1.0",
-          "published_at": "2026-08-20T13:32:49Z",
-          "zip_filename": "EdithFinchHeadTracking-v1.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/v1.1.0/EdithFinchHeadTracking-v1.1.0-installer.zip",
-          "size_bytes": 3027754
+          "version": "1.1.1",
+          "tag_name": "v1.1.1",
+          "name": "What Remains of Edith Finch Head Tracking v1.1.1",
+          "html_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/tag/v1.1.1",
+          "published_at": "2026-09-03T21:19:27Z",
+          "zip_filename": "EdithFinchHeadTracking-v1.1.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/v1.1.1/EdithFinchHeadTracking-v1.1.1-installer.zip",
+          "size_bytes": 3064158
         },
         "versions": [
+          {
+            "tag_name": "v1.1.1",
+            "version": "1.1.1",
+            "name": "What Remains of Edith Finch Head Tracking v1.1.1",
+            "html_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/tag/v1.1.1",
+            "published_at": "2026-09-03T21:19:27Z",
+            "zip_filename": "EdithFinchHeadTracking-v1.1.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/v1.1.1/EdithFinchHeadTracking-v1.1.1-installer.zip",
+            "size_bytes": 3064158
+          },
           {
             "tag_name": "v1.1.0",
             "version": "1.1.0",
