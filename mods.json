@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-03T21:19:59.116Z",
+  "updated_at": "2026-09-03T22:57:46.907Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4889,6 +4889,71 @@
           "zip_filename": "HighOnLifeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/high-on-life-headtracking/releases/download/dev/HighOnLifeHeadTracking-dev-installer.zip"
         }
+      }
+    },
+    {
+      "id": "wreckfest",
+      "public": true,
+      "released": true,
+      "display_name": "Wreckfest",
+      "repo": "itsloopyo/wreckfest-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 228380,
+        "steam_folder": "Wreckfest",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "WRECKFEST_PATH",
+        "executable_relpath": "Wreckfest_x64.exe"
+      },
+      "description": "6DOF head tracking for Wreckfest via OpenTrack. Your head moves the camera while the wheel or controller keeps driving, in online races as well as local ones. The supported build is the Steam Wreckfest_x64.exe of 19 September 2023.",
+      "features": [
+        "Decoupled view and driving: your head moves the camera, the car, the physics and every input stay untouched",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Yaw turns about the camera's own up axis, so the view stays glued to the car through a bank, a roll or a landing on the roof",
+        "Racing only: the menus and the pause screen keep the game's own camera, and tracking picks up from where your head is when you unpause"
+      ],
+      "requirements": [
+        "Wreckfest (Steam, app 228380) on the Wreckfest_x64.exe build of 19 September 2023",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Wreckfest Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/wreckfest-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-03T22:38:37Z",
+          "zip_filename": "WreckfestHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/wreckfest-headtracking/releases/download/v0.1.0/WreckfestHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 3039085
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Wreckfest Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/wreckfest-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-03T22:38:37Z",
+            "zip_filename": "WreckfestHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/wreckfest-headtracking/releases/download/v0.1.0/WreckfestHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3039085
+          }
+        ]
       }
     }
   ],
