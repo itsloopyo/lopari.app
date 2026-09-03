@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-03T00:09:21.562Z",
+  "updated_at": "2026-09-03T02:26:39.085Z",
   "mods": [
     {
       "id": "subnautica",
@@ -28,7 +28,7 @@
       ],
       "requirements": [
         "Subnautica (Steam / Epic)",
-        "OpenTrack (or any TrackIR/FreeTrack-compatible source)"
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
         {
@@ -175,7 +175,7 @@
       ],
       "requirements": [
         "Return of the Obra Dinn (Steam)",
-        "OpenTrack or any TrackIR/FreeTrack-compatible source"
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
         {
@@ -2924,7 +2924,7 @@
       ],
       "requirements": [
         "Assassin's Creed Unity (Steam or Ubisoft Connect)",
-        "OpenTrack (or any TrackIR/FreeTrack-compatible source)"
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
         {
@@ -3039,7 +3039,7 @@
       "description": "Head tracking for Yakuza 0: move your head to look around while the mouse or controller still controls aim and movement, driven by OpenTrack or any compatible UDP head-pose source - no VR headset required.",
       "features": [
         "Decoupled look and aim: head moves the camera, the mouse/controller still aims and moves",
-        "Works with any OpenTrack-compatible tracker (phone app, webcam, VR headset, TrackIR)",
+        "Works with any OpenTrack-compatible tracker (phone app, webcam, VR headset)",
         "World-space or camera-local yaw, toggleable in-game"
       ],
       "requirements": [
@@ -8594,14 +8594,14 @@
     }
   ],
   "launcher": {
-    "version": "0.6.0",
-    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.6.0",
-    "published_at": "2026-09-01T20:13:41Z",
+    "version": "0.7.0",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.7.0",
+    "published_at": "2026-09-03T02:25:57Z",
     "setup_exe": {
-      "name": "Lopari_0.6.0_x64-setup.exe",
-      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.6.0/Lopari_0.6.0_x64-setup.exe",
-      "size_bytes": 3457800,
-      "sha256": "2a8762b1fed7b80137dbeb82d9569067545cb161a04db0de6b35056584044d92"
+      "name": "Lopari_0.7.0_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.7.0/Lopari_0.7.0_x64-setup.exe",
+      "size_bytes": 3547808,
+      "sha256": "8f51b946597a91dcf43b38369ba5e3293dd642c1e10ae3c68e79c13359a431aa"
     },
     "msi": null
   }
