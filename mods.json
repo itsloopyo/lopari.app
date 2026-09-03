@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-01T21:04:00.226Z",
+  "updated_at": "2026-09-03T00:09:21.562Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4817,6 +4817,69 @@
           }
         ]
       }
+    },
+    {
+      "id": "high-on-life",
+      "public": true,
+      "released": false,
+      "display_name": "High On Life",
+      "repo": "itsloopyo/high-on-life-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 1583230,
+        "steam_folder": "HighOnLife",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "HIGH_ON_LIFE_PATH",
+        "executable_relpath": "Oregon\\Binaries\\Win64\\Oregon-Win64-Shipping.exe"
+      },
+      "description": "6DOF head tracking for High On Life via OpenTrack. Your head moves the view, the mouse or controller keeps aiming, and the game's own crosshair stays on the point the shot will hit. The supported build is the Steam Win64 build of 25 October 2023; on any other build the mod stays dormant and the game runs vanilla.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the view, the mouse or controller still controls the aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Crosshair marks the impact point: the game's own crosshair is drawn from its aim trace, so it stays on where the shot lands at any range",
+        "World-anchored HUD marks stay on the world: info-scan panels, mission waypoints, interaction prompts, dialogue speaker marks and compass markers",
+        "Aim-down-sights modes: tracking stands down for the aim by default, or carries on, cycled in game and saved to the config"
+      ],
+      "requirements": [
+        "High On Life (Steam, app 1583230) on the Win64 build of 25 October 2023",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Switches what head tracking does while the sights are up: paused for the aim, or tracking on"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260903.bd1e9e7",
+          "built_at": "2026-09-03T00:04:15Z",
+          "zip_filename": "HighOnLifeHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/high-on-life-headtracking/releases/download/dev/HighOnLifeHeadTracking-dev-installer.zip"
+        }
+      }
     }
   ],
   "native_games": [
@@ -4828,9 +4891,11 @@
       "executable_relpath": "EDLaunch.exe",
       "protocols": [
         "TrackIR",
-        "Tobii"
+        "Tobii",
+        "FreeTrack"
       ],
-      "notes": "Native TrackIR; OpenTrack reachable via headset-emulator output.",
+      "freetrack_bridge": true,
+      "notes": "Listed under the FreeTrack interface (native) on Wikipedia's list of FreeTrack-compatible games, which separates native support from TrackIR emulation, FSUIPC, SimConnect and third-party plugins. That listing is the only evidence; not confirmed by us on hardware.",
       "setup_steps": [
         "Start TrackIR (or OpenTrack with Output = 'freetrack 2.0 Enhanced', Interface = 'Both') BEFORE launching the game.",
         "Elite auto-detects TrackIR/FreeTrack - there's no in-game toggle to flip.",
@@ -4883,9 +4948,11 @@
       "executable_relpath": "FlightSimulator.exe",
       "protocols": [
         "TrackIR",
-        "Native"
+        "Native",
+        "FreeTrack"
       ],
-      "notes": "SimConnect-based; same driver chain as MSFS 2024.",
+      "freetrack_bridge": true,
+      "notes": "Listed under the FreeTrack interface (native) on Wikipedia's list of FreeTrack-compatible games, which separates native support from TrackIR emulation, FSUIPC, SimConnect and third-party plugins. That listing is the only evidence; not confirmed by us on hardware. Also reachable via SimConnect, which is the older route.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE MSFS 2020.",
         "In-game: Options → Camera → 'TrackIR Enabled' → On.",
@@ -4920,13 +4987,15 @@
         "TrackIR",
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE Assetto Corsa.",
         "AC auto-detects TrackIR and FreeTrack - no menu toggle.",
         "In-game: Options → View → set 'Lock onto Horizon' to ~50% for natural motion.",
         "If using Content Manager: Settings → Content Manager → Miscellaneous → enable the TrackIR profile.",
         "Edit <Documents>\\Assetto Corsa\\cfg\\camera_onboard.ini for fine tuning (FOV, head offsets)."
-      ]
+      ],
+      "notes": "Confirmed to use the FreeTrack door, not TrackIR: it tracks with opentrack set to 'Use freetrack, disable TrackIR'. Launched via AssettoCorsa.exe, which spawns the real acs.exe."
     },
     {
       "id": "assetto-corsa-competizione",
@@ -4971,11 +5040,12 @@
         "TrackIR",
         "FreeTrack"
       ],
-      "notes": "Widely used in milsim; FreeTrack support configurable.",
+      "freetrack_bridge": true,
+      "notes": "Widely used in milsim. Bohemia supports the FreeTrack protocol directly (not via NPClient) since Arma 2; Arma 3 carries it as legacy compatibility.",
       "setup_steps": [
-        "Start TrackIR / OpenTrack (Interface = Both) BEFORE Arma 3.",
-        "In-game: Options -> Controls -> Controllers tab -> click 'TrackIR' in the device list and tick 'Enable TrackIR'. Leave the raw 'FreeTrack' device disabled; OpenTrack's TrackIR output is what the game reads.",
-        "Configure Controls -> search 'TrackIR' to optionally bind a pause key.",
+        "Start your tracker before Arma 3, or launch from Lopari and it feeds the game directly.",
+        "In-game: Options -> Controls -> Controllers tab -> select 'FreeTrack' in the device list and enable it. Arma reads the FreeTrack protocol directly, so this is a separate device entry from 'TrackIR'.",
+        "Configure Controls -> search 'TrackIR' to optionally bind a head-tracking pause key.",
         "Options -> Game -> turn off 'Head bob' so it does not compound with tracker motion."
       ]
     },
@@ -5035,10 +5105,9 @@
       "steam_folder": "IL-2 1946",
       "executable_relpath": "il2fb.exe",
       "protocols": [
-        "TrackIR",
-        "FreeTrack"
+        "TrackIR"
       ],
-      "notes": "Legacy classic; FreeTrack via the community modpack.",
+      "notes": "Legacy classic. TrackIR is built in; FreeTrack only via the community modpack, so it is not native support.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE IL-2 1946.",
         "Open <IL-2 1946>\\conf.ini in a text editor.",
@@ -5103,10 +5172,9 @@
       "steam_folder": "FSX",
       "executable_relpath": "fsx.exe",
       "protocols": [
-        "TrackIR",
-        "FreeTrack"
+        "TrackIR"
       ],
-      "notes": "Classic Flight Simulator X; TrackIR has been supported since launch.",
+      "notes": "TrackIR is built in. FreeTrack only through SimConnect, so it is not native FreeTrack support.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE FSX.",
         "FSX auto-detects TrackIR via the NaturalPoint dll bundled with the game (NPClient.dll in the FSX root).",
@@ -5175,9 +5243,11 @@
       "executable_relpath": "Bin64\\AMS2AVX.exe",
       "protocols": [
         "TrackIR",
-        "SteamVR"
+        "SteamVR",
+        "FreeTrack"
       ],
-      "notes": "TrackIR only works when AMS 2 is launched in SteamVR mode; there is no in-game TrackIR toggle.",
+      "freetrack_bridge": true,
+      "notes": "Listed under the FreeTrack interface (native) on Wikipedia's list of FreeTrack-compatible games, which separates native support from TrackIR emulation, FSUIPC, SimConnect and third-party plugins. That listing is the only evidence; not confirmed by us on hardware. Its own setup steps say head tracking is only read in VR mode through the TrackIR interface, and its Madness-engine sibling Project CARS 2 is classed as TrackIR-only here, so the listing may be wrong for this title.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE AMS 2.",
         "In Steam: right-click Automobilista 2 -> Properties -> Launch Options -> add '-forceVR'. (Or use the shortcut URL steam://launch/1066890/vr.) AMS 2 only reads TrackIR in VR mode.",
@@ -5209,7 +5279,6 @@
       "executable_relpath": "pCARS2AVX.exe",
       "protocols": [
         "TrackIR",
-        "FreeTrack",
         "Tobii"
       ],
       "setup_steps": [
@@ -5217,7 +5286,8 @@
         "pCARS2 only reads TrackIR when launched in SteamVR mode - right-click the game in Steam -> Properties -> Launch Options and add '-vr' (or launch via steam://launch/234630/vr).",
         "In-car, switch to Helmet-cam (1 key) - TrackIR is inactive in the non-helmet cockpit and chase cams.",
         "Options -> Visuals -> tune 'Edge Peek' and 'G-Force Effect Strength' so the sim's own sway does not compound with the tracker."
-      ]
+      ],
+      "notes": "Only reads head tracking when launched in SteamVR mode, through the TrackIR interface. FreeTrack tools reach it by emulating TrackIR, so it is not native FreeTrack."
     },
     {
       "id": "dirt-rally-2",
@@ -5262,7 +5332,8 @@
         "TrackIR",
         "FreeTrack"
       ],
-      "notes": "Self-distributed from lfs.net; detected by folder match only.",
+      "freetrack_bridge": true,
+      "notes": "Community-reported native FreeTrack support (lfs.net has a dedicated 'FreeTrack in LFS' thread); not confirmed by us on hardware.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE LFS.",
         "LFS auto-detects TrackIR / FreeTrack via the bundled libraries.",
@@ -5280,12 +5351,15 @@
         "TrackIR",
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "setup_steps": [
-        "Start TrackIR / OpenTrack (Interface = Both) BEFORE ETS2.",
-        "ETS2 auto-detects TrackIR using its bundled profile - no in-game enable.",
-        "To fine-tune or turn off: edit <Documents>\\Euro Truck Simulator 2\\config.cfg and flip 'uset g_trackir' between 1 and 0.",
-        "If both TrackIR and Tobii Game Hub are installed, disable the Tobii ETS2 profile - otherwise TrackIR can get silently overridden."
-      ]
+        "Launch from Lopari and it feeds head tracking straight to the game.",
+        "Point your tracker at this PC on UDP 4242 (OpenTrack: Output = 'UDP over network'; Headcam: this machine's IP).",
+        "ETS2 picks head tracking up on its own - there is no in-game enable.",
+        "To turn it off, edit <Documents>\\Euro Truck Simulator 2\\config.cfg and set 'uset g_trackir' to 0.",
+        "If both TrackIR and Tobii Game Hub are installed, disable the Tobii ETS2 profile - it can silently override."
+      ],
+      "notes": "Confirmed reading the FreeTrack shared-memory block directly - it maps it itself rather than loading a client DLL, so Lopari drives it with no FreeTrack or OpenTrack install."
     },
     {
       "id": "american-truck-simulator",
@@ -5297,11 +5371,13 @@
         "TrackIR",
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "setup_steps": [
         "Same engine as ETS2 - setup is identical.",
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE ATS.",
         "ATS auto-detects TrackIR; toggle is 'uset g_trackir' in <Documents>\\American Truck Simulator\\config.cfg."
-      ]
+      ],
+      "notes": "Same SCS engine and same 'uset g_trackir' config as Euro Truck Simulator 2, which is confirmed to read the FreeTrack block directly. Enabled on that basis; not yet confirmed on ATS itself."
     },
     {
       "id": "farming-simulator-22",
@@ -5347,6 +5423,7 @@
         "FreeTrack",
         "Tobii"
       ],
+      "freetrack_bridge": true,
       "notes": "Native FreeTrack (in-game toggle, restored in v1.0.4) and Tobii; no TrackIR SDK - TrackIR users bridge through OpenTrack's FreeTrack output.",
       "setup_steps": [
         "Start OpenTrack with Output = 'freetrack 2.0 Enhanced' (or any FreeTrack-compatible tracker) BEFORE launching.",
@@ -5462,9 +5539,11 @@
       "steam_folder": "DiRT Rally",
       "executable_relpath": "drt.exe",
       "protocols": [
-        "TrackIR"
+        "TrackIR",
+        "FreeTrack"
       ],
-      "notes": "Yaw/pitch in dashcam and bonnet views; predecessor to DR2.0.",
+      "freetrack_bridge": true,
+      "notes": "Listed under the FreeTrack interface (native) on Wikipedia's list of FreeTrack-compatible games, which separates native support from TrackIR emulation, FSUIPC, SimConnect and third-party plugins. That listing is the only evidence; not confirmed by us on hardware.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (TrackIR output) BEFORE DiRT Rally.",
         "DiRT Rally auto-detects TrackIR - no in-game toggle needed.",
@@ -5495,10 +5574,9 @@
       "steam_folder": "rFactor",
       "executable_relpath": "rFactor.exe",
       "protocols": [
-        "TrackIR",
-        "FreeTrack"
+        "TrackIR"
       ],
-      "notes": "Foundational sim racing title; TrackIR since 2005.",
+      "notes": "Foundational sim racing title; TrackIR since 2005. Head tracking is the TrackIR interface, not native FreeTrack.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE rFactor.",
         "rFactor auto-detects TrackIR (no menu toggle - the 'Look' axes are pre-bound).",
@@ -5513,10 +5591,9 @@
       "steam_folder": "Richard Burns Rally",
       "executable_relpath": "RichardBurnsRally_SSE.exe",
       "protocols": [
-        "TrackIR",
-        "FreeTrack"
+        "TrackIR"
       ],
-      "notes": "Classic 2004 rally sim; TrackIR since 2004. Not on Steam; distributed via RSRBR community pack.",
+      "notes": "Classic 2004 rally sim, not on Steam (RSRBR community pack). Reaches head tracking through the TrackIR interface (requires TIRViews.dll), not FreeTrack.",
       "setup_steps": [
         "Install the RSRBR / NGP community mod pack from rallysimfans.hu - native RBR predates modern Windows and the mod pack fixes compatibility.",
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE RBR.",
@@ -5531,10 +5608,9 @@
       "steam_folder": "Rise of Flight",
       "executable_relpath": "ROF.exe",
       "protocols": [
-        "TrackIR",
-        "FreeTrack"
+        "TrackIR"
       ],
-      "notes": "WWI flight sim; Options > Controls > Pilot Head Control.",
+      "notes": "WWI flight sim; Options > Controls > Pilot Head Control. TrackIR interface; no evidence of native FreeTrack support.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE Rise of Flight.",
         "In-game: Options → Controls → 'Pilot Head Control' section.",
@@ -5549,10 +5625,9 @@
       "steam_folder": "IL-2 Sturmovik Cliffs of Dover Blitz",
       "executable_relpath": "Launcher.exe",
       "protocols": [
-        "TrackIR",
-        "FreeTrack"
+        "TrackIR"
       ],
-      "notes": "Battle-of-Britain flight sim; TrackIR full support post-Blitz remaster.",
+      "notes": "Battle-of-Britain flight sim. Head tracking is the TrackIR interface, gated on trackIRUse=1 in the startup config; not native FreeTrack.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (Interface = Both) BEFORE launching CloD Blitz.",
         "In-game: Options → Controls → Axes → bind TrackIR/FreeTrack pitch / yaw / roll under 'Camera'.",
@@ -5635,6 +5710,7 @@
         "TrackIR",
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "notes": "WWII combat sim on the ARMA 2 engine; same FreeTrack config path as ARMA.",
       "setup_steps": [
         "Iron Front runs on the ARMA 2 engine - same tracker wiring.",
@@ -6153,6 +6229,7 @@
         "TrackIR",
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "notes": "Sold on Steam as 'ARMA: Combat Operations' (app 2780); installdir not verified.",
       "setup_steps": [
         "Install/update your TrackIR or FreeTrack software and connect the tracker.",
@@ -6169,6 +6246,7 @@
         "TrackIR",
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "notes": "Steam installdir not verified.",
       "setup_steps": [
         "Install/update your TrackIR or FreeTrack software and connect the tracker.",
@@ -6185,6 +6263,7 @@
         "TrackIR",
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "notes": "Standalone expansion; Steam installdir not verified.",
       "setup_steps": [
         "Install/update your TrackIR or FreeTrack software and connect the tracker.",
@@ -6197,13 +6276,15 @@
       "display_name": "Arma 2: Reinforcements",
       "steam_app_id": null,
       "protocols": [
-        "TrackIR"
+        "TrackIR",
+        "FreeTrack"
       ],
-      "notes": "App 33930 is the Reinforcements/Combined Operations entry; installs into the shared Arma 2 Operation Arrowhead folder.",
+      "freetrack_bridge": true,
+      "notes": "App 33930 is the Reinforcements/Combined Operations entry; it installs into the shared Arma 2 Operation Arrowhead folder and runs the same arma2oa.exe, so it has the same native FreeTrack support as that entry.",
       "setup_steps": [
-        "Install or update the TrackIR software and connect the tracker directly.",
-        "Start TrackIR BEFORE launching the game.",
-        "Launch the game, then enable TrackIR / free-look in the controls or difficulty options.",
+        "Runs the same executable as Arma 2: Operation Arrowhead - the tracker wiring is identical.",
+        "Start your tracker before the game, or launch from Lopari and it feeds the game directly.",
+        "In-game: Options -> Controls -> Controllers -> select 'FreeTrack' and enable it.",
         "Use the in-game free-look key to confirm head tracking is active."
       ]
     },
@@ -6486,6 +6567,7 @@
         "TrackIR",
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "notes": "Bohemia Enfusion engine with native TrackIR/FreeTrack support.",
       "setup_steps": [
         "Start TrackIR / OpenTrack (FreeTrack output) BEFORE launching the game.",
@@ -6498,10 +6580,9 @@
       "display_name": "DCS: A-10C",
       "steam_app_id": null,
       "protocols": [
-        "TrackIR",
-        "FreeTrack"
+        "TrackIR"
       ],
-      "notes": "DCS module/DLC that installs into DCS World rather than a standalone folder; standalone installdir unverified.",
+      "notes": "DCS module that installs into DCS World. TrackIR is the supported route; FreeTrack only through a third-party headtracker.dll plugin, so it is not native support.",
       "setup_steps": [
         "Start TrackIR BEFORE launching DCS; it is detected natively.",
         "Enable TrackIR in DCS Options > Misc / Special.",
@@ -6975,10 +7056,9 @@
       "display_name": "Flight Simulator 2002",
       "steam_app_id": null,
       "protocols": [
-        "TrackIR",
-        "FreeTrack"
+        "TrackIR"
       ],
-      "notes": "Microsoft Flight Simulator 2002 is a retail-only release; FreeTrack support is via FSUIPC.",
+      "notes": "Retail-only release. TrackIR is built in; FreeTrack only through the third-party FSUIPC addon, so it is not native support.",
       "setup_steps": [
         "Start TrackIR or FreeTrack (Interface = Both) before launching the sim.",
         "For FreeTrack, ensure FSUIPC is installed to bridge head tracking.",
@@ -6992,10 +7072,9 @@
       "steam_app_id": null,
       "executable_relpath": "fs9.exe",
       "protocols": [
-        "TrackIR",
-        "FreeTrack"
+        "TrackIR"
       ],
-      "notes": "Retail/disc title, not sold on Steam; install path varies by edition.",
+      "notes": "Retail/disc title. TrackIR via TIRViews; FreeTrack only through the third-party FSUIPC addon, so it is not native support.",
       "setup_steps": [
         "Start TrackIR or a FreeTrack-compatible tracker (Interface = Both) BEFORE launching the sim.",
         "Enable head tracking via FSUIPC for FreeTrack support.",
@@ -7042,6 +7121,7 @@
       "protocols": [
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "notes": "PiBoSo title distributed from piboso.com, not Steam or GOG.",
       "setup_steps": [
         "Start your FreeTrack-compatible tracker BEFORE launching GP Bikes.",
@@ -7268,10 +7348,29 @@
       "protocols": [
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "notes": "Also distributed direct from PiBoSo; supports FreeTrack natively. Steam installdir name not fully verified.",
       "setup_steps": [
         "Start your FreeTrack-compatible tracker before launching the game.",
         "Launch Kart Racing PRO.",
+        "Enable FreeTrack / head tracking in the game options.",
+        "Recenter the view with your tracker's default recenter key."
+      ]
+    },
+    {
+      "id": "mx-bikes",
+      "display_name": "MX Bikes",
+      "steam_app_id": 655500,
+      "steam_folder": "MX Bikes",
+      "executable_relpath": "mxbikes.exe",
+      "protocols": [
+        "FreeTrack"
+      ],
+      "freetrack_bridge": true,
+      "notes": "PiBoSo sim, also sold direct from piboso.com. Supports FreeTrack natively; PiBoSo declines NaturalPoint's SDK licence so there is no TrackIR path.",
+      "setup_steps": [
+        "Start your FreeTrack-compatible tracker before launching the game.",
+        "Launch MX Bikes.",
         "Enable FreeTrack / head tracking in the game options.",
         "Recenter the view with your tracker's default recenter key."
       ]
@@ -7445,7 +7544,8 @@
         "TrackIR",
         "FreeTrack"
       ],
-      "notes": "Steam installdir not verified; native FreeTrack support is listed.",
+      "freetrack_bridge": true,
+      "notes": "Listed under the FreeTrack interface (native) on Wikipedia's list of FreeTrack-compatible games, which separates native support from TrackIR emulation, FSUIPC, SimConnect and third-party plugins. That listing is the only evidence; not confirmed by us on hardware. Added in patch #33.",
       "setup_steps": [
         "Start your tracker (TrackIR, or OpenTrack with FreeTrack output) BEFORE launching the game.",
         "Launch Miscreated.",
@@ -7599,10 +7699,9 @@
       "display_name": "Prepar3D",
       "steam_app_id": null,
       "protocols": [
-        "TrackIR",
-        "FreeTrack"
+        "TrackIR"
       ],
-      "notes": "Lockheed Martin licensed download; not distributed on Steam.",
+      "notes": "Lockheed Martin licensed download, not on Steam. TrackIR is built in; FreeTrack only through a SimConnect addon, so it is not native support.",
       "setup_steps": [
         "Start TrackIR or FreeTrack (via SimConnect) BEFORE launching the sim.",
         "Launch Prepar3D and confirm head tracking is active in the cockpit view.",
@@ -8056,6 +8155,7 @@
       "protocols": [
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "setup_steps": [
         "Start your FreeTrack / OpenTrack tracker BEFORE launching the game.",
         "Launch Take On Helicopters from Steam.",
@@ -8409,6 +8509,7 @@
       "protocols": [
         "FreeTrack"
       ],
+      "freetrack_bridge": true,
       "notes": "PiBoSo sim distributed only via the developer's website; not on Steam.",
       "setup_steps": [
         "Start your FreeTrack-compatible tracker (FreeTrack or OpenTrack) before launching the game.",
@@ -8468,7 +8569,8 @@
         "TrackIR",
         "FreeTrack"
       ],
-      "notes": "Albion Prelude installs into the X3: Terran Conflict folder and launches via X3AP.exe.",
+      "freetrack_bridge": true,
+      "notes": "Listed under the FreeTrack interface (native) on Wikipedia's list of FreeTrack-compatible games, which separates native support from TrackIR emulation, FSUIPC, SimConnect and third-party plugins. That listing is the only evidence; not confirmed by us on hardware.",
       "setup_steps": [
         "Start your tracker (TrackIR, or FreeTrack/OpenTrack) before launching the game.",
         "Enable head-tracking in the game's controls/options.",
