@@ -8,13 +8,12 @@
 <meta property="og:title" content="Lopari" />
 <meta property="og:description" content="A launcher for the head-tracking-capable games on your PC." />
 <meta property="og:image" content="favicon.png" />
-<meta name="theme-color" content="#070a0d" />
+<meta name="theme-color" content="#24344a" />
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="apple-touch-icon" href="favicon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@500;600;700;800&family=Saira:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css?v=2" />
+<link rel="preload" href="fonts/bungee-latin.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
 
@@ -23,7 +22,7 @@
 <header class="masthead">
   <div class="mast-row">
     <a href="index.html" class="mast-brand">
-      <img src="favicon.png" alt="" width="24" height="24" />
+      <img src="favicon.png" alt="" width="21" height="21" />
       <span>Lopari</span>
     </a>
     <nav class="mast-nav" aria-label="Primary">
@@ -36,61 +35,76 @@
   </div>
 </header>
 
-<main id="main">
+<main id="main" class="wrap">
 
-<section class="hero" id="top">
-  <div class="hero-copy">
-    <h1>Immersive <span>flatscreen gaming</span></h1>
+<section class="back" id="top">
+  <svg class="rocker" viewBox="0 0 600 138" role="img" aria-label="Lopari">
+    <path id="topArc" d="M52 110 A 420 420 0 0 1 548 110" fill="none" />
+    <use href="#topArc" class="edge" />
+    <use href="#topArc" class="field" />
+    <text dy="13"><textPath href="#topArc" startOffset="50%" text-anchor="middle">LOPARI</textPath></text>
+  </svg>
 
-    <figure class="hero-shot">
-      <img src="screenshot-hero.png" width="1319" height="981"
-           alt="The Lopari launcher: a sidebar of detected head-tracking games with Skyrim selected, showing its head-tracking controls and setup." />
-    </figure>
-
-    <p class="standfirst">
+  <div class="crest patch">
+    <h1>Immersive flatscreen gaming</h1>
+    <p>
       Lopari surfaces games on your PC which support head tracking, either
-      natively or via unofficial mods, and loads them in a click.
+      natively or via unofficial mods, and loads them in one click.
     </p>
-    <!-- HERO_DOWNLOAD:START -->
-    <div class="hero-actions">
-      <a class="action big" href="https://github.com/itsloopyo/lopari-releases/releases/download/v0.7.0/Lopari_0.7.0_x64-setup.exe">
-        <span class="action-main">Download for Windows</span>
-        <span class="action-sub">v0.7.0 · 64-bit · free</span>
-      </a>
-      <a class="action ghost" href="#how">How it works</a>
-    </div>
-    <p class="hero-spec">Windows 10 &amp; 11 · No account · No telemetry</p>
-    <details class="download-verify hero-verify">
-      <summary>Verify your download (SHA256)</summary>
-      <p>Optional. Confirm the installer matches what CI built:</p>
-      <pre><code>Get-FileHash .\Lopari_0.7.0_x64-setup.exe -Algorithm SHA256</code></pre>
-      <p>Expected digest for this release:</p>
-      <p><code class="sha-digest">8f51b946597a91dcf43b38369ba5e3293dd642c1e10ae3c68e79c13359a431aa</code></p>
-    </details>
-    <!-- HERO_DOWNLOAD:END -->
   </div>
+
+  <svg class="rocker small" viewBox="0 0 600 142" role="img" aria-label="Head track all the things">
+    <path id="botArc" d="M52 28 A 420 420 0 0 0 548 28" fill="none" />
+    <use href="#botArc" class="edge" />
+    <use href="#botArc" class="field" />
+    <text dy="7"><textPath href="#botArc" startOffset="50%" text-anchor="middle">HEAD TRACK ALL THE THINGS</textPath></text>
+  </svg>
+
+  <!-- HERO_DOWNLOAD:START -->
+  <div class="hero-actions">
+    <a class="action" href="https://github.com/itsloopyo/lopari-releases/releases/download/v0.6.0/Lopari_0.6.0_x64-setup.exe">
+      <span class="action-main">Download for Windows</span>
+      <span class="action-sub">v0.6.0 · 64-bit · free</span>
+    </a>
+  </div>
+  <p class="hero-spec">Windows 10 &amp; 11 · No account · No telemetry</p>
+  <details class="download-verify">
+    <summary>Verify your download (SHA256)</summary>
+    <p>Optional. Confirm the installer matches what CI built:</p>
+    <pre><code>Get-FileHash .\Lopari_0.6.0_x64-setup.exe -Algorithm SHA256</code></pre>
+    <p>Expected digest for this release:</p>
+    <p><code class="sha-digest">2a8762b1fed7b80137dbeb82d9569067545cb161a04db0de6b35056584044d92</code></p>
+  </details>
+  <!-- HERO_DOWNLOAD:END -->
+
+  <figure class="woven patch">
+    <img src="screenshot-hero.png" width="1319" height="981"
+         alt="The Lopari launcher: a sidebar of detected head-tracking games with Skyrim selected, showing its head-tracking controls and setup." />
+    <figcaption>Lopari 0.6.0</figcaption>
+  </figure>
 </section>
 
-<section class="how" id="how">
-  <div class="sec-head">
-    <p class="kicker">How it works</p>
-    <h2 class="section-title">Pick a game. Launch it. Done.</h2>
-  </div>
+<div class="ribbons" id="how">
+  <section class="ribbon patch">
+    <h2>It finds your games</h2>
+    <p>Every installed game that supports head tracking, natively or through an unofficial mod.</p>
+  </section>
+  <section class="ribbon patch">
+    <h2>You launch in one click</h2>
+    <p>Hit play. Lopari adds the mod if a game needs one, and takes it back out when you want vanilla.</p>
+  </section>
+</div>
 
-  <ol class="steps">
-    <li>
-      <span class="step-no">01</span>
-      <h3 class="step-title">It finds your games</h3>
-      <p>Every installed game that supports head tracking - natively, or through an unofficial mod.</p>
-    </li>
-    <li>
-      <span class="step-no">02</span>
-      <h3 class="step-title">You launch in one click</h3>
-      <p>Hit play. Lopari adds the mod if a game needs one, and takes it back out when you want vanilla.</p>
-    </li>
-  </ol>
-
-  <p class="how-note"><strong>You bring the tracker.</strong> Lopari launches your games and swaps the mod in and out. The head tracking itself comes from whatever you already use - TrackIR, a Tobii Eye Tracker, OpenTrack with a webcam, or <a href="https://headcam.app" target="_blank" rel="noopener">Headcam</a>, our free app that turns your iPhone or Android phone into the tracker.</p>
+<section class="bring patch">
+  <h2>You bring the tracker</h2>
+  <p>
+    Lopari launches your games and swaps the mod in and out. The head tracking
+    itself is yours to supply, and two of the options are free:
+    <a href="https://github.com/opentrack/opentrack/releases" target="_blank" rel="noopener">OpenTrack</a>
+    if you have a webcam, and <a href="https://headcam.app" target="_blank" rel="noopener">Headcam</a>,
+    our own app, if you have an iPhone or Android phone. Hardware trackers like
+    TrackIR and the Tobii Eye Tracker work too.
+  </p>
 </section>
 
 </main>
@@ -118,13 +132,13 @@
         <li><a href="eula.html">EULA</a></li>
       </ul>
     </div>
-  </div>
 
-  <p class="disclaimer">
-    Lopari is an independent, fan-made project. It is not affiliated with, endorsed by, or sponsored by any game publisher, developer, storefront, or trademark holder. All game titles, trademarks, and logos are the property of their respective owners and are referenced here solely to identify which titles support head tracking. The community mods Lopari can optionally install modify only files on the user's own machine and are designed to be reversible.
+    <p class="disclaimer">
+    Lopari is an independent, fan-made project. It is not affiliated with, endorsed by, or sponsored by any game publisher, developer, storefront, or trademark holder. All game titles, trademarks, and logos are the property of their respective owners and are referenced here solely to identify which titles support head tracking. The mods Lopari can optionally install modify only files on the user's own machine and are designed to be reversible.
   </p>
 
-  <p class="copyline">© 2026 itsloopyo · <span>Head track all the things.</span></p>
+    <p class="copyline">© 2026 itsloopyo</p>
+  </div>
 </footer>
 
 </body>

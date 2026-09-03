@@ -3,6 +3,12 @@
 // SHA256 driven by the env vars set by the calling workflow.
 //
 // Run from the repo root: `node scripts/update-latest.mjs`.
+//
+// The markup below is written verbatim into index.html, so its class names are
+// a contract with styles.css. Change one in either place and you must change
+// it in the other in the same commit, or the next release reverts the hero to
+// markup the stylesheet no longer knows about. Verify with a round trip: run
+// this script and diff index.html; at an unchanged version it must be a no-op.
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve } from "node:path";
@@ -27,22 +33,21 @@ const mastBlock = `<!-- MAST_DOWNLOAD:START -->
       <!-- MAST_DOWNLOAD:END -->`;
 
 const heroBlock = `<!-- HERO_DOWNLOAD:START -->
-    <div class="hero-actions">
-      <a class="action big" href="${escape(env.NSIS_URL)}">
-        <span class="action-main">Download for Windows</span>
-        <span class="action-sub">${escape(env.VERSION)} · 64-bit · free</span>
-      </a>
-      <a class="action ghost" href="#how">How it works</a>
-    </div>
-    <p class="hero-spec">Windows 10 &amp; 11 · No account · No telemetry</p>
-    <details class="download-verify hero-verify">
-      <summary>Verify your download (SHA256)</summary>
-      <p>Optional. Confirm the installer matches what CI built:</p>
-      <pre><code>Get-FileHash .\\${escape(env.NSIS_FILENAME)} -Algorithm SHA256</code></pre>
-      <p>Expected digest for this release:</p>
-      <p><code class="sha-digest">${escape(env.NSIS_SHA256)}</code></p>
-    </details>
-    <!-- HERO_DOWNLOAD:END -->`;
+  <div class="hero-actions">
+    <a class="action" href="${escape(env.NSIS_URL)}">
+      <span class="action-main">Download for Windows</span>
+      <span class="action-sub">${escape(env.VERSION)} · 64-bit · free</span>
+    </a>
+  </div>
+  <p class="hero-spec">Windows 10 &amp; 11 · No account · No telemetry</p>
+  <details class="download-verify">
+    <summary>Verify your download (SHA256)</summary>
+    <p>Optional. Confirm the installer matches what CI built:</p>
+    <pre><code>Get-FileHash .\\${escape(env.NSIS_FILENAME)} -Algorithm SHA256</code></pre>
+    <p>Expected digest for this release:</p>
+    <p><code class="sha-digest">${escape(env.NSIS_SHA256)}</code></p>
+  </details>
+  <!-- HERO_DOWNLOAD:END -->`;
 
 html = replaceBlock(html, "MAST_DOWNLOAD", mastBlock);
 html = replaceBlock(html, "HERO_DOWNLOAD", heroBlock);

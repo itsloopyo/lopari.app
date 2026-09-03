@@ -1,8 +1,24 @@
+# Pages serves this repo's root verbatim, so every committed path is
+# published at lopari.app/<path>. Ignoring here is the publication gate,
+# not just local tidiness.
+
 .pixi/
+node_modules/
+
 .claude/
 .lab/
-node_modules/
-.DS_Store
-Thumbs.db
+.impeccable/
+.github/hooks/
+.mcp.json
+
 AGENTS.md
 CLAUDE.md
+PRODUCT.md
+DESIGN.md
+
+.env
+.env.*
+
+.DS_Store
+Thumbs.db
+desktop.ini
