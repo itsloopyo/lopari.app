@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-05T13:31:46.711Z",
+  "updated_at": "2026-09-05T19:19:22.549Z",
   "mods": [
     {
       "id": "subnautica",
@@ -8,6 +8,12 @@
       "released": true,
       "display_name": "Subnautica",
       "repo": "itsloopyo/subnautica-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/subnautica/mods/3169"
+        }
+      ],
       "install_strategy": "BepInEx5",
       "verified_sources": [
         "Steam"
@@ -159,6 +165,12 @@
       "released": true,
       "display_name": "Return of the Obra Dinn",
       "repo": "itsloopyo/obra-dinn-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/returnoftheobradinn/mods/9"
+        }
+      ],
       "install_strategy": "BepInEx5",
       "verified_sources": [
         "Steam"
@@ -373,6 +385,12 @@
       "released": true,
       "display_name": "PEAK",
       "repo": "itsloopyo/peak-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/peak/mods/167"
+        }
+      ],
       "install_strategy": "BepInEx5",
       "verified_sources": [
         "Steam"
@@ -530,6 +548,12 @@
       "released": true,
       "display_name": "Green Hell",
       "repo": "itsloopyo/green-hell-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/greenhell/mods/83"
+        }
+      ],
       "install_strategy": "MelonLoader",
       "verified_sources": [
         "Steam"
@@ -744,7 +768,111 @@
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         }
       ],
-      "known_issues": []
+      "known_issues": [],
+      "release": {
+        "versions": [
+          {
+            "tag_name": "v1.3.0",
+            "version": "1.3.0",
+            "name": "Head Tracking for Outer Wilds v1.3.0",
+            "html_url": "https://github.com/itsloopyo/outer-wilds-headtracking/releases/tag/v1.3.0",
+            "published_at": "2026-08-20T11:56:29Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.2.3",
+            "version": "1.2.3",
+            "name": "Head Tracking for Outer Wilds v1.2.3",
+            "html_url": "https://github.com/itsloopyo/outer-wilds-headtracking/releases/tag/v1.2.3",
+            "published_at": "2026-08-07T13:42:01Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.2.2",
+            "version": "1.2.2",
+            "name": "Head Tracking for Outer Wilds v1.2.2",
+            "html_url": "https://github.com/itsloopyo/outer-wilds-headtracking/releases/tag/v1.2.2",
+            "published_at": "2026-08-03T19:00:10Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.2.1",
+            "version": "1.2.1",
+            "name": "Head Tracking for Outer Wilds v1.2.1",
+            "html_url": "https://github.com/itsloopyo/outer-wilds-headtracking/releases/tag/v1.2.1",
+            "published_at": "2026-08-03T18:37:35Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.2.0",
+            "version": "1.2.0",
+            "name": "Head Tracking for Outer Wilds v1.2.0",
+            "html_url": "https://github.com/itsloopyo/outer-wilds-headtracking/releases/tag/v1.2.0",
+            "published_at": "2026-07-26T23:36:30Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.1.0",
+            "version": "1.1.0",
+            "name": "Head Tracking for Outer Wilds v1.1.0",
+            "html_url": "https://github.com/itsloopyo/outer-wilds-headtracking/releases/tag/v1.1.0",
+            "published_at": "2026-04-29T19:03:19Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.0.3",
+            "version": "1.0.3",
+            "name": "Head Tracking for Outer Wilds v1.0.3",
+            "html_url": "https://github.com/itsloopyo/outer-wilds-headtracking/releases/tag/v1.0.3",
+            "published_at": "2026-03-05T18:53:28Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.0.2",
+            "version": "1.0.2",
+            "name": "Head Tracking for Outer Wilds v1.0.2",
+            "html_url": "https://github.com/itsloopyo/outer-wilds-headtracking/releases/tag/v1.0.2",
+            "published_at": "2026-02-26T19:04:21Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.0.1",
+            "version": "1.0.1",
+            "name": "Head Tracking for Outer Wilds v1.0.1",
+            "html_url": "https://github.com/itsloopyo/outer-wilds-headtracking/releases/tag/v1.0.1",
+            "published_at": "2025-11-30T01:37:43Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          },
+          {
+            "tag_name": "v1.0.0",
+            "version": "1.0.0",
+            "name": "Head Tracking for Outer Wilds v1.0.0",
+            "html_url": "https://github.com/itsloopyo/outer-wilds-headtracking/releases/tag/v1.0.0",
+            "published_at": "2025-11-23T16:59:58Z",
+            "zip_filename": null,
+            "download_url": null,
+            "size_bytes": null
+          }
+        ]
+      }
     },
     {
       "id": "resident-evil-requiem",
@@ -752,6 +880,12 @@
       "released": true,
       "display_name": "Resident Evil Requiem",
       "repo": "itsloopyo/resident-evil-requiem-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/residentevilrequiem/mods/1678"
+        }
+      ],
       "install_strategy": "REFramework",
       "verified_sources": [
         "Steam"
@@ -884,6 +1018,12 @@
       "released": true,
       "display_name": "Dying Light 2 Stay Human",
       "repo": "itsloopyo/dying-light-2-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/dyinglight2/mods/1900"
+        }
+      ],
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Steam"
@@ -1062,6 +1202,12 @@
       "released": true,
       "display_name": "BioShock Remastered",
       "repo": "itsloopyo/bioshock-remastered-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/bioshock/mods/144"
+        }
+      ],
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Steam"
@@ -1388,6 +1534,12 @@
       "released": true,
       "display_name": "Cyberpunk 2077",
       "repo": "itsloopyo/cyberpunk-2077-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/cyberpunk2077/mods/32865"
+        }
+      ],
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Gog"
@@ -1561,6 +1713,12 @@
       "released": true,
       "display_name": "Easy Delivery Co",
       "repo": "itsloopyo/easy-delivery-co-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/easydeliveryco/mods/18"
+        }
+      ],
       "install_strategy": "BepInEx5",
       "verified_sources": [
         "Xbox"
@@ -2381,6 +2539,12 @@
       "released": true,
       "display_name": "Skyrim Special Edition",
       "repo": "itsloopyo/skyrim-special-edition-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/skyrimspecialedition/mods/180328"
+        }
+      ],
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Steam"
@@ -2475,6 +2639,12 @@
       "released": true,
       "display_name": "Subnautica 2",
       "repo": "itsloopyo/subnautica-2-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/subnautica2/mods/250"
+        }
+      ],
       "install_strategy": "Shim",
       "verified_sources": [
         "Steam",
@@ -2662,6 +2832,12 @@
       "released": true,
       "display_name": "Valheim",
       "repo": "itsloopyo/valheim-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/valheim/mods/3356"
+        }
+      ],
       "install_strategy": "BepInEx5",
       "verified_sources": [
         "Steam"
@@ -2872,6 +3048,12 @@
       "released": true,
       "display_name": "Black & White",
       "repo": "itsloopyo/black-and-white-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/blackandwhite/mods/26"
+        }
+      ],
       "install_strategy": "Shim",
       "verified_sources": [
         "Manual"
@@ -3345,6 +3527,12 @@
       "released": false,
       "display_name": "Titanfall 2",
       "repo": "itsloopyo/titanfall-2-headtracking",
+      "listings": [
+        {
+          "name": "NexusMods",
+          "url": "https://www.nexusmods.com/titanfall2/mods/74"
+        }
+      ],
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Steam"
@@ -3643,6 +3831,12 @@
       "released": true,
       "display_name": "Assetto Corsa EVO",
       "repo": "itsloopyo/assetto-corsa-evo-headtracking",
+      "listings": [
+        {
+          "name": "Overtake.gg",
+          "url": "https://www.overtake.gg/downloads/assetto-corsa-evo-head-tracking.86062/"
+        }
+      ],
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Steam"
@@ -4087,6 +4281,12 @@
       "released": true,
       "display_name": "Assetto Corsa Rally",
       "repo": "itsloopyo/assetto-corsa-rally-headtracking",
+      "listings": [
+        {
+          "name": "Overtake.gg",
+          "url": "https://www.overtake.gg/downloads/assetto-corsa-rally-head-tracking.86201/"
+        }
+      ],
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Steam"
