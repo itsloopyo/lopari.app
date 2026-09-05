@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-05T12:44:49.470Z",
+  "updated_at": "2026-09-05T13:31:46.711Z",
   "mods": [
     {
       "id": "subnautica",
@@ -9,6 +9,9 @@
       "display_name": "Subnautica",
       "repo": "itsloopyo/subnautica-headtracking",
       "install_strategy": "BepInEx5",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 264710,
         "steam_folder": "Subnautica",
@@ -157,6 +160,9 @@
       "display_name": "Return of the Obra Dinn",
       "repo": "itsloopyo/obra-dinn-headtracking",
       "install_strategy": "BepInEx5",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 653530,
         "steam_folder": "ObraDinn",
@@ -368,6 +374,9 @@
       "display_name": "PEAK",
       "repo": "itsloopyo/peak-headtracking",
       "install_strategy": "BepInEx5",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 3527290,
         "steam_folder": "PEAK",
@@ -522,6 +531,9 @@
       "display_name": "Green Hell",
       "repo": "itsloopyo/green-hell-headtracking",
       "install_strategy": "MelonLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 815370,
         "steam_folder": "Green Hell",
@@ -691,6 +703,9 @@
       "display_name": "Outer Wilds",
       "repo": "itsloopyo/outer-wilds-headtracking",
       "install_strategy": "External",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 753640,
         "steam_folder": "Outer Wilds",
@@ -738,6 +753,9 @@
       "display_name": "Resident Evil Requiem",
       "repo": "itsloopyo/resident-evil-requiem-headtracking",
       "install_strategy": "REFramework",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 3764200,
         "steam_folder": "RESIDENT EVIL requiem BIOHAZARD requiem",
@@ -867,6 +885,9 @@
       "display_name": "Dying Light 2 Stay Human",
       "repo": "itsloopyo/dying-light-2-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 534380,
         "steam_folder": "Dying Light 2",
@@ -1042,6 +1063,9 @@
       "display_name": "BioShock Remastered",
       "repo": "itsloopyo/bioshock-remastered-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 409710,
         "steam_folder": "BioShock Remastered",
@@ -1171,6 +1195,9 @@
       "display_name": "Gone Home",
       "repo": "itsloopyo/gone-home-headtracking",
       "install_strategy": "MonoCecil",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 232430,
         "steam_folder": "Gone Home",
@@ -1362,6 +1389,9 @@
       "display_name": "Cyberpunk 2077",
       "repo": "itsloopyo/cyberpunk-2077-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Gog"
+      ],
       "game": {
         "steam_app_id": 1091500,
         "steam_folder": "Cyberpunk 2077",
@@ -1532,6 +1562,9 @@
       "display_name": "Easy Delivery Co",
       "repo": "itsloopyo/easy-delivery-co-headtracking",
       "install_strategy": "BepInEx5",
+      "verified_sources": [
+        "Xbox"
+      ],
       "game": {
         "steam_app_id": 3293010,
         "steam_folder": "Easy Delivery Co",
@@ -1642,6 +1675,9 @@
       "display_name": "Eternal Afternoon",
       "repo": "itsloopyo/eternal-afternoon-headtracking",
       "install_strategy": "MonoCecil",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 3924170,
         "steam_folder": "Eternal Afternoon",
@@ -1767,6 +1803,9 @@
       "display_name": "Fallout: New Vegas",
       "repo": "itsloopyo/fallout-new-vegas-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 22380,
         "steam_folder": "Fallout New Vegas",
@@ -1860,6 +1899,9 @@
       "display_name": "Firewatch",
       "repo": "itsloopyo/firewatch-headtracking",
       "install_strategy": "MelonLoader",
+      "verified_sources": [
+        "Xbox"
+      ],
       "game": {
         "steam_app_id": 383870,
         "steam_folder": "Firewatch",
@@ -1970,6 +2012,9 @@
       "display_name": "The Painscreek Killings",
       "repo": "itsloopyo/the-painscreek-killings-headtracking",
       "install_strategy": "MonoCecil",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 624270,
         "steam_folder": "The Painscreek Killings",
@@ -2020,6 +2065,9 @@
       "display_name": "Resident Evil 2",
       "repo": "itsloopyo/resident-evil-2-headtracking",
       "install_strategy": "REFramework",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 883710,
         "steam_folder": "RESIDENT EVIL 2  BIOHAZARD RE2",
@@ -2070,6 +2118,9 @@
       "display_name": "Resident Evil 3",
       "repo": "itsloopyo/resident-evil-3-headtracking",
       "install_strategy": "REFramework",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 952060,
         "steam_folder": "RE3",
@@ -2119,6 +2170,9 @@
       "display_name": "Resident Evil 4",
       "repo": "itsloopyo/resident-evil-4-headtracking",
       "install_strategy": "REFramework",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 2050650,
         "steam_folder": "RESIDENT EVIL 4  BIOHAZARD RE4",
@@ -2167,6 +2221,9 @@
       "display_name": "Resident Evil 7 biohazard",
       "repo": "itsloopyo/resident-evil-7-headtracking",
       "install_strategy": "REFramework",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 418370,
         "steam_folder": "RESIDENT EVIL 7 biohazard",
@@ -2214,6 +2271,9 @@
       "display_name": "Resident Evil Village",
       "repo": "itsloopyo/resident-evil-village-headtracking",
       "install_strategy": "REFramework",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 1196590,
         "steam_folder": "Resident Evil Village BIOHAZARD VILLAGE",
@@ -2261,6 +2321,9 @@
       "display_name": "Shadows of Doubt",
       "repo": "itsloopyo/shadows-of-doubt-headtracking",
       "install_strategy": "BepInEx6",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 986130,
         "steam_folder": "Shadows of Doubt",
@@ -2319,6 +2382,9 @@
       "display_name": "Skyrim Special Edition",
       "repo": "itsloopyo/skyrim-special-edition-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 489830,
         "steam_folder": "Skyrim Special Edition",
@@ -2410,6 +2476,10 @@
       "display_name": "Subnautica 2",
       "repo": "itsloopyo/subnautica-2-headtracking",
       "install_strategy": "Shim",
+      "verified_sources": [
+        "Steam",
+        "Xbox"
+      ],
       "game": {
         "steam_app_id": 1962700,
         "steam_folder": "Subnautica2",
@@ -2593,6 +2663,9 @@
       "display_name": "Valheim",
       "repo": "itsloopyo/valheim-headtracking",
       "install_strategy": "BepInEx5",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 892970,
         "steam_folder": "Valheim",
@@ -2748,6 +2821,9 @@
       "display_name": "Wobbly Life",
       "repo": "itsloopyo/wobbly-life-headtracking",
       "install_strategy": "BepInEx5",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 1211020,
         "steam_folder": "Wobbly Life",
@@ -2797,6 +2873,9 @@
       "display_name": "Black & White",
       "repo": "itsloopyo/black-and-white-headtracking",
       "install_strategy": "Shim",
+      "verified_sources": [
+        "Manual"
+      ],
       "game": {
         "steam_app_id": null,
         "steam_folder": null,
@@ -2908,6 +2987,9 @@
       "display_name": "Assassin's Creed Unity",
       "repo": "itsloopyo/assassins-creed-unity-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Ubisoft"
+      ],
       "game": {
         "steam_app_id": 289650,
         "steam_folder": "Assassin's Creed Unity",
@@ -2968,6 +3050,9 @@
       "display_name": "ABZÛ",
       "repo": "itsloopyo/abzu-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 384190,
         "steam_folder": "ABZU",
@@ -3026,6 +3111,9 @@
       "display_name": "Yakuza 0",
       "repo": "itsloopyo/yakuza-0-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 638970,
         "steam_folder": "Yakuza 0",
@@ -3086,6 +3174,9 @@
       "display_name": "Sons of the Forest",
       "repo": "itsloopyo/sons-of-the-forest-headtracking",
       "install_strategy": "BepInEx6",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 1326470,
         "steam_folder": "Sons Of The Forest",
@@ -3143,6 +3234,9 @@
       "display_name": "YAPYAP",
       "repo": "itsloopyo/yapyap-headtracking",
       "install_strategy": "BepInEx5",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 3834090,
         "steam_folder": "YAPYAP",
@@ -3252,6 +3346,9 @@
       "display_name": "Titanfall 2",
       "repo": "itsloopyo/titanfall-2-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 1237970,
         "steam_folder": "Titanfall2",
@@ -3316,6 +3413,9 @@
       "display_name": "Metaphor: ReFantazio",
       "repo": "itsloopyo/metaphor-refantazio-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 2679460,
         "steam_folder": "METAPHOR",
@@ -3375,6 +3475,9 @@
       "display_name": "Mirror's Edge",
       "repo": "itsloopyo/mirrors-edge-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 17410,
         "steam_folder": "mirrors edge",
@@ -3435,6 +3538,10 @@
       "display_name": "RV There Yet?",
       "repo": "itsloopyo/rv-there-yet-headtracking",
       "install_strategy": "Shim",
+      "verified_sources": [
+        "Steam",
+        "Xbox"
+      ],
       "game": {
         "steam_app_id": 3949040,
         "steam_folder": "Ride",
@@ -3537,6 +3644,9 @@
       "display_name": "Assetto Corsa EVO",
       "repo": "itsloopyo/assetto-corsa-evo-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 3058630,
         "steam_folder": "Assetto Corsa EVO",
@@ -3653,6 +3763,9 @@
       "display_name": "Red Eclipse",
       "repo": "itsloopyo/red-eclipse-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 967460,
         "steam_folder": "Red Eclipse",
@@ -3734,6 +3847,9 @@
       "display_name": "Alien: Isolation",
       "repo": "itsloopyo/alien-isolation-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 214490,
         "steam_folder": "Alien Isolation",
@@ -3803,6 +3919,9 @@
       "display_name": "Minecraft: Bedrock Edition",
       "repo": "itsloopyo/minecraft-bedrock-edition-headtracking",
       "install_strategy": "Shim",
+      "verified_sources": [
+        "Msix"
+      ],
       "game": {
         "steam_app_id": null,
         "steam_folder": null,
@@ -3909,6 +4028,9 @@
       "display_name": "R.E.P.O.",
       "repo": "itsloopyo/repo-headtracking",
       "install_strategy": "BepInEx5",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 3241660,
         "steam_folder": "REPO",
@@ -3966,6 +4088,9 @@
       "display_name": "Assetto Corsa Rally",
       "repo": "itsloopyo/assetto-corsa-rally-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 3917090,
         "steam_folder": "Assetto Corsa Rally",
@@ -4064,6 +4189,10 @@
       "display_name": "Fallout 4",
       "repo": "itsloopyo/fallout-4-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam",
+        "Gog"
+      ],
       "game": {
         "steam_app_id": 377160,
         "steam_folder": "Fallout 4",
@@ -4128,6 +4257,9 @@
       "display_name": "What Remains of Edith Finch",
       "repo": "itsloopyo/what-remains-of-edith-finch-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 501300,
         "steam_folder": "EdithFinch",
@@ -4224,6 +4356,9 @@
       "display_name": "Control: Ultimate Edition",
       "repo": "itsloopyo/control-ultimate-edition-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 870780,
         "steam_folder": "Control",
@@ -4278,6 +4413,9 @@
       "display_name": "Portal 2",
       "repo": "itsloopyo/portal-2-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 620,
         "steam_folder": "Portal 2",
@@ -4330,6 +4468,9 @@
       "display_name": "Pinball FX",
       "repo": "itsloopyo/pinball-fx-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 2328760,
         "steam_folder": "Pinball FX",
@@ -4445,6 +4586,9 @@
       "display_name": "Kingdom Come: Deliverance II",
       "repo": "itsloopyo/kingdom-come-deliverance-2-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 1771300,
         "steam_folder": "KingdomComeDeliverance2",
@@ -4503,6 +4647,9 @@
       "display_name": "Kingdom Come: Deliverance",
       "repo": "itsloopyo/kingdom-come-deliverance-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 379430,
         "steam_folder": "KingdomComeDeliverance",
@@ -4561,6 +4708,9 @@
       "display_name": "Pacific Drive",
       "repo": "itsloopyo/pacific-drive-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 1458140,
         "steam_folder": "Pacific Drive",
@@ -4617,6 +4767,9 @@
       "display_name": "Prey",
       "repo": "itsloopyo/prey-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 480490,
         "steam_folder": "Prey",
@@ -4685,6 +4838,9 @@
       "display_name": "Still Wakes the Deep",
       "repo": "itsloopyo/still-wakes-the-deep-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 1622910,
         "steam_folder": "Still Wakes the Deep",
@@ -4764,6 +4920,9 @@
       "display_name": "Half-Life 2",
       "repo": "itsloopyo/half-life-2-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 220,
         "steam_folder": "Half-Life 2",
@@ -4835,6 +4994,9 @@
       "display_name": "High On Life",
       "repo": "itsloopyo/high-on-life-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 1583230,
         "steam_folder": "HighOnLife",
@@ -4898,6 +5060,9 @@
       "display_name": "Wreckfest",
       "repo": "itsloopyo/wreckfest-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 228380,
         "steam_folder": "Wreckfest",
@@ -4963,6 +5128,9 @@
       "display_name": "Wreckfest 2",
       "repo": "itsloopyo/wreckfest-2-headtracking",
       "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
       "game": {
         "steam_app_id": 1203190,
         "steam_folder": "Wreckfest 2",
@@ -5020,6 +5188,203 @@
           }
         ]
       }
+    },
+    {
+      "id": "dishonored",
+      "public": true,
+      "released": false,
+      "display_name": "Dishonored",
+      "repo": "itsloopyo/dishonored-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 205100,
+        "steam_folder": "Dishonored",
+        "gog_ids": [
+          "1701063787"
+        ],
+        "epic_search_paths": [],
+        "env_var": "DISHONORED_PATH",
+        "executable_relpath": "Binaries\\Win32\\Dishonored.exe"
+      },
+      "description": "6DOF head tracking for Dishonored via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and the crosshair is redrawn on where the game is actually aiming. The supported build is the Steam retail build of 17 February 2022; on any other build the mod stays dormant and the game runs vanilla.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the rendered view, while weapon fire, prompts and enemy awareness still follow your mouse or controller",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean and peek",
+        "Crosshair follows the aim: the game draws its crosshair at screen centre, and the mod moves it onto where the shot is pointed once the view has moved off it",
+        "Lean collision: a lean is traced against the level and stopped short of the wall it would otherwise have carried the view through",
+        "Optional FOV override on top of the game's own FOV slider, with weapon zooms still removing the same number of degrees they always did"
+      ],
+      "requirements": [
+        "Dishonored (Steam, app 205100) on the retail build of 17 February 2022",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260905.5f2df02",
+          "built_at": "2026-09-05T13:16:52Z",
+          "zip_filename": "DishonoredHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/dishonored-headtracking/releases/download/dev/DishonoredHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "spec-ops-the-line",
+      "public": true,
+      "released": false,
+      "display_name": "Spec Ops: The Line",
+      "repo": "itsloopyo/spec-ops-the-line-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 50300,
+        "steam_folder": "SpecOps_TheLine",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "SPEC_OPS_THE_LINE_PATH",
+        "executable_relpath": "Binaries\\Win32\\SpecOpsTheLine.exe"
+      },
+      "description": "6DOF head tracking for Spec Ops: The Line via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming, and the game's own crosshair is moved onto the point the shot lands on.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the rendered view, aim stays on your mouse or controller",
+        "Parallax-correct crosshair: the game's crosshair is drawn on the point the shot lands on, not just the direction it points",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean and peek",
+        "Lean collision: the lean is traced against the level so leaning into cover stops at the wall instead of putting the view inside it"
+      ],
+      "requirements": [
+        "Spec Ops: The Line (Steam, app 50300)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260905.3e9a526",
+          "built_at": "2026-09-05T13:17:08Z",
+          "zip_filename": "SpecOpsTheLineHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/spec-ops-the-line-headtracking/releases/download/dev/SpecOpsTheLineHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "The crosshair is hidden once your head turns far enough that the point the shot lands on leaves the screen; at a 72 degree field of view that starts around 40 degrees of head yaw."
+      ]
+    },
+    {
+      "id": "deus-ex-human-revolution",
+      "public": true,
+      "released": false,
+      "display_name": "Deus Ex: Human Revolution - Director's Cut",
+      "repo": "itsloopyo/deus-ex-human-revolution-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 238010,
+        "steam_folder": "Deus Ex Human Revolution Director's Cut",
+        "gog_ids": [
+          "1370227705"
+        ],
+        "epic_search_paths": [],
+        "env_var": "DXHR_PATH",
+        "executable_relpath": "DXHRDC.exe"
+      },
+      "description": "6DOF head tracking for Deus Ex: Human Revolution - Director's Cut via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming, and what tracking does while the sights are up is yours to pick.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean and peek",
+        "Aim-down-sights modes: raising the sights always swings the view onto the point the reticle was marking, then tracking either pauses for the aim, carries on with a marker on where the rounds land, or carries on without one"
+      ],
+      "requirements": [
+        "Deus Ex: Human Revolution - Director's Cut (Steam, app 238010)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Cycles what head tracking does while the sights are up: paused for the aim, tracking on with a marker on the point the rounds land, or tracking on without it"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260905.9a3d6ce",
+          "built_at": "2026-09-05T13:17:59Z",
+          "zip_filename": "DeusExHumanRevolutionHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/deus-ex-human-revolution-headtracking/releases/download/dev/DeusExHumanRevolutionHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
     }
   ],
   "native_games": [
@@ -5383,7 +5748,6 @@
       "executable_relpath": "Bin64\\AMS2AVX.exe",
       "protocols": [
         "TrackIR",
-        "SteamVR",
         "FreeTrack"
       ],
       "freetrack_bridge": true,
@@ -5542,8 +5906,7 @@
       "steam_folder": "Star Wars Squadrons",
       "executable_relpath": "starwarssquadrons.exe",
       "protocols": [
-        "TrackIR",
-        "SteamVR"
+        "TrackIR"
       ],
       "notes": "Native TrackIR; VR mode also exposes tracking to emulated headsets.",
       "setup_steps": [
