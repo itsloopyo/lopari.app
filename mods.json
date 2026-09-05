@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-03T22:57:46.907Z",
+  "updated_at": "2026-09-05T00:31:48.825Z",
   "mods": [
     {
       "id": "subnautica",
@@ -4952,6 +4952,71 @@
             "zip_filename": "WreckfestHeadTracking-v0.1.0-installer.zip",
             "download_url": "https://github.com/itsloopyo/wreckfest-headtracking/releases/download/v0.1.0/WreckfestHeadTracking-v0.1.0-installer.zip",
             "size_bytes": 3039085
+          }
+        ]
+      }
+    },
+    {
+      "id": "wreckfest-2",
+      "public": true,
+      "released": true,
+      "display_name": "Wreckfest 2",
+      "repo": "itsloopyo/wreckfest-2-headtracking",
+      "install_strategy": "AsiLoader",
+      "game": {
+        "steam_app_id": 1203190,
+        "steam_folder": "Wreckfest 2",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "WRECKFEST_2_PATH",
+        "executable_relpath": "Wreckfest2.exe"
+      },
+      "description": "6DOF head tracking for Wreckfest 2 via OpenTrack. Your head moves the camera while the wheel or controller keeps driving, in online races as well as local ones. The supported build is the Steam Wreckfest2.exe of 9 July 2026.",
+      "features": [
+        "Decoupled view and driving: your head moves the camera, the car, the physics and every input stay untouched",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Yaw turns about the camera's own up axis, so the view stays glued to the car through a bank, a roll or a landing on the roof",
+        "Racing only: tracking follows from the grid countdown to the chequered flag, online and offline, and the menus, the paddock, the results screen and the pause menu keep the game's own camera"
+      ],
+      "requirements": [
+        "Wreckfest 2 (Steam, app 1203190) on the Wreckfest2.exe build of 9 July 2026",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Wreckfest 2 Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/wreckfest-2-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-05T00:27:36Z",
+          "zip_filename": "Wreckfest2HeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/wreckfest-2-headtracking/releases/download/v0.1.0/Wreckfest2HeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 3083685
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Wreckfest 2 Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/wreckfest-2-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-05T00:27:36Z",
+            "zip_filename": "Wreckfest2HeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/wreckfest-2-headtracking/releases/download/v0.1.0/Wreckfest2HeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3083685
           }
         ]
       }
