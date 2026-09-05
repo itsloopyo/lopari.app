@@ -145,7 +145,14 @@ function stripV(tag) {
 // channel is surfaced separately via `distribution.pinned`, and the version
 // picker is for stable builds only. Returns null when no stable release
 // carries a *-installer.zip yet.
-async function fetchReleaseChannel(repo) {
+//
+// `external` mods are installed by a third-party manager, so their releases
+// ship the mod's own zip rather than an -installer.zip and there is nothing
+// for the launcher to pin. They get the version list alone - PinnedRelease
+// requires a download_url in the launcher's struct, so emitting a pin
+// without one would fail deserialisation of the whole catalog, while
+// PinnedVersion.download_url is already Option for exactly this case.
+async function fetchReleaseChannel(repo, { external = false } = {}) {
   const releases = await githubJson(
     `https://api.github.com/repos/${repo}/releases?per_page=${VERSION_LIST_LIMIT}`,
   );
@@ -164,6 +171,7 @@ async function fetchReleaseChannel(repo) {
         size_bytes: asset ? asset.size : null,
       };
     });
+  if (external) return versions.length > 0 ? { versions } : null;
   const latest = versions.find((v) => v.download_url);
   if (!latest) return null;
   return {
@@ -281,15 +289,20 @@ let devPinned = 0;
 // predictable order. ~30 mods x ~200ms RTT = a few seconds total.
 for (const m of publicMods) {
   const hasDevRelease = m.distribution && m.distribution.type === "dev-release";
-  if (m.released !== true && !hasDevRelease) continue;
+  // External mods are installed through a third-party manager rather than
+  // by the launcher, so they stay `released: false` however many stable
+  // releases their repo carries. Pin the channel anyway: it's the only
+  // record of what version they're on, and generate-readme.mjs reads it.
+  const isExternal = m.install_strategy === "External";
+  if (m.released !== true && !hasDevRelease && !isExternal) continue;
   console.log(`[${m.id}] ${m.repo}`);
 
   try {
-    const channel = await fetchReleaseChannel(m.repo);
+    const channel = await fetchReleaseChannel(m.repo, { external: isExternal });
     if (channel) {
       m.release = channel;
       releasePinned++;
-      if (m.released !== true) {
+      if (m.released !== true && !isExternal) {
         // First stable release. Stamping `released` is what moves the
         // mod out of the launcher's pre-release section, hides the
         // dev-build row and routes installs to the stable channel.
@@ -308,7 +321,9 @@ for (const m of publicMods) {
         }
       }
       console.log(
-        `  release pinned ${channel.pinned.version} (${channel.versions.length} versions in picker)`,
+        channel.pinned
+          ? `  release pinned ${channel.pinned.version} (${channel.versions.length} versions in picker)`
+          : `  release listed ${channel.versions[0].version} (external - version list only, no pin)`,
       );
     } else if (m.released === true) {
       console.log("  release: no stable release with an -installer.zip yet");
