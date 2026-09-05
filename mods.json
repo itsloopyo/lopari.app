@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-05T19:26:53.588Z",
+  "updated_at": "2026-09-05T21:22:21.353Z",
   "mods": [
     {
       "id": "subnautica",
@@ -5714,6 +5714,78 @@
       },
       "known_issues": [
         "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "metro-exodus-enhanced-edition",
+      "public": true,
+      "released": false,
+      "display_name": "Metro Exodus Enhanced Edition",
+      "repo": "itsloopyo/metro-exodus-enhanced-edition-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 1449560,
+        "steam_folder": "Metro Exodus Enhanced Edition",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "METRO_EXODUS_ENHANCED_EDITION_PATH",
+        "executable_relpath": "MetroExodus.exe"
+      },
+      "description": "6DOF head tracking for Metro Exodus Enhanced Edition via OpenTrack. Your head moves the view, your shots still go where the mouse or controller points, and the mod marks where they land. On a build it has no profile for it stays dormant and the game runs stock.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the view, your shots still go where the mouse or controller points",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Aim marker: while tracking is on the mod draws a small white cross on the point your rounds are going and hides the game's crosshair, so there is one mark on screen rather than two",
+        "The torch turns with your head instead of staying on your aim, leading the view slightly so the beam lands on what you turned towards",
+        "Optional field of view up to 120 degrees: the game's own slider stops at 75 and its engine holds the drawn picture at 60 inside a level, and both are put back when the game exits"
+      ],
+      "requirements": [
+        "Metro Exodus Enhanced Edition (Steam, app 1449560)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw. Applies immediately and is not saved, so the next launch starts on whatever the config says"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Picks what head tracking will do while the sights are up. The key cycles and saves the choice, but the mod cannot yet tell when your sights are up, so nothing acts on it"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260905.a71df8b",
+          "built_at": "2026-09-05T21:18:13Z",
+          "zip_filename": "MetroExodusHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/metro-exodus-enhanced-edition-headtracking/releases/download/dev/MetroExodusHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "Aiming down sights is not detected on either known build yet, so head tracking stays on through an aim whatever the ADS mode is set to.",
+        "Head tracking keeps running behind the pause menu, the journal and the death screen, so the view drifts while you read them.",
+        "The aim marker follows your head's rotation, not your lean, so leaning hard while shooting something close puts the mark off where the round goes. It also drops Metro's accuracy spread, so you lose the dispersion read while tracking is on."
       ]
     }
   ],
