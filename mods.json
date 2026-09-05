@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-05T19:19:22.549Z",
+  "updated_at": "2026-09-05T19:26:53.588Z",
   "mods": [
     {
       "id": "subnautica",
@@ -5580,6 +5580,136 @@
           "built_at": "2026-09-05T13:17:59Z",
           "zip_filename": "DeusExHumanRevolutionHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/deus-ex-human-revolution-headtracking/releases/download/dev/DeusExHumanRevolutionHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "portal-with-rtx",
+      "public": true,
+      "released": true,
+      "display_name": "Portal with RTX",
+      "repo": "itsloopyo/portal-with-rtx-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 2012840,
+        "steam_folder": "PortalRTX",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "PORTAL_WITH_RTX_PATH",
+        "executable_relpath": "hl2.exe"
+      },
+      "description": "6DOF head tracking for Portal with RTX via OpenTrack. Your head moves the view while the portal gun keeps aiming with the mouse or controller. The mod matches the game's client.dll against the builds it knows; on one it doesn't recognise it stays dormant and the game runs vanilla.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the view, the portal gun still aims with your mouse or controller",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Head movement is scaled for the field of view the frame is rendered at, so a wider FOV doesn't make tracking feel stronger",
+        "Optional FOV override written into the rendered view rather than the cvar, so it takes 30 to 150 instead of the slider's 75 to 90 and stays out of your userinfo"
+      ],
+      "requirements": [
+        "Portal with RTX (Steam, app 2012840)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Portal with RTX Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/portal-with-rtx-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-05T18:15:18Z",
+          "zip_filename": "PortalWithRTXHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/portal-with-rtx-headtracking/releases/download/v0.1.0/PortalWithRTXHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 3729058
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Portal with RTX Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/portal-with-rtx-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-05T18:15:18Z",
+            "zip_filename": "PortalWithRTXHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/portal-with-rtx-headtracking/releases/download/v0.1.0/PortalWithRTXHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3729058
+          }
+        ]
+      }
+    },
+    {
+      "id": "amnesia-the-dark-descent",
+      "public": true,
+      "released": false,
+      "display_name": "Amnesia: The Dark Descent",
+      "repo": "itsloopyo/amnesia-the-dark-descent-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 57300,
+        "steam_folder": "Amnesia The Dark Descent",
+        "gog_ids": [
+          "1207659259"
+        ],
+        "epic_search_paths": [],
+        "env_var": "AMNESIA_TDD_PATH",
+        "executable_relpath": "Amnesia.exe"
+      },
+      "description": "6DOF head tracking for Amnesia: The Dark Descent via OpenTrack. Your head moves the view while the mouse still turns you and reaches for what you are grabbing. On a build whose signature the mod doesn't find it stays dormant and the game runs unmodified.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the view, the mouse still controls where you turn and what you reach for",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck"
+      ],
+      "requirements": [
+        "Amnesia: The Dark Descent (Steam, app 57300)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260905.4e78380",
+          "built_at": "2026-09-05T19:00:24Z",
+          "zip_filename": "AmnesiaHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/amnesia-the-dark-descent-headtracking/releases/download/dev/AmnesiaHeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
