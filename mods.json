@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-07T23:42:48.533Z",
+  "updated_at": "2026-09-07T23:51:21.730Z",
   "mods": [
     {
       "id": "subnautica",
@@ -5831,9 +5831,6 @@
           "chord": "Ctrl+Shift+G",
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         }
-      ],
-      "known_issues": [
-        "The camera hold during a co-op session is confirmed silent in single player but has not been exercised in a live network session."
       ],
       "release": {
         "pinned": {
