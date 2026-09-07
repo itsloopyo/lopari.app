@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-05T21:22:21.353Z",
+  "updated_at": "2026-09-07T23:42:48.533Z",
   "mods": [
     {
       "id": "subnautica",
@@ -5787,6 +5787,78 @@
         "Head tracking keeps running behind the pause menu, the journal and the death screen, so the view drifts while you read them.",
         "The aim marker follows your head's rotation, not your lean, so leaning hard while shooting something close puts the mark off where the round goes. It also drops Metro's accuracy spread, so you lose the dispersion read while tracking is on."
       ]
+    },
+    {
+      "id": "snowrunner",
+      "public": true,
+      "released": true,
+      "display_name": "SnowRunner",
+      "repo": "itsloopyo/snowrunner-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 1465360,
+        "steam_folder": "SnowRunner",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "SNOWRUNNER_PATH",
+        "executable_relpath": "Sources\\Bin\\SnowRunner.exe"
+      },
+      "description": "6DOF head tracking for SnowRunner via OpenTrack. Your head moves the camera while the wheel, pedals or controller keep driving, in the cab and in the exterior view. The supported build is the Steam SnowRunner.exe of 22 July 2026; on any other build the mod stays dormant and the game runs vanilla.",
+      "features": [
+        "Decoupled view and driving: your head moves the camera, and the truck, the physics and every input stay untouched",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Rotation is camera-local on all three axes, so the view stays glued to the truck on two wheels or upside down",
+        "Holds still outside gameplay: menus, loading screens and the pause screen keep the game's own camera",
+        "Reclaims UDP 4242 about half a second after another app releases the port, with no game restart"
+      ],
+      "requirements": [
+        "SnowRunner (Steam, app 1465360) on the SnowRunner.exe build of 22 July 2026",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
+      ],
+      "known_issues": [
+        "The camera hold during a co-op session is confirmed silent in single player but has not been exercised in a live network session."
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "SnowRunner Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/snowrunner-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-07T23:39:58Z",
+          "zip_filename": "SnowRunnerHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/snowrunner-headtracking/releases/download/v0.1.0/SnowRunnerHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 3063094
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "SnowRunner Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/snowrunner-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-07T23:39:58Z",
+            "zip_filename": "SnowRunnerHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/snowrunner-headtracking/releases/download/v0.1.0/SnowRunnerHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3063094
+          }
+        ]
+      }
     }
   ],
   "native_games": [
