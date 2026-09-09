@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-09T18:01:40.180Z",
+  "updated_at": "2026-09-09T22:38:45.492Z",
   "mods": [
     {
       "id": "subnautica",
@@ -3875,16 +3875,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.1.2",
-          "tag_name": "v1.1.2",
-          "name": "Assetto Corsa EVO Head Tracking v1.1.2",
-          "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v1.1.2",
-          "published_at": "2026-09-01T21:03:21Z",
-          "zip_filename": "AssettoCorsaEvoHeadTracking-v1.1.2-installer.zip",
-          "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v1.1.2/AssettoCorsaEvoHeadTracking-v1.1.2-installer.zip",
-          "size_bytes": 3027619
+          "version": "1.1.3",
+          "tag_name": "v1.1.3",
+          "name": "Assetto Corsa EVO Head Tracking v1.1.3",
+          "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v1.1.3",
+          "published_at": "2026-09-09T22:38:03Z",
+          "zip_filename": "AssettoCorsaEvoHeadTracking-v1.1.3-installer.zip",
+          "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v1.1.3/AssettoCorsaEvoHeadTracking-v1.1.3-installer.zip",
+          "size_bytes": 3042827
         },
         "versions": [
+          {
+            "tag_name": "v1.1.3",
+            "version": "1.1.3",
+            "name": "Assetto Corsa EVO Head Tracking v1.1.3",
+            "html_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/tag/v1.1.3",
+            "published_at": "2026-09-09T22:38:03Z",
+            "zip_filename": "AssettoCorsaEvoHeadTracking-v1.1.3-installer.zip",
+            "download_url": "https://github.com/itsloopyo/assetto-corsa-evo-headtracking/releases/download/v1.1.3/AssettoCorsaEvoHeadTracking-v1.1.3-installer.zip",
+            "size_bytes": 3042827
+          },
           {
             "tag_name": "v1.1.2",
             "version": "1.1.2",
