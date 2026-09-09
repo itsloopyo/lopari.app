@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-08T21:27:51.101Z",
+  "updated_at": "2026-09-09T18:01:40.180Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1730,9 +1730,6 @@
           "1186701134"
         ],
         "epic_search_paths": [],
-        "xbox_paths": [
-          "C:\\XboxGames\\Easy Delivery Co\\Content"
-        ],
         "env_var": "EASY_DELIVERY_CO_PATH",
         "executable_relpath": "EasyDeliveryCo.exe"
       },
@@ -2067,9 +2064,6 @@
           "1459256379"
         ],
         "epic_search_paths": [],
-        "xbox_paths": [
-          "C:\\XboxGames\\Firewatch\\Content"
-        ],
         "env_var": "FIREWATCH_PATH",
         "executable_relpath": "Firewatch.exe"
       },
@@ -2655,9 +2649,6 @@
         "steam_folder": "Subnautica2",
         "gog_ids": [],
         "epic_search_paths": [],
-        "xbox_paths": [
-          "C:\\XboxGames\\Subnautica 2\\Content"
-        ],
         "env_var": "SUBNAUTICA_2_PATH",
         "executable_relpath": "Subnautica2\\Binaries\\Win64\\Subnautica2-Win64-Shipping.exe",
         "xbox_executable_relpath": "Subnautica2\\Binaries\\WinGDK\\Subnautica2-WinGDK-Shipping.exe"
@@ -3745,9 +3736,6 @@
         "steam_folder": "Ride",
         "gog_ids": [],
         "epic_search_paths": [],
-        "xbox_paths": [
-          "C:\\XboxGames\\RV There Yet\\Content"
-        ],
         "env_var": "RV_THERE_YET_PATH",
         "executable_relpath": "Ride\\Binaries\\Win64\\Ride-Win64-Shipping.exe",
         "xbox_executable_relpath": "Ride\\Binaries\\WinGDK\\Ride-WinGDK-Shipping.exe"
@@ -4134,6 +4122,7 @@
         "msix_identity_name": "Microsoft.MinecraftUWP",
         "env_var": "MINECRAFT_BEDROCK_PATH",
         "executable_relpath": "Minecraft.Windows.exe",
+        "xbox_identity_name": "Microsoft.MinecraftUWP",
         "modded_executable_relpath": "MinecraftHeadTrackingLauncher.exe"
       },
       "description": "Head tracking for Minecraft for Windows (Bedrock Edition). Your head moves the view while the mouse still controls where you aim, mine and build. Bedrock installs to a read-only Store folder, so the launcher keeps the mod in its own folder and starts the game through it.",
@@ -4807,7 +4796,9 @@
         ],
         "epic_search_paths": [],
         "env_var": "KINGDOM_COME_DELIVERANCE_2_PATH",
-        "executable_relpath": "Bin\\Win64MasterMasterSteamPGO\\KingdomCome.exe"
+        "executable_relpath": "Bin\\Win64MasterMasterSteamPGO\\KingdomCome.exe",
+        "xbox_executable_relpath": "KingdomCome.exe",
+        "xbox_identity_name": "DeepSilver.77536C3FE941"
       },
       "description": "6DOF head tracking for Kingdom Come: Deliverance II via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming.",
       "features": [
@@ -4858,7 +4849,8 @@
       "repo": "itsloopyo/kingdom-come-deliverance-headtracking",
       "install_strategy": "AsiLoader",
       "verified_sources": [
-        "Steam"
+        "Steam",
+        "Xbox"
       ],
       "game": {
         "steam_app_id": 379430,
@@ -4868,15 +4860,17 @@
         ],
         "epic_search_paths": [],
         "env_var": "KINGDOM_COME_DELIVERANCE_PATH",
-        "executable_relpath": "Bin\\Win64\\KingdomCome.exe"
+        "executable_relpath": "Bin\\Win64\\KingdomCome.exe",
+        "xbox_executable_relpath": "KingdomCome.exe",
+        "xbox_identity_name": "DeepSilver.KingdomComeDeliverance"
       },
-      "description": "6DOF head tracking for Kingdom Come: Deliverance via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming.",
+      "description": "6DOF head tracking for Kingdom Come: Deliverance via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming. Steam and Game Pass ship their own build of the game and the mod carries a profile for each; on a build it does not recognise it stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
         "6DOF positional tracking: lean and peek with head position"
       ],
       "requirements": [
-        "Kingdom Come: Deliverance (Steam, Windows x64)",
+        "Kingdom Come: Deliverance (Steam or Xbox Game Pass, Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
@@ -4901,8 +4895,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260824.95cd6d8",
-          "built_at": "2026-08-24T19:16:19Z",
+          "version": "0.0.0-nightly.20260909.c91277b",
+          "built_at": "2026-09-09T18:00:15Z",
           "zip_filename": "KingdomComeDeliveranceHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/kingdom-come-deliverance-headtracking/releases/download/dev/KingdomComeDeliveranceHeadTracking-dev-installer.zip"
         }
@@ -4927,7 +4921,8 @@
         "gog_ids": [],
         "epic_search_paths": [],
         "env_var": "PACIFIC_DRIVE_PATH",
-        "executable_relpath": "PenDriverPro\\Binaries\\Win64\\PenDriverPro-Win64-Shipping.exe"
+        "executable_relpath": "PenDriverPro\\Binaries\\Win64\\PenDriverPro-Win64-Shipping.exe",
+        "xbox_executable_relpath": "PenDriverPro\\Binaries\\WinGDK\\PenDriverPro-WinGDK-Shipping.exe"
       },
       "description": "6DOF head tracking for Pacific Drive via OpenTrack. Your head moves the camera, the mouse or controller keeps driving, aiming and interacting.",
       "features": [
@@ -5213,7 +5208,8 @@
         "gog_ids": [],
         "epic_search_paths": [],
         "env_var": "HIGH_ON_LIFE_PATH",
-        "executable_relpath": "Oregon\\Binaries\\Win64\\Oregon-Win64-Shipping.exe"
+        "executable_relpath": "Oregon\\Binaries\\Win64\\Oregon-Win64-Shipping.exe",
+        "xbox_executable_relpath": "Oregon\\Binaries\\WinGDK\\Oregon-WinGDK-Shipping.exe"
       },
       "description": "6DOF head tracking for High On Life via OpenTrack. Your head moves the view, the mouse or controller keeps aiming, and the game's own crosshair stays on the point the shot will hit. The supported build is the Steam Win64 build of 25 October 2023; on any other build the mod stays dormant and the game runs vanilla.",
       "features": [
