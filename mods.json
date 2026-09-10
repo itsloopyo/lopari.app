@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-10T07:00:44.441Z",
+  "updated_at": "2026-09-10T21:39:46.688Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2006,8 +2006,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.2.0-nightly.20260909.74431db",
-          "built_at": "2026-09-09T23:08:30Z",
+          "version": "0.0.0-nightly.20260910.a4de67a",
+          "built_at": "2026-09-10T19:18:58Z",
           "zip_filename": "FalloutNVHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/dev/FalloutNVHeadTracking-dev-installer.zip"
         }
