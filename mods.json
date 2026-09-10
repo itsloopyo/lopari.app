@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-09T22:38:45.492Z",
+  "updated_at": "2026-09-10T00:16:53.409Z",
   "mods": [
     {
       "id": "subnautica",
@@ -2005,8 +2005,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260607.9b647cd",
-          "built_at": "2026-06-07T20:00:14Z",
+          "version": "0.2.0-nightly.20260909.74431db",
+          "built_at": "2026-09-09T23:08:30Z",
           "zip_filename": "FalloutNVHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/dev/FalloutNVHeadTracking-dev-installer.zip"
         }
@@ -4448,8 +4448,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260831.6ec12a7",
-          "built_at": "2026-08-31T10:33:25Z",
+          "version": "0.0.0-nightly.20260909.fbefff4",
+          "built_at": "2026-09-09T23:13:21Z",
           "zip_filename": "Fallout4HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/fallout-4-headtracking/releases/download/dev/Fallout4HeadTracking-dev-installer.zip"
         }
@@ -5262,8 +5262,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260903.bd1e9e7",
-          "built_at": "2026-09-03T00:04:15Z",
+          "version": "0.0.0-nightly.20260909.c24cc5a",
+          "built_at": "2026-09-09T23:40:18Z",
           "zip_filename": "HighOnLifeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/high-on-life-headtracking/releases/download/dev/HighOnLifeHeadTracking-dev-installer.zip"
         }
@@ -9585,14 +9585,14 @@
     }
   ],
   "launcher": {
-    "version": "0.8.1",
-    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.8.1",
-    "published_at": "2026-09-05T10:20:22Z",
+    "version": "0.8.2",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.8.2",
+    "published_at": "2026-09-10T00:15:03Z",
     "setup_exe": {
-      "name": "Lopari_0.8.1_x64-setup.exe",
-      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.8.1/Lopari_0.8.1_x64-setup.exe",
-      "size_bytes": 3574824,
-      "sha256": "e4c35763a89f9e93c17691004181b3b7af834175a541b68fea703dab5a904b85"
+      "name": "Lopari_0.8.2_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.8.2/Lopari_0.8.2_x64-setup.exe",
+      "size_bytes": 3577656,
+      "sha256": "59531307ff4408031411d386b4c603b4ff95a0511384ada3bb9951b573320cf7"
     },
     "msi": null
   }
