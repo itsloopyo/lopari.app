@@ -24,8 +24,12 @@ description = "Serve lopari.app at http://localhost:4173 and open it in the defa
 # run, so the public list can't drift from what the launcher offers. All
 # three copies are committed for you (see scripts/commit-catalog.mjs);
 # pushing them stays manual. Authenticates via $GITHUB_TOKEN or `gh auth token`.
+#
+# Fast-forwards all three repos first (see scripts/sync-repos.mjs), because
+# update-pins.yml re-pins the live catalog hourly and regenerating from a
+# stale checkout collides with it.
 [tasks.update-metadata]
-cmd = "node scripts/update-metadata.mjs && node scripts/generate-readme.mjs && node scripts/commit-catalog.mjs"
+cmd = "node scripts/sync-repos.mjs && node scripts/update-metadata.mjs && node scripts/generate-readme.mjs && node scripts/commit-catalog.mjs"
 description = "Republish and commit mods.json (and the itsloopyo README mod table) with pinned release / dev-build / launcher info for every public mod in the lopari catalog"
 
 # Pins-only refresh of the LIVE mods.json (this repo, in and out) - no
