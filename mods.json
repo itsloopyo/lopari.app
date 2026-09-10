@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-10T00:16:53.409Z",
+  "updated_at": "2026-09-10T07:00:44.441Z",
   "mods": [
     {
       "id": "subnautica",
@@ -1959,7 +1959,8 @@
       "repo": "itsloopyo/fallout-new-vegas-headtracking",
       "install_strategy": "AsiLoader",
       "verified_sources": [
-        "Steam"
+        "Steam",
+        "Xbox"
       ],
       "game": {
         "steam_app_id": 22380,
@@ -4400,7 +4401,8 @@
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Steam",
-        "Gog"
+        "Gog",
+        "Xbox"
       ],
       "game": {
         "steam_app_id": 377160,
@@ -4419,7 +4421,7 @@
         "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
       ],
       "requirements": [
-        "Fallout 4 (Steam, Windows x64)",
+        "Fallout 4 (Steam, GOG or Xbox / Game Pass, Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
@@ -5210,7 +5212,8 @@
       "repo": "itsloopyo/high-on-life-headtracking",
       "install_strategy": "AsiLoader",
       "verified_sources": [
-        "Steam"
+        "Steam",
+        "Xbox"
       ],
       "game": {
         "steam_app_id": 1583230,
@@ -5221,7 +5224,7 @@
         "executable_relpath": "Oregon\\Binaries\\Win64\\Oregon-Win64-Shipping.exe",
         "xbox_executable_relpath": "Oregon\\Binaries\\WinGDK\\Oregon-WinGDK-Shipping.exe"
       },
-      "description": "6DOF head tracking for High On Life via OpenTrack. Your head moves the view, the mouse or controller keeps aiming, and the game's own crosshair stays on the point the shot will hit. The supported build is the Steam Win64 build of 25 October 2023; on any other build the mod stays dormant and the game runs vanilla.",
+      "description": "6DOF head tracking for High On Life via OpenTrack. Your head moves the view, the mouse or controller keeps aiming, and the game's own crosshair stays on the point the shot will hit. Two builds are supported, the Steam Win64 build of 25 October 2023 and the Game Pass WinGDK build of the same date, and the mod tells them apart by fingerprint; on any other build it stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled look and aim: head tracking moves the view, the mouse or controller still controls the aim",
         "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
@@ -5230,7 +5233,7 @@
         "Aim-down-sights modes: tracking stands down for the aim by default, or carries on, cycled in game and saved to the config"
       ],
       "requirements": [
-        "High On Life (Steam, app 1583230) on the Win64 build of 25 October 2023",
+        "High On Life on Steam (app 1583230, Win64 build of 25 October 2023) or on PC Game Pass / Microsoft Store (WinGDK build of the same date, package 1.13.3652.0)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -5872,6 +5875,68 @@
           }
         ]
       }
+    },
+    {
+      "id": "arx-fatalis",
+      "public": true,
+      "released": false,
+      "display_name": "Arx Fatalis",
+      "repo": "itsloopyo/arx-fatalis-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam",
+        "Xbox"
+      ],
+      "game": {
+        "steam_app_id": 1700,
+        "steam_folder": "Arx Fatalis",
+        "gog_ids": [
+          "1207658680"
+        ],
+        "epic_search_paths": [],
+        "env_var": "ARX_FATALIS_PATH",
+        "executable_relpath": "arx.exe",
+        "xbox_executable_relpath": "EN\\arx.exe"
+      },
+      "description": "6DOF head tracking for Arx Fatalis via OpenTrack. Your head moves the view while the mouse keeps aiming, and the cursor sits on the point you select with. The mod identifies the executable by its PE header and engages on the Steam and Microsoft Store builds of 1.21; on any other copy it stays dormant, leaves the game untouched, and says which way it differs in the log.",
+      "features": [
+        "Decoupled look and aim: your head moves the view while the mouse still controls where you aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Cursor sits on the aim point: the mark you select with follows the shot, not your head",
+        "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
+      ],
+      "requirements": [
+        "Arx Fatalis (Steam, app 1700) or the Microsoft Store copy, on the 1.21 build",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "Windows 10 or 11 - the mod loads into the game's 32-bit executable"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+J",
+          "description": "Cycles through normal, rotation only, and position only, then back"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260910.2e9ca90",
+          "built_at": "2026-09-10T06:55:55Z",
+          "zip_filename": "ArxFatalisHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/arx-fatalis-headtracking/releases/download/dev/ArxFatalisHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Both binding sets collide with something Arx already uses, so pick whichever you mind less. Arx binds End and Page Up to centre view and look up, and binds Ctrl to magic mode and Shift to stealth mode, so a chord puts you into both while you hold it. The nav-cluster keys can be rebound in ArxFatalisHeadTracking.ini, the game's in Options.",
+        "There is no recenter key. Centring is done in your tracker - OpenTrack's Center bind, or the CENTER button in a phone app.",
+        "The Microsoft Store build installs one complete copy of the game per language, under DE, EN, ES, FR, IT and RU. The install deploys into EN; if you play in another language, copy dinput.dll and ArxFatalisHeadTracking.asi across into that folder."
+      ]
     }
   ],
   "native_games": [
