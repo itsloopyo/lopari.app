@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-10T22:14:51.097Z",
+  "updated_at": "2026-09-10T23:19:27.308Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -5339,7 +5339,8 @@
       "repo": "itsloopyo/wreckfest-headtracking",
       "install_strategy": "AsiLoader",
       "verified_sources": [
-        "Steam"
+        "Steam",
+        "Xbox"
       ],
       "game": {
         "steam_app_id": 228380,
@@ -5349,7 +5350,7 @@
         "env_var": "WRECKFEST_PATH",
         "executable_relpath": "Wreckfest_x64.exe"
       },
-      "description": "6DOF head tracking for Wreckfest via OpenTrack. Your head moves the camera while the wheel or controller keeps driving, in online races as well as local ones. The supported build is the Steam Wreckfest_x64.exe of 19 September 2023.",
+      "description": "6DOF head tracking for Wreckfest via OpenTrack. Your head moves the camera while the wheel or controller keeps driving, in online races as well as local ones. Steam and Game Pass ship different builds of the game and the mod carries a profile for each, the Steam Wreckfest_x64.exe of 19 September 2023 and the Game Pass one of 23 February 2021; on a build it does not recognise it stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled view and driving: your head moves the camera, the car, the physics and every input stay untouched",
         "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
@@ -5357,7 +5358,7 @@
         "Racing only: the menus and the pause screen keep the game's own camera, and tracking picks up from where your head is when you unpause"
       ],
       "requirements": [
-        "Wreckfest (Steam, app 228380) on the Wreckfest_x64.exe build of 19 September 2023",
+        "Wreckfest on Steam (app 228380, the Wreckfest_x64.exe build of 19 September 2023) or on PC Game Pass / Microsoft Store (package version 1.4.3.0)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -6070,6 +6071,140 @@
         "Leaning is not clamped against level geometry. Lean hard into a doorframe or cover and the camera can enter it, which renders the space beyond as though the wall were not there.",
         "The stock crosshair is corrected for where your head has turned the view but not for how far you have leaned, so leaning hard while shooting something close puts the mark off where the round goes.",
         "Played windowed, the game window is re-centred on its monitor every time the game gives it a new size, because BioShock Infinite otherwise pins it to the top-left corner. A window already filling the screen, or one you have dragged somewhere yourself, is left where it is."
+      ]
+    },
+    {
+      "id": "quake-ii-rtx",
+      "public": true,
+      "released": false,
+      "display_name": "Quake II RTX",
+      "repo": "itsloopyo/quake-ii-rtx-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 1089130,
+        "steam_folder": "Quake II RTX",
+        "gog_ids": [
+          "1825786806"
+        ],
+        "epic_search_paths": [],
+        "env_var": "QUAKE_II_RTX_PATH",
+        "executable_relpath": "q2rtx.exe"
+      },
+      "description": "6DOF head tracking for Quake II RTX via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and the game's own crosshair is drawn on the point the shot will reach. The mod knows one build, the Steam 1.8.0 of 26 March 2025, and checks q2rtx.exe before it hooks anything; on any other copy it installs nothing and the game runs vanilla.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the view, the mouse or controller still aims",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean and peek, stopped at the wall rather than put through it",
+        "The crosshair is drawn on the point the shot will reach, so it holds on target at any range and under any lean, and hides rather than guesses when that point is off screen",
+        "Head movement is measured against the field of view you set, so the game's own FOV slider does not change how far your head moves the picture",
+        "Holds still outside single-player gameplay: menus, loading screens, the console, coop and deathmatch, and the end-of-level intermission keep the game's own camera",
+        "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
+      ],
+      "requirements": [
+        "Quake II RTX (Steam, app 1089130) on the 1.8.0 build of 26 March 2025",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260910.b6665cf",
+          "built_at": "2026-09-10T22:56:13Z",
+          "zip_filename": "QuakeIIRTXHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/quake-ii-rtx-headtracking/releases/download/dev/QuakeIIRTXHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "There is no recenter key. Centring is done in your tracker - OpenTrack's Center bind, SteamVR's reset, or the CENTER button in a phone app."
+      ]
+    },
+    {
+      "id": "soma",
+      "public": true,
+      "released": false,
+      "display_name": "SOMA",
+      "repo": "itsloopyo/soma-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 282140,
+        "steam_folder": "SOMA",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "SOMA_PATH",
+        "executable_relpath": "Soma.exe"
+      },
+      "description": "6DOF head tracking for SOMA via OpenTrack. Your head moves the view while the mouse or controller keeps control of look and interaction, and the crosshair follows the game's own interaction ray so it marks what you are about to pick up. The mod identifies the executable by its PE header and covers both the Steam depot ships, Soma.exe and Soma_NoSteam.exe, each linked on 27 September 2021; on any other copy it stays dormant and the game runs vanilla.",
+      "features": [
+        "Decoupled look and interaction: your head moves the view, the mouse or controller still decides what you grab and read",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "The crosshair follows the game's own interaction ray, so it marks what you are about to pick up rather than sitting at screen centre",
+        "A field of view setting, which SOMA has none of in its options: the vertical field, 30 to 120, with the game's scripted zooms still working from whatever you set",
+        "SOMA's own Tobii eye tracking is held off while head tracking is on, so Extended View stops steering the view on top of the head pose",
+        "Holds still outside gameplay: menus, loading screens, the pause screen and the in-world monitor renders keep the game's own camera",
+        "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
+      ],
+      "requirements": [
+        "SOMA (Steam, app 282140) - both shipped executables, Soma.exe and Soma_NoSteam.exe, are covered by the same build of the mod",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260910.7d8e2c8",
+          "built_at": "2026-09-10T22:49:28Z",
+          "zip_filename": "SomaHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/soma-headtracking/releases/download/dev/SomaHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "There is no recenter key. Centring is done in your tracker - OpenTrack's Center bind, SteamVR's reset, or the CENTER button in a phone app.",
+        "HeadTracking.ini is read at startup only, so a change to the field of view, sensitivities or limits needs the game restarted."
       ]
     }
   ],
@@ -9784,14 +9919,14 @@
     }
   ],
   "launcher": {
-    "version": "0.8.2",
-    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.8.2",
-    "published_at": "2026-09-10T00:15:03Z",
+    "version": "0.8.3",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.8.3",
+    "published_at": "2026-09-10T23:17:39Z",
     "setup_exe": {
-      "name": "Lopari_0.8.2_x64-setup.exe",
-      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.8.2/Lopari_0.8.2_x64-setup.exe",
-      "size_bytes": 3577656,
-      "sha256": "59531307ff4408031411d386b4c603b4ff95a0511384ada3bb9951b573320cf7"
+      "name": "Lopari_0.8.3_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.8.3/Lopari_0.8.3_x64-setup.exe",
+      "size_bytes": 3599944,
+      "sha256": "c2bd63c4fc64d4e06df3b19d6beabe9db88dbb03eb7b6632f5740d42422e57b1"
     },
     "msi": null
   }
