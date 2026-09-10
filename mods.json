@@ -1,7 +1,69 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-10T21:39:46.688Z",
+  "updated_at": "2026-09-10T22:14:51.097Z",
   "mods": [
+    {
+      "id": "blue-prince",
+      "public": true,
+      "released": false,
+      "display_name": "Blue Prince",
+      "repo": "itsloopyo/blue-prince-headtracking",
+      "install_strategy": "BepInEx6",
+      "verified_sources": [
+        "Xbox"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. Head tracking moves the view while your mouse or controller keeps control of look and interaction. Built and tested against the Xbox app / Game Pass build.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll plus positional lean, peek and duck",
+        "Works with any OpenTrack compatible tracker"
+      ],
+      "requirements": [
+        "Blue Prince on Xbox app / Game Pass for PC, tested with package version 1.1.11.0",
+        "An OpenTrack compatible tracker sending UDP on port 4242",
+        "Windows 10 or 11, 64-bit",
+        "Internet access on first launch for BepInEx interop setup"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H"
+        }
+      ],
+      "known_issues": [
+        "Beta build: expect rough edges.",
+        "Steam and Epic builds have not been tested.",
+        "The first launch takes longer while BepInEx generates interop assemblies."
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260910.6c5513c",
+          "built_at": "2026-09-10T19:51:09Z",
+          "zip_filename": "BluePrinceHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/blue-prince-headtracking/releases/download/dev/BluePrinceHeadTracking-dev-installer.zip"
+        }
+      },
+      "game": {
+        "steam_app_id": 1569580,
+        "steam_folder": null,
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "BLUE_PRINCE_PATH",
+        "executable_relpath": "BLUE PRINCE.exe"
+      }
+    },
     {
       "id": "subnautica",
       "public": true,
@@ -1954,10 +2016,10 @@
     {
       "id": "fallout-new-vegas",
       "public": true,
-      "released": true,
+      "released": false,
       "display_name": "Fallout: New Vegas",
       "repo": "itsloopyo/fallout-new-vegas-headtracking",
-      "install_strategy": "AsiLoader",
+      "install_strategy": "Shim",
       "verified_sources": [
         "Steam",
         "Xbox"
@@ -1975,8 +2037,7 @@
         ],
         "env_var": "FalloutNVPath",
         "executable_relpath": "FalloutNV.exe",
-        "modded_executable_relpath": "nvse_loader.exe",
-        "modded_launcher_hint": "Fallout: New Vegas loads head tracking through xNVSE, but nvse_loader.exe wasn't found next to FalloutNV.exe. Install xNVSE 6.4.1 or newer (github.com/xNVSE/NVSE/releases) into your game folder, then launch again. Strongly recommended: New Vegas Tick Fix / NVTF (nexusmods.com/newvegas/mods/66537) for smooth head-tracked camera motion."
+        "xbox_executable_relpath": "Fallout New Vegas English\\FalloutNV.exe"
       },
       "hotkeys": [
         {
@@ -1991,15 +2052,21 @@
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         },
         {
-          "action": "Toggle reticle",
+          "action": "Toggle hip-fire reticle",
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H",
-          "description": "Toggle a faint dot in the screen center marking where head-aim points"
+          "description": "Turns off the gold reticle marking where your mouse or controller is aiming and restores the game's centred hip-fire crosshair"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Cycles what head tracking does while the sights are up: paused, on with a white aim marker, or on without one. All three ease the view onto the sight line as the weapon comes up, and the choice is saved"
         },
         {
           "action": "Toggle yaw mode",
-          "nav_key": "Insert",
-          "chord": "Ctrl+Shift+U",
+          "nav_key": "Delete",
+          "chord": "Ctrl+Shift+J",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
@@ -2012,41 +2079,24 @@
           "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/dev/FalloutNVHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [],
-      "release": {
-        "pinned": {
-          "version": "0.2.0",
-          "tag_name": "v0.2.0",
-          "name": "Head Tracking for Fallout: New Vegas v0.2.0",
-          "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.2.0",
-          "published_at": "2026-08-20T10:16:03Z",
-          "zip_filename": "FalloutNVHeadTracking-v0.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.2.0/FalloutNVHeadTracking-v0.2.0-installer.zip",
-          "size_bytes": 230373
-        },
-        "versions": [
-          {
-            "tag_name": "v0.2.0",
-            "version": "0.2.0",
-            "name": "Head Tracking for Fallout: New Vegas v0.2.0",
-            "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.2.0",
-            "published_at": "2026-08-20T10:16:03Z",
-            "zip_filename": "FalloutNVHeadTracking-v0.2.0-installer.zip",
-            "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.2.0/FalloutNVHeadTracking-v0.2.0-installer.zip",
-            "size_bytes": 230373
-          },
-          {
-            "tag_name": "v0.1.0",
-            "version": "0.1.0",
-            "name": "Head Tracking for Fallout: New Vegas v0.1.0",
-            "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.1.0",
-            "published_at": "2026-08-03T22:11:54Z",
-            "zip_filename": "FalloutNVHeadTracking-v0.1.0-installer.zip",
-            "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.1.0/FalloutNVHeadTracking-v0.1.0-installer.zip",
-            "size_bytes": 212011
-          }
-        ]
-      }
+      "known_issues": [
+        "Not comprehensively tested.",
+        "Occasional incorrect frames are still reported while head tracking is on. Camera alignment for foliage and effects has improved, but the intermittent flicker is not fully resolved.",
+        "Upgrading from the xNVSE version moves the settings file: the mod now reads HeadTracking.ini from the game root rather than Data/NVSE/Plugins, so copy your old one across to keep your tweaks.",
+        "The Game Pass copy installs one complete copy of the game per language. Install targets the English folder, which is the Game Pass build the mod supports."
+      ],
+      "description": "Head tracking for Fallout: New Vegas via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and a gold reticle marks where the shot goes while you look around. The mod loads through a dsound.dll proxy and needs no xNVSE. It engages only on the executable profiles it knows - the 2011-07-01 Steam build and the 2016-01-21 Game Pass English build - and stays dormant on anything else, naming the mismatch in the log.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera, your aim stays on the mouse or controller",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean and peek, limited by the game's world collision so the camera stays out of walls",
+        "A gold hip-fire reticle marks where the shot goes while your head moves the view, and turns off for the game's own centred crosshair",
+        "Three ways to aim down sights: tracking paused for the game's own sight picture, or tracking live with or without a white aim marker",
+        "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
+      ],
+      "requirements": [
+        "Fallout: New Vegas for Windows - the 2011-07-01 Steam build or the 2016-01-21 Game Pass English build",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ]
     },
     {
       "id": "firewatch",
@@ -3710,8 +3760,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260820.fbac051",
-          "built_at": "2026-08-20T11:57:54Z",
+          "version": "0.0.0-nightly.20260910.d7f4b7c",
+          "built_at": "2026-09-10T22:08:33Z",
           "zip_filename": "MirrorsEdgeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/mirrors-edge-headtracking/releases/download/dev/MirrorsEdgeHeadTracking-dev-installer.zip"
         }
@@ -4798,7 +4848,8 @@
       "repo": "itsloopyo/kingdom-come-deliverance-2-headtracking",
       "install_strategy": "AsiLoader",
       "verified_sources": [
-        "Steam"
+        "Steam",
+        "Xbox"
       ],
       "game": {
         "steam_app_id": 1771300,
@@ -4812,13 +4863,14 @@
         "xbox_executable_relpath": "KingdomCome.exe",
         "xbox_identity_name": "DeepSilver.77536C3FE941"
       },
-      "description": "6DOF head tracking for Kingdom Come: Deliverance II via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming.",
+      "description": "6DOF head tracking for Kingdom Come: Deliverance II via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming, and what tracking does while a bow or crossbow is drawn is yours to pick. Steam and Game Pass ship their own build of the game and the mod carries a profile for each; on a build it does not recognise it stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
-        "6DOF positional tracking: lean and peek with head position"
+        "6DOF positional tracking: lean and peek with head position",
+        "Three ways to draw a bow or crossbow: raising the sights eases the view onto the weapon's aim direction, then tracking either pauses for the aim or carries on, with or without a cross marking that direction"
       ],
       "requirements": [
-        "Kingdom Come: Deliverance II (Steam, Windows x64)",
+        "Kingdom Come: Deliverance II (Steam or Xbox Game Pass, Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
@@ -4838,19 +4890,26 @@
           "nav_key": "Page Down",
           "chord": "Ctrl+Shift+H",
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Cycles what head tracking does while a bow or crossbow is drawn: paused for the aim, on with a cross marking where the weapon points, or on without it. All three ease the view onto the weapon's aim direction as the sights come up, and the choice is saved"
         }
       ],
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260824.fd75b15",
-          "built_at": "2026-08-24T08:36:56Z",
+          "version": "0.0.0-nightly.20260910.ed0140b",
+          "built_at": "2026-09-10T22:08:46Z",
           "zip_filename": "KingdomComeDeliverance2HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/kingdom-come-deliverance-2-headtracking/releases/download/dev/KingdomComeDeliverance2HeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
-        "Not comprehensively tested."
+        "Not comprehensively tested.",
+        "The aim marker shows the direction the weapon points, not where the arrow lands, so it does not account for drop at range."
       ]
     },
     {
@@ -5936,6 +5995,81 @@
         "Both binding sets collide with something Arx already uses, so pick whichever you mind less. Arx binds End and Page Up to centre view and look up, and binds Ctrl to magic mode and Shift to stealth mode, so a chord puts you into both while you hold it. The nav-cluster keys can be rebound in ArxFatalisHeadTracking.ini, the game's in Options.",
         "There is no recenter key. Centring is done in your tracker - OpenTrack's Center bind, or the CENTER button in a phone app.",
         "The Microsoft Store build installs one complete copy of the game per language, under DE, EN, ES, FR, IT and RU. The install deploys into EN; if you play in another language, copy dinput.dll and ArxFatalisHeadTracking.asi across into that folder."
+      ]
+    },
+    {
+      "id": "bioshock-infinite",
+      "public": true,
+      "released": false,
+      "display_name": "BioShock Infinite",
+      "repo": "itsloopyo/bioshock-infinite-headtracking",
+      "install_strategy": "Shim",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 8870,
+        "steam_folder": "BioShock Infinite",
+        "gog_ids": [
+          "1752654506"
+        ],
+        "epic_search_paths": [],
+        "env_var": "BIOSHOCK_INFINITE_PATH",
+        "executable_relpath": "Binaries\\Win32\\BioShockInfinite.exe"
+      },
+      "description": "6DOF head tracking for BioShock Infinite via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and tracking pauses by itself in the title, main and pause menus. The mod knows one build, the 2022-05-11 Steam one, and checks the executable before it hooks anything; on any other copy it stays dormant and names the mismatch in the log.",
+      "features": [
+        "Decoupled look and aim: your head moves the view while the mouse or controller still controls where you aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Three ways to aim down sights: raising the sights always swings the view onto the point the reticle was marking, then tracking either pauses for the game's own sight picture or carries on, with or without the stock crosshair following your aim",
+        "Optional field of view: the game's own slider reaches 82.5 degrees, and the mod renders anything from 30 to 150 while shots, traces and aim assist keep the game's own angle",
+        "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
+      ],
+      "requirements": [
+        "BioShock Infinite (Steam, app 8870), on the 2022-05-11 build",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "Windows 10 or 11 - the mod loads into the game's 32-bit executable"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Cycles what head tracking does while the sights are up: paused, on with the stock crosshair following your aim, or on with the crosshair left where the game puts it. The choice is saved to the INI on every press"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260910.411fb97",
+          "built_at": "2026-09-10T18:41:55Z",
+          "zip_filename": "BioShockInfiniteHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/bioshock-infinite-headtracking/releases/download/dev/BioShockInfiniteHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested.",
+        "There is no recenter key. Centring is done in your tracker - OpenTrack's Center bind, or the CENTER button in a phone app.",
+        "Leaning is not clamped against level geometry. Lean hard into a doorframe or cover and the camera can enter it, which renders the space beyond as though the wall were not there.",
+        "The stock crosshair is corrected for where your head has turned the view but not for how far you have leaned, so leaning hard while shooting something close puts the mark off where the round goes.",
+        "Played windowed, the game window is re-centred on its monitor every time the game gives it a new size, because BioShock Infinite otherwise pins it to the top-left corner. A window already filling the screen, or one you have dragged somewhere yourself, is left where it is."
       ]
     }
   ],
