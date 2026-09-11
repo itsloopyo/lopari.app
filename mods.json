@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-11T19:05:13.534Z",
+  "updated_at": "2026-09-11T21:02:27.681Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -42,9 +42,7 @@
         }
       ],
       "known_issues": [
-        "Beta build: expect rough edges.",
-        "Steam and Epic builds have not been tested.",
-        "The first launch takes longer while BepInEx generates interop assemblies."
+        "Not comprehensively tested."
       ],
       "distribution": {
         "type": "dev-release",
@@ -830,7 +828,9 @@
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         }
       ],
-      "known_issues": [],
+      "known_issues": [
+        "Not comprehensively tested."
+      ],
       "release": {
         "versions": [
           {
@@ -2257,8 +2257,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -2310,8 +2309,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -2362,8 +2360,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -2413,8 +2410,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -2463,8 +2459,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -2513,8 +2508,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -3050,17 +3044,23 @@
       "repo": "itsloopyo/wobbly-life-headtracking",
       "install_strategy": "BepInEx5",
       "verified_sources": [
-        "Steam"
+        "Steam",
+        "Xbox"
       ],
       "game": {
         "steam_app_id": 1211020,
         "steam_folder": "Wobbly Life",
         "gog_ids": [],
         "epic_search_paths": [],
+        "xbox_paths": [
+          "C:\\XboxGames\\Wobbly Life\\Content",
+          "D:\\XboxGames\\Wobbly Life\\Content"
+        ],
+        "msix_identity_name": "10192RubberBandGames.WobblyLife",
         "env_var": "WOBBLY_LIFE_PATH",
         "executable_relpath": "Wobbly Life.exe"
       },
-      "description": "Head tracking for Wobbly Life. Decouples look from aim so you can glance around the world while the mouse or controller still drives aim and movement. Supports up to 4 local players in couch co-op - each player needs their own OpenTrack source on a separate UDP port (P1 4242, P2 4243, P3 4244, P4 4245). Online multiplayer is unaffected: tracking is client-side only and is not transmitted to other clients.",
+      "description": "Head tracking for Wobbly Life on Steam and PC Game Pass / Microsoft Store. One download includes the matching mod and loader for each build. Decouples look from aim so you can glance around the world while the mouse or controller still drives aim and movement. Supports up to 4 local players in couch co-op - each player needs their own OpenTrack source on a separate UDP port (P1 4242, P2 4243, P3 4244, P4 4245). Online multiplayer is unaffected: tracking is client-side only and is not transmitted to other clients.",
       "hotkeys": [
         {
           "action": "Toggle tracking",
@@ -3083,15 +3083,14 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260828.8a5a8a3",
-          "built_at": "2026-08-28T01:49:37Z",
+          "version": "0.0.0-nightly.20260911.0a3073b",
+          "built_at": "2026-09-11T19:35:57Z",
           "zip_filename": "WobblyLifeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/wobbly-life-headtracking/releases/download/dev/WobblyLifeHeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -3397,8 +3396,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -3457,8 +3455,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -3703,9 +3700,7 @@
         }
       },
       "known_issues": [
-        "Experimental prototype; core features may be missing or incomplete.",
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -3767,8 +3762,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -4162,7 +4156,7 @@
         }
       },
       "known_issues": [
-        "Not exhaustively tested. Head tracking, aim decoupling and 6DOF position all work in game, but only a small part of the campaign has been played through, so expect rough edges in situations the mod has not seen yet."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -4507,8 +4501,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "The ASI loader installs as dxgi.dll, the only proxy slot Fallout4.exe imports. If you already run ReShade as dxgi.dll the loader is left alone and the mod never loads, so rename ReShade to d3d11.dll first."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -4661,6 +4654,66 @@
           "built_at": "2026-08-20T09:59:50Z",
           "zip_filename": "ControlHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/control-ultimate-edition-headtracking/releases/download/dev/ControlHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "portal",
+      "public": true,
+      "released": false,
+      "display_name": "Portal",
+      "repo": "itsloopyo/portal-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 400,
+        "steam_folder": "Portal",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "PORTAL_PATH",
+        "executable_relpath": "hl2.exe"
+      },
+      "description": "6DOF head tracking for Portal on Steam via OpenTrack. Your head moves the camera while your mouse or controller keeps aiming the portal gun.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the camera; the portal gun keeps its aim",
+        "6DOF positional tracking: lean, peek and duck with head position",
+        "Works with any OpenTrack compatible tracker"
+      ],
+      "requirements": [
+        "Portal on Steam (app 400, Windows)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260911.e187816",
+          "built_at": "2026-09-11T20:05:46Z",
+          "zip_filename": "PortalHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/portal-headtracking/releases/download/dev/PortalHeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
@@ -4984,24 +5037,26 @@
       "repo": "itsloopyo/pacific-drive-headtracking",
       "install_strategy": "AsiLoader",
       "verified_sources": [
-        "Steam"
+        "Steam",
+        "Xbox"
       ],
       "game": {
         "steam_app_id": 1458140,
         "steam_folder": "Pacific Drive",
         "gog_ids": [],
         "epic_search_paths": [],
+        "msix_identity_name": "KeplerInteractive.PacificDrive",
         "env_var": "PACIFIC_DRIVE_PATH",
         "executable_relpath": "PenDriverPro\\Binaries\\Win64\\PenDriverPro-Win64-Shipping.exe",
         "xbox_executable_relpath": "PenDriverPro\\Binaries\\WinGDK\\PenDriverPro-WinGDK-Shipping.exe"
       },
-      "description": "6DOF head tracking for Pacific Drive via OpenTrack. Your head moves the camera, the mouse or controller keeps driving, aiming and interacting.",
+      "description": "6DOF head tracking for Pacific Drive on Steam and PC Game Pass / Microsoft Store via OpenTrack. Your head moves the camera, the mouse or controller keeps driving, aiming and interacting.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, aim and interaction stay on your mouse or controller",
         "6DOF positional tracking: lean and peek with head position"
       ],
       "requirements": [
-        "Pacific Drive (Steam, Windows x64)",
+        "Pacific Drive on Steam or PC Game Pass / Microsoft Store (Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
@@ -5026,8 +5081,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260826.dbdf382",
-          "built_at": "2026-08-26T14:44:24Z",
+          "version": "0.0.0-nightly.20260911.21a4f1e",
+          "built_at": "2026-09-11T19:39:11Z",
           "zip_filename": "PacificDriveHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/pacific-drive-headtracking/releases/download/dev/PacificDriveHeadTracking-dev-installer.zip"
         }
@@ -5044,7 +5099,8 @@
       "repo": "itsloopyo/prey-headtracking",
       "install_strategy": "AsiLoader",
       "verified_sources": [
-        "Steam"
+        "Steam",
+        "Xbox"
       ],
       "game": {
         "steam_app_id": 480490,
@@ -5053,16 +5109,20 @@
           "1158493447"
         ],
         "epic_search_paths": [],
+        "xbox_paths": [
+          "C:\\XboxGames\\Prey\\Content"
+        ],
         "env_var": "PREY_PATH",
-        "executable_relpath": "Binaries\\Danielle\\x64\\Release\\Prey.exe"
+        "executable_relpath": "Binaries\\Danielle\\x64\\Release\\Prey.exe",
+        "xbox_executable_relpath": "Binaries\\Danielle\\Gaming.Desktop.x64\\Release\\Prey.exe"
       },
-      "description": "6DOF head tracking for Prey (2017) via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming. Campaign only: Mooncrash and Typhon Hunter run from a separate DLL the mod does not recognise, so they render vanilla.",
+      "description": "6DOF head tracking for Prey (2017) on Steam and Xbox / PC Game Pass via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming. Campaign only: Mooncrash and Typhon Hunter run from a separate DLL the mod does not recognise, so they render vanilla.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
         "6DOF positional tracking: lean and peek with head position"
       ],
       "requirements": [
-        "Prey (2017) (Steam, Windows x64)",
+        "Prey (2017) campaign on Steam or Xbox / PC Game Pass (Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
@@ -5097,8 +5157,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260828.f3d9739",
-          "built_at": "2026-08-28T01:15:22Z",
+          "version": "0.0.0-nightly.20260911.e87ed9e",
+          "built_at": "2026-09-11T20:00:54Z",
           "zip_filename": "PreyHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/prey-headtracking/releases/download/dev/PreyHeadTracking-dev-installer.zip"
         }
@@ -5329,7 +5389,10 @@
           "zip_filename": "HighOnLifeHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/high-on-life-headtracking/releases/download/dev/HighOnLifeHeadTracking-dev-installer.zip"
         }
-      }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
     },
     {
       "id": "wreckfest",
@@ -5861,10 +5924,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "Aiming down sights is not detected on either known build yet, so head tracking stays on through an aim whatever the ADS mode is set to.",
-        "Head tracking keeps running behind the pause menu, the journal and the death screen, so the view drifts while you read them.",
-        "The aim marker follows your head's rotation, not your lean, so leaning hard while shooting something close puts the mark off where the round goes. It also drops Metro's accuracy spread, so you lose the dispersion read while tracking is on."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -5875,17 +5935,23 @@
       "repo": "itsloopyo/snowrunner-headtracking",
       "install_strategy": "AsiLoader",
       "verified_sources": [
-        "Steam"
+        "Steam",
+        "Xbox"
       ],
       "game": {
         "steam_app_id": 1465360,
         "steam_folder": "SnowRunner",
         "gog_ids": [],
         "epic_search_paths": [],
+        "xbox_paths": [
+          "C:\\XboxGames\\SnowRunner - Windows10\\Content"
+        ],
+        "msix_identity_name": "FocusHomeInteractiveSA.SnowRunnerWindows10",
         "env_var": "SNOWRUNNER_PATH",
-        "executable_relpath": "Sources\\Bin\\SnowRunner.exe"
+        "executable_relpath": "Sources\\Bin\\SnowRunner.exe",
+        "xbox_executable_relpath": "SnowRunner.exe"
       },
-      "description": "6DOF head tracking for SnowRunner via OpenTrack. Your head moves the camera while the wheel, pedals or controller keep driving, in the cab and in the exterior view. The supported build is the Steam SnowRunner.exe of 22 July 2026; on any other build the mod stays dormant and the game runs vanilla.",
+      "description": "6DOF head tracking for SnowRunner via OpenTrack. Your head moves the camera while the wheel, pedals or controller keep driving, in the cab and in the exterior view. Supports the Steam and PC Game Pass / Microsoft Store builds of 22 July 2026; on any other build the mod stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled view and driving: your head moves the camera, and the truck, the physics and every input stay untouched",
         "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
@@ -5894,7 +5960,7 @@
         "Reclaims UDP 4242 about half a second after another app releases the port, with no game restart"
       ],
       "requirements": [
-        "SnowRunner (Steam, app 1465360) on the SnowRunner.exe build of 22 July 2026",
+        "SnowRunner on Steam (app 1465360) or PC Game Pass / Microsoft Store, on the build of 22 July 2026",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -6003,9 +6069,7 @@
         }
       },
       "known_issues": [
-        "Both binding sets collide with something Arx already uses, so pick whichever you mind less. Arx binds End and Page Up to centre view and look up, and binds Ctrl to magic mode and Shift to stealth mode, so a chord puts you into both while you hold it. The nav-cluster keys can be rebound in ArxFatalisHeadTracking.ini, the game's in Options.",
-        "There is no recenter key. Centring is done in your tracker - OpenTrack's Center bind, or the CENTER button in a phone app.",
-        "The Microsoft Store build installs one complete copy of the game per language, under DE, EN, ES, FR, IT and RU. The install deploys into EN; if you play in another language, copy dinput.dll and ArxFatalisHeadTracking.asi across into that folder."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -6076,11 +6140,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "There is no recenter key. Centring is done in your tracker - OpenTrack's Center bind, or the CENTER button in a phone app.",
-        "Leaning is not clamped against level geometry. Lean hard into a doorframe or cover and the camera can enter it, which renders the space beyond as though the wall were not there.",
-        "The stock crosshair is corrected for where your head has turned the view but not for how far you have leaned, so leaning hard while shooting something close puts the mark off where the round goes.",
-        "Played windowed, the game window is re-centred on its monitor every time the game gives it a new size, because BioShock Infinite otherwise pins it to the top-left corner. A window already filling the screen, or one you have dragged somewhere yourself, is left where it is."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -6215,6 +6275,129 @@
         "Not comprehensively tested.",
         "There is no recenter key. Centring is done in your tracker - OpenTrack's Center bind, SteamVR's reset, or the CENTER button in a phone app.",
         "HeadTracking.ini is read at startup only, so a change to the field of view, sensitivities or limits needs the game restarted."
+      ]
+    },
+    {
+      "id": "outlast",
+      "public": true,
+      "released": false,
+      "display_name": "Outlast",
+      "repo": "itsloopyo/outlast-headtracking",
+      "install_strategy": "Shim",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 238320,
+        "steam_folder": "Outlast",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "OUTLAST_PATH",
+        "executable_relpath": "Binaries\\Win64\\OLGame.exe"
+      },
+      "description": "6DOF head tracking for Outlast via OpenTrack. Your head moves the view while your mouse or controller keeps aiming. Supports the Steam 64-bit build of 29 April 2014; on an unrecognised build the mod stays inactive.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the view; aim stays on your mouse or controller",
+        "6DOF positional tracking: lean and peek with head position",
+        "Works with any OpenTrack compatible tracker"
+      ],
+      "requirements": [
+        "Outlast on Steam (app 238320), build of 29 April 2014",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows and the 64-bit game executable"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between horizon-locked yaw and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260911.528f16b",
+          "built_at": "2026-09-11T19:43:17Z",
+          "zip_filename": "OutlastHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/outlast-headtracking/releases/download/dev/OutlastHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "ethan-carter-redux",
+      "public": true,
+      "released": false,
+      "display_name": "The Vanishing of Ethan Carter Redux",
+      "repo": "itsloopyo/the-vanishing-of-ethan-carter-redux-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "game": {
+        "steam_app_id": 258520,
+        "steam_folder": "The Vanishing of Ethan Carter Redux",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "ETHAN_CARTER_REDUX_PATH",
+        "executable_relpath": "EthanCarter\\Binaries\\Win64\\EthanCarter-Win64-Shipping.exe"
+      },
+      "description": "6DOF head tracking for The Vanishing of Ethan Carter Redux on Steam via OpenTrack. Your head moves the view while your mouse or controller keeps control of look and interaction. Supports the Steam Win64 executable with PE build date 15 September 2015; on an unrecognised build the mod stays dormant.",
+      "features": [
+        "Decoupled look and aim: head tracking moves the view; look and interaction stay on your mouse or controller",
+        "6DOF tracking: rotation and positional lean and peek",
+        "Works with any OpenTrack compatible tracker",
+        "Field of view offset: adds to the game's own Field of View slider"
+      ],
+      "requirements": [
+        "The Vanishing of Ethan Carter Redux on Steam (app 258520), Win64 executable with PE build date 15 September 2015",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switch between world-space yaw and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260911.3db7b5e",
+          "built_at": "2026-09-11T20:11:25Z",
+          "zip_filename": "EthanCarterReduxHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/the-vanishing-of-ethan-carter-redux-headtracking/releases/download/dev/EthanCarterReduxHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
       ]
     }
   ],
@@ -9929,14 +10112,14 @@
     }
   ],
   "launcher": {
-    "version": "0.8.3",
-    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.8.3",
-    "published_at": "2026-09-10T23:17:39Z",
+    "version": "0.9.0",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.9.0",
+    "published_at": "2026-09-11T21:01:43Z",
     "setup_exe": {
-      "name": "Lopari_0.8.3_x64-setup.exe",
-      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.8.3/Lopari_0.8.3_x64-setup.exe",
-      "size_bytes": 3599944,
-      "sha256": "c2bd63c4fc64d4e06df3b19d6beabe9db88dbb03eb7b6632f5740d42422e57b1"
+      "name": "Lopari_0.9.0_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.9.0/Lopari_0.9.0_x64-setup.exe",
+      "size_bytes": 3607584,
+      "sha256": "f85d35b59770e29dcb3bbab6b9c775a1037b8c76df5f4f8a317cba353f2cf9d4"
     },
     "msi": null
   }
