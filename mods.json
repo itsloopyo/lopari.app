@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-10T23:19:27.308Z",
+  "updated_at": "2026-09-11T19:05:13.534Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -5913,16 +5913,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "SnowRunner Head Tracking v0.1.0",
-          "html_url": "https://github.com/itsloopyo/snowrunner-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-09-07T23:39:58Z",
-          "zip_filename": "SnowRunnerHeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/snowrunner-headtracking/releases/download/v0.1.0/SnowRunnerHeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 3063094
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "SnowRunner Head Tracking v0.2.0",
+          "html_url": "https://github.com/itsloopyo/snowrunner-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-09-11T19:04:01Z",
+          "zip_filename": "SnowRunnerHeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/snowrunner-headtracking/releases/download/v0.2.0/SnowRunnerHeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 3072317
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "SnowRunner Head Tracking v0.2.0",
+            "html_url": "https://github.com/itsloopyo/snowrunner-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-09-11T19:04:01Z",
+            "zip_filename": "SnowRunnerHeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/snowrunner-headtracking/releases/download/v0.2.0/SnowRunnerHeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 3072317
+          },
           {
             "tag_name": "v0.1.0",
             "version": "0.1.0",
