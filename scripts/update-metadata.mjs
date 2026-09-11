@@ -281,6 +281,7 @@ async function fetchLauncherPin() {
 
 const errors = [];
 const promoted = [];
+const demoted = [];
 let releasePinned = 0;
 let devPinned = 0;
 
@@ -297,6 +298,10 @@ for (const m of publicMods) {
   if (m.released !== true && !hasDevRelease && !isExternal) continue;
   console.log(`[${m.id}] ${m.repo}`);
 
+  // Set when we hold a published pin the repo no longer backs. Acting on
+  // it needs the dev pin, which is only resolved further down.
+  let staleRelease = false;
+
   try {
     const channel = await fetchReleaseChannel(m.repo, { external: isExternal });
     if (channel) {
@@ -311,13 +316,15 @@ for (const m of publicMods) {
         m.released = true;
         promoted.push(m.id);
         console.log("  first stable release found - stamped released: true");
-        // known_issues exists to set pre-release expectations (the
-        // launcher shows it as a warning banner); a mod graduating to a
-        // stable release sheds them. Anything that genuinely survived
-        // the release gets re-added by hand in the authored catalog.
+        // known_issues is authored data (see the header), and a promotion
+        // is not evidence any of it was fixed. Clearing it here also made
+        // promotion destructive in a way nothing could undo: a mod that
+        // yo-yos between channels lost the text on every trip back.
+        // Editing them out is a human call, so just say what is there.
         if (Array.isArray(m.known_issues) && m.known_issues.length > 0) {
-          console.log(`  cleared ${m.known_issues.length} known issue(s) on promotion`);
-          m.known_issues = [];
+          console.log(
+            `  carries ${m.known_issues.length} known issue(s) written while it was a pre-release - review them`,
+          );
         }
       }
       console.log(
@@ -325,6 +332,8 @@ for (const m of publicMods) {
           ? `  release pinned ${channel.pinned.version} (${channel.versions.length} versions in picker)`
           : `  release listed ${channel.versions[0].version} (external - version list only, no pin)`,
       );
+    } else if (m.release) {
+      staleRelease = true;
     } else if (m.released === true) {
       console.log("  release: no stable release with an -installer.zip yet");
     }
@@ -352,6 +361,49 @@ for (const m of publicMods) {
     } catch (e) {
       console.warn(`  dev: FAILED - ${e.message}`);
       errors.push({ mod: m.id, error: e.message });
+    }
+  }
+
+  // A pin we published that the repo no longer backs. Its URLs address
+  // assets that die with their release, so it 404s: dropping it is always
+  // right. Unstamping `released` is the dangerous half and is decided
+  // separately, below.
+  //
+  // Not proof the releases were deleted - `fetchReleaseChannel` also comes
+  // back empty when the newest page carries no non-draft, non-prerelease
+  // release with an `-installer.zip`, which a maintainer can cause by
+  // ticking "pre-release" or renaming an asset.
+  if (staleRelease) {
+    if (m.released !== true) {
+      delete m.release;
+      console.log("  release: dropped a stale pin (entry is not stamped released)");
+    } else if (m.distribution?.pinned) {
+      // The dev build is now the only way to install, and `released: true`
+      // is what hides its row in the launcher, so the flag has to follow
+      // the pin. Recoverable: the entry keeps a dev channel, so the loop
+      // gate above still visits it and re-promotes when a release returns.
+      delete m.release;
+      m.released = false;
+      demoted.push(m.id);
+      console.log("  release: gone from the repo - dropped the pin, unstamped released");
+    } else {
+      // Left exactly as authored, dead pin and all. Unstamping would be a
+      // one-way door - `released: false` hides the mod from every
+      // non-supporter (detect::mod_entry_visible) AND the loop gate above
+      // then skips a mod that is neither released, dev-release nor
+      // External, so no later run could promote it back. Dropping the pin
+      // alone strands the entry on `released: true` with nothing to
+      // install, which generate-readme.mjs rejects and the launcher
+      // renders as a CTA over a dead download. A human decides this one.
+      errors.push({
+        mod: m.id,
+        error:
+          `no stable release with an -installer.zip left on ${m.repo}, and this entry ` +
+          `has no dev build to fall back on. Restore the release, or hand-edit the ` +
+          `entry in the lopari catalog - unstamping it here would hide the mod from ` +
+          `non-supporters with no way back.`,
+      });
+      console.warn("  release: gone from the repo, and no dev build to fall back on");
     }
   }
 }
@@ -386,7 +438,10 @@ if (!LIVE_ONLY) writeFileSync(CATALOG_PATH, sourceOutput, "utf8");
 console.log(
   `\nwrote ${CATALOG_OUT_PATH}${LIVE_ONLY ? "" : `\nwrote ${CATALOG_PATH}`}\n` +
     `mods: ${publicMods.length}, releases pinned: ${releasePinned}, dev pinned: ${devPinned}, errors: ${errors.length}` +
-    (promoted.length ? `\npromoted to released: ${promoted.join(", ")}` : ""),
+    (promoted.length ? `\npromoted to released: ${promoted.join(", ")}` : "") +
+    (demoted.length
+      ? `\nunstamped released (every stable release yanked): ${demoted.join(", ")}`
+      : ""),
 );
 
 if (errors.length > 0) {

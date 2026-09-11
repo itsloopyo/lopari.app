@@ -6,6 +6,7 @@
 //
 //   Game            display_name
 //   Status          Released (has a stable release) / Beta (dev builds only)
+//   Supported stores verified_sources
 //   Links           the repo, plus any `listings` (NexusMods, Overtake.gg)
 //   Latest release  the pinned stable version, or the dev build's base
 //                   version, with the date it was published
@@ -69,7 +70,17 @@ function links(mod) {
 function row(mod) {
   const { status, version, date } = latestRelease(mod);
   if (!date) throw new Error(`${mod.id} has a release with no date to show`);
-  return `| ${mod.display_name} | ${status} | ${links(mod)} | v${version} (${date.slice(0, 10)}) |`;
+  const labels = {
+    Steam: "Steam", Gog: "GOG", Epic: "Epic", Xbox: "Xbox",
+    Msix: "Microsoft Store", Ea: "EA app", Ubisoft: "Ubisoft Connect", Manual: "Manual",
+  };
+  const stores = (mod.verified_sources ?? []).map((source) => {
+    if (!Object.hasOwn(labels, source)) {
+      throw new Error(`${mod.id} has an unknown verified source: ${source}`);
+    }
+    return labels[source];
+  }).join(", ") || "Not specified";
+  return `| ${mod.display_name} | ${status} | ${stores} | ${links(mod)} | v${version} (${date.slice(0, 10)}) |`;
 }
 
 const catalog = JSON.parse(readFileSync(CATALOG_PATH, "utf8"));
@@ -78,8 +89,8 @@ const mods = catalog.mods
   .sort((a, b) => a.display_name.localeCompare(b.display_name, "en", { sensitivity: "base" }));
 
 const table = [
-  "| Game | Status | Links | Latest release |",
-  "|---|---|---|---|",
+  "| Game | Status | Supported stores | Links | Latest release |",
+  "|---|---|---|---|---|",
   ...mods.map(row),
 ].join("\n");
 

@@ -40,3 +40,7 @@ description = "Republish and commit mods.json (and the itsloopyo README mod tabl
 [tasks.update-pins]
 cmd = "node scripts/update-metadata.mjs --live"
 description = "Refresh release/dev/launcher pins in the live mods.json only (CI-safe)"
+
+[tasks.test]
+cmd = "node --test scripts/*.test.mjs"
+description = "Test catalog metadata and profile README generation in temporary directories"
