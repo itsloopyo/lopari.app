@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-13T11:38:14.588Z",
+  "updated_at": "2026-09-13T23:21:51.302Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -2686,6 +2686,7 @@
       "repo": "itsloopyo/starfield-headtracking",
       "install_strategy": "AsiLoader",
       "verified_sources": [
+        "Steam",
         "Xbox"
       ],
       "game": {
@@ -2697,7 +2698,7 @@
         "executable_relpath": "Starfield.exe",
         "xbox_executable_relpath": "Starfield.exe"
       },
-      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Starfield on the Xbox app / PC Game Pass, package version 1.16.244.0. Your head moves the view while your mouse or controller keeps aiming. Ship lock-on acquisition follows your view. Steam builds are not supported yet.",
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Starfield version 1.16.244.0, on Steam or the Xbox app / PC Game Pass. Your head moves the view while your mouse or controller keeps aiming. Ship lock-on acquisition follows your view.",
       "features": [
         "Decoupled look and aim",
         "6DOF positional tracking: lean, peek and duck",
@@ -2705,7 +2706,7 @@
         "Ship lock-on acquisition follows your view"
       ],
       "requirements": [
-        "Starfield on the Xbox app / PC Game Pass, package version 1.16.244.0",
+        "Starfield version 1.16.244.0, on Steam or the Xbox app / PC Game Pass. On any other version the mod stays inactive",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -2736,14 +2737,13 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260912.21ad25e",
-          "built_at": "2026-09-12T23:50:43Z",
+          "version": "0.0.0-nightly.20260913.4370c3f",
+          "built_at": "2026-09-13T23:01:51Z",
           "zip_filename": "StarfieldHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/starfield-headtracking/releases/download/dev/StarfieldHeadTracking-dev-installer.zip"
         }
       },
       "known_issues": [
-        "Steam builds are not supported yet.",
         "Looking away from a ship can cause you to lose lock-on."
       ]
     },
@@ -3127,10 +3127,6 @@
         "steam_folder": "Wobbly Life",
         "gog_ids": [],
         "epic_search_paths": [],
-        "xbox_paths": [
-          "C:\\XboxGames\\Wobbly Life\\Content",
-          "D:\\XboxGames\\Wobbly Life\\Content"
-        ],
         "msix_identity_name": "10192RubberBandGames.WobblyLife",
         "env_var": "WOBBLY_LIFE_PATH",
         "executable_relpath": "Wobbly Life.exe"
@@ -5194,9 +5190,6 @@
           "1158493447"
         ],
         "epic_search_paths": [],
-        "xbox_paths": [
-          "C:\\XboxGames\\Prey\\Content"
-        ],
         "env_var": "PREY_PATH",
         "executable_relpath": "Binaries\\Danielle\\x64\\Release\\Prey.exe",
         "xbox_executable_relpath": "Binaries\\Danielle\\Gaming.Desktop.x64\\Release\\Prey.exe"
@@ -6038,9 +6031,6 @@
         "steam_folder": "SnowRunner",
         "gog_ids": [],
         "epic_search_paths": [],
-        "xbox_paths": [
-          "C:\\XboxGames\\SnowRunner - Windows10\\Content"
-        ],
         "msix_identity_name": "FocusHomeInteractiveSA.SnowRunnerWindows10",
         "env_var": "SNOWRUNNER_PATH",
         "executable_relpath": "Sources\\Bin\\SnowRunner.exe",
@@ -6503,7 +6493,9 @@
       "repo": "itsloopyo/superliminal-headtracking",
       "install_strategy": "BepInEx5",
       "verified_sources": [
-        "Steam"
+        "Steam",
+        "Xbox",
+        "Msix"
       ],
       "description": "Works with any OpenTrack compatible tracker. Your head moves the view while your mouse or controller keeps aiming the grab ray. Object resizing stays tied to mouse aim.",
       "features": [
@@ -6513,7 +6505,7 @@
         "Object resizing stays tied to mouse aim while your head moves the view"
       ],
       "requirements": [
-        "Superliminal on Steam",
+        "Superliminal on Steam or the Xbox app / PC Game Pass (Microsoft Store build tested: 1.0.6.0)",
         "An OpenTrack compatible tracker sending UDP on port 4242",
         "Windows 10 or 11, 64-bit"
       ],
@@ -6538,16 +6530,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Head Tracking for Superliminal v0.1.0",
-          "html_url": "https://github.com/itsloopyo/superliminal-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-09-13T11:35:18Z",
-          "zip_filename": "SuperliminalHeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/superliminal-headtracking/releases/download/v0.1.0/SuperliminalHeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 877993
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Head Tracking for Superliminal v0.2.0",
+          "html_url": "https://github.com/itsloopyo/superliminal-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-09-13T18:12:01Z",
+          "zip_filename": "SuperliminalHeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/superliminal-headtracking/releases/download/v0.2.0/SuperliminalHeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 35119905
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Head Tracking for Superliminal v0.2.0",
+            "html_url": "https://github.com/itsloopyo/superliminal-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-09-13T18:12:01Z",
+            "zip_filename": "SuperliminalHeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/superliminal-headtracking/releases/download/v0.2.0/SuperliminalHeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 35119905
+          },
           {
             "tag_name": "v0.1.0",
             "version": "0.1.0",
@@ -6565,9 +6567,141 @@
         "steam_folder": "Superliminal",
         "gog_ids": [],
         "epic_search_paths": [],
+        "msix_identity_name": "PillowCastle.Superliminal",
         "env_var": "SUPERLIMINAL_PATH",
         "executable_relpath": "SuperliminalSteam.exe",
         "xbox_executable_relpath": "Superliminal.exe"
+      }
+    },
+    {
+      "id": "the-witness",
+      "public": true,
+      "released": false,
+      "display_name": "The Witness",
+      "repo": "itsloopyo/the-witness-headtracking",
+      "install_strategy": "Shim",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. Head tracking for the Steam build of The Witness. Your head moves the view while your mouse or controller keeps control of look and interaction.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF positional tracking: lean and peek",
+        "Works with any OpenTrack compatible tracker"
+      ],
+      "requirements": [
+        "The Witness on Steam (64-bit witness64_d3d11.exe)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260913.05ca5b5",
+          "built_at": "2026-09-13T18:43:14Z",
+          "zip_filename": "TheWitnessHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/the-witness-headtracking/releases/download/dev/TheWitnessHeadTracking-dev-installer.zip"
+        }
+      },
+      "game": {
+        "steam_app_id": 210970,
+        "steam_folder": "The Witness",
+        "gog_ids": [
+          "1461060839"
+        ],
+        "epic_search_paths": [],
+        "env_var": "THE_WITNESS_PATH",
+        "executable_relpath": "witness64_d3d11.exe"
+      }
+    },
+    {
+      "id": "wolfenstein-the-new-order",
+      "public": true,
+      "released": false,
+      "display_name": "Wolfenstein: The New Order",
+      "repo": "itsloopyo/wolfenstein-the-new-order-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam",
+        "Xbox",
+        "Msix"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Wolfenstein: The New Order on Steam or Xbox Game Pass / Microsoft Store. Your head moves the view while your mouse or controller keeps aiming. Steam and Game Pass ship different builds of the game and the mod carries addresses for each; on a build it does not recognise it stays dormant and the game runs vanilla.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Works with any OpenTrack compatible tracker",
+        "Three ways to aim down sights: tracking paused, or tracking on with or without an aim marker"
+      ],
+      "requirements": [
+        "Wolfenstein: The New Order on Steam or Xbox Game Pass / Microsoft Store",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches head yaw between turning about world up and turning about the view axis"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Cycles what head tracking does while the sights are up: paused, on with an aim marker, or on without one. The choice is saved"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260913.c37f0f4",
+          "built_at": "2026-09-13T18:04:05Z",
+          "zip_filename": "WolfensteinTheNewOrderHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/wolfenstein-the-new-order-headtracking/releases/download/dev/WolfensteinTheNewOrderHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "The ADS mode \"tracking on, with an aim marker\" draws no marker in this build, so it currently behaves the same as tracking on without one."
+      ],
+      "game": {
+        "steam_app_id": 201810,
+        "steam_folder": "Wolfenstein.The.New.Order",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "msix_identity_name": "BethesdaSoftworks.WolfensteinTNO-PC",
+        "env_var": "WOLFENSTEIN_THE_NEW_ORDER_PATH",
+        "executable_relpath": "WolfNewOrder_x64.exe"
       }
     }
   ],
