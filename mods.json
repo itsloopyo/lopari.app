@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-11T21:02:27.681Z",
+  "updated_at": "2026-09-13T03:47:27.394Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -786,6 +786,12 @@
       "released": false,
       "display_name": "Outer Wilds",
       "repo": "itsloopyo/outer-wilds-headtracking",
+      "listings": [
+        {
+          "name": "OWMM",
+          "url": "https://outerwildsmods.com/mods/headtracking/"
+        }
+      ],
       "install_strategy": "External",
       "verified_sources": [
         "Steam"
@@ -2673,6 +2679,75 @@
       }
     },
     {
+      "id": "starfield",
+      "public": true,
+      "released": false,
+      "display_name": "Starfield",
+      "repo": "itsloopyo/starfield-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Xbox"
+      ],
+      "game": {
+        "steam_app_id": 1716740,
+        "steam_folder": "Starfield",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "STARFIELD_PATH",
+        "executable_relpath": "Starfield.exe",
+        "xbox_executable_relpath": "Starfield.exe"
+      },
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Starfield on the Xbox app / PC Game Pass, package version 1.16.244.0. Your head moves the view while your mouse or controller keeps aiming. Ship lock-on acquisition follows your view. Steam builds are not supported yet.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF positional tracking: lean, peek and duck",
+        "Works with any OpenTrack compatible tracker",
+        "Ship lock-on acquisition follows your view"
+      ],
+      "requirements": [
+        "Starfield on the Xbox app / PC Game Pass, package version 1.16.244.0",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle horizon lock",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H"
+        },
+        {
+          "action": "Cycle what the sights do",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Cycles through stock roll-only aiming, full tracking with the mod reticle, and full tracking with the game reticle"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260912.21ad25e",
+          "built_at": "2026-09-12T23:50:43Z",
+          "zip_filename": "StarfieldHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/starfield-headtracking/releases/download/dev/StarfieldHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Steam builds are not supported yet.",
+        "Looking away from a ship can cause you to lose lock-on."
+      ]
+    },
+    {
       "id": "subnautica-2",
       "public": true,
       "released": true,
@@ -4054,16 +4129,26 @@
       "known_issues": [],
       "release": {
         "pinned": {
-          "version": "0.3.0",
-          "tag_name": "v0.3.0",
-          "name": "Red Eclipse Head Tracking v0.3.0",
-          "html_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/tag/v0.3.0",
-          "published_at": "2026-08-20T12:53:20Z",
-          "zip_filename": "RedEclipseHeadTracking-v0.3.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/download/v0.3.0/RedEclipseHeadTracking-v0.3.0-installer.zip",
-          "size_bytes": 3025821
+          "version": "0.3.1",
+          "tag_name": "v0.3.1",
+          "name": "Red Eclipse Head Tracking v0.3.1",
+          "html_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/tag/v0.3.1",
+          "published_at": "2026-09-13T02:54:10Z",
+          "zip_filename": "RedEclipseHeadTracking-v0.3.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/download/v0.3.1/RedEclipseHeadTracking-v0.3.1-installer.zip",
+          "size_bytes": 3091373
         },
         "versions": [
+          {
+            "tag_name": "v0.3.1",
+            "version": "0.3.1",
+            "name": "Red Eclipse Head Tracking v0.3.1",
+            "html_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/tag/v0.3.1",
+            "published_at": "2026-09-13T02:54:10Z",
+            "zip_filename": "RedEclipseHeadTracking-v0.3.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/red-eclipse-headtracking/releases/download/v0.3.1/RedEclipseHeadTracking-v0.3.1-installer.zip",
+            "size_bytes": 3091373
+          },
           {
             "tag_name": "v0.3.0",
             "version": "0.3.0",
@@ -5228,7 +5313,7 @@
         "pinned": {
           "version": "0.2.0",
           "tag_name": "v0.2.0",
-          "name": "v0.2.0",
+          "name": "Still Wakes the Deep Head Tracking v0.2.0",
           "html_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/tag/v0.2.0",
           "published_at": "2026-08-30T11:12:42Z",
           "zip_filename": "StillWakesTheDeepHeadTracking-v0.2.0-installer.zip",
@@ -5239,7 +5324,7 @@
           {
             "tag_name": "v0.2.0",
             "version": "0.2.0",
-            "name": "v0.2.0",
+            "name": "Still Wakes the Deep Head Tracking v0.2.0",
             "html_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/tag/v0.2.0",
             "published_at": "2026-08-30T11:12:42Z",
             "zip_filename": "StillWakesTheDeepHeadTracking-v0.2.0-installer.zip",
@@ -5300,16 +5385,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Half-Life 2 Head Tracking v0.1.0",
-          "html_url": "https://github.com/itsloopyo/half-life-2-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-08-31T19:42:20Z",
-          "zip_filename": "HalfLife2HeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/half-life-2-headtracking/releases/download/v0.1.0/HalfLife2HeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 4203616
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Half-Life 2 Head Tracking v0.2.0",
+          "html_url": "https://github.com/itsloopyo/half-life-2-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-09-13T02:33:15Z",
+          "zip_filename": "HalfLife2HeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/half-life-2-headtracking/releases/download/v0.2.0/HalfLife2HeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 3731534
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Half-Life 2 Head Tracking v0.2.0",
+            "html_url": "https://github.com/itsloopyo/half-life-2-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-09-13T02:33:15Z",
+            "zip_filename": "HalfLife2HeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/half-life-2-headtracking/releases/download/v0.2.0/HalfLife2HeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 3731534
+          },
           {
             "tag_name": "v0.1.0",
             "version": "0.1.0",
