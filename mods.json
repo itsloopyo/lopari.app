@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-13T03:47:27.394Z",
+  "updated_at": "2026-09-13T11:38:14.588Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -6494,6 +6494,81 @@
       "known_issues": [
         "Not comprehensively tested."
       ]
+    },
+    {
+      "id": "superliminal",
+      "public": true,
+      "released": true,
+      "display_name": "Superliminal",
+      "repo": "itsloopyo/superliminal-headtracking",
+      "install_strategy": "BepInEx5",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. Your head moves the view while your mouse or controller keeps aiming the grab ray. Object resizing stays tied to mouse aim.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF positional tracking: lean, peek and duck",
+        "Works with any OpenTrack compatible tracker",
+        "Object resizing stays tied to mouse aim while your head moves the view"
+      ],
+      "requirements": [
+        "Superliminal on Steam",
+        "An OpenTrack compatible tracker sending UDP on port 4242",
+        "Windows 10 or 11, 64-bit"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through full tracking, rotation only, and position only"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between world-locked yaw and camera-local yaw"
+        }
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Head Tracking for Superliminal v0.1.0",
+          "html_url": "https://github.com/itsloopyo/superliminal-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-13T11:35:18Z",
+          "zip_filename": "SuperliminalHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/superliminal-headtracking/releases/download/v0.1.0/SuperliminalHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 877993
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Head Tracking for Superliminal v0.1.0",
+            "html_url": "https://github.com/itsloopyo/superliminal-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-13T11:35:18Z",
+            "zip_filename": "SuperliminalHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/superliminal-headtracking/releases/download/v0.1.0/SuperliminalHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 877993
+          }
+        ]
+      },
+      "game": {
+        "steam_app_id": 1049410,
+        "steam_folder": "Superliminal",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "SUPERLIMINAL_PATH",
+        "executable_relpath": "SuperliminalSteam.exe",
+        "xbox_executable_relpath": "Superliminal.exe"
+      }
     }
   ],
   "native_games": [
