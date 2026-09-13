@@ -23,6 +23,15 @@ const wobbly = {
   } },
 };
 
+const staleRelease = {
+  pinned: {
+    version: "1.0.0", tag_name: "v1.0.0",
+    zip_filename: "WobblyLifeHeadTracking-installer.zip",
+    download_url: "https://github.com/itsloopyo/wobbly-life-headtracking/releases/download/v1.0.0/WobblyLifeHeadTracking-installer.zip",
+  },
+  versions: [{ version: "1.0.0", tag_name: "v1.0.0" }],
+};
+
 function workspace(t, mods) {
   const root = mkdtempSync(join(tmpdir(), "lopari-catalog-test-"));
   t.after(() => rmSync(root, { recursive: true, force: true }));
@@ -82,6 +91,67 @@ test("README rejects an unknown store without changing the file", (t) => {
 });
 
 for (const live of [false, true]) {
+  for (const scenario of [
+    { name: "drops a stale release on an unstamped entry", released: false, dev: "available", dropRelease: true, status: 0 },
+    { name: "drops a stale release and unstamps an entry with a dev build", released: true, dev: "available", dropRelease: true, status: 0 },
+    { name: "preserves a stale release and errors without a dev channel", released: true, dev: "none", status: 1 },
+    { name: "preserves a stale release and errors when the dev release is missing", released: true, dev: "missing", status: 1 },
+    { name: "preserves a stale release and errors when the dev installer is missing", released: true, dev: "assetless", status: 1 },
+    { name: "preserves the stable release and stamp on a GitHub failure", released: true, dev: "available", releaseFailure: true, status: 1 },
+  ]) {
+    test(`metadata refresh ${scenario.name} (${live ? "live" : "full"})`, (t) => {
+      const mod = { ...wobbly, released: scenario.released, release: staleRelease };
+      if (scenario.dev === "none") delete mod.distribution;
+      const expected = structuredClone(mod);
+      if (scenario.dropRelease) {
+        delete expected.release;
+        expected.released = false;
+      }
+      if (["missing", "assetless"].includes(scenario.dev)) delete expected.distribution.pinned;
+      const { root, site } = workspace(t, [mod]);
+      const sourcePath = join(root, "lopari", "catalog", "mods.json");
+      const originalSource = readFileSync(sourcePath, "utf8");
+      const mock = join(root, "github.mjs");
+      writeFileSync(mock, `
+const scenario = ${JSON.stringify(scenario)};
+const pin = ${JSON.stringify(wobbly.distribution.pinned)};
+globalThis.fetch = async (url) => {
+  if (url === 'https://api.github.com/repos/itsloopyo/wobbly-life-headtracking/releases?per_page=25') {
+    return scenario.releaseFailure
+      ? new Response('unavailable', { status: 503, statusText: 'Service Unavailable' })
+      : Response.json([]);
+  }
+  if (url === 'https://api.github.com/repos/itsloopyo/wobbly-life-headtracking/releases/tags/dev' && scenario.dev !== 'none') {
+    if (scenario.dev === 'missing') return new Response(null, { status: 404 });
+    return Response.json({
+      name: 'Development build ' + pin.version, tag_name: 'dev', prerelease: true,
+      published_at: pin.built_at,
+      assets: scenario.dev === 'assetless' ? [] : [{ name: pin.zip_filename, browser_download_url: pin.download_url }],
+    });
+  }
+  if (url === 'https://api.github.com/repos/itsloopyo/lopari-releases/releases/latest') return Response.json({tag_name: 'v0.8.3', assets: []});
+  throw new Error('Unexpected fetch: ' + url);
+};
+`);
+      const result = spawnSync(process.execPath, ["--import", pathToFileURL(mock).href, join(site, "scripts", "update-metadata.mjs"), ...(live ? ["--live"] : [])], {
+        encoding: "utf8", env: { ...process.env, GITHUB_TOKEN: "test-only" },
+      });
+      assert.equal(result.status, scenario.status, result.stdout + result.stderr);
+      if (scenario.releaseFailure) {
+        assert.match(result.stderr, /GET https:\/\/api\.github\.com\/repos\/itsloopyo\/wobbly-life-headtracking\/releases\?per_page=25 -> 503 Service Unavailable/);
+        assert.doesNotMatch(result.stderr, /has no dev build to fall back on/);
+      } else if (scenario.status === 1) {
+        assert.match(result.stderr, /has no dev build to fall back on\. Restore the release, or hand-edit the entry in the lopari catalog/);
+      } else {
+        assert.equal(result.stderr, "");
+      }
+      const output = JSON.parse(readFileSync(join(site, "mods.json"), "utf8"));
+      assert.deepEqual(output.mods, [expected]);
+      if (live) assert.equal(readFileSync(sourcePath, "utf8"), originalSource);
+      else assert.deepEqual(JSON.parse(readFileSync(sourcePath, "utf8")), output);
+    });
+  }
+
   test(`metadata refresh preserves Wobbly's stores and shared package (${live ? "live" : "full"})`, (t) => {
     const { root, site } = workspace(t, [wobbly]);
     const sourcePath = join(root, "lopari", "catalog", "mods.json");
