@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-13T23:21:51.302Z",
+  "updated_at": "2026-09-15T07:17:25.926Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -2737,8 +2737,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260913.4370c3f",
-          "built_at": "2026-09-13T23:01:51Z",
+          "version": "0.0.1-nightly.20260914.d276538",
+          "built_at": "2026-09-14T23:01:20Z",
           "zip_filename": "StarfieldHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/starfield-headtracking/releases/download/dev/StarfieldHeadTracking-dev-installer.zip"
         }
@@ -6702,6 +6702,66 @@
         "msix_identity_name": "BethesdaSoftworks.WolfensteinTNO-PC",
         "env_var": "WOLFENSTEIN_THE_NEW_ORDER_PATH",
         "executable_relpath": "WolfNewOrder_x64.exe"
+      }
+    },
+    {
+      "id": "viewfinder",
+      "public": true,
+      "released": false,
+      "display_name": "Viewfinder",
+      "repo": "itsloopyo/viewfinder-headtracking",
+      "install_strategy": "BepInEx6",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Viewfinder on Steam. Your head moves the view while your mouse or controller keeps aiming. Head tracking fades out while a camera or photo is raised, so the shot you frame is the shot you get.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Works with any OpenTrack compatible tracker",
+        "Leaning is swept against the level, so the view cannot be pushed through a wall"
+      ],
+      "requirements": [
+        "Viewfinder on Steam (tested against version 1.1.4, as shown on the main menu)",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "Internet access on first launch for BepInEx interop setup",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and view-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260915.3a5666b",
+          "built_at": "2026-09-15T07:15:29Z",
+          "zip_filename": "ViewfinderHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/viewfinder-headtracking/releases/download/dev/ViewfinderHeadTracking-dev-installer.zip"
+        }
+      },
+      "game": {
+        "steam_app_id": 1382070,
+        "steam_folder": "Viewfinder",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "VIEWFINDER_PATH",
+        "executable_relpath": "Viewfinder.exe"
       }
     }
   ],
