@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-15T07:17:25.926Z",
+  "updated_at": "2026-09-16T22:59:55.930Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -2022,7 +2022,7 @@
     {
       "id": "fallout-new-vegas",
       "public": true,
-      "released": false,
+      "released": true,
       "display_name": "Fallout: New Vegas",
       "repo": "itsloopyo/fallout-new-vegas-headtracking",
       "install_strategy": "Shim",
@@ -2102,7 +2102,31 @@
       "requirements": [
         "Fallout: New Vegas for Windows - the 2011-07-01 Steam build or the 2016-01-21 Game Pass English build",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
-      ]
+      ],
+      "release": {
+        "pinned": {
+          "version": "0.3.1",
+          "tag_name": "v0.3.1",
+          "name": "Head Tracking for Fallout: New Vegas v0.3.1",
+          "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.3.1",
+          "published_at": "2026-09-16T22:44:40Z",
+          "zip_filename": "FalloutNVHeadTracking-v0.3.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.3.1/FalloutNVHeadTracking-v0.3.1-installer.zip",
+          "size_bytes": 321855
+        },
+        "versions": [
+          {
+            "tag_name": "v0.3.1",
+            "version": "0.3.1",
+            "name": "Head Tracking for Fallout: New Vegas v0.3.1",
+            "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.3.1",
+            "published_at": "2026-09-16T22:44:40Z",
+            "zip_filename": "FalloutNVHeadTracking-v0.3.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.3.1/FalloutNVHeadTracking-v0.3.1-installer.zip",
+            "size_bytes": 321855
+          }
+        ]
+      }
     },
     {
       "id": "firewatch",
@@ -3231,16 +3255,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.2.0",
-          "tag_name": "v0.2.0",
-          "name": "BlackAndWhiteHeadTracking v0.2.0",
-          "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.2.0",
-          "published_at": "2026-08-20T10:00:08Z",
-          "zip_filename": "BlackAndWhiteHeadTracking-v0.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.2.0/BlackAndWhiteHeadTracking-v0.2.0-installer.zip",
-          "size_bytes": 297324
+          "version": "0.2.1",
+          "tag_name": "v0.2.1",
+          "name": "BlackAndWhiteHeadTracking v0.2.1",
+          "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.2.1",
+          "published_at": "2026-09-16T22:44:25Z",
+          "zip_filename": "BlackAndWhiteHeadTracking-v0.2.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.2.1/BlackAndWhiteHeadTracking-v0.2.1-installer.zip",
+          "size_bytes": 359796
         },
         "versions": [
+          {
+            "tag_name": "v0.2.1",
+            "version": "0.2.1",
+            "name": "BlackAndWhiteHeadTracking v0.2.1",
+            "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.2.1",
+            "published_at": "2026-09-16T22:44:25Z",
+            "zip_filename": "BlackAndWhiteHeadTracking-v0.2.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.2.1/BlackAndWhiteHeadTracking-v0.2.1-installer.zip",
+            "size_bytes": 359796
+          },
           {
             "tag_name": "v0.2.0",
             "version": "0.2.0",
@@ -6218,8 +6252,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260910.411fb97",
-          "built_at": "2026-09-10T18:41:55Z",
+          "version": "0.0.0-nightly.20260916.128e9d4",
+          "built_at": "2026-09-16T21:43:35Z",
           "zip_filename": "BioShockInfiniteHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/bioshock-infinite-headtracking/releases/download/dev/BioShockInfiniteHeadTracking-dev-installer.zip"
         }
@@ -6413,8 +6447,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260911.528f16b",
-          "built_at": "2026-09-11T19:43:17Z",
+          "version": "0.0.0-nightly.20260916.070d424",
+          "built_at": "2026-09-16T22:58:47Z",
           "zip_filename": "OutlastHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/outlast-headtracking/releases/download/dev/OutlastHeadTracking-dev-installer.zip"
         }
@@ -6616,8 +6650,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260913.05ca5b5",
-          "built_at": "2026-09-13T18:43:14Z",
+          "version": "0.0.0-nightly.20260916.a18847d",
+          "built_at": "2026-09-16T22:35:51Z",
           "zip_filename": "TheWitnessHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/the-witness-headtracking/releases/download/dev/TheWitnessHeadTracking-dev-installer.zip"
         }
