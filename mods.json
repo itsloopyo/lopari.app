@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-17T01:27:24.079Z",
+  "updated_at": "2026-09-17T07:10:35.058Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -6796,6 +6796,333 @@
         "epic_search_paths": [],
         "env_var": "VIEWFINDER_PATH",
         "executable_relpath": "Viewfinder.exe"
+      }
+    },
+    {
+      "id": "roadcraft",
+      "public": true,
+      "released": true,
+      "display_name": "RoadCraft",
+      "repo": "itsloopyo/roadcraft-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for RoadCraft on Steam, in the chase camera and the cockpit camera. Your head moves the view while your wheel or controller keeps steering.",
+      "features": [
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Works with any OpenTrack compatible tracker",
+        "Head tracking in both the chase camera and the cockpit camera",
+        "Scaled to the field of view the camera is rendering, so the chase camera Dynamic FOV zoom does not change how far a head turn moves the view"
+      ],
+      "requirements": [
+        "RoadCraft on Steam. The mod carries a build profile for the Steam copy only; on a build it does not recognise it stays dormant and the game runs vanilla",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
+      ],
+      "known_issues": [
+        "Head tracking is held off while a multiplayer session is running. That check has been tested by hosting a session, not by joining someone else's."
+      ],
+      "game": {
+        "steam_app_id": 2104890,
+        "steam_folder": "RoadCraft",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "ROADCRAFT_PATH",
+        "executable_relpath": "root\\bin\\pc\\Roadcraft - Retail.exe"
+      },
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "RoadCraft Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/roadcraft-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-16T16:56:13Z",
+          "zip_filename": "RoadCraftHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/roadcraft-headtracking/releases/download/v0.1.0/RoadCraftHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 3080018
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "RoadCraft Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/roadcraft-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-16T16:56:13Z",
+            "zip_filename": "RoadCraftHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/roadcraft-headtracking/releases/download/v0.1.0/RoadCraftHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3080018
+          }
+        ]
+      }
+    },
+    {
+      "id": "stormworks",
+      "public": true,
+      "released": false,
+      "display_name": "Stormworks: Build and Rescue",
+      "repo": "itsloopyo/stormworks-headtracking",
+      "install_strategy": "Shim",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Stormworks: Build and Rescue on Steam. Your head moves the view while your mouse keeps aiming. Tracking applies in a loaded save, not on the menus.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean and peek",
+        "Works with any OpenTrack compatible tracker",
+        "Per-axis sensitivity, inversion and lean limits in the mod's ini"
+      ],
+      "requirements": [
+        "Stormworks: Build and Rescue on Steam, running the 64-bit stormworks64.exe",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260916.5516c25",
+          "built_at": "2026-09-16T22:35:30Z",
+          "zip_filename": "StormworksHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/stormworks-build-and-rescue-headtracking/releases/download/dev/StormworksHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "The crosshair follows head rotation, but leaning moves the view without moving the crosshair. Center your lean when precision matters.",
+        "The mod is installed alongside a copy of your own Windows opengl32.dll. After a Windows update replaces that file, install again so the copy matches the rest of your system."
+      ],
+      "game": {
+        "steam_app_id": 573090,
+        "steam_folder": "Stormworks",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "STORMWORKS_PATH",
+        "executable_relpath": "stormworks64.exe"
+      }
+    },
+    {
+      "id": "dishonored-2",
+      "public": true,
+      "released": false,
+      "display_name": "Dishonored 2",
+      "repo": "itsloopyo/dishonored-2-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Dishonored 2 on Steam. Your head moves the view while your mouse or controller keeps aiming. The mod is tied to one build of Dishonored2.exe and stays dormant on any other, so the game runs vanilla.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean and peek",
+        "Works with any OpenTrack compatible tracker"
+      ],
+      "requirements": [
+        "Dishonored 2 on Steam, on the build of Dishonored2.exe timestamped 2025-02-06. On any other build the mod stays dormant and the game runs unmodified",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260916.e7ab953",
+          "built_at": "2026-09-16T23:08:30Z",
+          "zip_filename": "Dishonored2HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/dishonored-2-headtracking/releases/download/dev/Dishonored2HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "The crosshair marks the first surface the aim line hits, so at very close range it marks a pane of glass in the way rather than what is behind it."
+      ],
+      "game": {
+        "steam_app_id": 403640,
+        "steam_folder": "Dishonored2",
+        "gog_ids": [
+          "1431426311"
+        ],
+        "epic_search_paths": [],
+        "env_var": "DISHONORED_2_PATH",
+        "executable_relpath": "Dishonored2.exe"
+      }
+    },
+    {
+      "id": "indiana-jones-and-the-great-circle",
+      "public": true,
+      "released": false,
+      "display_name": "Indiana Jones and the Great Circle",
+      "repo": "itsloopyo/indiana-jones-and-the-great-circle-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Xbox",
+        "Msix"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for the Xbox Game Pass / Microsoft Store build of Indiana Jones and the Great Circle. Your head moves the view while your mouse or controller keeps aiming. The Steam build is a different binary the mod has no profile for, so it stays dormant there and the game runs vanilla.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Works with any OpenTrack compatible tracker"
+      ],
+      "requirements": [
+        "Indiana Jones and the Great Circle on Xbox Game Pass or the Microsoft Store, package 1.16.1.0. The Steam build is not supported",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260917.d4bf69d",
+          "built_at": "2026-09-17T06:44:36Z",
+          "zip_filename": "GreatCircleHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/indiana-jones-and-the-great-circle-headtracking/releases/download/dev/GreatCircleHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Tracking stays live on the main menu, so the menu background moves with your head. Press End or Ctrl+Shift+Y there if it bothers you.",
+        "Leaning is not stopped by walls, so leaning hard into a doorframe can put the view through it.",
+        "The reticle follows your aim as you turn your head, but not as you lean. Under a lean it sits slightly off where the shot lands, by more at close range than far."
+      ],
+      "game": {
+        "steam_app_id": 2677660,
+        "steam_folder": "Indiana Jones and the Great Circle",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "msix_identity_name": "BethesdaSoftworks.ProjectRelic",
+        "env_var": "INDIANA_JONES_AND_THE_GREAT_CIRCLE_PATH",
+        "executable_relpath": "TheGreatCircle.exe",
+        "xbox_identity_name": "BethesdaSoftworks.ProjectRelic"
+      }
+    },
+    {
+      "id": "far-cry-6",
+      "public": true,
+      "released": false,
+      "display_name": "Far Cry 6",
+      "repo": "itsloopyo/far-cry-6-headtracking",
+      "install_strategy": "Shim",
+      "verified_sources": [
+        "Ubisoft"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. Head tracking for Far Cry 6 from Ubisoft Connect. Your head moves the view while your mouse or controller keeps aiming. The mod takes the place of the head tracking library the game already ships, so there is no mod loader to install.",
+      "features": [
+        "Decoupled look and aim",
+        "Six-axis head tracking: yaw, pitch, roll and positional lean",
+        "Works with any OpenTrack compatible tracker",
+        "A soft orientation dot marks the aim point while the game hides its own reticle"
+      ],
+      "requirements": [
+        "Far Cry 6 on PC from Ubisoft Connect. The game folder must contain bin\\FarCry6.exe and bin\\tobii_gameintegration_x64.dll",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Switches what head tracking does while the sights are up: paused, or the view settles onto the sights and tracking carries on from there"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260917.dec1791",
+          "built_at": "2026-09-17T06:57:09Z",
+          "zip_filename": "FarCry6HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/download/dev/FarCry6HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "A real Tobii eye tracker does not work while the mod is installed, because the mod takes the place of the library that talks to it.",
+        "The mod replaces a file the game ships, so a game update or a file verification in Ubisoft Connect puts the original back. Install again after either.",
+        "The camera adapter checks the game build before starting. On a build it does not recognise, tracking stays off and the log records an unsupported camera module."
+      ],
+      "game": {
+        "steam_app_id": null,
+        "steam_folder": null,
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "FAR_CRY_6_PATH",
+        "executable_relpath": "bin\\FarCry6.exe"
       }
     }
   ],
