@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-16T22:59:55.930Z",
+  "updated_at": "2026-09-17T01:27:24.079Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -2109,7 +2109,7 @@
           "tag_name": "v0.3.1",
           "name": "Head Tracking for Fallout: New Vegas v0.3.1",
           "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.3.1",
-          "published_at": "2026-09-16T22:44:40Z",
+          "published_at": "2026-09-16T23:02:30Z",
           "zip_filename": "FalloutNVHeadTracking-v0.3.1-installer.zip",
           "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.3.1/FalloutNVHeadTracking-v0.3.1-installer.zip",
           "size_bytes": 321855
@@ -2120,7 +2120,7 @@
             "version": "0.3.1",
             "name": "Head Tracking for Fallout: New Vegas v0.3.1",
             "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.3.1",
-            "published_at": "2026-09-16T22:44:40Z",
+            "published_at": "2026-09-16T23:02:30Z",
             "zip_filename": "FalloutNVHeadTracking-v0.3.1-installer.zip",
             "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.3.1/FalloutNVHeadTracking-v0.3.1-installer.zip",
             "size_bytes": 321855
@@ -3259,10 +3259,10 @@
           "tag_name": "v0.2.1",
           "name": "BlackAndWhiteHeadTracking v0.2.1",
           "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.2.1",
-          "published_at": "2026-09-16T22:44:25Z",
+          "published_at": "2026-09-16T23:02:35Z",
           "zip_filename": "BlackAndWhiteHeadTracking-v0.2.1-installer.zip",
           "download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.2.1/BlackAndWhiteHeadTracking-v0.2.1-installer.zip",
-          "size_bytes": 359796
+          "size_bytes": 359793
         },
         "versions": [
           {
@@ -3270,10 +3270,10 @@
             "version": "0.2.1",
             "name": "BlackAndWhiteHeadTracking v0.2.1",
             "html_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/tag/v0.2.1",
-            "published_at": "2026-09-16T22:44:25Z",
+            "published_at": "2026-09-16T23:02:35Z",
             "zip_filename": "BlackAndWhiteHeadTracking-v0.2.1-installer.zip",
             "download_url": "https://github.com/itsloopyo/black-and-white-headtracking/releases/download/v0.2.1/BlackAndWhiteHeadTracking-v0.2.1-installer.zip",
-            "size_bytes": 359796
+            "size_bytes": 359793
           },
           {
             "tag_name": "v0.2.0",
