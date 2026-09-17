@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-17T18:28:12.186Z",
+  "updated_at": "2026-09-17T23:47:33.716Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -7133,6 +7133,96 @@
         "epic_search_paths": [],
         "env_var": "FAR_CRY_6_PATH",
         "executable_relpath": "bin\\FarCry6.exe"
+      }
+    },
+    {
+      "id": "trepang2",
+      "public": true,
+      "released": true,
+      "display_name": "Trepang2",
+      "repo": "itsloopyo/trepang2-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam",
+        "Xbox",
+        "Msix"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Trepang2 on Steam and on Xbox / PC Game Pass. Your head moves the view while your mouse or controller keeps aiming, the torch turns with your head, and the crosshair moves to stay on the point the shot lands.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean and peek",
+        "Works with any OpenTrack compatible tracker",
+        "The crosshair, stealth dot, kill marker and tactical visor crosshair follow your head to the point the rounds land, and so do the prompts and ability keys the HUD draws with them",
+        "The torch points where you are looking rather than where the weapon is aiming",
+        "Three aim-down-sights modes: tracking paused for the aim, tracking on with an aim marker, or tracking on with the sights alone"
+      ],
+      "requirements": [
+        "Trepang2 on Steam, on the build whose menu footer reads BUILD#: 2484 (Jul 30 2024), or Trepang2 from the Xbox app / PC Game Pass, package version 1.0.15.0. On any other build the mod stays dormant and the game runs unmodified",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+J",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "description": "Switches between horizon-locked yaw and camera-local yaw. No chord here: the game binds H to dual wielding"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Switches what head tracking does while the sights are up: paused, tracking with an aim marker, or tracking without one"
+        }
+      ],
+      "known_issues": [
+        "Trepang2 runs its own key bindings whether or not Ctrl and Shift are held, so whatever you have bound to a chord's letter fires as well when you press it. The nav-cluster keys do not have that problem.",
+        "In the two ADS modes that keep tracking on, a scope's own reticle only reads true while your eye is lined up with the optic, so it separates from the crosshair the mod draws once head tracking moves the view off that sight line. The drawn crosshair is the one that matches where the rounds land.",
+        "Most weapons in Trepang2 have no aim down sights of their own, so the ADS modes only come into play on a weapon with an optic or with the game's all-weapons ADS cheat on."
+      ],
+      "game": {
+        "steam_app_id": 1164940,
+        "steam_folder": "Trepang2",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "msix_identity_name": "Team17DigitalLimited.Trepang2",
+        "env_var": "TREPANG2_PATH",
+        "executable_relpath": "CPPFPS\\Binaries\\Win64\\CPPFPS-Win64-Shipping.exe",
+        "xbox_executable_relpath": "CPPFPS\\Binaries\\WinGDK\\CPPFPS-WinGDK-Shipping.exe"
+      },
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Trepang2 Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/trepang2-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-17T23:26:55Z",
+          "zip_filename": "Trepang2HeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/trepang2-headtracking/releases/download/v0.1.0/Trepang2HeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 3208575
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Trepang2 Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/trepang2-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-17T23:26:55Z",
+            "zip_filename": "Trepang2HeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/trepang2-headtracking/releases/download/v0.1.0/Trepang2HeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3208575
+          }
+        ]
       }
     }
   ],
