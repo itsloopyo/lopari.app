@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-18T16:37:46.440Z",
+  "updated_at": "2026-09-18T17:25:51.908Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -7199,16 +7199,26 @@
       },
       "release": {
         "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Trepang2 Head Tracking v0.1.0",
-          "html_url": "https://github.com/itsloopyo/trepang2-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-09-17T23:26:55Z",
-          "zip_filename": "Trepang2HeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/trepang2-headtracking/releases/download/v0.1.0/Trepang2HeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 3208575
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Trepang2 Head Tracking v0.2.0",
+          "html_url": "https://github.com/itsloopyo/trepang2-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-09-18T17:25:03Z",
+          "zip_filename": "Trepang2HeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/trepang2-headtracking/releases/download/v0.2.0/Trepang2HeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 3211992
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Trepang2 Head Tracking v0.2.0",
+            "html_url": "https://github.com/itsloopyo/trepang2-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-09-18T17:25:03Z",
+            "zip_filename": "Trepang2HeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/trepang2-headtracking/releases/download/v0.2.0/Trepang2HeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 3211992
+          },
           {
             "tag_name": "v0.1.0",
             "version": "0.1.0",
