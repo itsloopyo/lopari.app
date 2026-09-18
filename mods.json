@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-18T17:25:51.908Z",
+  "updated_at": "2026-09-18T17:30:50.698Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -7142,9 +7142,10 @@
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Steam",
+        "Gog",
         "Xbox"
       ],
-      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Trepang2 on Steam and Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming, the torch turns with your head, and the crosshair moves to stay on the point the shot lands.",
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Trepang2 on Steam, GOG and Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming, the torch turns with your head, and the crosshair moves to stay on the point the shot lands.",
       "features": [
         "Decoupled look and aim",
         "6DOF tracking: yaw, pitch and roll, plus positional lean and peek",
@@ -7154,7 +7155,7 @@
         "Three aim-down-sights modes: tracking paused for the aim, tracking on with an aim marker, or tracking on with the sights alone"
       ],
       "requirements": [
-        "Trepang2 on Steam, on the build whose menu footer reads BUILD#: 2484 (Jul 30 2024), or Trepang2 from Xbox Game Pass, package version 1.0.15.0. On any other build the mod stays dormant and the game runs unmodified",
+        "Trepang2 on Steam, on the build whose menu footer reads BUILD#: 2484 (Jul 30 2024), Trepang2 on GOG, the build of Aug 5 2024, or Trepang2 from Xbox Game Pass, package version 1.0.15.0. On any other build the mod stays dormant and the game runs unmodified",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -7190,7 +7191,9 @@
       "game": {
         "steam_app_id": 1164940,
         "steam_folder": "Trepang2",
-        "gog_ids": [],
+        "gog_ids": [
+          "1599916752"
+        ],
         "epic_search_paths": [],
         "msix_identity_name": "Team17DigitalLimited.Trepang2",
         "env_var": "TREPANG2_PATH",
