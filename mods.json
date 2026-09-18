@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-18T00:14:59.463Z",
+  "updated_at": "2026-09-18T16:37:46.440Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -7125,8 +7125,8 @@
         "The camera adapter checks the game build before starting. On a build it does not recognise, tracking stays off and the log records an unsupported camera module."
       ],
       "game": {
-        "steam_app_id": null,
-        "steam_folder": null,
+        "steam_app_id": 2369390,
+        "steam_folder": "Far Cry 6",
         "gog_ids": [],
         "epic_search_paths": [],
         "env_var": "FAR_CRY_6_PATH",
@@ -7220,6 +7220,62 @@
             "size_bytes": 3208575
           }
         ]
+      }
+    },
+    {
+      "id": "tt-isle-of-man-ride-on-the-edge-3",
+      "public": true,
+      "released": false,
+      "display_name": "TT Isle of Man: Ride on the Edge 3",
+      "repo": "itsloopyo/tt-isle-of-man-ride-on-the-edge-3-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for TT Isle of Man: Ride on the Edge 3 on Steam. Your head moves the camera while your keyboard or controller keeps steering. Tracking runs while riding in free roam and in races, and pauses in menus, the pause screen and the map.",
+      "features": [
+        "6DOF tracking: yaw, pitch and roll, plus positional lean",
+        "Works with any OpenTrack compatible tracker",
+        "Head movement scaled to the field of view the game is using",
+        "Smoothing and lean limits in HeadTracking.ini"
+      ],
+      "requirements": [
+        "TT Isle of Man: Ride on the Edge 3 on Steam. On a game build the mod does not recognize, it stays inactive and the game runs normally",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260918.6bd4544",
+          "built_at": "2026-09-18T16:35:40Z",
+          "zip_filename": "TT3HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/tt-isle-of-man-ride-on-the-edge-3-headtracking/releases/download/dev/TT3HeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "Head tracking keeps running while a tutorial popup is on screen."
+      ],
+      "game": {
+        "steam_app_id": 1924170,
+        "steam_folder": "TT3",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "TT_ISLE_OF_MAN_3_PATH",
+        "executable_relpath": "TT3.exe"
       }
     }
   ],
