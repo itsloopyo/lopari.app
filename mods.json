@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-17T23:47:33.716Z",
+  "updated_at": "2026-09-18T00:14:59.463Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -12,14 +12,14 @@
       "verified_sources": [
         "Xbox"
       ],
-      "description": "Works with any OpenTrack compatible tracker. Head tracking moves the view while your mouse or controller keeps control of look and interaction. Built and tested against the Xbox app / Game Pass build.",
+      "description": "Works with any OpenTrack compatible tracker. Head tracking moves the view while your mouse or controller keeps control of look and interaction. Built and tested against the Xbox Game Pass build.",
       "features": [
         "Decoupled look and aim",
         "6DOF tracking: yaw, pitch and roll plus positional lean, peek and duck",
         "Works with any OpenTrack compatible tracker"
       ],
       "requirements": [
-        "Blue Prince on Xbox app / Game Pass for PC, tested with package version 1.1.11.0",
+        "Blue Prince on Xbox Game Pass, tested with package version 1.1.11.0",
         "An OpenTrack compatible tracker sending UDP on port 4242",
         "Windows 10 or 11, 64-bit",
         "Internet access on first launch for BepInEx interop setup"
@@ -2099,9 +2099,9 @@
         "Not comprehensively tested.",
         "Occasional incorrect frames are still reported while head tracking is on. Camera alignment for foliage and effects has improved, but the intermittent flicker is not fully resolved.",
         "Upgrading from the xNVSE version moves the settings file: the mod now reads HeadTracking.ini from the game root rather than Data/NVSE/Plugins, so copy your old one across to keep your tweaks.",
-        "The Game Pass copy installs one complete copy of the game per language. Install targets the English folder, which is the Game Pass build the mod supports."
+        "The Xbox Game Pass copy installs one complete copy of the game per language. Install targets the English folder, which is the build the mod supports."
       ],
-      "description": "Head tracking for Fallout: New Vegas via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and a gold reticle marks where the shot goes while you look around. The mod loads through a dsound.dll proxy and needs no xNVSE. It engages only on the executable profiles it knows - the 2011-07-01 Steam build and the 2016-01-21 Game Pass English build - and stays dormant on anything else, naming the mismatch in the log.",
+      "description": "Head tracking for Fallout: New Vegas via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and a gold reticle marks where the shot goes while you look around. The mod loads through a dsound.dll proxy and needs no xNVSE. It engages only on the executable profiles it knows - the 2011-07-01 Steam build and the 2016-01-21 Xbox Game Pass English build - and stays dormant on anything else, naming the mismatch in the log.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, your aim stays on the mouse or controller",
         "6DOF tracking: yaw, pitch and roll, plus positional lean and peek, limited by the game's world collision so the camera stays out of walls",
@@ -2110,7 +2110,7 @@
         "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
       ],
       "requirements": [
-        "Fallout: New Vegas for Windows - the 2011-07-01 Steam build or the 2016-01-21 Game Pass English build",
+        "Fallout: New Vegas for Windows - the 2011-07-01 Steam build or the 2016-01-21 Xbox Game Pass English build",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "release": {
@@ -2732,7 +2732,7 @@
         "executable_relpath": "Starfield.exe",
         "xbox_executable_relpath": "Starfield.exe"
       },
-      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Starfield version 1.16.244.0, on Steam or the Xbox app / PC Game Pass. Your head moves the view while your mouse or controller keeps aiming. Ship lock-on acquisition follows your view.",
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Starfield version 1.16.244.0, on Steam or Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming. Ship lock-on acquisition follows your view.",
       "features": [
         "Decoupled look and aim",
         "6DOF positional tracking: lean, peek and duck",
@@ -2740,7 +2740,7 @@
         "Ship lock-on acquisition follows your view"
       ],
       "requirements": [
-        "Starfield version 1.16.244.0, on Steam or the Xbox app / PC Game Pass. On any other version the mod stays inactive",
+        "Starfield version 1.16.244.0, on Steam or Xbox Game Pass. On any other version the mod stays inactive",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -3165,7 +3165,7 @@
         "env_var": "WOBBLY_LIFE_PATH",
         "executable_relpath": "Wobbly Life.exe"
       },
-      "description": "Head tracking for Wobbly Life on Steam and PC Game Pass / Microsoft Store. One download includes the matching mod and loader for each build. Decouples look from aim so you can glance around the world while the mouse or controller still drives aim and movement. Supports up to 4 local players in couch co-op - each player needs their own OpenTrack source on a separate UDP port (P1 4242, P2 4243, P3 4244, P4 4245). Online multiplayer is unaffected: tracking is client-side only and is not transmitted to other clients.",
+      "description": "Head tracking for Wobbly Life on Steam and Xbox Game Pass. One download includes the matching mod and loader for each build. Decouples look from aim so you can glance around the world while the mouse or controller still drives aim and movement. Supports up to 4 local players in couch co-op - each player needs their own OpenTrack source on a separate UDP port (P1 4242, P2 4243, P3 4244, P4 4245). Online multiplayer is unaffected: tracking is client-side only and is not transmitted to other clients.",
       "hotkeys": [
         {
           "action": "Toggle tracking",
@@ -3907,7 +3907,7 @@
         "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
       ],
       "requirements": [
-        "RV There Yet? (Steam or Xbox / Game Pass, Windows x64)",
+        "RV There Yet? (Steam or Xbox Game Pass, Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
@@ -4312,7 +4312,7 @@
         "Disables itself when the pvp game rule is on and another player is in the session, so it cannot be used as a freelook cheat"
       ],
       "requirements": [
-        "Minecraft for Windows (Bedrock Edition) from the Microsoft Store or Xbox app",
+        "Minecraft for Windows (Bedrock Edition) from the Microsoft Store",
         "Windows 10 version 1903 or newer, x64",
         "OpenTrack or any OpenTrack UDP-compatible tracker"
       ],
@@ -4590,7 +4590,7 @@
         "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
       ],
       "requirements": [
-        "Fallout 4 (Steam, GOG or Xbox / Game Pass, Windows x64)",
+        "Fallout 4 (Steam, GOG or Xbox Game Pass, Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
@@ -5041,7 +5041,7 @@
         "xbox_executable_relpath": "KingdomCome.exe",
         "xbox_identity_name": "DeepSilver.77536C3FE941"
       },
-      "description": "6DOF head tracking for Kingdom Come: Deliverance II via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming, and what tracking does while a bow or crossbow is drawn is yours to pick. Steam and Game Pass ship their own build of the game and the mod carries a profile for each; on a build it does not recognise it stays dormant and the game runs vanilla.",
+      "description": "6DOF head tracking for Kingdom Come: Deliverance II via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming, and what tracking does while a bow or crossbow is drawn is yours to pick. Steam and Xbox Game Pass ship their own build of the game and the mod carries a profile for each; on a build it does not recognise it stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
         "6DOF positional tracking: lean and peek with head position",
@@ -5113,7 +5113,7 @@
         "xbox_executable_relpath": "KingdomCome.exe",
         "xbox_identity_name": "DeepSilver.KingdomComeDeliverance"
       },
-      "description": "6DOF head tracking for Kingdom Come: Deliverance via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming. Steam and Game Pass ship their own build of the game and the mod carries a profile for each; on a build it does not recognise it stays dormant and the game runs vanilla.",
+      "description": "6DOF head tracking for Kingdom Come: Deliverance via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming. Steam and Xbox Game Pass ship their own build of the game and the mod carries a profile for each; on a build it does not recognise it stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
         "6DOF positional tracking: lean and peek with head position"
@@ -5175,13 +5175,13 @@
         "executable_relpath": "PenDriverPro\\Binaries\\Win64\\PenDriverPro-Win64-Shipping.exe",
         "xbox_executable_relpath": "PenDriverPro\\Binaries\\WinGDK\\PenDriverPro-WinGDK-Shipping.exe"
       },
-      "description": "6DOF head tracking for Pacific Drive on Steam and PC Game Pass / Microsoft Store via OpenTrack. Your head moves the camera, the mouse or controller keeps driving, aiming and interacting.",
+      "description": "6DOF head tracking for Pacific Drive on Steam and Xbox Game Pass via OpenTrack. Your head moves the camera, the mouse or controller keeps driving, aiming and interacting.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, aim and interaction stay on your mouse or controller",
         "6DOF positional tracking: lean and peek with head position"
       ],
       "requirements": [
-        "Pacific Drive on Steam or PC Game Pass / Microsoft Store (Windows x64)",
+        "Pacific Drive on Steam or Xbox Game Pass (Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
@@ -5238,13 +5238,13 @@
         "executable_relpath": "Binaries\\Danielle\\x64\\Release\\Prey.exe",
         "xbox_executable_relpath": "Binaries\\Danielle\\Gaming.Desktop.x64\\Release\\Prey.exe"
       },
-      "description": "6DOF head tracking for Prey (2017) on Steam and Xbox / PC Game Pass via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming. Campaign only: Mooncrash and Typhon Hunter run from a separate DLL the mod does not recognise, so they render vanilla.",
+      "description": "6DOF head tracking for Prey (2017) on Steam and Xbox Game Pass via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming. Campaign only: Mooncrash and Typhon Hunter run from a separate DLL the mod does not recognise, so they render vanilla.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, aim stays on your mouse or controller",
         "6DOF positional tracking: lean and peek with head position"
       ],
       "requirements": [
-        "Prey (2017) campaign on Steam or Xbox / PC Game Pass (Windows x64)",
+        "Prey (2017) campaign on Steam or Xbox Game Pass (Windows x64)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242"
       ],
       "hotkeys": [
@@ -5475,7 +5475,7 @@
         "executable_relpath": "Oregon\\Binaries\\Win64\\Oregon-Win64-Shipping.exe",
         "xbox_executable_relpath": "Oregon\\Binaries\\WinGDK\\Oregon-WinGDK-Shipping.exe"
       },
-      "description": "6DOF head tracking for High On Life via OpenTrack. Your head moves the view, the mouse or controller keeps aiming, and the game's own crosshair stays on the point the shot will hit. Two builds are supported, the Steam Win64 build of 25 October 2023 and the Game Pass WinGDK build of the same date, and the mod tells them apart by fingerprint; on any other build it stays dormant and the game runs vanilla.",
+      "description": "6DOF head tracking for High On Life via OpenTrack. Your head moves the view, the mouse or controller keeps aiming, and the game's own crosshair stays on the point the shot will hit. Two builds are supported, the Steam Win64 build of 25 October 2023 and the Xbox Game Pass WinGDK build of the same date, and the mod tells them apart by fingerprint; on any other build it stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled look and aim: head tracking moves the view, the mouse or controller still controls the aim",
         "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
@@ -5484,7 +5484,7 @@
         "Aim-down-sights modes: tracking stands down for the aim by default, or carries on, cycled in game and saved to the config"
       ],
       "requirements": [
-        "High On Life on Steam (app 1583230, Win64 build of 25 October 2023) or on PC Game Pass / Microsoft Store (WinGDK build of the same date, package 1.13.3652.0)",
+        "High On Life on Steam (app 1583230, Win64 build of 25 October 2023) or on Xbox Game Pass (WinGDK build of the same date, package 1.13.3652.0)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -5545,7 +5545,7 @@
         "env_var": "WRECKFEST_PATH",
         "executable_relpath": "Wreckfest_x64.exe"
       },
-      "description": "6DOF head tracking for Wreckfest via OpenTrack. Your head moves the camera while the wheel or controller keeps driving, in online races as well as local ones. Steam and Game Pass ship different builds of the game and the mod carries a profile for each, the Steam Wreckfest_x64.exe of 19 September 2023 and the Game Pass one of 23 February 2021; on a build it does not recognise it stays dormant and the game runs vanilla.",
+      "description": "6DOF head tracking for Wreckfest via OpenTrack. Your head moves the camera while the wheel or controller keeps driving, in online races as well as local ones. Steam and Xbox Game Pass ship different builds of the game and the mod carries a profile for each, the Steam Wreckfest_x64.exe of 19 September 2023 and the Xbox Game Pass one of 23 February 2021; on a build it does not recognise it stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled view and driving: your head moves the camera, the car, the physics and every input stay untouched",
         "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
@@ -5553,7 +5553,7 @@
         "Racing only: the menus and the pause screen keep the game's own camera, and tracking picks up from where your head is when you unpause"
       ],
       "requirements": [
-        "Wreckfest on Steam (app 228380, the Wreckfest_x64.exe build of 19 September 2023) or on PC Game Pass / Microsoft Store (package version 1.4.3.0)",
+        "Wreckfest on Steam (app 228380, the Wreckfest_x64.exe build of 19 September 2023) or on Xbox Game Pass (package version 1.4.3.0)",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -6080,7 +6080,7 @@
         "executable_relpath": "Sources\\Bin\\SnowRunner.exe",
         "xbox_executable_relpath": "SnowRunner.exe"
       },
-      "description": "6DOF head tracking for SnowRunner via OpenTrack. Your head moves the camera while the wheel, pedals or controller keep driving, in the cab and in the exterior view. Supports the Steam and PC Game Pass / Microsoft Store builds of 22 July 2026; on any other build the mod stays dormant and the game runs vanilla.",
+      "description": "6DOF head tracking for SnowRunner via OpenTrack. Your head moves the camera while the wheel, pedals or controller keep driving, in the cab and in the exterior view. Supports the Steam and Xbox Game Pass builds of 22 July 2026; on any other build the mod stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled view and driving: your head moves the camera, and the truck, the physics and every input stay untouched",
         "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
@@ -6089,7 +6089,7 @@
         "Reclaims UDP 4242 about half a second after another app releases the port, with no game restart"
       ],
       "requirements": [
-        "SnowRunner on Steam (app 1465360) or PC Game Pass / Microsoft Store, on the build of 22 July 2026",
+        "SnowRunner on Steam (app 1465360) or Xbox Game Pass, on the build of 22 July 2026",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -6163,7 +6163,7 @@
         "executable_relpath": "arx.exe",
         "xbox_executable_relpath": "EN\\arx.exe"
       },
-      "description": "6DOF head tracking for Arx Fatalis via OpenTrack. Your head moves the view while the mouse keeps aiming, and the cursor sits on the point you select with. The mod identifies the executable by its PE header and engages on the Steam and Microsoft Store builds of 1.21; on any other copy it stays dormant, leaves the game untouched, and says which way it differs in the log.",
+      "description": "6DOF head tracking for Arx Fatalis via OpenTrack. Your head moves the view while the mouse keeps aiming, and the cursor sits on the point you select with. The mod identifies the executable by its PE header and engages on the Steam and Xbox Game Pass builds of 1.21; on any other copy it stays dormant, leaves the game untouched, and says which way it differs in the log.",
       "features": [
         "Decoupled look and aim: your head moves the view while the mouse still controls where you aim",
         "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
@@ -6171,7 +6171,7 @@
         "Works with any OpenTrack UDP source (webcam, phone app, VR headset) on port 4242"
       ],
       "requirements": [
-        "Arx Fatalis (Steam, app 1700) or the Microsoft Store copy, on the 1.21 build",
+        "Arx Fatalis (Steam, app 1700) or the Xbox Game Pass copy, on the 1.21 build",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "Windows 10 or 11 - the mod loads into the game's 32-bit executable"
       ],
@@ -6538,8 +6538,7 @@
       "install_strategy": "BepInEx5",
       "verified_sources": [
         "Steam",
-        "Xbox",
-        "Msix"
+        "Xbox"
       ],
       "description": "Works with any OpenTrack compatible tracker. Your head moves the view while your mouse or controller keeps aiming the grab ray. Object resizing stays tied to mouse aim.",
       "features": [
@@ -6549,7 +6548,7 @@
         "Object resizing stays tied to mouse aim while your head moves the view"
       ],
       "requirements": [
-        "Superliminal on Steam or the Xbox app / PC Game Pass (Microsoft Store build tested: 1.0.6.0)",
+        "Superliminal on Steam or Xbox Game Pass (package version tested: 1.0.6.0)",
         "An OpenTrack compatible tracker sending UDP on port 4242",
         "Windows 10 or 11, 64-bit"
       ],
@@ -6686,10 +6685,9 @@
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Steam",
-        "Xbox",
-        "Msix"
+        "Xbox"
       ],
-      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Wolfenstein: The New Order on Steam or Xbox Game Pass / Microsoft Store. Your head moves the view while your mouse or controller keeps aiming. Steam and Game Pass ship different builds of the game and the mod carries addresses for each; on a build it does not recognise it stays dormant and the game runs vanilla.",
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Wolfenstein: The New Order on Steam or Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming. Steam and Xbox Game Pass ship different builds of the game and the mod carries addresses for each; on a build it does not recognise it stays dormant and the game runs vanilla.",
       "features": [
         "Decoupled look and aim",
         "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
@@ -6697,7 +6695,7 @@
         "Three ways to aim down sights: tracking paused, or tracking on with or without an aim marker"
       ],
       "requirements": [
-        "Wolfenstein: The New Order on Steam or Xbox Game Pass / Microsoft Store",
+        "Wolfenstein: The New Order on Steam or Xbox Game Pass",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -7023,7 +7021,7 @@
         "Works with any OpenTrack compatible tracker"
       ],
       "requirements": [
-        "Indiana Jones and the Great Circle on Xbox Game Pass or the Microsoft Store, package 1.16.1.0. The Steam build is not supported",
+        "Indiana Jones and the Great Circle on Xbox Game Pass / Microsoft Store, package 1.16.1.0. The Steam build is not supported",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -7144,10 +7142,9 @@
       "install_strategy": "AsiLoader",
       "verified_sources": [
         "Steam",
-        "Xbox",
-        "Msix"
+        "Xbox"
       ],
-      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Trepang2 on Steam and on Xbox / PC Game Pass. Your head moves the view while your mouse or controller keeps aiming, the torch turns with your head, and the crosshair moves to stay on the point the shot lands.",
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Trepang2 on Steam and Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming, the torch turns with your head, and the crosshair moves to stay on the point the shot lands.",
       "features": [
         "Decoupled look and aim",
         "6DOF tracking: yaw, pitch and roll, plus positional lean and peek",
@@ -7157,7 +7154,7 @@
         "Three aim-down-sights modes: tracking paused for the aim, tracking on with an aim marker, or tracking on with the sights alone"
       ],
       "requirements": [
-        "Trepang2 on Steam, on the build whose menu footer reads BUILD#: 2484 (Jul 30 2024), or Trepang2 from the Xbox app / PC Game Pass, package version 1.0.15.0. On any other build the mod stays dormant and the game runs unmodified",
+        "Trepang2 on Steam, on the build whose menu footer reads BUILD#: 2484 (Jul 30 2024), or Trepang2 from Xbox Game Pass, package version 1.0.15.0. On any other build the mod stays dormant and the game runs unmodified",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
