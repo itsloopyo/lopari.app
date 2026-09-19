@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-19T03:30:16.339Z",
+  "updated_at": "2026-09-19T03:39:15.403Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -2095,12 +2095,6 @@
           "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/dev/FalloutNVHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [
-        "Not comprehensively tested.",
-        "Occasional incorrect frames are still reported while head tracking is on. Camera alignment for foliage and effects has improved, but the intermittent flicker is not fully resolved.",
-        "Upgrading from the xNVSE version moves the settings file: the mod now reads HeadTracking.ini from the game root rather than Data/NVSE/Plugins, so copy your old one across to keep your tweaks.",
-        "The Xbox Game Pass copy installs one complete copy of the game per language. Install targets the English folder, which is the build the mod supports."
-      ],
       "description": "Head tracking for Fallout: New Vegas via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and a gold reticle marks where the shot goes while you look around. The mod loads through a dsound.dll proxy and needs no xNVSE. It engages only on the executable profiles it knows - the 2011-07-01 Steam build and the 2016-01-21 Xbox Game Pass English build - and stays dormant on anything else, naming the mismatch in the log.",
       "features": [
         "Decoupled look and aim: head tracking moves the camera, your aim stays on the mouse or controller",
@@ -3629,7 +3623,6 @@
           "download_url": "https://github.com/itsloopyo/yapyap-headtracking/releases/download/dev/YapyapHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [],
       "release": {
         "pinned": {
           "version": "0.2.0",
@@ -4030,9 +4023,6 @@
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         }
       ],
-      "known_issues": [
-        "Assetto Corsa EVO is in early access and patches often. The mod stays dormant on a build it has no profile for, rather than hooking a camera it does not recognise."
-      ],
       "release": {
         "pinned": {
           "version": "1.1.3",
@@ -4166,7 +4156,6 @@
           "description": "Switch between horizon-locked yaw (world-space) and camera-local yaw"
         }
       ],
-      "known_issues": [],
       "release": {
         "pinned": {
           "version": "0.3.1",
@@ -4335,7 +4324,6 @@
           "description": "Switch between horizon-locked world-space yaw and camera-local yaw"
         }
       ],
-      "known_issues": [],
       "distribution": {
         "type": "dev-release"
       },
@@ -4682,7 +4670,6 @@
           "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/dev/EdithFinchHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [],
       "release": {
         "pinned": {
           "version": "1.1.1",
@@ -6841,9 +6828,6 @@
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         }
       ],
-      "known_issues": [
-        "Head tracking is held off while a multiplayer session is running. That check has been tested by hosting a session, not by joining someone else's."
-      ],
       "game": {
         "steam_app_id": 2104890,
         "steam_folder": "RoadCraft",
@@ -7328,9 +7312,6 @@
           "description": "Switches between horizon-locked yaw and camera-local yaw"
         }
       ],
-      "known_issues": [
-        "The game draws its crosshair at screen center and the mod leaves it there, so with your head turned away from center the crosshair no longer marks where shots land. Turn your head back to center to line them up."
-      ],
       "game": {
         "steam_app_id": 362890,
         "steam_folder": "Black Mesa",
@@ -7423,10 +7404,6 @@
           "description": "Switches between tracking paused and tracking on while aiming down sights"
         }
       ],
-      "known_issues": [
-        "Leaning into a wall can put the view through it. The lean collision check ships turned off; set Enabled=1 under [Collision] in HeadTracking.ini to try it.",
-        "The two aim-down-sights modes have not been confirmed in a live firefight yet. If Insert seems to do nothing, report it with HeadTracking.log attached."
-      ],
       "game": {
         "steam_app_id": 1920490,
         "steam_folder": "The Outer Worlds Spacer's Choice",
@@ -7512,9 +7489,6 @@
           "download_url": "https://github.com/itsloopyo/ghostrunner-headtracking/releases/download/dev/GhostrunnerHeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [
-        "The game reads Ctrl as crouch and Shift as dash, so holding a Ctrl+Shift chord also crouches and dashes. The End, Page Up and Page Down keys do not."
-      ],
       "game": {
         "steam_app_id": 1139900,
         "steam_folder": "Ghostrunner",
