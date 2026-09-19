@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-18T17:30:50.698Z",
+  "updated_at": "2026-09-19T03:30:16.339Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -7183,11 +7183,6 @@
           "description": "Switches what head tracking does while the sights are up: paused, tracking with an aim marker, or tracking without one"
         }
       ],
-      "known_issues": [
-        "Trepang2 runs its own key bindings whether or not Ctrl and Shift are held, so whatever you have bound to a chord's letter fires as well when you press it. The nav-cluster keys do not have that problem.",
-        "In the two ADS modes that keep tracking on, a scope's own reticle only reads true while your eye is lined up with the optic, so it separates from the crosshair the mod draws once head tracking moves the view off that sight line. The drawn crosshair is the one that matches where the rounds land.",
-        "Most weapons in Trepang2 have no aim down sights of their own, so the ADS modes only come into play on a weapon with an optic or with the game's all-weapons ADS cheat on."
-      ],
       "game": {
         "steam_app_id": 1164940,
         "steam_folder": "Trepang2",
@@ -7289,6 +7284,324 @@
         "epic_search_paths": [],
         "env_var": "TT_ISLE_OF_MAN_3_PATH",
         "executable_relpath": "TT3.exe"
+      }
+    },
+    {
+      "id": "black-mesa",
+      "public": true,
+      "released": true,
+      "display_name": "Black Mesa",
+      "repo": "itsloopyo/black-mesa-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Black Mesa on Steam. Your head moves the view while your mouse or controller keeps aiming. Tracking runs in single-player gameplay and pauses while the game is paused, while a level loads, in deathmatch and on the menu background maps.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Works with any OpenTrack compatible tracker",
+        "Head movement scaled to the field of view, so the suit zoom does not magnify it",
+        "Optional field of view override in HeadTracking.ini, independent of the game setting"
+      ],
+      "requirements": [
+        "Black Mesa on Steam, on the build whose bms\binclient.dll is dated 7 June 2025. On any other build the mod stays dormant and the game runs unmodified",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        }
+      ],
+      "known_issues": [
+        "The game draws its crosshair at screen center and the mod leaves it there, so with your head turned away from center the crosshair no longer marks where shots land. Turn your head back to center to line them up."
+      ],
+      "game": {
+        "steam_app_id": 362890,
+        "steam_folder": "Black Mesa",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "BLACK_MESA_PATH",
+        "executable_relpath": "bms.exe"
+      },
+      "release": {
+        "pinned": {
+          "version": "0.1.1",
+          "tag_name": "v0.1.1",
+          "name": "Black Mesa Head Tracking v0.1.1",
+          "html_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/tag/v0.1.1",
+          "published_at": "2026-09-18T18:30:50Z",
+          "zip_filename": "BlackMesaHeadTracking-v0.1.1-installer.zip",
+          "download_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/download/v0.1.1/BlackMesaHeadTracking-v0.1.1-installer.zip",
+          "size_bytes": 3746788
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.1",
+            "version": "0.1.1",
+            "name": "Black Mesa Head Tracking v0.1.1",
+            "html_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/tag/v0.1.1",
+            "published_at": "2026-09-18T18:30:50Z",
+            "zip_filename": "BlackMesaHeadTracking-v0.1.1-installer.zip",
+            "download_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/download/v0.1.1/BlackMesaHeadTracking-v0.1.1-installer.zip",
+            "size_bytes": 3746788
+          },
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Black Mesa Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-18T18:25:29Z",
+            "zip_filename": "BlackMesaHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/download/v0.1.0/BlackMesaHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3746669
+          }
+        ]
+      }
+    },
+    {
+      "id": "outer-worlds-spacers-choice-edition",
+      "public": true,
+      "released": true,
+      "display_name": "The Outer Worlds: Spacer's Choice Edition",
+      "repo": "itsloopyo/outer-worlds-spacers-choice-edition-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for The Outer Worlds: Spacer's Choice Edition on Steam. Your head moves the view while your mouse or controller keeps aiming, and the crosshair moves to where your shot will land.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Works with any OpenTrack compatible tracker",
+        "Crosshair follows the shot while your head moves the view",
+        "Two aim-down-sights modes: tracking paused for the game's own sight picture, or tracking live",
+        "Head movement is the same at any field of view setting"
+      ],
+      "requirements": [
+        "The Outer Worlds: Spacer's Choice Edition on Steam, on the build whose Indiana-Win64-Shipping.exe was linked on 4 August 2026. On any other build the mod stays dormant and the game runs unmodified",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        },
+        {
+          "action": "Cycle ADS mode",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Switches between tracking paused and tracking on while aiming down sights"
+        }
+      ],
+      "known_issues": [
+        "Leaning into a wall can put the view through it. The lean collision check ships turned off; set Enabled=1 under [Collision] in HeadTracking.ini to try it.",
+        "The two aim-down-sights modes have not been confirmed in a live firefight yet. If Insert seems to do nothing, report it with HeadTracking.log attached."
+      ],
+      "game": {
+        "steam_app_id": 1920490,
+        "steam_folder": "The Outer Worlds Spacer's Choice",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "OUTER_WORLDS_SPACERS_CHOICE_EDITION_PATH",
+        "executable_relpath": "Indiana\\Binaries\\Win64\\Indiana-Win64-Shipping.exe"
+      },
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "The Outer Worlds: Spacer's Choice Edition Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/outer-worlds-spacers-choice-edition-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-19T02:04:53Z",
+          "zip_filename": "OuterWorldsSpacersChoiceHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/outer-worlds-spacers-choice-edition-headtracking/releases/download/v0.1.0/OuterWorldsSpacersChoiceHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 3133657
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "The Outer Worlds: Spacer's Choice Edition Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/outer-worlds-spacers-choice-edition-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-19T02:04:53Z",
+            "zip_filename": "OuterWorldsSpacersChoiceHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/outer-worlds-spacers-choice-edition-headtracking/releases/download/v0.1.0/OuterWorldsSpacersChoiceHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3133657
+          }
+        ]
+      }
+    },
+    {
+      "id": "ghostrunner",
+      "public": true,
+      "released": false,
+      "display_name": "Ghostrunner",
+      "repo": "itsloopyo/ghostrunner-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Ghostrunner on Steam. Your head moves the view while your mouse or controller keeps aiming, and the crosshair follows the point your sword, shuriken and grapple are aimed at.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean and peek",
+        "Works with any OpenTrack compatible tracker",
+        "Crosshair, sensory boost gauge and dash charges follow the aim point",
+        "Head movement stays the same size through slides, dashes and the rift, and at any field of view setting",
+        "Leaning into a wall holds the view off the surface instead of passing through it"
+      ],
+      "requirements": [
+        "Ghostrunner on Steam, on the build whose main menu footer reads 0.42507.61. On any other build the mod stays dormant and the game runs unmodified",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260919.84353ca",
+          "built_at": "2026-09-19T02:50:48Z",
+          "zip_filename": "GhostrunnerHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/ghostrunner-headtracking/releases/download/dev/GhostrunnerHeadTracking-dev-installer.zip"
+        }
+      },
+      "known_issues": [
+        "The game reads Ctrl as crouch and Shift as dash, so holding a Ctrl+Shift chord also crouches and dashes. The End, Page Up and Page Down keys do not."
+      ],
+      "game": {
+        "steam_app_id": 1139900,
+        "steam_folder": "Ghostrunner",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "GHOSTRUNNER_PATH",
+        "executable_relpath": "Ghostrunner\\Binaries\\Win64\\Ghostrunner-Win64-Shipping.exe"
+      }
+    },
+    {
+      "id": "dying-light",
+      "public": true,
+      "released": true,
+      "display_name": "Dying Light",
+      "repo": "itsloopyo/dying-light-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Dying Light on Steam. Your head moves the view while your mouse or controller keeps aiming, and the crosshair moves to where your shot will land. Tracking pauses in menus, pause screens and cutscenes.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean",
+        "Works with any OpenTrack compatible tracker",
+        "The crosshair moves to the point the shot lands, with a toggle to hand it back to the game"
+      ],
+      "requirements": [
+        "Dying Light on Steam. On a game build the mod does not recognize, it stays dormant and the game runs unmodified",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        },
+        {
+          "action": "Toggle crosshair compensation",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Switches between the mod crosshair on the point the shot lands and the game's own center-screen crosshair"
+        }
+      ],
+      "game": {
+        "steam_app_id": 239140,
+        "steam_folder": "Dying Light",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "DYING_LIGHT_PATH",
+        "executable_relpath": "DyingLightGame.exe"
+      },
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Head Tracking for Dying Light v0.1.0",
+          "html_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-19T03:28:10Z",
+          "zip_filename": "DyingLightHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/download/v0.1.0/DyingLightHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 3100846
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Head Tracking for Dying Light v0.1.0",
+            "html_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-19T03:28:10Z",
+            "zip_filename": "DyingLightHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/download/v0.1.0/DyingLightHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3100846
+          }
+        ]
       }
     }
   ],
@@ -8430,8 +8743,7 @@
       "setup_steps": [
         "Dying Light (original) supports Tobii eye / head tracking only - no TrackIR.",
         "Install Tobii Game Hub and connect a Tobii Eye Tracker.",
-        "In-game: Options → Tobii Eye Tracking → enable Extended View / Aim at Gaze.",
-        "For TrackIR-style head tracking, see the head-tracking mod for Dying Light 2 instead - this launcher covers that title."
+        "In-game: Options → Tobii Eye Tracking → enable Extended View / Aim at Gaze."
       ]
     },
     {
