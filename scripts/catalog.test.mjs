@@ -92,12 +92,12 @@ test("README lists verified stores without inferring support from detection", (t
   assert.equal(readFileSync(readmePath, "utf8"), output);
 });
 
-test("README lists every mod added in the past 30 days, newest first", (t) => {
+test("README lists every mod added this week, newest first", (t) => {
   const mods = [
     { ...wobbly, id: "today", display_name: "Today", added: daysAgo(0) },
     { ...wobbly, id: "same-day", display_name: "Also today", added: daysAgo(0) },
-    { ...wobbly, id: "edge", display_name: "Thirty days", added: daysAgo(30) },
-    { ...wobbly, id: "old", display_name: "Thirty-one days", added: daysAgo(31) },
+    { ...wobbly, id: "edge", display_name: "Six days", added: daysAgo(6) },
+    { ...wobbly, id: "old", display_name: "Seven days", added: daysAgo(7) },
     { ...wobbly, id: "private", display_name: "Private mod", public: false, added: daysAgo(1) },
   ];
   const { site, readmePath } = workspace(t, mods);
@@ -106,14 +106,14 @@ test("README lists every mod added in the past 30 days, newest first", (t) => {
   assert.deepEqual(recentList(readFileSync(readmePath, "utf8")).split("\n"), [
     `- **Also today** (Beta), added ${daysAgo(0)} · ${repo}`,
     `- **Today** (Beta), added ${daysAgo(0)} · ${repo}`,
-    `- **Thirty days** (Beta), added ${daysAgo(30)} · ${repo}`,
+    `- **Six days** (Beta), added ${daysAgo(6)} · ${repo}`,
   ]);
 });
 
-test("README says so when nothing was added in the past 30 days", (t) => {
-  const { site, readmePath } = workspace(t, [{ ...wobbly, added: daysAgo(31) }]);
+test("README says so when nothing was added this week", (t) => {
+  const { site, readmePath } = workspace(t, [{ ...wobbly, added: daysAgo(7) }]);
   execFileSync(process.execPath, [join(site, "scripts", "generate-readme.mjs")]);
-  assert.equal(recentList(readFileSync(readmePath, "utf8")), "No new mods in the past 30 days.");
+  assert.equal(recentList(readFileSync(readmePath, "utf8")), "No new mods this week.");
 });
 
 test("README and feed refuse a public mod with no added date", (t) => {

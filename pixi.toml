@@ -35,7 +35,7 @@ description = "Republish and commit mods.json (plus the itsloopyo README mod lis
 
 # Regenerate only the two generated blocks in ../itsloopyo/README.md from
 # the live mods.json. The profile repo's nightly workflow runs this so the
-# "New in the past 30 days" window moves with the calendar even on days
+# "New this week" window moves with the calendar even on days
 # nothing is published.
 [tasks.readme]
 cmd = "node scripts/generate-readme.mjs"
