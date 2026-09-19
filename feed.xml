@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://lopari.app/feed.xml</id>
+  <title>New head tracking mods in Lopari</title>
+  <subtitle>One entry for each head tracking mod added to the Lopari catalog.</subtitle>
+  <link rel="self" href="https://lopari.app/feed.xml"/>
+  <link rel="alternate" href="https://lopari.app/"/>
+  <author><name>itsloopyo</name></author>
+  <updated>2026-09-19T00:00:00Z</updated>
+  <entry>
+    <id>tag:lopari.app,2026:mod/dying-light</id>
+    <title>Dying Light</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/dying-light-headtracking"/>
+    <published>2026-09-19T00:00:00Z</published>
+    <updated>2026-09-19T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Dying Light on Steam. Your head moves the view while your mouse or controller keeps aiming, and the crosshair moves to where your shot will land. Tracking pauses in menus, pause screens and cutscenes.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/ghostrunner</id>
+    <title>Ghostrunner</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/ghostrunner-headtracking"/>
+    <published>2026-09-19T00:00:00Z</published>
+    <updated>2026-09-19T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Ghostrunner on Steam. Your head moves the view while your mouse or controller keeps aiming, and the crosshair follows the point your sword, shuriken and grapple are aimed at.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/outer-worlds-spacers-choice-edition</id>
+    <title>The Outer Worlds: Spacer's Choice Edition</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/outer-worlds-spacers-choice-edition-headtracking"/>
+    <published>2026-09-19T00:00:00Z</published>
+    <updated>2026-09-19T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for The Outer Worlds: Spacer's Choice Edition on Steam. Your head moves the view while your mouse or controller keeps aiming, and the crosshair moves to where your shot will land.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/black-mesa</id>
+    <title>Black Mesa</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/black-mesa-headtracking"/>
+    <published>2026-09-18T00:00:00Z</published>
+    <updated>2026-09-18T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Black Mesa on Steam. Your head moves the view while your mouse or controller keeps aiming. Tracking runs in single-player gameplay and pauses while the game is paused, while a level loads, in deathmatch and on the menu background maps.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/tt-isle-of-man-ride-on-the-edge-3</id>
+    <title>TT Isle of Man: Ride on the Edge 3</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/tt-isle-of-man-ride-on-the-edge-3-headtracking"/>
+    <published>2026-09-18T00:00:00Z</published>
+    <updated>2026-09-18T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for TT Isle of Man: Ride on the Edge 3 on Steam. Your head moves the camera while your keyboard or controller keeps steering. Tracking runs while riding in free roam and in races, and pauses in menus, the pause screen and the map.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/far-cry-6</id>
+    <title>Far Cry 6</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/far-cry-6-headtracking"/>
+    <published>2026-09-17T00:00:00Z</published>
+    <updated>2026-09-17T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. Head tracking for Far Cry 6 from Ubisoft Connect. Your head moves the view while your mouse or controller keeps aiming. The mod takes the place of the head tracking library the game already ships, so there is no mod loader to install.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/indiana-jones-and-the-great-circle</id>
+    <title>Indiana Jones and the Great Circle</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/indiana-jones-and-the-great-circle-headtracking"/>
+    <published>2026-09-17T00:00:00Z</published>
+    <updated>2026-09-17T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for the Xbox Game Pass / Microsoft Store build of Indiana Jones and the Great Circle. Your head moves the view while your mouse or controller keeps aiming. The Steam build is a different binary the mod has no profile for, so it stays dormant there and the game runs vanilla.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/trepang2</id>
+    <title>Trepang2</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/trepang2-headtracking"/>
+    <published>2026-09-17T00:00:00Z</published>
+    <updated>2026-09-17T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Trepang2 on Steam, GOG and Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming, the torch turns with your head, and the crosshair moves to stay on the point the shot lands.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/dishonored-2</id>
+    <title>Dishonored 2</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/dishonored-2-headtracking"/>
+    <published>2026-09-16T00:00:00Z</published>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Dishonored 2 on Steam. Your head moves the view while your mouse or controller keeps aiming. The mod is tied to one build of Dishonored2.exe and stays dormant on any other, so the game runs vanilla.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/outlast</id>
+    <title>Outlast</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/outlast-headtracking"/>
+    <published>2026-09-16T00:00:00Z</published>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <summary>6DOF head tracking for Outlast via OpenTrack. Your head moves the view while your mouse or controller keeps aiming. Supports the Steam 64-bit build of 29 April 2014; on an unrecognised build the mod stays inactive.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/roadcraft</id>
+    <title>RoadCraft</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/roadcraft-headtracking"/>
+    <published>2026-09-16T00:00:00Z</published>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for RoadCraft on Steam, in the chase camera and the cockpit camera. Your head moves the view while your wheel or controller keeps steering.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/stormworks</id>
+    <title>Stormworks: Build and Rescue</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/stormworks-headtracking"/>
+    <published>2026-09-16T00:00:00Z</published>
+    <updated>2026-09-16T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Stormworks: Build and Rescue on Steam. Your head moves the view while your mouse keeps aiming. Tracking applies in a loaded save, not on the menus.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/viewfinder</id>
+    <title>Viewfinder</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/viewfinder-headtracking"/>
+    <published>2026-09-14T00:00:00Z</published>
+    <updated>2026-09-14T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Viewfinder on Steam. Your head moves the view while your mouse or controller keeps aiming. Head tracking fades out while a camera or photo is raised, so the shot you frame is the shot you get.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/superliminal</id>
+    <title>Superliminal</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/superliminal-headtracking"/>
+    <published>2026-09-13T00:00:00Z</published>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. Your head moves the view while your mouse or controller keeps aiming the grab ray. Object resizing stays tied to mouse aim.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/the-witness</id>
+    <title>The Witness</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/the-witness-headtracking"/>
+    <published>2026-09-13T00:00:00Z</published>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. Head tracking for the Steam build of The Witness. Your head moves the view while your mouse or controller keeps control of look and interaction.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/wolfenstein-the-new-order</id>
+    <title>Wolfenstein: The New Order</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/wolfenstein-the-new-order-headtracking"/>
+    <published>2026-09-13T00:00:00Z</published>
+    <updated>2026-09-13T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Wolfenstein: The New Order on Steam or Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming. Steam and Xbox Game Pass ship different builds of the game and the mod carries addresses for each; on a build it does not recognise it stays dormant and the game runs vanilla.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/starfield</id>
+    <title>Starfield</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/starfield-headtracking"/>
+    <published>2026-09-12T00:00:00Z</published>
+    <updated>2026-09-12T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Starfield version 1.16.244.0, on Steam or Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming. Ship lock-on acquisition follows your view.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/portal</id>
+    <title>Portal</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/portal-headtracking"/>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-11T00:00:00Z</updated>
+    <summary>6DOF head tracking for Portal on Steam via OpenTrack. Your head moves the camera while your mouse or controller keeps aiming the portal gun.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/ethan-carter-redux</id>
+    <title>The Vanishing of Ethan Carter Redux</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/the-vanishing-of-ethan-carter-redux-headtracking"/>
+    <published>2026-09-11T00:00:00Z</published>
+    <updated>2026-09-11T00:00:00Z</updated>
+    <summary>6DOF head tracking for The Vanishing of Ethan Carter Redux on Steam via OpenTrack. Your head moves the view while your mouse or controller keeps control of look and interaction. Supports the Steam Win64 executable with PE build date 15 September 2015; on an unrecognised build the mod stays dormant.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/arx-fatalis</id>
+    <title>Arx Fatalis</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/arx-fatalis-headtracking"/>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <summary>6DOF head tracking for Arx Fatalis via OpenTrack. Your head moves the view while the mouse keeps aiming, and the cursor sits on the point you select with. The mod identifies the executable by its PE header and engages on the Steam and Xbox Game Pass builds of 1.21; on any other copy it stays dormant, leaves the game untouched, and says which way it differs in the log.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/bioshock-infinite</id>
+    <title>BioShock Infinite</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/bioshock-infinite-headtracking"/>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <summary>6DOF head tracking for BioShock Infinite via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and tracking pauses by itself in the title, main and pause menus. The mod knows one build, the 2022-05-11 Steam one, and checks the executable before it hooks anything; on any other copy it stays dormant and names the mismatch in the log.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/blue-prince</id>
+    <title>Blue Prince</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/blue-prince-headtracking"/>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. Head tracking moves the view while your mouse or controller keeps control of look and interaction. Built and tested against the Xbox Game Pass build.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/quake-ii-rtx</id>
+    <title>Quake II RTX</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/quake-ii-rtx-headtracking"/>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <summary>6DOF head tracking for Quake II RTX via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and the game's own crosshair is drawn on the point the shot will reach. The mod knows one build, the Steam 1.8.0 of 26 March 2025, and checks q2rtx.exe before it hooks anything; on any other copy it installs nothing and the game runs vanilla.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/soma</id>
+    <title>SOMA</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/soma-headtracking"/>
+    <published>2026-09-10T00:00:00Z</published>
+    <updated>2026-09-10T00:00:00Z</updated>
+    <summary>6DOF head tracking for SOMA via OpenTrack. Your head moves the view while the mouse or controller keeps control of look and interaction, and the crosshair follows the game's own interaction ray so it marks what you are about to pick up. The mod identifies the executable by its PE header and covers both the Steam depot ships, Soma.exe and Soma_NoSteam.exe, each linked on 27 September 2021; on any other copy it stays dormant and the game runs vanilla.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/snowrunner</id>
+    <title>SnowRunner</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/snowrunner-headtracking"/>
+    <published>2026-09-07T00:00:00Z</published>
+    <updated>2026-09-07T00:00:00Z</updated>
+    <summary>6DOF head tracking for SnowRunner via OpenTrack. Your head moves the camera while the wheel, pedals or controller keep driving, in the cab and in the exterior view. Supports the Steam and Xbox Game Pass builds of 22 July 2026; on any other build the mod stays dormant and the game runs vanilla.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/amnesia-the-dark-descent</id>
+    <title>Amnesia: The Dark Descent</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/amnesia-the-dark-descent-headtracking"/>
+    <published>2026-09-05T00:00:00Z</published>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <summary>6DOF head tracking for Amnesia: The Dark Descent via OpenTrack. Your head moves the view while the mouse still turns you and reaches for what you are grabbing. On a build whose signature the mod doesn't find it stays dormant and the game runs unmodified.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/deus-ex-human-revolution</id>
+    <title>Deus Ex: Human Revolution - Director's Cut</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/deus-ex-human-revolution-headtracking"/>
+    <published>2026-09-05T00:00:00Z</published>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <summary>6DOF head tracking for Deus Ex: Human Revolution - Director's Cut via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming, and what tracking does while the sights are up is yours to pick.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/dishonored</id>
+    <title>Dishonored</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/dishonored-headtracking"/>
+    <published>2026-09-05T00:00:00Z</published>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <summary>6DOF head tracking for Dishonored via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and the crosshair is redrawn on where the game is actually aiming. The supported build is the Steam retail build of 17 February 2022; on any other build the mod stays dormant and the game runs vanilla.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/metro-exodus-enhanced-edition</id>
+    <title>Metro Exodus Enhanced Edition</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/metro-exodus-enhanced-edition-headtracking"/>
+    <published>2026-09-05T00:00:00Z</published>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <summary>6DOF head tracking for Metro Exodus Enhanced Edition via OpenTrack. Your head moves the view, your shots still go where the mouse or controller points, and the mod marks where they land. On a build it has no profile for it stays dormant and the game runs stock.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/portal-with-rtx</id>
+    <title>Portal with RTX</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/portal-with-rtx-headtracking"/>
+    <published>2026-09-05T00:00:00Z</published>
+    <updated>2026-09-05T00:00:00Z</updated>
+    <summary>6DOF head tracking for Portal with RTX via OpenTrack. Your head moves the view while the portal gun keeps aiming with the mouse or controller. The mod matches the game's client.dll against the builds it knows; on one it doesn't recognise it stays dormant and the game runs vanilla.</summary>
+  </entry>
+</feed>

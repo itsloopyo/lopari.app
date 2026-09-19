@@ -21,16 +21,25 @@ description = "Serve lopari.app at http://localhost:4173 and open it in the defa
 # only source of build availability - it never queries the GitHub API - so
 # run this whenever a mod ships a release or dev build. The mod table in
 # ../itsloopyo/README.md is regenerated from the same catalog in the same
-# run, so the public list can't drift from what the launcher offers. All
-# three copies are committed for you (see scripts/commit-catalog.mjs);
-# pushing them stays manual. Authenticates via $GITHUB_TOKEN or `gh auth token`.
+# run, so the public list can't drift from what the launcher offers, and
+# so is feed.xml, the Atom feed of newly added mods. All of it is
+# committed for you (see scripts/commit-catalog.mjs); pushing stays
+# manual. Authenticates via $GITHUB_TOKEN or `gh auth token`.
 #
 # Fast-forwards all three repos first (see scripts/sync-repos.mjs), because
 # update-pins.yml re-pins the live catalog hourly and regenerating from a
 # stale checkout collides with it.
 [tasks.update-metadata]
-cmd = "node scripts/sync-repos.mjs && node scripts/update-metadata.mjs && node scripts/generate-readme.mjs && node scripts/commit-catalog.mjs"
-description = "Republish and commit mods.json (and the itsloopyo README mod table) with pinned release / dev-build / launcher info for every public mod in the lopari catalog"
+cmd = "node scripts/sync-repos.mjs && node scripts/update-metadata.mjs && node scripts/generate-readme.mjs && node scripts/generate-feed.mjs && node scripts/commit-catalog.mjs"
+description = "Republish and commit mods.json (plus the itsloopyo README mod lists and feed.xml) with pinned release / dev-build / launcher info for every public mod in the lopari catalog"
+
+# Regenerate only the two generated blocks in ../itsloopyo/README.md from
+# the live mods.json. The profile repo's nightly workflow runs this so the
+# "New in the past 30 days" window moves with the calendar even on days
+# nothing is published.
+[tasks.readme]
+cmd = "node scripts/generate-readme.mjs"
+description = "Rewrite the mod lists in ../itsloopyo/README.md from mods.json"
 
 # Pins-only refresh of the LIVE mods.json (this repo, in and out) - no
 # ../lopari checkout needed, so CI can run it. update-pins.yml calls this
