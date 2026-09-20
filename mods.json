@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-20T03:02:42.946Z",
+  "updated_at": "2026-09-20T03:16:46.149Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -1688,9 +1688,6 @@
           "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/dev/HeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [
-        "Some unique and quest weapons do not decouple look and aim: 23 of them, the MA70, the AirDrop variants, Nova Doom Doom and Saratoga Maelstrom among them, keep their own attack records and stay on hitscan, so your aim follows your head while one is equipped. Every standard weapon is covered."
-      ],
       "release": {
         "pinned": {
           "version": "1.3.3",
@@ -2796,7 +2793,7 @@
         }
       },
       "known_issues": [
-        "Looking away from a ship can cause you to lose lock-on."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -3408,10 +3405,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "Frustum culling issues.",
-        "UI element positioning issues.",
-        "No README.gif."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -5123,8 +5117,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "The aim marker shows the direction the weapon points, not where the arrow lands, so it does not account for drop at range."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -5834,8 +5827,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "The crosshair is hidden once your head turns far enough that the point the shot lands on leaves the screen; at a 72 degree field of view that starts around 40 degrees of head yaw."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -6390,8 +6382,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "There is no recenter key. Centring is done in your tracker - OpenTrack's Center bind, SteamVR's reset, or the CENTER button in a phone app."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -6457,9 +6448,7 @@
         }
       },
       "known_issues": [
-        "Not comprehensively tested.",
-        "There is no recenter key. Centring is done in your tracker - OpenTrack's Center bind, SteamVR's reset, or the CENTER button in a phone app.",
-        "HeadTracking.ini is read at startup only, so a change to the field of view, sensitivities or limits needs the game restarted."
+        "Not comprehensively tested."
       ]
     },
     {
@@ -6734,7 +6723,10 @@
         "epic_search_paths": [],
         "env_var": "THE_WITNESS_PATH",
         "executable_relpath": "witness64_d3d11.exe"
-      }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
     },
     {
       "id": "wolfenstein-the-new-order",
@@ -6795,7 +6787,7 @@
         }
       },
       "known_issues": [
-        "The ADS mode \"tracking on, with an aim marker\" draws no marker in this build, so it currently behaves the same as tracking on without one."
+        "Not comprehensively tested."
       ],
       "game": {
         "steam_app_id": 201810,
@@ -6866,7 +6858,10 @@
         "epic_search_paths": [],
         "env_var": "VIEWFINDER_PATH",
         "executable_relpath": "Viewfinder.exe"
-      }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
     },
     {
       "id": "roadcraft",
@@ -6989,8 +6984,7 @@
         }
       },
       "known_issues": [
-        "The crosshair follows head rotation, but leaning moves the view without moving the crosshair. Center your lean when precision matters.",
-        "The mod is installed alongside a copy of your own Windows opengl32.dll. After a Windows update replaces that file, install again so the copy matches the rest of your system."
+        "Not comprehensively tested."
       ],
       "game": {
         "steam_app_id": 573090,
@@ -7052,7 +7046,7 @@
         }
       },
       "known_issues": [
-        "The crosshair marks the first surface the aim line hits, so at very close range it marks a pane of glass in the way rather than what is behind it."
+        "Not comprehensively tested."
       ],
       "game": {
         "steam_app_id": 403640,
@@ -7117,9 +7111,7 @@
         }
       },
       "known_issues": [
-        "Tracking stays live on the main menu, so the menu background moves with your head. Press End or Ctrl+Shift+Y there if it bothers you.",
-        "Leaning is not stopped by walls, so leaning hard into a doorframe can put the view through it.",
-        "The reticle follows your aim as you turn your head, but not as you lean. Under a lean it sits slightly off where the shot lands, by more at close range than far."
+        "Not comprehensively tested."
       ],
       "game": {
         "steam_app_id": 2677660,
@@ -7141,17 +7133,19 @@
       "repo": "itsloopyo/far-cry-6-headtracking",
       "install_strategy": "Shim",
       "verified_sources": [
+        "Steam",
         "Ubisoft"
       ],
-      "description": "Works with any OpenTrack compatible tracker. Head tracking for Far Cry 6 from Ubisoft Connect. Your head moves the view while your mouse or controller keeps aiming. The mod takes the place of the head tracking library the game already ships, so there is no mod loader to install.",
+      "description": "Works with any OpenTrack compatible tracker. Head tracking for Far Cry 6 on Steam and Ubisoft Connect. Your head moves the view while your mouse or controller keeps aiming. The mod takes the place of the head tracking library the game already ships, so there is no mod loader to install.",
       "features": [
         "Decoupled look and aim",
         "Six-axis head tracking: yaw, pitch, roll and positional lean",
         "Works with any OpenTrack compatible tracker",
-        "A soft orientation dot marks the aim point while the game hides its own reticle"
+        "An aim dot marks where you are aiming whenever the game's own crosshair is not on screen",
+        "The flashlight turns with your head"
       ],
       "requirements": [
-        "Far Cry 6 on PC from Ubisoft Connect. The game folder must contain bin\\FarCry6.exe and bin\\tobii_gameintegration_x64.dll",
+        "Far Cry 6 on PC from Steam or Ubisoft Connect. The game folder must contain bin\\FarCry6.exe and bin\\tobii_gameintegration_x64.dll",
         "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
         "64-bit Windows 10 or 11"
       ],
@@ -7168,10 +7162,10 @@
           "description": "Cycles through rotation + position, rotation only, and position only, then back"
         },
         {
-          "action": "Cycle ADS mode",
-          "nav_key": "Insert",
-          "chord": "Ctrl+Shift+U",
-          "description": "Switches what head tracking does while the sights are up: paused, or the view settles onto the sights and tracking carries on from there"
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
         }
       ],
       "distribution": {
@@ -7183,11 +7177,6 @@
           "download_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/download/dev/FarCry6HeadTracking-dev-installer.zip"
         }
       },
-      "known_issues": [
-        "A real Tobii eye tracker does not work while the mod is installed, because the mod takes the place of the library that talks to it.",
-        "The mod replaces a file the game ships, so a game update or a file verification in Ubisoft Connect puts the original back. Install again after either.",
-        "The camera adapter checks the game build before starting. On a build it does not recognise, tracking stays off and the log records an unsupported camera module."
-      ],
       "game": {
         "steam_app_id": 2369390,
         "steam_folder": "Far Cry 6",
@@ -7365,7 +7354,7 @@
         }
       },
       "known_issues": [
-        "Head tracking keeps running while a tutorial popup is on screen."
+        "Not comprehensively tested."
       ],
       "game": {
         "steam_app_id": 1924170,
@@ -7605,7 +7594,10 @@
         "epic_search_paths": [],
         "env_var": "GHOSTRUNNER_PATH",
         "executable_relpath": "Ghostrunner\\Binaries\\Win64\\Ghostrunner-Win64-Shipping.exe"
-      }
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
     },
     {
       "id": "dying-light",
@@ -7684,6 +7676,213 @@
             "zip_filename": "DyingLightHeadTracking-v0.1.0-installer.zip",
             "download_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/download/v0.1.0/DyingLightHeadTracking-v0.1.0-installer.zip",
             "size_bytes": 3100846
+          }
+        ]
+      }
+    },
+    {
+      "id": "thief",
+      "public": true,
+      "released": false,
+      "added": "2026-09-19",
+      "display_name": "Thief",
+      "repo": "itsloopyo/thief-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Thief on Steam. Your head moves the view while your mouse or controller keeps aiming, and the crosshair moves to where your arrow will land.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: lean in for a closer look or peer around a corner",
+        "Works with any OpenTrack compatible tracker",
+        "The crosshair follows the aim point into the tracked view, including while you lean"
+      ],
+      "requirements": [
+        "Thief on Steam. On a game build the mod does not recognize, it stays dormant and the game runs unmodified",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260919.adfccf8",
+          "built_at": "2026-09-19T16:04:45Z",
+          "zip_filename": "ThiefHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/thief-headtracking/releases/download/dev/ThiefHeadTracking-dev-installer.zip"
+        }
+      },
+      "game": {
+        "steam_app_id": 239160,
+        "steam_folder": "Thief",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "THIEF_PATH",
+        "executable_relpath": "Binaries2\\Win64\\Shipping-ThiefGame.exe"
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "pathologic-2",
+      "public": true,
+      "released": false,
+      "added": "2026-09-19",
+      "display_name": "Pathologic 2",
+      "repo": "itsloopyo/pathalogic-2-headtracking",
+      "install_strategy": "BepInEx5",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Pathologic 2 on Steam. Your head moves the view while your mouse or controller keeps aiming, and an aim dot marks where your shot will land. Tracking runs in ordinary gameplay and stands down in menus, dialogue and cutscenes.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean, peek and duck",
+        "Works with any OpenTrack compatible tracker",
+        "An aim dot marks where the shot stops, since the game draws no crosshair of its own"
+      ],
+      "requirements": [
+        "Pathologic 2 on Steam",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        },
+        {
+          "action": "Toggle aim dot",
+          "nav_key": "Insert",
+          "chord": "Ctrl+Shift+U",
+          "description": "Turns the aim dot on and off"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20260919.59351e4",
+          "built_at": "2026-09-19T19:39:09Z",
+          "zip_filename": "Pathologic2HeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/pathalogic-2-headtracking/releases/download/dev/Pathologic2HeadTracking-dev-installer.zip"
+        }
+      },
+      "game": {
+        "steam_app_id": 505230,
+        "steam_folder": "Pathologic",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "PATHOLOGIC_2_PATH",
+        "executable_relpath": "Pathologic.exe"
+      },
+      "known_issues": [
+        "Not comprehensively tested."
+      ]
+    },
+    {
+      "id": "subliminal",
+      "public": true,
+      "released": true,
+      "added": "2026-09-20",
+      "display_name": "Subliminal",
+      "repo": "itsloopyo/subliminal-headtracking",
+      "install_strategy": "AsiLoader",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Subliminal on Steam. Your head moves the view while your mouse or controller keeps pointing at what you interact with, and the crosshair ring follows that point.",
+      "features": [
+        "Decoupled look and interaction",
+        "6DOF tracking: turn, tilt and lean, with the lean clamped so the view stays inside the player",
+        "Works with any OpenTrack compatible tracker",
+        "The crosshair ring moves to where you are pointing"
+      ],
+      "requirements": [
+        "Subliminal on Steam. On a game build the mod does not recognize, it stays dormant and the game runs unmodified",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down",
+          "chord": "Ctrl+Shift+H",
+          "description": "Switches between horizon-locked yaw and camera-local yaw"
+        }
+      ],
+      "game": {
+        "steam_app_id": 2300840,
+        "steam_folder": "Subliminal",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "SUBLIMINAL_PATH",
+        "executable_relpath": "Subliminal\\Binaries\\Win64\\Subliminal-Win64-Shipping.exe"
+      },
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Subliminal Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-20T00:22:33Z",
+          "zip_filename": "SubliminalHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/download/v0.1.0/SubliminalHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 3101525
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Subliminal Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-20T00:22:33Z",
+            "zip_filename": "SubliminalHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/download/v0.1.0/SubliminalHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 3101525
           }
         ]
       }
