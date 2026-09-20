@@ -6,7 +6,15 @@
   <link rel="self" href="https://lopari.app/feed.xml"/>
   <link rel="alternate" href="https://lopari.app/"/>
   <author><name>itsloopyo</name></author>
-  <updated>2026-09-19T00:00:00Z</updated>
+  <updated>2026-09-20T00:00:00Z</updated>
+  <entry>
+    <id>tag:lopari.app,2026:mod/subliminal</id>
+    <title>Subliminal</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/subliminal-headtracking"/>
+    <published>2026-09-20T00:00:00Z</published>
+    <updated>2026-09-20T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Subliminal on Steam. Your head moves the view while your mouse or controller keeps pointing at what you interact with, and the crosshair ring follows that point.</summary>
+  </entry>
   <entry>
     <id>tag:lopari.app,2026:mod/dying-light</id>
     <title>Dying Light</title>
@@ -24,12 +32,28 @@
     <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Ghostrunner on Steam. Your head moves the view while your mouse or controller keeps aiming, and the crosshair follows the point your sword, shuriken and grapple are aimed at.</summary>
   </entry>
   <entry>
+    <id>tag:lopari.app,2026:mod/pathologic-2</id>
+    <title>Pathologic 2</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/pathalogic-2-headtracking"/>
+    <published>2026-09-19T00:00:00Z</published>
+    <updated>2026-09-19T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Pathologic 2 on Steam. Your head moves the view while your mouse or controller keeps aiming, and an aim dot marks where your shot will land. Tracking runs in ordinary gameplay and stands down in menus, dialogue and cutscenes.</summary>
+  </entry>
+  <entry>
     <id>tag:lopari.app,2026:mod/outer-worlds-spacers-choice-edition</id>
     <title>The Outer Worlds: Spacer's Choice Edition</title>
     <link rel="alternate" href="https://github.com/itsloopyo/outer-worlds-spacers-choice-edition-headtracking"/>
     <published>2026-09-19T00:00:00Z</published>
     <updated>2026-09-19T00:00:00Z</updated>
     <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for The Outer Worlds: Spacer's Choice Edition on Steam. Your head moves the view while your mouse or controller keeps aiming, and the crosshair moves to where your shot will land.</summary>
+  </entry>
+  <entry>
+    <id>tag:lopari.app,2026:mod/thief</id>
+    <title>Thief</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/thief-headtracking"/>
+    <published>2026-09-19T00:00:00Z</published>
+    <updated>2026-09-19T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Thief on Steam. Your head moves the view while your mouse or controller keeps aiming, and the crosshair moves to where your arrow will land.</summary>
   </entry>
   <entry>
     <id>tag:lopari.app,2026:mod/black-mesa</id>
@@ -53,7 +77,7 @@
     <link rel="alternate" href="https://github.com/itsloopyo/far-cry-6-headtracking"/>
     <published>2026-09-17T00:00:00Z</published>
     <updated>2026-09-17T00:00:00Z</updated>
-    <summary>Works with any OpenTrack compatible tracker. Head tracking for Far Cry 6 from Ubisoft Connect. Your head moves the view while your mouse or controller keeps aiming. The mod takes the place of the head tracking library the game already ships, so there is no mod loader to install.</summary>
+    <summary>Works with any OpenTrack compatible tracker. Head tracking for Far Cry 6 on Steam and Ubisoft Connect. Your head moves the view while your mouse or controller keeps aiming. The mod takes the place of the head tracking library the game already ships, so there is no mod loader to install.</summary>
   </entry>
   <entry>
     <id>tag:lopari.app,2026:mod/indiana-jones-and-the-great-circle</id>
@@ -222,29 +246,5 @@
     <published>2026-09-05T00:00:00Z</published>
     <updated>2026-09-05T00:00:00Z</updated>
     <summary>6DOF head tracking for Deus Ex: Human Revolution - Director's Cut via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming, and what tracking does while the sights are up is yours to pick.</summary>
-  </entry>
-  <entry>
-    <id>tag:lopari.app,2026:mod/dishonored</id>
-    <title>Dishonored</title>
-    <link rel="alternate" href="https://github.com/itsloopyo/dishonored-headtracking"/>
-    <published>2026-09-05T00:00:00Z</published>
-    <updated>2026-09-05T00:00:00Z</updated>
-    <summary>6DOF head tracking for Dishonored via OpenTrack. Your head moves the view while the mouse or controller keeps aiming, and the crosshair is redrawn on where the game is actually aiming. The supported build is the Steam retail build of 17 February 2022; on any other build the mod stays dormant and the game runs vanilla.</summary>
-  </entry>
-  <entry>
-    <id>tag:lopari.app,2026:mod/metro-exodus-enhanced-edition</id>
-    <title>Metro Exodus Enhanced Edition</title>
-    <link rel="alternate" href="https://github.com/itsloopyo/metro-exodus-enhanced-edition-headtracking"/>
-    <published>2026-09-05T00:00:00Z</published>
-    <updated>2026-09-05T00:00:00Z</updated>
-    <summary>6DOF head tracking for Metro Exodus Enhanced Edition via OpenTrack. Your head moves the view, your shots still go where the mouse or controller points, and the mod marks where they land. On a build it has no profile for it stays dormant and the game runs stock.</summary>
-  </entry>
-  <entry>
-    <id>tag:lopari.app,2026:mod/portal-with-rtx</id>
-    <title>Portal with RTX</title>
-    <link rel="alternate" href="https://github.com/itsloopyo/portal-with-rtx-headtracking"/>
-    <published>2026-09-05T00:00:00Z</published>
-    <updated>2026-09-05T00:00:00Z</updated>
-    <summary>6DOF head tracking for Portal with RTX via OpenTrack. Your head moves the view while the portal gun keeps aiming with the mouse or controller. The mod matches the game's client.dll against the builds it knows; on one it doesn't recognise it stays dormant and the game runs vanilla.</summary>
   </entry>
 </feed>
