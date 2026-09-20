@@ -58,6 +58,25 @@ function workspace(t, mods) {
   };
 }
 
+// The date is generate-readme's requirement, but that script runs after
+// update-metadata has pinned every mod and rewritten both catalogs, so a new
+// entry missing it used to fail the run at the far end with the files already
+// written. Checked up front instead, before any GitHub call.
+test("update-metadata refuses a public mod with no added date before it fetches anything", (t) => {
+  const { root, site } = workspace(t, [{ ...wobbly, id: "undated", added: undefined }]);
+  const sourcePath = join(root, "lopari", "catalog", "mods.json");
+  const before = readFileSync(sourcePath, "utf8");
+  const mock = join(root, "github.mjs");
+  writeFileSync(mock, "globalThis.fetch = async (url) => { throw new Error('Unexpected fetch: ' + url); };");
+  const result = spawnSync(process.execPath, ["--import", pathToFileURL(mock).href, join(site, "scripts", "update-metadata.mjs")], {
+    encoding: "utf8", env: { ...process.env, GITHUB_TOKEN: "test-only" },
+  });
+  assert.equal(result.status, 1, result.stdout + result.stderr);
+  assert.match(result.stderr, /public with no valid "added" date .*: undated/);
+  assert.doesNotMatch(result.stderr, /Unexpected fetch/);
+  assert.equal(readFileSync(sourcePath, "utf8"), before);
+});
+
 test("README lists verified stores without inferring support from detection", (t) => {
   const mods = [
     wobbly,

@@ -125,6 +125,20 @@ console.log(
   `catalog: ${catalog.mods.length} entries total, ${publicMods.length} public (the rest are dev-only).`,
 );
 
+// generate-readme.mjs needs `added` on every public mod, and it runs after
+// this script has already pinned every mod and written both catalogs. A new
+// entry missing the date therefore failed the run at the far end, after ~100
+// GitHub calls, with both mods.json files rewritten and nothing committed.
+// Same requirement, checked before any of that happens.
+const undated = publicMods.filter((m) => !/^\d{4}-\d{2}-\d{2}$/.test(m.added ?? ""));
+if (undated.length > 0) {
+  throw new Error(
+    `public with no valid "added" date (YYYY-MM-DD, the committer date of the mod repo's first commit): ${undated
+      .map((m) => m.id)
+      .join(", ")}. Set it in the lopari catalog, then re-run.`,
+  );
+}
+
 function installerAsset(release) {
   return (release.assets || []).find((a) =>
     a.name.toLowerCase().endsWith("-installer.zip"),
