@@ -42,7 +42,7 @@
   <entry>
     <id>tag:lopari.app,2026:mod/pathologic-2</id>
     <title>Pathologic 2</title>
-    <link rel="alternate" href="https://github.com/itsloopyo/pathalogic-2-headtracking"/>
+    <link rel="alternate" href="https://github.com/itsloopyo/pathologic-2-headtracking"/>
     <published>2026-09-19T00:00:00Z</published>
     <updated>2026-09-19T00:00:00Z</updated>
     <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for Pathologic 2 on Steam. Your head moves the view while your mouse or controller keeps aiming, and an aim dot marks where your shot will land. Tracking runs in ordinary gameplay and stands down in menus, dialogue and cutscenes.</summary>
