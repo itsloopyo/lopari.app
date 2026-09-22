@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-20T03:16:46.149Z",
+  "updated_at": "2026-09-22T22:36:03.686Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -7883,6 +7883,79 @@
             "zip_filename": "SubliminalHeadTracking-v0.1.0-installer.zip",
             "download_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/download/v0.1.0/SubliminalHeadTracking-v0.1.0-installer.zip",
             "size_bytes": 3101525
+          }
+        ]
+      }
+    },
+    {
+      "id": "no-mans-sky",
+      "public": true,
+      "released": true,
+      "added": "2026-09-22",
+      "display_name": "No Man's Sky",
+      "repo": "itsloopyo/no-mans-sky-headtracking",
+      "install_strategy": "Shim",
+      "verified_sources": [
+        "Steam",
+        "Xbox"
+      ],
+      "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for No Man's Sky on Steam and Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming. On the Steam build tracking applies while you are looking through your own eyes; the Xbox Game Pass build routes every camera through one path, so it follows your head in third person too.",
+      "features": [
+        "Decoupled look and aim",
+        "6DOF tracking: yaw, pitch and roll, plus positional lean and peek",
+        "Works with any OpenTrack compatible tracker",
+        "Yaw follows the walking horizon on foot and the camera axis in a ship or on a spacewalk"
+      ],
+      "requirements": [
+        "No Man's Sky on Steam or from Xbox Game Pass. Each store ships a different build, and on a build the mod does not recognize it stays dormant and the game runs unmodified",
+        "OpenTrack or any OpenTrack UDP-compatible tracker on port 4242",
+        "64-bit Windows 10 or 11"
+      ],
+      "hotkeys": [
+        {
+          "action": "Toggle tracking",
+          "nav_key": "End",
+          "chord": "Ctrl+Shift+Y"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up",
+          "chord": "Ctrl+Shift+G",
+          "description": "Cycles through rotation + position, rotation only, and position only, then back"
+        }
+      ],
+      "game": {
+        "steam_app_id": 275850,
+        "steam_folder": "No Man's Sky",
+        "gog_ids": [
+          "1446213994"
+        ],
+        "epic_search_paths": [],
+        "env_var": "NO_MANS_SKY_PATH",
+        "executable_relpath": "Binaries\\NMS.exe",
+        "xbox_identity_name": "HelloGames.NoMansSky"
+      },
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "No Man's Sky Head Tracking v0.1.0",
+          "html_url": "https://github.com/itsloopyo/no-mans-sky-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-09-22T21:51:36Z",
+          "zip_filename": "NoMansSkyHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/no-mans-sky-headtracking/releases/download/v0.1.0/NoMansSkyHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 356315
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "No Man's Sky Head Tracking v0.1.0",
+            "html_url": "https://github.com/itsloopyo/no-mans-sky-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-09-22T21:51:36Z",
+            "zip_filename": "NoMansSkyHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/no-mans-sky-headtracking/releases/download/v0.1.0/NoMansSkyHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 356315
           }
         ]
       }
