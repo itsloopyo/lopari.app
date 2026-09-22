@@ -6,7 +6,15 @@
   <link rel="self" href="https://lopari.app/feed.xml"/>
   <link rel="alternate" href="https://lopari.app/"/>
   <author><name>itsloopyo</name></author>
-  <updated>2026-09-20T00:00:00Z</updated>
+  <updated>2026-09-22T00:00:00Z</updated>
+  <entry>
+    <id>tag:lopari.app,2026:mod/no-mans-sky</id>
+    <title>No Man's Sky</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/no-mans-sky-headtracking"/>
+    <published>2026-09-22T00:00:00Z</published>
+    <updated>2026-09-22T00:00:00Z</updated>
+    <summary>Works with any OpenTrack compatible tracker. 6DOF head tracking for No Man's Sky on Steam and Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming. On the Steam build tracking applies while you are looking through your own eyes; the Xbox Game Pass build routes every camera through one path, so it follows your head in third person too.</summary>
+  </entry>
   <entry>
     <id>tag:lopari.app,2026:mod/subliminal</id>
     <title>Subliminal</title>
@@ -238,13 +246,5 @@
     <published>2026-09-05T00:00:00Z</published>
     <updated>2026-09-05T00:00:00Z</updated>
     <summary>6DOF head tracking for Amnesia: The Dark Descent via OpenTrack. Your head moves the view while the mouse still turns you and reaches for what you are grabbing. On a build whose signature the mod doesn't find it stays dormant and the game runs unmodified.</summary>
-  </entry>
-  <entry>
-    <id>tag:lopari.app,2026:mod/deus-ex-human-revolution</id>
-    <title>Deus Ex: Human Revolution - Director's Cut</title>
-    <link rel="alternate" href="https://github.com/itsloopyo/deus-ex-human-revolution-headtracking"/>
-    <published>2026-09-05T00:00:00Z</published>
-    <updated>2026-09-05T00:00:00Z</updated>
-    <summary>6DOF head tracking for Deus Ex: Human Revolution - Director's Cut via OpenTrack. Your head moves the camera, the mouse or controller keeps aiming, and what tracking does while the sights are up is yours to pick.</summary>
   </entry>
 </feed>
