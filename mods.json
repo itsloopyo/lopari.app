@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-22T22:36:03.686Z",
+  "updated_at": "2026-09-22T23:55:01.196Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -7749,7 +7749,7 @@
       "released": false,
       "added": "2026-09-19",
       "display_name": "Pathologic 2",
-      "repo": "itsloopyo/pathalogic-2-headtracking",
+      "repo": "itsloopyo/pathologic-2-headtracking",
       "install_strategy": "BepInEx5",
       "verified_sources": [
         "Steam"
@@ -7797,7 +7797,7 @@
           "version": "0.0.0-nightly.20260919.59351e4",
           "built_at": "2026-09-19T19:39:09Z",
           "zip_filename": "Pathologic2HeadTracking-dev-installer.zip",
-          "download_url": "https://github.com/itsloopyo/pathalogic-2-headtracking/releases/download/dev/Pathologic2HeadTracking-dev-installer.zip"
+          "download_url": "https://github.com/itsloopyo/pathologic-2-headtracking/releases/download/dev/Pathologic2HeadTracking-dev-installer.zip"
         }
       },
       "game": {
