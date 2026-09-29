@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-29T23:53:57.460Z",
+  "updated_at": "2026-09-29T23:55:33.259Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -7488,16 +7488,26 @@
       },
       "release": {
         "pinned": {
-          "version": "0.1.1",
-          "tag_name": "v0.1.1",
-          "name": "Black Mesa Head Tracking v0.1.1",
-          "html_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/tag/v0.1.1",
-          "published_at": "2026-09-18T18:30:50Z",
-          "zip_filename": "BlackMesaHeadTracking-v0.1.1-installer.zip",
-          "download_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/download/v0.1.1/BlackMesaHeadTracking-v0.1.1-installer.zip",
-          "size_bytes": 3746788
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Black Mesa Head Tracking v0.2.0",
+          "html_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-09-29T23:55:03Z",
+          "zip_filename": "BlackMesaHeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/download/v0.2.0/BlackMesaHeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 4001274
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Black Mesa Head Tracking v0.2.0",
+            "html_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-09-29T23:55:03Z",
+            "zip_filename": "BlackMesaHeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/black-mesa-headtracking/releases/download/v0.2.0/BlackMesaHeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 4001274
+          },
           {
             "tag_name": "v0.1.1",
             "version": "0.1.1",
