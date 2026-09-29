@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-29T23:36:48.690Z",
+  "updated_at": "2026-09-29T23:52:52.411Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -7717,16 +7717,26 @@
       },
       "release": {
         "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Head Tracking for Dying Light v0.1.0",
-          "html_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-09-19T03:28:10Z",
-          "zip_filename": "DyingLightHeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/download/v0.1.0/DyingLightHeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 3100846
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Head Tracking for Dying Light v0.2.0",
+          "html_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-09-29T23:51:56Z",
+          "zip_filename": "DyingLightHeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/download/v0.2.0/DyingLightHeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 3383618
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Head Tracking for Dying Light v0.2.0",
+            "html_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-09-29T23:51:56Z",
+            "zip_filename": "DyingLightHeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/dying-light-headtracking/releases/download/v0.2.0/DyingLightHeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 3383618
+          },
           {
             "tag_name": "v0.1.0",
             "version": "0.1.0",
