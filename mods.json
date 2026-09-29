@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-29T23:52:52.411Z",
+  "updated_at": "2026-09-29T23:53:57.460Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -1857,16 +1857,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.2.0",
-          "tag_name": "v0.2.0",
-          "name": "Head Tracking for Easy Delivery Co v0.2.0",
-          "html_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/tag/v0.2.0",
-          "published_at": "2026-08-20T10:06:57Z",
-          "zip_filename": "EasyDeliveryCoHeadTracking-v0.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/download/v0.2.0/EasyDeliveryCoHeadTracking-v0.2.0-installer.zip",
-          "size_bytes": 794939
+          "version": "0.3.0",
+          "tag_name": "v0.3.0",
+          "name": "Head Tracking for Easy Delivery Co v0.3.0",
+          "html_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/tag/v0.3.0",
+          "published_at": "2026-09-29T23:53:02Z",
+          "zip_filename": "EasyDeliveryCoHeadTracking-v0.3.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/download/v0.3.0/EasyDeliveryCoHeadTracking-v0.3.0-installer.zip",
+          "size_bytes": 965037
         },
         "versions": [
+          {
+            "tag_name": "v0.3.0",
+            "version": "0.3.0",
+            "name": "Head Tracking for Easy Delivery Co v0.3.0",
+            "html_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/tag/v0.3.0",
+            "published_at": "2026-09-29T23:53:02Z",
+            "zip_filename": "EasyDeliveryCoHeadTracking-v0.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/easy-delivery-co-headtracking/releases/download/v0.3.0/EasyDeliveryCoHeadTracking-v0.3.0-installer.zip",
+            "size_bytes": 965037
+          },
           {
             "tag_name": "v0.2.0",
             "version": "0.2.0",
