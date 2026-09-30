@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T21:10:37.354Z",
+  "updated_at": "2026-09-30T21:11:49.988Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -8174,16 +8174,26 @@
       },
       "release": {
         "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Subliminal Head Tracking v0.1.0",
-          "html_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-09-20T00:22:33Z",
-          "zip_filename": "SubliminalHeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/download/v0.1.0/SubliminalHeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 3101525
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Subliminal Head Tracking v0.2.0",
+          "html_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-09-30T21:11:08Z",
+          "zip_filename": "SubliminalHeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/download/v0.2.0/SubliminalHeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 3401072
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Subliminal Head Tracking v0.2.0",
+            "html_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-09-30T21:11:08Z",
+            "zip_filename": "SubliminalHeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subliminal-headtracking/releases/download/v0.2.0/SubliminalHeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 3401072
+          },
           {
             "tag_name": "v0.1.0",
             "version": "0.1.0",
