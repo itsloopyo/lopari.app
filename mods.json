@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T00:21:25.214Z",
+  "updated_at": "2026-09-30T00:42:27.993Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -1986,16 +1986,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.2.0",
-          "tag_name": "v0.2.0",
-          "name": "Head Tracking for Eternal Afternoon v0.2.0",
-          "html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/tag/v0.2.0",
-          "published_at": "2026-08-20T10:25:59Z",
-          "zip_filename": "EternalAfternoonHeadTracking-v0.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/download/v0.2.0/EternalAfternoonHeadTracking-v0.2.0-installer.zip",
-          "size_bytes": 1166483
+          "version": "0.3.0",
+          "tag_name": "v0.3.0",
+          "name": "Head Tracking for Eternal Afternoon v0.3.0",
+          "html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/tag/v0.3.0",
+          "published_at": "2026-09-30T00:41:35Z",
+          "zip_filename": "EternalAfternoonHeadTracking-v0.3.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/download/v0.3.0/EternalAfternoonHeadTracking-v0.3.0-installer.zip",
+          "size_bytes": 971955
         },
         "versions": [
+          {
+            "tag_name": "v0.3.0",
+            "version": "0.3.0",
+            "name": "Head Tracking for Eternal Afternoon v0.3.0",
+            "html_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/tag/v0.3.0",
+            "published_at": "2026-09-30T00:41:35Z",
+            "zip_filename": "EternalAfternoonHeadTracking-v0.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/eternal-afternoon-headtracking/releases/download/v0.3.0/EternalAfternoonHeadTracking-v0.3.0-installer.zip",
+            "size_bytes": 971955
+          },
           {
             "tag_name": "v0.2.0",
             "version": "0.2.0",
