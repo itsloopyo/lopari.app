@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T19:54:36.780Z",
+  "updated_at": "2026-09-30T19:58:08.117Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -4084,16 +4084,26 @@
       },
       "release": {
         "pinned": {
-          "version": "0.3.0",
-          "tag_name": "v0.3.0",
-          "name": "RV There Yet Head Tracking v0.3.0",
-          "html_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/tag/v0.3.0",
-          "published_at": "2026-08-20T13:12:31Z",
-          "zip_filename": "RVThereYetHeadTracking-v0.3.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/download/v0.3.0/RVThereYetHeadTracking-v0.3.0-installer.zip",
-          "size_bytes": 242918
+          "version": "0.5.0",
+          "tag_name": "v0.5.0",
+          "name": "RV There Yet Head Tracking v0.5.0",
+          "html_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/tag/v0.5.0",
+          "published_at": "2026-09-30T19:57:14Z",
+          "zip_filename": "RVThereYetHeadTracking-v0.5.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/download/v0.5.0/RVThereYetHeadTracking-v0.5.0-installer.zip",
+          "size_bytes": 606344
         },
         "versions": [
+          {
+            "tag_name": "v0.5.0",
+            "version": "0.5.0",
+            "name": "RV There Yet Head Tracking v0.5.0",
+            "html_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/tag/v0.5.0",
+            "published_at": "2026-09-30T19:57:14Z",
+            "zip_filename": "RVThereYetHeadTracking-v0.5.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/rv-there-yet-headtracking/releases/download/v0.5.0/RVThereYetHeadTracking-v0.5.0-installer.zip",
+            "size_bytes": 606344
+          },
           {
             "tag_name": "v0.3.0",
             "version": "0.3.0",
