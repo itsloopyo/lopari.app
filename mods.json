@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T01:15:24.486Z",
+  "updated_at": "2026-09-30T19:49:34.763Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -1024,16 +1024,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.4.0",
-          "tag_name": "v0.4.0",
-          "name": "Head Tracking for Resident Evil Requiem v0.4.0",
-          "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.4.0",
-          "published_at": "2026-08-25T19:48:36Z",
-          "zip_filename": "RE9HeadTracking-v0.4.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.4.0/RE9HeadTracking-v0.4.0-installer.zip",
-          "size_bytes": 13451647
+          "version": "0.5.0",
+          "tag_name": "v0.5.0",
+          "name": "Head Tracking for Resident Evil Requiem v0.5.0",
+          "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.5.0",
+          "published_at": "2026-09-30T19:48:39Z",
+          "zip_filename": "RE9HeadTracking-v0.5.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.5.0/RE9HeadTracking-v0.5.0-installer.zip",
+          "size_bytes": 13823761
         },
         "versions": [
+          {
+            "tag_name": "v0.5.0",
+            "version": "0.5.0",
+            "name": "Head Tracking for Resident Evil Requiem v0.5.0",
+            "html_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/tag/v0.5.0",
+            "published_at": "2026-09-30T19:48:39Z",
+            "zip_filename": "RE9HeadTracking-v0.5.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/resident-evil-requiem-headtracking/releases/download/v0.5.0/RE9HeadTracking-v0.5.0-installer.zip",
+            "size_bytes": 13823761
+          },
           {
             "tag_name": "v0.4.0",
             "version": "0.4.0",
