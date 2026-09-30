@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T21:05:21.367Z",
+  "updated_at": "2026-09-30T21:10:37.354Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -128,16 +128,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.4.0",
-          "tag_name": "v1.4.0",
-          "name": "Head Tracking for Subnautica v1.4.0",
-          "html_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/tag/v1.4.0",
-          "published_at": "2026-08-20T13:21:43Z",
-          "zip_filename": "SubnauticaHeadTracking-v1.4.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/download/v1.4.0/SubnauticaHeadTracking-v1.4.0-installer.zip",
-          "size_bytes": 796981
+          "version": "1.5.0",
+          "tag_name": "v1.5.0",
+          "name": "Head Tracking for Subnautica v1.5.0",
+          "html_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/tag/v1.5.0",
+          "published_at": "2026-09-30T21:09:38Z",
+          "zip_filename": "SubnauticaHeadTracking-v1.5.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/download/v1.5.0/SubnauticaHeadTracking-v1.5.0-installer.zip",
+          "size_bytes": 971261
         },
         "versions": [
+          {
+            "tag_name": "v1.5.0",
+            "version": "1.5.0",
+            "name": "Head Tracking for Subnautica v1.5.0",
+            "html_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/tag/v1.5.0",
+            "published_at": "2026-09-30T21:09:38Z",
+            "zip_filename": "SubnauticaHeadTracking-v1.5.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/subnautica-headtracking/releases/download/v1.5.0/SubnauticaHeadTracking-v1.5.0-installer.zip",
+            "size_bytes": 971261
+          },
           {
             "tag_name": "v1.4.0",
             "version": "1.4.0",
