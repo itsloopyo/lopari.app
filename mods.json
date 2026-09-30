@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T21:17:38.652Z",
+  "updated_at": "2026-09-30T21:20:29.070Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -5958,16 +5958,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Wreckfest 2 Head Tracking v0.1.0",
-          "html_url": "https://github.com/itsloopyo/wreckfest-2-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-09-05T00:27:36Z",
-          "zip_filename": "Wreckfest2HeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/wreckfest-2-headtracking/releases/download/v0.1.0/Wreckfest2HeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 3083685
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Wreckfest 2 Head Tracking v0.2.0",
+          "html_url": "https://github.com/itsloopyo/wreckfest-2-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-09-30T21:19:16Z",
+          "zip_filename": "Wreckfest2HeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/wreckfest-2-headtracking/releases/download/v0.2.0/Wreckfest2HeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 3381064
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Wreckfest 2 Head Tracking v0.2.0",
+            "html_url": "https://github.com/itsloopyo/wreckfest-2-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-09-30T21:19:16Z",
+            "zip_filename": "Wreckfest2HeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/wreckfest-2-headtracking/releases/download/v0.2.0/Wreckfest2HeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 3381064
+          },
           {
             "tag_name": "v0.1.0",
             "version": "0.1.0",
