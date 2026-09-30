@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T19:58:08.117Z",
+  "updated_at": "2026-09-30T19:59:31.817Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -2783,16 +2783,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.3.0",
-          "tag_name": "v0.3.0",
-          "name": "v0.3.0",
-          "html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/tag/v0.3.0",
-          "published_at": "2026-08-20T13:13:53Z",
-          "zip_filename": "SkyrimSEHeadTracking-v0.3.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.3.0/SkyrimSEHeadTracking-v0.3.0-installer.zip",
-          "size_bytes": 3058740
+          "version": "0.4.0",
+          "tag_name": "v0.4.0",
+          "name": "SkyrimSEHeadTracking v0.4.0",
+          "html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/tag/v0.4.0",
+          "published_at": "2026-09-30T19:58:27Z",
+          "zip_filename": "SkyrimSEHeadTracking-v0.4.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.4.0/SkyrimSEHeadTracking-v0.4.0-installer.zip",
+          "size_bytes": 3411821
         },
         "versions": [
+          {
+            "tag_name": "v0.4.0",
+            "version": "0.4.0",
+            "name": "SkyrimSEHeadTracking v0.4.0",
+            "html_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/tag/v0.4.0",
+            "published_at": "2026-09-30T19:58:27Z",
+            "zip_filename": "SkyrimSEHeadTracking-v0.4.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/skyrim-special-edition-headtracking/releases/download/v0.4.0/SkyrimSEHeadTracking-v0.4.0-installer.zip",
+            "size_bytes": 3411821
+          },
           {
             "tag_name": "v0.3.0",
             "version": "0.3.0",
