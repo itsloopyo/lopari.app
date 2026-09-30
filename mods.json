@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T20:57:17.988Z",
+  "updated_at": "2026-09-30T21:01:45.865Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -5612,16 +5612,26 @@
       },
       "release": {
         "pinned": {
-          "version": "0.2.0",
-          "tag_name": "v0.2.0",
-          "name": "Still Wakes the Deep Head Tracking v0.2.0",
-          "html_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/tag/v0.2.0",
-          "published_at": "2026-08-30T11:12:42Z",
-          "zip_filename": "StillWakesTheDeepHeadTracking-v0.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/download/v0.2.0/StillWakesTheDeepHeadTracking-v0.2.0-installer.zip",
-          "size_bytes": 3045546
+          "version": "0.3.0",
+          "tag_name": "v0.3.0",
+          "name": "Still Wakes the Deep Head Tracking v0.3.0",
+          "html_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/tag/v0.3.0",
+          "published_at": "2026-09-30T21:00:46Z",
+          "zip_filename": "StillWakesTheDeepHeadTracking-v0.3.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/download/v0.3.0/StillWakesTheDeepHeadTracking-v0.3.0-installer.zip",
+          "size_bytes": 3410910
         },
         "versions": [
+          {
+            "tag_name": "v0.3.0",
+            "version": "0.3.0",
+            "name": "Still Wakes the Deep Head Tracking v0.3.0",
+            "html_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/tag/v0.3.0",
+            "published_at": "2026-09-30T21:00:46Z",
+            "zip_filename": "StillWakesTheDeepHeadTracking-v0.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/still-wakes-the-deep-headtracking/releases/download/v0.3.0/StillWakesTheDeepHeadTracking-v0.3.0-installer.zip",
+            "size_bytes": 3410910
+          },
           {
             "tag_name": "v0.2.0",
             "version": "0.2.0",
