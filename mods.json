@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T22:54:56.416Z",
+  "updated_at": "2026-09-30T23:18:35.842Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -7537,16 +7537,26 @@
       },
       "release": {
         "pinned": {
-          "version": "0.2.0",
-          "tag_name": "v0.2.0",
-          "name": "Far Cry 6 Head Tracking v0.2.0",
-          "html_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/tag/v0.2.0",
-          "published_at": "2026-09-30T00:47:38Z",
-          "zip_filename": "FarCry6HeadTracking-v0.2.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/download/v0.2.0/FarCry6HeadTracking-v0.2.0-installer.zip",
-          "size_bytes": 590245
+          "version": "0.3.0",
+          "tag_name": "v0.3.0",
+          "name": "Far Cry 6 Head Tracking v0.3.0",
+          "html_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/tag/v0.3.0",
+          "published_at": "2026-09-30T23:17:39Z",
+          "zip_filename": "FarCry6HeadTracking-v0.3.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/download/v0.3.0/FarCry6HeadTracking-v0.3.0-installer.zip",
+          "size_bytes": 609755
         },
         "versions": [
+          {
+            "tag_name": "v0.3.0",
+            "version": "0.3.0",
+            "name": "Far Cry 6 Head Tracking v0.3.0",
+            "html_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/tag/v0.3.0",
+            "published_at": "2026-09-30T23:17:39Z",
+            "zip_filename": "FarCry6HeadTracking-v0.3.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/download/v0.3.0/FarCry6HeadTracking-v0.3.0-installer.zip",
+            "size_bytes": 609755
+          },
           {
             "tag_name": "v0.2.0",
             "version": "0.2.0",
