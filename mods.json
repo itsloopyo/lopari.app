@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T21:11:49.988Z",
+  "updated_at": "2026-09-30T21:16:35.302Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -4951,16 +4951,26 @@
       },
       "release": {
         "pinned": {
-          "version": "1.1.1",
-          "tag_name": "v1.1.1",
-          "name": "What Remains of Edith Finch Head Tracking v1.1.1",
-          "html_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/tag/v1.1.1",
-          "published_at": "2026-09-03T21:19:27Z",
-          "zip_filename": "EdithFinchHeadTracking-v1.1.1-installer.zip",
-          "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/v1.1.1/EdithFinchHeadTracking-v1.1.1-installer.zip",
-          "size_bytes": 3064158
+          "version": "1.2.0",
+          "tag_name": "v1.2.0",
+          "name": "What Remains of Edith Finch Head Tracking v1.2.0",
+          "html_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/tag/v1.2.0",
+          "published_at": "2026-09-30T21:15:39Z",
+          "zip_filename": "EdithFinchHeadTracking-v1.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/v1.2.0/EdithFinchHeadTracking-v1.2.0-installer.zip",
+          "size_bytes": 3394316
         },
         "versions": [
+          {
+            "tag_name": "v1.2.0",
+            "version": "1.2.0",
+            "name": "What Remains of Edith Finch Head Tracking v1.2.0",
+            "html_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/tag/v1.2.0",
+            "published_at": "2026-09-30T21:15:39Z",
+            "zip_filename": "EdithFinchHeadTracking-v1.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/what-remains-of-edith-finch-headtracking/releases/download/v1.2.0/EdithFinchHeadTracking-v1.2.0-installer.zip",
+            "size_bytes": 3394316
+          },
           {
             "tag_name": "v1.1.1",
             "version": "1.1.1",
