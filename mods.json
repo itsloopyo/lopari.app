@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T21:29:03.040Z",
+  "updated_at": "2026-09-30T21:39:03.078Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -1388,16 +1388,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.6.0",
-          "tag_name": "v0.6.0",
-          "name": "BioShock Remastered Head Tracking v0.6.0",
-          "html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/tag/v0.6.0",
-          "published_at": "2026-09-29T23:35:02Z",
-          "zip_filename": "BioshockRemasteredHeadTracking-v0.6.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/download/v0.6.0/BioshockRemasteredHeadTracking-v0.6.0-installer.zip",
-          "size_bytes": 1033009
+          "version": "0.7.0",
+          "tag_name": "v0.7.0",
+          "name": "BioShock Remastered Head Tracking v0.7.0",
+          "html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/tag/v0.7.0",
+          "published_at": "2026-09-30T21:38:02Z",
+          "zip_filename": "BioshockRemasteredHeadTracking-v0.7.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/download/v0.7.0/BioshockRemasteredHeadTracking-v0.7.0-installer.zip",
+          "size_bytes": 1039272
         },
         "versions": [
+          {
+            "tag_name": "v0.7.0",
+            "version": "0.7.0",
+            "name": "BioShock Remastered Head Tracking v0.7.0",
+            "html_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/tag/v0.7.0",
+            "published_at": "2026-09-30T21:38:02Z",
+            "zip_filename": "BioshockRemasteredHeadTracking-v0.7.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/bioshock-remastered-headtracking/releases/download/v0.7.0/BioshockRemasteredHeadTracking-v0.7.0-installer.zip",
+            "size_bytes": 1039272
+          },
           {
             "tag_name": "v0.6.0",
             "version": "0.6.0",
