@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T19:53:19.956Z",
+  "updated_at": "2026-09-30T19:54:36.780Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -279,16 +279,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.3.0",
-          "tag_name": "v1.3.0",
-          "name": "Head Tracking for Return of the Obra Dinn v1.3.0",
-          "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.3.0",
-          "published_at": "2026-08-20T13:12:25Z",
-          "zip_filename": "ObraDinnHeadTracking-v1.3.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.3.0/ObraDinnHeadTracking-v1.3.0-installer.zip",
-          "size_bytes": 790668
+          "version": "1.4.0",
+          "tag_name": "v1.4.0",
+          "name": "Head Tracking for Return of the Obra Dinn v1.4.0",
+          "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.4.0",
+          "published_at": "2026-09-30T19:53:47Z",
+          "zip_filename": "ObraDinnHeadTracking-v1.4.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.4.0/ObraDinnHeadTracking-v1.4.0-installer.zip",
+          "size_bytes": 963359
         },
         "versions": [
+          {
+            "tag_name": "v1.4.0",
+            "version": "1.4.0",
+            "name": "Head Tracking for Return of the Obra Dinn v1.4.0",
+            "html_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/tag/v1.4.0",
+            "published_at": "2026-09-30T19:53:47Z",
+            "zip_filename": "ObraDinnHeadTracking-v1.4.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/obra-dinn-headtracking/releases/download/v1.4.0/ObraDinnHeadTracking-v1.4.0-installer.zip",
+            "size_bytes": 963359
+          },
           {
             "tag_name": "v1.3.0",
             "version": "1.3.0",
