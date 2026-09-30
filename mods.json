@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-09-30T00:42:27.993Z",
+  "updated_at": "2026-09-30T00:48:39.727Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -1473,16 +1473,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "1.5.0",
-          "tag_name": "v1.5.0",
-          "name": "Head Tracking for Gone Home v1.5.0",
-          "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.5.0",
-          "published_at": "2026-08-20T10:30:24Z",
-          "zip_filename": "GoneHomeHeadTracking-v1.5.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.5.0/GoneHomeHeadTracking-v1.5.0-installer.zip",
-          "size_bytes": 470633
+          "version": "1.6.0",
+          "tag_name": "v1.6.0",
+          "name": "Head Tracking for Gone Home v1.6.0",
+          "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.6.0",
+          "published_at": "2026-09-30T00:47:41Z",
+          "zip_filename": "GoneHomeHeadTracking-v1.6.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.6.0/GoneHomeHeadTracking-v1.6.0-installer.zip",
+          "size_bytes": 634725
         },
         "versions": [
+          {
+            "tag_name": "v1.6.0",
+            "version": "1.6.0",
+            "name": "Head Tracking for Gone Home v1.6.0",
+            "html_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/tag/v1.6.0",
+            "published_at": "2026-09-30T00:47:41Z",
+            "zip_filename": "GoneHomeHeadTracking-v1.6.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/gone-home-headtracking/releases/download/v1.6.0/GoneHomeHeadTracking-v1.6.0-installer.zip",
+            "size_bytes": 634725
+          },
           {
             "tag_name": "v1.5.0",
             "version": "1.5.0",
@@ -7287,16 +7297,26 @@
       },
       "release": {
         "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Far Cry 6 Head Tracking v0.1.0",
-          "html_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-09-20T03:02:00Z",
-          "zip_filename": "FarCry6HeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/download/v0.1.0/FarCry6HeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 330156
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Far Cry 6 Head Tracking v0.2.0",
+          "html_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-09-30T00:47:38Z",
+          "zip_filename": "FarCry6HeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/download/v0.2.0/FarCry6HeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 590245
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Far Cry 6 Head Tracking v0.2.0",
+            "html_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-09-30T00:47:38Z",
+            "zip_filename": "FarCry6HeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/far-cry-6-headtracking/releases/download/v0.2.0/FarCry6HeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 590245
+          },
           {
             "tag_name": "v0.1.0",
             "version": "0.1.0",
