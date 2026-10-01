@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-01T07:12:59.130Z",
+  "updated_at": "2026-10-01T07:13:50.561Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -2250,16 +2250,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.4.0",
-          "tag_name": "v0.4.0",
-          "name": "Head Tracking for Fallout: New Vegas v0.4.0",
-          "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.4.0",
-          "published_at": "2026-09-30T00:55:32Z",
-          "zip_filename": "FalloutNVHeadTracking-v0.4.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.4.0/FalloutNVHeadTracking-v0.4.0-installer.zip",
-          "size_bytes": 580620
+          "version": "0.5.0",
+          "tag_name": "v0.5.0",
+          "name": "Head Tracking for Fallout: New Vegas v0.5.0",
+          "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.5.0",
+          "published_at": "2026-10-01T07:12:45Z",
+          "zip_filename": "FalloutNVHeadTracking-v0.5.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.5.0/FalloutNVHeadTracking-v0.5.0-installer.zip",
+          "size_bytes": 648854
         },
         "versions": [
+          {
+            "tag_name": "v0.5.0",
+            "version": "0.5.0",
+            "name": "Head Tracking for Fallout: New Vegas v0.5.0",
+            "html_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/tag/v0.5.0",
+            "published_at": "2026-10-01T07:12:45Z",
+            "zip_filename": "FalloutNVHeadTracking-v0.5.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/fallout-new-vegas-headtracking/releases/download/v0.5.0/FalloutNVHeadTracking-v0.5.0-installer.zip",
+            "size_bytes": 648854
+          },
           {
             "tag_name": "v0.4.0",
             "version": "0.4.0",
@@ -6292,16 +6302,26 @@
       ],
       "release": {
         "pinned": {
-          "version": "0.1.0",
-          "tag_name": "v0.1.0",
-          "name": "Portal with RTX Head Tracking v0.1.0",
-          "html_url": "https://github.com/itsloopyo/portal-with-rtx-headtracking/releases/tag/v0.1.0",
-          "published_at": "2026-09-05T18:15:18Z",
-          "zip_filename": "PortalWithRTXHeadTracking-v0.1.0-installer.zip",
-          "download_url": "https://github.com/itsloopyo/portal-with-rtx-headtracking/releases/download/v0.1.0/PortalWithRTXHeadTracking-v0.1.0-installer.zip",
-          "size_bytes": 3729058
+          "version": "0.2.0",
+          "tag_name": "v0.2.0",
+          "name": "Portal with RTX Head Tracking v0.2.0",
+          "html_url": "https://github.com/itsloopyo/portal-with-rtx-headtracking/releases/tag/v0.2.0",
+          "published_at": "2026-10-01T07:13:19Z",
+          "zip_filename": "PortalWithRTXHeadTracking-v0.2.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/portal-with-rtx-headtracking/releases/download/v0.2.0/PortalWithRTXHeadTracking-v0.2.0-installer.zip",
+          "size_bytes": 3996676
         },
         "versions": [
+          {
+            "tag_name": "v0.2.0",
+            "version": "0.2.0",
+            "name": "Portal with RTX Head Tracking v0.2.0",
+            "html_url": "https://github.com/itsloopyo/portal-with-rtx-headtracking/releases/tag/v0.2.0",
+            "published_at": "2026-10-01T07:13:19Z",
+            "zip_filename": "PortalWithRTXHeadTracking-v0.2.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/portal-with-rtx-headtracking/releases/download/v0.2.0/PortalWithRTXHeadTracking-v0.2.0-installer.zip",
+            "size_bytes": 3996676
+          },
           {
             "tag_name": "v0.1.0",
             "version": "0.1.0",
