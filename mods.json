@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-01T19:33:36.358Z",
+  "updated_at": "2026-10-01T23:54:09.569Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -4945,8 +4945,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20260909.fbefff4",
-          "built_at": "2026-09-09T23:13:21Z",
+          "version": "0.0.0-nightly.20261001.c7e3fa3",
+          "built_at": "2026-10-01T20:40:00Z",
           "zip_filename": "Fallout4HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/fallout-4-headtracking/releases/download/dev/Fallout4HeadTracking-dev-installer.zip"
         }
