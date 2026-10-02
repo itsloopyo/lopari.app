@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-01T23:54:09.569Z",
+  "updated_at": "2026-10-02T11:25:09.946Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -1790,16 +1790,26 @@
       },
       "release": {
         "pinned": {
-          "version": "1.4.2",
-          "tag_name": "v1.4.2",
-          "name": "Cyberpunk 2077 HeadTracking v1.4.2",
-          "html_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/tag/v1.4.2",
-          "published_at": "2026-10-01T09:47:47Z",
-          "zip_filename": "HeadTracking-v1.4.2-installer.zip",
-          "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/v1.4.2/HeadTracking-v1.4.2-installer.zip",
-          "size_bytes": 37535151
+          "version": "1.4.3",
+          "tag_name": "v1.4.3",
+          "name": "Cyberpunk 2077 HeadTracking v1.4.3",
+          "html_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/tag/v1.4.3",
+          "published_at": "2026-10-02T11:24:03Z",
+          "zip_filename": "HeadTracking-v1.4.3-installer.zip",
+          "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/v1.4.3/HeadTracking-v1.4.3-installer.zip",
+          "size_bytes": 37535914
         },
         "versions": [
+          {
+            "tag_name": "v1.4.3",
+            "version": "1.4.3",
+            "name": "Cyberpunk 2077 HeadTracking v1.4.3",
+            "html_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/tag/v1.4.3",
+            "published_at": "2026-10-02T11:24:03Z",
+            "zip_filename": "HeadTracking-v1.4.3-installer.zip",
+            "download_url": "https://github.com/itsloopyo/cyberpunk-2077-headtracking/releases/download/v1.4.3/HeadTracking-v1.4.3-installer.zip",
+            "size_bytes": 37535914
+          },
           {
             "tag_name": "v1.4.2",
             "version": "1.4.2",
@@ -4945,8 +4955,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20261001.c7e3fa3",
-          "built_at": "2026-10-01T20:40:00Z",
+          "version": "0.0.0-nightly.20261002.744af65",
+          "built_at": "2026-10-02T11:13:55Z",
           "zip_filename": "Fallout4HeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/fallout-4-headtracking/releases/download/dev/Fallout4HeadTracking-dev-installer.zip"
         }
