@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-03T17:58:26.451Z",
+  "updated_at": "2026-10-04T00:40:24.337Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -2996,8 +2996,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.1.2-nightly.20261003.f8a6b98",
-          "built_at": "2026-10-03T16:05:45Z",
+          "version": "0.1.3-nightly.20261004.088cddf",
+          "built_at": "2026-10-04T00:37:55Z",
           "zip_filename": "StarfieldHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/starfield-headtracking/releases/download/dev/StarfieldHeadTracking-dev-installer.zip"
         }
