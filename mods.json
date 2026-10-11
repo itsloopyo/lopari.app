@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-04T21:28:50.406Z",
+  "updated_at": "2026-10-11T01:06:57.711Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -1731,8 +1731,12 @@
       ],
       "install_strategy": "AsiLoader",
       "verified_sources": [
+        "Steam",
         "Gog"
       ],
+      "source_added": {
+        "Steam": "2026-10-02"
+      },
       "game": {
         "steam_app_id": 1091500,
         "steam_folder": "Cyberpunk 2077",
@@ -2221,6 +2225,9 @@
         "Steam",
         "Xbox"
       ],
+      "source_added": {
+        "Xbox": "2026-09-09"
+      },
       "game": {
         "steam_app_id": 22380,
         "steam_folder": "Fallout New Vegas",
@@ -2948,6 +2955,9 @@
         "Steam",
         "Xbox"
       ],
+      "source_added": {
+        "Steam": "2026-09-13"
+      },
       "game": {
         "steam_app_id": 1716740,
         "steam_folder": "Starfield",
@@ -3404,6 +3414,9 @@
         "Steam",
         "Xbox"
       ],
+      "source_added": {
+        "Xbox": "2026-09-11"
+      },
       "game": {
         "steam_app_id": 1211020,
         "steam_folder": "Wobbly Life",
@@ -3653,7 +3666,7 @@
       "public": true,
       "released": false,
       "added": "2026-05-29",
-      "display_name": "ABZÛ",
+      "display_name": "ABZU",
       "repo": "itsloopyo/abzu-headtracking",
       "install_strategy": "AsiLoader",
       "verified_sources": [
@@ -4929,6 +4942,9 @@
         "Gog",
         "Xbox"
       ],
+      "source_added": {
+        "Xbox": "2026-09-09"
+      },
       "game": {
         "steam_app_id": 377160,
         "steam_folder": "Fallout 4",
@@ -5400,6 +5416,9 @@
         "Steam",
         "Xbox"
       ],
+      "source_added": {
+        "Xbox": "2026-09-10"
+      },
       "game": {
         "steam_app_id": 1771300,
         "steam_folder": "KingdomComeDeliverance2",
@@ -5472,6 +5491,9 @@
         "Steam",
         "Xbox"
       ],
+      "source_added": {
+        "Xbox": "2026-09-09"
+      },
       "game": {
         "steam_app_id": 379430,
         "steam_folder": "KingdomComeDeliverance",
@@ -5537,6 +5559,9 @@
         "Steam",
         "Xbox"
       ],
+      "source_added": {
+        "Xbox": "2026-09-11"
+      },
       "game": {
         "steam_app_id": 1458140,
         "steam_folder": "Pacific Drive",
@@ -5600,6 +5625,9 @@
         "Steam",
         "Xbox"
       ],
+      "source_added": {
+        "Xbox": "2026-09-11"
+      },
       "game": {
         "steam_app_id": 480490,
         "steam_folder": "Prey",
@@ -5872,6 +5900,9 @@
         "Steam",
         "Xbox"
       ],
+      "source_added": {
+        "Xbox": "2026-09-09"
+      },
       "game": {
         "steam_app_id": 1583230,
         "steam_folder": "HighOnLife",
@@ -5944,6 +5975,9 @@
         "Steam",
         "Xbox"
       ],
+      "source_added": {
+        "Xbox": "2026-09-10"
+      },
       "game": {
         "steam_app_id": 228380,
         "steam_folder": "Wreckfest",
@@ -6514,6 +6548,9 @@
         "Steam",
         "Xbox"
       ],
+      "source_added": {
+        "Xbox": "2026-09-11"
+      },
       "game": {
         "steam_app_id": 1465360,
         "steam_folder": "SnowRunner",
@@ -7556,6 +7593,9 @@
         "Steam",
         "Ubisoft"
       ],
+      "source_added": {
+        "Steam": "2026-09-19"
+      },
       "description": "Works with any OpenTrack compatible tracker. Head tracking for Far Cry 6 on Steam and Ubisoft Connect. Your head moves the view while your mouse or controller keeps aiming. The mod takes the place of the head tracking library the game already ships, so there is no mod loader to install.",
       "features": [
         "Decoupled look and aim",
@@ -7663,6 +7703,9 @@
         "Gog",
         "Xbox"
       ],
+      "source_added": {
+        "Gog": "2026-09-18"
+      },
       "description": "Works with any OpenTrack compatible tracker. 6DOF head tracking for Trepang2 on Steam, GOG and Xbox Game Pass. Your head moves the view while your mouse or controller keeps aiming, the torch turns with your head, and the crosshair moves to stay on the point the shot lands.",
       "features": [
         "Decoupled look and aim",
@@ -8633,7 +8676,7 @@
       "notes": "Widely used in milsim. Bohemia supports the FreeTrack protocol directly (not via NPClient) since Arma 2; Arma 3 carries it as legacy compatibility.",
       "setup_steps": [
         "Start your tracker before Arma 3, or launch from Lopari and it feeds the game directly.",
-        "In-game: Options -> Controls -> Controllers tab -> select 'FreeTrack' in the device list and enable it. Arma reads the FreeTrack protocol directly, so this is a separate device entry from 'TrackIR'.",
+        "In-game: Options -> Controls -> Controller, then enable 'FreeTrack'. It is listed separately from 'TrackIR'. If it is missing, start your tracker and press Refresh on that page.",
         "Configure Controls -> search 'TrackIR' to optionally bind a head-tracking pause key.",
         "Options -> Game -> turn off 'Head bob' so it does not compound with tracker motion."
       ]
@@ -12181,14 +12224,14 @@
     }
   ],
   "launcher": {
-    "version": "0.9.0",
-    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v0.9.0",
-    "published_at": "2026-09-11T21:01:43Z",
+    "version": "1.0.0",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v1.0.0",
+    "published_at": "2026-10-11T01:04:02Z",
     "setup_exe": {
-      "name": "Lopari_0.9.0_x64-setup.exe",
-      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v0.9.0/Lopari_0.9.0_x64-setup.exe",
-      "size_bytes": 3607584,
-      "sha256": "f85d35b59770e29dcb3bbab6b9c775a1037b8c76df5f4f8a317cba353f2cf9d4"
+      "name": "Lopari_1.0.0_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v1.0.0/Lopari_1.0.0_x64-setup.exe",
+      "size_bytes": 3740064,
+      "sha256": "ec29319f405abd0ba38e28c65372f70e2c707f1fa3ae53c483a579dca281ff3d"
     },
     "msi": null
   }
