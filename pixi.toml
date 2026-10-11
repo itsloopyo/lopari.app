@@ -33,10 +33,10 @@ description = "Serve lopari.app at http://localhost:4173 and open it in the defa
 cmd = "node scripts/sync-repos.mjs && node scripts/update-metadata.mjs && node scripts/generate-readme.mjs && node scripts/generate-feed.mjs && node scripts/commit-catalog.mjs"
 description = "Republish and commit mods.json (plus the itsloopyo README mod lists and feed.xml) with pinned release / dev-build / launcher info for every public mod in the lopari catalog"
 
-# Regenerate only the two generated blocks in ../itsloopyo/README.md from
+# Regenerate only the generated blocks in ../itsloopyo/README.md from
 # the live mods.json. The profile repo's nightly workflow runs this so the
-# "New this week" window moves with the calendar even on days
-# nothing is published.
+# "Recently updated" list and the table pick up the pins update-pins.yml
+# refreshes hourly.
 [tasks.readme]
 cmd = "node scripts/generate-readme.mjs"
 description = "Rewrite the mod lists in ../itsloopyo/README.md from mods.json"
