@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-11T01:06:57.711Z",
+  "updated_at": "2026-10-11T01:23:47.430Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -8511,6 +8511,79 @@
             "size_bytes": 356315
           }
         ]
+      }
+    },
+    {
+      "id": "project-zomboid",
+      "public": true,
+      "released": false,
+      "added": "2026-10-11",
+      "display_name": "Project Zomboid",
+      "repo": "itsloopyo/project-zomboid-headtracking",
+      "install_strategy": "JavaAgent",
+      "verified_sources": [
+        "Steam"
+      ],
+      "description": "Play Project Zomboid in first person with a rebuilt world, new graphics and head tracking. Works with any OpenTrack compatible tracker. No VR headset required.",
+      "features": [
+        "First person on foot and in vehicles, switched with one key",
+        "A rebuilt world: 3D buildings and furniture, new textures, detailed plants, rolling hills and distant scenery",
+        "Full 6DOF head tracking: yaw, pitch and roll plus moving left and right, up and down, forward and back",
+        "Decoupled look and aim",
+        "Multiplayer and split screen: only you need the mod on a server, and up to four local players each get their own view and tracker",
+        "Works with any OpenTrack compatible tracker"
+      ],
+      "requirements": [
+        "Project Zomboid on Steam, tested on build 42.21.0",
+        "An OpenTrack compatible tracker sending UDP on port 4242",
+        "Windows 10 or 11, 64-bit"
+      ],
+      "hotkeys": [
+        {
+          "action": "Switch between first person and isometric",
+          "nav_key": "Delete"
+        },
+        {
+          "action": "Cycle tracking mode",
+          "nav_key": "Page Up"
+        },
+        {
+          "action": "Toggle yaw mode",
+          "nav_key": "Page Down"
+        },
+        {
+          "action": "Change aiming mode",
+          "nav_key": "Insert"
+        },
+        {
+          "action": "Change graphics quality of the view you are in",
+          "nav_key": "F9"
+        },
+        {
+          "action": "Change picture style",
+          "nav_key": "F8"
+        },
+        {
+          "action": "Arrange two-player split screen",
+          "nav_key": "F7"
+        }
+      ],
+      "distribution": {
+        "type": "dev-release",
+        "pinned": {
+          "version": "0.0.0-nightly.20261011.7f014866",
+          "built_at": "2026-10-11T00:26:29Z",
+          "zip_filename": "ProjectZomboidHeadTracking-dev-installer.zip",
+          "download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/dev/ProjectZomboidHeadTracking-dev-installer.zip"
+        }
+      },
+      "game": {
+        "steam_app_id": 108600,
+        "steam_folder": "ProjectZomboid",
+        "gog_ids": [],
+        "epic_search_paths": [],
+        "env_var": "PROJECT_ZOMBOID_PATH",
+        "executable_relpath": "ProjectZomboid64.exe"
       }
     }
   ],
