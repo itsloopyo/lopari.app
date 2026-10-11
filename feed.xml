@@ -6,7 +6,15 @@
   <link rel="self" href="https://lopari.app/feed.xml"/>
   <link rel="alternate" href="https://lopari.app/"/>
   <author><name>itsloopyo</name></author>
-  <updated>2026-09-22T00:00:00Z</updated>
+  <updated>2026-10-11T00:00:00Z</updated>
+  <entry>
+    <id>tag:lopari.app,2026:mod/project-zomboid</id>
+    <title>Project Zomboid</title>
+    <link rel="alternate" href="https://github.com/itsloopyo/project-zomboid-headtracking"/>
+    <published>2026-10-11T00:00:00Z</published>
+    <updated>2026-10-11T00:00:00Z</updated>
+    <summary>Play Project Zomboid in first person with a rebuilt world, new graphics and head tracking. Works with any OpenTrack compatible tracker. No VR headset required.</summary>
+  </entry>
   <entry>
     <id>tag:lopari.app,2026:mod/no-mans-sky</id>
     <title>No Man's Sky</title>
@@ -238,13 +246,5 @@
     <published>2026-09-07T00:00:00Z</published>
     <updated>2026-09-07T00:00:00Z</updated>
     <summary>6DOF head tracking for SnowRunner via OpenTrack. Your head moves the camera while the wheel, pedals or controller keep driving, in the cab and in the exterior view. Supports the Steam and Xbox Game Pass builds of 22 July 2026; on any other build the mod stays dormant and the game runs vanilla.</summary>
-  </entry>
-  <entry>
-    <id>tag:lopari.app,2026:mod/amnesia-the-dark-descent</id>
-    <title>Amnesia: The Dark Descent</title>
-    <link rel="alternate" href="https://github.com/itsloopyo/amnesia-the-dark-descent-headtracking"/>
-    <published>2026-09-05T00:00:00Z</published>
-    <updated>2026-09-05T00:00:00Z</updated>
-    <summary>6DOF head tracking for Amnesia: The Dark Descent via OpenTrack. Your head moves the view while the mouse still turns you and reaches for what you are grabbing. On a build whose signature the mod doesn't find it stays dormant and the game runs unmodified.</summary>
   </entry>
 </feed>
