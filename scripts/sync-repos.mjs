@@ -89,7 +89,7 @@ for (const repo of REPOS) {
     } catch (e) {
       console.error(
         `${name}: cannot fast-forward ${behind} commit${behind === 1 ? "" : "s"} from ${upstream}` +
-          `\n    ${firstLine(e)}`,
+          `\n    ${e.message.trim().replace(/^(fatal|error): /, "").replace(/\n/g, "\n    ")}`,
       );
       blocked = true;
       continue;
