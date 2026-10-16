@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-15T22:21:37.439Z",
+  "updated_at": "2026-10-16T01:23:07.971Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -8571,8 +8571,8 @@
       "distribution": {
         "type": "dev-release",
         "pinned": {
-          "version": "0.0.0-nightly.20261015.73565a70",
-          "built_at": "2026-10-15T20:48:32Z",
+          "version": "0.0.0-nightly.20261015.14a0dab5",
+          "built_at": "2026-10-15T23:36:22Z",
           "zip_filename": "ProjectZomboidHeadTracking-dev-installer.zip",
           "download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/dev/ProjectZomboidHeadTracking-dev-installer.zip"
         }
