@@ -145,6 +145,23 @@ function installerAsset(release) {
   );
 }
 
+// A release whose package deploys files as release assets also carries a
+// -launcher.zip: the installer without those files. The launcher downloads
+// it in place of the installer when the pin names it (catalog/mods.rs
+// `package`); the installer stays the manual download and what an older
+// launcher installs.
+function launcherFields(release) {
+  const asset = (release.assets || []).find((a) =>
+    a.name.toLowerCase().endsWith("-launcher.zip"),
+  );
+  if (!asset) return {};
+  return {
+    launcher_zip_filename: asset.name,
+    launcher_download_url: asset.browser_download_url,
+    launcher_size_bytes: asset.size,
+  };
+}
+
 function stripV(tag) {
   return tag.startsWith("v") ? tag.slice(1) : tag;
 }
@@ -183,6 +200,7 @@ async function fetchReleaseChannel(repo, { external = false } = {}) {
         zip_filename: asset ? asset.name : null,
         download_url: asset ? asset.browser_download_url : null,
         size_bytes: asset ? asset.size : null,
+        ...(asset ? launcherFields(r) : {}),
       };
     });
   if (external) return versions.length > 0 ? { versions } : null;
@@ -198,6 +216,13 @@ async function fetchReleaseChannel(repo, { external = false } = {}) {
       zip_filename: latest.zip_filename,
       download_url: latest.download_url,
       size_bytes: latest.size_bytes,
+      ...(latest.launcher_download_url
+        ? {
+            launcher_zip_filename: latest.launcher_zip_filename,
+            launcher_download_url: latest.launcher_download_url,
+            launcher_size_bytes: latest.launcher_size_bytes,
+          }
+        : {}),
     },
     versions,
   };
@@ -205,7 +230,7 @@ async function fetchReleaseChannel(repo, { external = false } = {}) {
 
 // Resolve the latest `dev` pre-release for a mod and shape it into the
 // launcher's `PinnedDevRelease` struct (catalog/mods.rs): four fields,
-// no more. catalog::validate enforces an https://github.com/ host on
+// and the launcher zip's three when the release has one. catalog::validate enforces an https://github.com/ host on
 // download_url, so don't ever emit a different host here.
 //
 // Returns `{ pin: null, reason }` for the two ways the dev channel comes up
@@ -240,6 +265,7 @@ async function fetchDevReleasePin(repo) {
       built_at: release.published_at || "",
       zip_filename: asset.name,
       download_url: asset.browser_download_url,
+      ...launcherFields(release),
     },
   };
 }

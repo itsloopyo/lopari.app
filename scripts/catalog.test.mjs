@@ -337,3 +337,60 @@ globalThis.fetch = async (url) => {
     else assert.deepEqual(JSON.parse(readFileSync(sourcePath, "utf8")), output);
   });
 }
+
+// A release whose package deploys release assets carries a -launcher.zip beside the installer.
+// Every pin of such a release names it, and a pin of a release without one names nothing.
+test("update-metadata pins a release's launcher zip beside its installer", (t) => {
+  const repo = "https://github.com/itsloopyo/wobbly-life-headtracking/releases/download";
+  const asset = (tag, name, size) => ({ name, size, browser_download_url: `${repo}/${tag}/${name}` });
+  const stable = (tag, launcher) => ({
+    tag_name: tag, name: tag, draft: false, prerelease: false,
+    html_url: `https://github.com/itsloopyo/wobbly-life-headtracking/releases/tag/${tag}`,
+    published_at: "2026-10-20T00:00:00Z",
+    assets: [
+      asset(tag, `Mod-${tag}-installer.zip`, 400),
+      ...(launcher ? [asset(tag, `Mod-${tag}-launcher.zip`, 3), asset(tag, "Mod-art-0123456789ab.jar", 397)] : []),
+    ],
+  });
+  const dev = {
+    name: "Development build 0.2.0-nightly.20261022.abc1234", tag_name: "dev", prerelease: true,
+    published_at: "2026-10-22T00:00:00Z",
+    assets: [asset("dev", "Mod-dev-installer.zip", 400), asset("dev", "Mod-dev-launcher.zip", 3)],
+  };
+  const mod = { ...structuredClone(wobbly), released: true, release: { versions: [] } };
+  const { site } = workspace(t, [mod]);
+  const mock = join(dirname(site), "github.mjs");
+  writeFileSync(mock, `
+const releases = ${JSON.stringify([stable("v0.2.0", true), stable("v0.1.0", false)])};
+const dev = ${JSON.stringify(dev)};
+globalThis.fetch = async (url) => {
+  if (url === 'https://api.github.com/repos/itsloopyo/wobbly-life-headtracking/releases?per_page=25') return Response.json(releases);
+  if (url === 'https://api.github.com/repos/itsloopyo/wobbly-life-headtracking/releases/tags/dev') return Response.json(dev);
+  if (url === 'https://api.github.com/repos/itsloopyo/lopari-releases/releases/latest') return Response.json({tag_name: 'v0.8.3', assets: []});
+  throw new Error('Unexpected fetch: ' + url);
+};
+`);
+  execFileSync(process.execPath, ["--import", pathToFileURL(mock).href, join(site, "scripts", "update-metadata.mjs")], {
+    env: { ...process.env, GITHUB_TOKEN: "test-only" },
+  });
+  const updated = JSON.parse(readFileSync(join(site, "mods.json"), "utf8")).mods[0];
+  const launcher = (tag, name) => ({
+    launcher_zip_filename: name,
+    launcher_download_url: `${repo}/${tag}/${name}`,
+    launcher_size_bytes: 3,
+  });
+  assert.deepEqual(
+    { ...updated.release.pinned, ...launcher("v0.2.0", "Mod-v0.2.0-launcher.zip") },
+    updated.release.pinned,
+  );
+  assert.equal(updated.release.pinned.download_url, `${repo}/v0.2.0/Mod-v0.2.0-installer.zip`);
+  assert.deepEqual(
+    updated.release.versions.map((v) => v.launcher_download_url ?? null),
+    [`${repo}/v0.2.0/Mod-v0.2.0-launcher.zip`, null],
+  );
+  assert.deepEqual(updated.distribution.pinned, {
+    version: "0.2.0-nightly.20261022.abc1234", built_at: "2026-10-22T00:00:00Z",
+    zip_filename: "Mod-dev-installer.zip", download_url: `${repo}/dev/Mod-dev-installer.zip`,
+    ...launcher("dev", "Mod-dev-launcher.zip"),
+  });
+});
