@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-10-26T19:40:22.571Z",
+  "updated_at": "2026-10-27T22:32:17.184Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -8576,7 +8576,7 @@
     {
       "id": "project-zomboid",
       "public": true,
-      "released": false,
+      "released": true,
       "added": "2026-10-11",
       "display_name": "Project Zomboid",
       "repo": "itsloopyo/project-zomboid-headtracking",
@@ -8647,6 +8647,36 @@
         "epic_search_paths": [],
         "env_var": "PROJECT_ZOMBOID_PATH",
         "executable_relpath": "ProjectZomboid64.exe"
+      },
+      "release": {
+        "pinned": {
+          "version": "0.1.0",
+          "tag_name": "v0.1.0",
+          "name": "Head Tracking for Project Zomboid v0.1.0",
+          "html_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/tag/v0.1.0",
+          "published_at": "2026-10-27T22:31:21Z",
+          "zip_filename": "ProjectZomboidHeadTracking-v0.1.0-installer.zip",
+          "download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/v0.1.0/ProjectZomboidHeadTracking-v0.1.0-installer.zip",
+          "size_bytes": 472608395,
+          "launcher_zip_filename": "ProjectZomboidHeadTracking-v0.1.0-launcher.zip",
+          "launcher_download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/v0.1.0/ProjectZomboidHeadTracking-v0.1.0-launcher.zip",
+          "launcher_size_bytes": 3836355
+        },
+        "versions": [
+          {
+            "tag_name": "v0.1.0",
+            "version": "0.1.0",
+            "name": "Head Tracking for Project Zomboid v0.1.0",
+            "html_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/tag/v0.1.0",
+            "published_at": "2026-10-27T22:31:21Z",
+            "zip_filename": "ProjectZomboidHeadTracking-v0.1.0-installer.zip",
+            "download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/v0.1.0/ProjectZomboidHeadTracking-v0.1.0-installer.zip",
+            "size_bytes": 472608395,
+            "launcher_zip_filename": "ProjectZomboidHeadTracking-v0.1.0-launcher.zip",
+            "launcher_download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/v0.1.0/ProjectZomboidHeadTracking-v0.1.0-launcher.zip",
+            "launcher_size_bytes": 3836355
+          }
+        ]
       }
     }
   ],
@@ -12360,14 +12390,14 @@
     }
   ],
   "launcher": {
-    "version": "1.0.0",
-    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v1.0.0",
-    "published_at": "2026-10-11T01:04:02Z",
+    "version": "1.1.0",
+    "html_url": "https://github.com/itsloopyo/lopari-releases/releases/tag/v1.1.0",
+    "published_at": "2026-10-27T22:25:58Z",
     "setup_exe": {
-      "name": "Lopari_1.0.0_x64-setup.exe",
-      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v1.0.0/Lopari_1.0.0_x64-setup.exe",
-      "size_bytes": 3740064,
-      "sha256": "ec29319f405abd0ba38e28c65372f70e2c707f1fa3ae53c483a579dca281ff3d"
+      "name": "Lopari_1.1.0_x64-setup.exe",
+      "download_url": "https://github.com/itsloopyo/lopari-releases/releases/download/v1.1.0/Lopari_1.1.0_x64-setup.exe",
+      "size_bytes": 3768312,
+      "sha256": "51bbd0a69f5b2c0474f2ba82f60ae0f985c9f8160439fea620d3d6a18ece827b"
     },
     "msi": null
   }
