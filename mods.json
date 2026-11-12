@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated_at": "2026-11-09T16:01:13.404Z",
+  "updated_at": "2026-11-12T16:31:23.191Z",
   "mods": [
     {
       "id": "blue-prince",
@@ -8690,19 +8690,32 @@
       },
       "release": {
         "pinned": {
-          "version": "0.3.1",
-          "tag_name": "v0.3.1",
-          "name": "Head Tracking for Project Zomboid v0.3.1",
-          "html_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/tag/v0.3.1",
-          "published_at": "2026-11-09T16:00:07Z",
-          "zip_filename": "ProjectZomboidHeadTracking-v0.3.1-installer.zip",
-          "download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/v0.3.1/ProjectZomboidHeadTracking-v0.3.1-installer.zip",
-          "size_bytes": 476549262,
-          "launcher_zip_filename": "ProjectZomboidHeadTracking-v0.3.1-launcher.zip",
-          "launcher_download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/v0.3.1/ProjectZomboidHeadTracking-v0.3.1-launcher.zip",
-          "launcher_size_bytes": 4397342
+          "version": "0.3.2",
+          "tag_name": "v0.3.2",
+          "name": "Head Tracking for Project Zomboid v0.3.2",
+          "html_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/tag/v0.3.2",
+          "published_at": "2026-11-12T16:30:11Z",
+          "zip_filename": "ProjectZomboidHeadTracking-v0.3.2-installer.zip",
+          "download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/v0.3.2/ProjectZomboidHeadTracking-v0.3.2-installer.zip",
+          "size_bytes": 476549390,
+          "launcher_zip_filename": "ProjectZomboidHeadTracking-v0.3.2-launcher.zip",
+          "launcher_download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/v0.3.2/ProjectZomboidHeadTracking-v0.3.2-launcher.zip",
+          "launcher_size_bytes": 4397470
         },
         "versions": [
+          {
+            "tag_name": "v0.3.2",
+            "version": "0.3.2",
+            "name": "Head Tracking for Project Zomboid v0.3.2",
+            "html_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/tag/v0.3.2",
+            "published_at": "2026-11-12T16:30:11Z",
+            "zip_filename": "ProjectZomboidHeadTracking-v0.3.2-installer.zip",
+            "download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/v0.3.2/ProjectZomboidHeadTracking-v0.3.2-installer.zip",
+            "size_bytes": 476549390,
+            "launcher_zip_filename": "ProjectZomboidHeadTracking-v0.3.2-launcher.zip",
+            "launcher_download_url": "https://github.com/itsloopyo/project-zomboid-headtracking/releases/download/v0.3.2/ProjectZomboidHeadTracking-v0.3.2-launcher.zip",
+            "launcher_size_bytes": 4397470
+          },
           {
             "tag_name": "v0.3.1",
             "version": "0.3.1",
